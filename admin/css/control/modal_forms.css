@@ -1,0 +1,122 @@
+/*кнопки*/
+.modal_btn{
+	background: #DE9E26;
+	color: #fff;
+	display: inline;
+	float: none;
+	font-size: 16px;
+	margin: 10px 10px 20px 0px;
+	opacity: 1;
+	position: static;
+	text-align: center;
+	transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	}
+	a.modal_btn{
+		padding: 10px 20px;
+		}
+	button.modal_btn{
+		line-height: 30px;
+		padding: 2px 20px;
+		height: 40px;
+		}
+	.modal_btn:hover{
+		color: #fff;
+		opacity: 0.8;
+		}
+
+	.modal_btn.red{
+		background: red;
+	}
+	.modal_btn.yellow{
+		background: yellow;
+		color: #000;
+		}
+	.modal_btn.yellow:hover{
+		color: #000;
+		}
+		
+/*форма*/
+.modal_form{
+	float: left;
+	width: 100%;
+	}
+	.modal_line{
+		float: left;
+		margin-bottom: 10px;
+		width: 100%;
+		}
+		.modal_line .title{
+			float: left;
+			padding: 5px 2%;
+			text-align: right;
+			width: 36%;
+			}
+		.modal_line .value{
+			float: left;
+			padding: 0 2%;
+			text-align: left;
+			width: 56%;
+			}
+			.modal_line .value .error{
+				color: #000;
+				font-size: 16px;
+				line-height: 30px;
+				text-align: left;
+				}
+			.modal_line .error{
+				color: red;
+				float: left;
+				font-size: 14px;
+				line-height: 20px;
+				text-align: center;
+				width: 100%;
+				}
+			.modal_line_btn{
+				float: left;
+				padding: 20px 0 0 0;
+				text-align: center;
+				width: 100%;
+				}
+				
+/*элементы управления*/
+.modal_form input[type="text"],
+.modal_form input[type="password"],
+.modal_form input[type="datetime"],
+.modal_form input[type="datetime-local"],
+.modal_form input[type="date"],
+.modal_form input[type="month"],
+.modal_form input[type="time"],
+.modal_form input[type="week"],
+.modal_form input[type="number"],
+.modal_form input[type="email"],
+.modal_form input[type="url"],
+.modal_form input[type="search"],
+.modal_form input[type="tel"],
+.modal_form input[type="range"],
+.modal_form input[type="color"]{
+	background: #fff;
+	border: 1px solid #C0C0C0;
+	color: #000;
+	float: left;
+	font-size: 20px;
+	height: 30px;
+	margin: 0px;
+	padding: 1px;
+	width: 250px;
+	text-indent: 5px;
+	font-size: 14px;
+	transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-webkit-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+}
+
+.modal_form input[type="checkbox"]{
+	position: relative;
+	top: 10px;
+}

@@ -1,0 +1,7 @@
+.left{
+	/*float: left;*/
+	width: 20%;
+	/*position:relative;*/
+	min-height: 768px;
+	background: #EDEEF0;
+	}

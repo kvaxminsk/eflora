@@ -1,0 +1,64 @@
+/*модальные окна*/
+.m{
+	background: rgb(256, 256, 256);
+	display: block;
+	height: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	overflow: auto;
+	text-align: center;	
+	z-index: 100;		
+	}
+	.m_m{
+		display: table;
+		float: left;
+		height: 100%;
+		text-align: center;
+		vertical-align: middle;
+		width: 100%;
+		}
+		.m_m_m{
+			display: table-cell;
+			padding: 5px 0;
+			text-align: center;
+			vertical-align: middle;
+			}
+			.m_m_m_body{
+				background: #fff;
+				border: 1px solid silver;
+				display: inline-block;
+				max-width: 960px;
+				min-width: 350px;
+				padding: 5px;
+				width: 650px;
+				}
+				.m_m_m_header{
+					background: #E5E5E7;
+					display:block;
+					margin-bottom: 15px;
+					padding: 10px 10px;
+					position: relative;
+					text-align: left;
+					}
+					.m_m_m_header .title{
+						color: #000;
+						font: 18px/18px Tahoma, Arial, Sans-Serif;
+						}
+					.m_m_m_header .close{
+						background: url('../../images/cancel_white.png') no-repeat;
+						cursor: pointer;
+						float: right;
+						height: 32px;
+						right: 3px;
+						top: 2px;
+						position: absolute;
+						width: 32px;
+						}
+				.m_m_m_content{
+					color: #111;
+					font-size: 16px;
+					padding: 20px;
+					}

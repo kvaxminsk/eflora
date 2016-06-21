@@ -1,0 +1,21 @@
+.center{
+	/*float: left;*/
+	width: 80%;
+	padding-left: 10px;
+	background: #FFF;
+	border-left: 1px solid #AAA;
+}
+	.zagolovok{
+		width: 100%;
+		font-size: 32px;
+		font-weight: bold;
+		/*color: #00CE9B;*/
+		color: #333;
+		height: 50px;
+		float: left;
+		margin-top: 30px;
+		border-bottom: 1px dotted #ccc;
+	}
+	.zagolovok span{
+		/*margin-left: 20px;*/
+	}

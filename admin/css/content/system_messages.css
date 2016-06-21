@@ -1,0 +1,42 @@
+.system_message{
+	border: 1px solid #cacaca;
+	float: right;
+	font-size: 14px;
+	margin-bottom: 2px;
+	padding: 50px; 
+	position: relative;
+	text-align: center;
+	width: 616px;
+	}
+	.system_message.ok{
+		background: #c4e562;
+		border: 1px solid rgba(0,0,0, 0.2);
+		color: #444;
+		}
+	.system_message.no{
+		background: #f25c06;
+		border: 1px solid rgba(0,0,0, 0.3);
+		color: #fff;
+		}
+		.system_message .close_msg{
+			background: #333 url('../../images/icons.png') no-repeat;
+			background-position: -95px -126px;
+			cursor: pointer;
+			height: 20px;
+			opacity: 0.6;
+			position: absolute;
+			right: 10px;
+			transition: opacity 0.4s ease-in-out;
+				-o-transition: opacity 0.4s ease-in-out;
+				-moz-transition: opacity 0.4s ease-in-out;
+				-webkit-transition: opacity 0.4s ease-in-out;
+				-ms-transition: opacity 0.4s ease-in-out;
+			top: 10px;
+			width: 20px;
+			}
+			.system_message .close_msg:hover{
+				opacity: 1;
+				}
+			.system_message .close_msg:active{
+				top: 11px;
+				}

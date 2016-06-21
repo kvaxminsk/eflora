@@ -1,0 +1,151 @@
+/*модальные окна*/
+.m{
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+	height: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	overflow: auto;
+	text-align: center;	
+	z-index: 100;		
+	}
+	.m_m{
+		display: table;
+		float: left;
+		height: 100%;
+		text-align: center;
+		vertical-align: middle;
+		width: 100%;
+		}
+		.m_m_m{
+			display: table-cell;
+			padding: 5px 0;
+			text-align: center;
+			vertical-align: middle;
+			}
+			.m_m_m_body{
+				background: #fff;
+				border: 1px solid silver;
+				border-radius: 5px;
+				display: inline-block;
+				max-width: 960px;
+				min-width: 350px;
+				padding: 5px;
+				}
+				.m_m_m_header{
+					background: #dadada;
+					border-radius: 5px;
+					display:block;
+					margin-bottom: 15px;
+					padding: 10px 10px;
+					text-align: left;
+					}
+					.m_m_m_header .title{
+						color: #000;
+						font: 18px/18px Arial, Sans-Serif;
+						}
+					.m_m_m_header .close{
+						background: url('../images/img/close.png') no-repeat;
+						cursor: pointer;
+						float: right;
+						height: 32px;
+						left: 6px;
+						top: -8px;
+						position: relative;
+						width: 32px;
+						}
+				.m_m_m_content{
+					
+					}
+
+#view_pictures{
+	min-width: 700px;
+	position: relative;
+	}
+	#left_right{
+		background: red;
+		height:0px;
+		top: 45%;
+		position: absolute;
+		width: 100%;
+		z-index: 101;
+		}
+		#left_right #left{
+			background: #444 url('../images/img/left_str.png') 10px 10px no-repeat;
+			border-radius: 35px;
+			border: 3px solid #d8d1c9;
+			display: block;
+			height: 35px;
+			left: 10px;
+			opacity: 0.3;
+			position: absolute;
+			transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			width: 35px;
+			}
+			#left_right #left:hover{
+				background: #d82027 url('../images/img/left_str.png') 10px 10px no-repeat;
+				opacity: 0.9;
+				}
+		#left_right #right{
+			background: #444 url('../images/img/right_str.png') 10px 10px no-repeat;
+			border-radius: 35px;
+			border: 3px solid #d8d1c9;
+			display: block;
+			height: 35px;
+			right: 10px;
+			opacity: 0.3;
+			position: absolute;
+			transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			width: 35px;
+			}	
+			#left_right #right:hover{
+				background: #d82027 url('../images/img/right_str.png') 10px 10px no-repeat;
+				opacity: 0.9;
+				}
+	#view_pictures #all_pictures{
+		display: block;
+		text-align: center;
+		}
+	#view_pictures #all_pictures .image{
+		display: none !important;
+		text-align: center;
+		}
+	#view_pictures #all_pictures .active.image{
+		display: block !important;
+		}
+		#view_pictures #all_pictures .image .yakor{
+			height: 10px;
+			position: absolute;
+			top: -64px;
+			width: 10px;
+			}
+		#view_pictures #all_pictures .image .name{
+			font: bold 16px Arial, Verdana, Sans-serif;
+			display: block !important;
+			padding: 0px 10px 10px 10px;
+			text-align: left;
+			}
+		#view_pictures #all_pictures .image a{
+			display: block !important;
+			text-align: center;
+			}
+				
+			#view_pictures #all_pictures .image a img{
+				max-width: 940px;
+			}
+		#view_pictures #all_pictures .image .about{
+			font: normal 14px/16px Arial, Verdana, Sans-serif;
+			display: block;
+			padding: 20px;
+			}

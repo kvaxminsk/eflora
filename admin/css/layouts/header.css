@@ -1,0 +1,53 @@
+#wrapper_header{
+	display: block;
+	height: 40px;
+	padding-top: 10px 0;
+	width: 100%;
+	}
+	#header{
+		/*height: 40px;*/
+		margin: 0 auto;
+			/*background: #fff;*/
+
+		/*width: 1255px;*/
+		}
+		#header:after {
+			content: '.';	
+			clear: both;
+			display: block;
+			height: 0;
+			visibility: hidden;	
+			}
+
+#header .left{
+	float: left;
+	width: 270px;
+	}
+#header .right{
+	float: right;
+	width: 680px;
+	}
+
+.logo{
+	float: left;
+	width: 100%;
+		background-color: #333;
+
+	}
+	.logo a{
+		float: left;
+		text-align: center;
+		width: 100%;
+		}
+	
+.citys{
+	float: right;
+	height: 20px;
+	line-height: 20px;
+	padding-right: 10px;
+	text-align: right;
+	width: 235px;
+	}
+	.citys span{
+		margin-right: 5px;
+		}

@@ -1,0 +1,103 @@
+#slider{
+  width:1000px;
+  height:383px;
+  margin:0 auto;
+  position:relative;
+}
+#mask{
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+}
+.fleche{
+  position:absolute;
+  top:145px;
+  cursor:pointer;
+}
+#fleche_gauche{
+  left:-17px;
+}
+#fleche_droite{
+  right: -17px;
+}
+#image_container{
+  position:absolute;
+  width:400%;
+  height:100%;
+  /* La transition sur tout les navigateurs */
+     /* Chrome */ 
+    -webkit-transition-property:all;
+    -webkit-transition-duration:1s;
+
+     /* Firefox */ 
+    -moz-transition-property:all;
+    -moz-transition-duration:1s;
+    
+     /* Opera */ 
+    transition-property:all;
+    transition-duration:1s;
+}
+/* Les différentes positions du slider */
+.image1 #image_container{
+  left:0;
+}
+.image2 #image_container{
+  left:-100%;
+}
+.image3 #image_container{
+  left:-200%;
+}
+.image4 #image_container{
+  left:-300%;
+}
+
+/* Les images */
+#image_container li{
+  float:left;
+}
+
+#bouton{
+  position:relative;
+  width:244px;
+  height:55px;
+  margin: 300px 0px 0px 40px;
+  cursor:pointer;
+}
+
+/* Les points de navigation */
+#dots{
+  position:absolute;
+  width:130px;
+  height:15px;
+  left:425px;
+  bottom:-25px;
+  top:359px;
+}
+  
+/* les points, avec leur background non selectionné */
+#dots li{
+  float:left;
+  margin: 0px 2px;
+  width:10px;
+  height:10px;
+  background: #b7b7b7;
+  cursor:pointer;
+  border-radius:5px;
+}
+/* Point au survol */
+#dots li:hover{
+  background: #016ca2;
+}
+/* Point "selectionné". De la même manière que l'image, on change en fonction de la classe de slider */
+.image1 #dots li.button1, .image2 #dots li.button2, .image3 #dots li.button3, .image4 #dots li.button4{
+  background: #016ca2;
+  cursor:normal;
+}
+
+/* Un eyecandy */
+#glass{
+  position:absolute;
+  top:0px;
+  left:0px;
+}

@@ -1,0 +1,148 @@
+/*header adminki*/
+header .left{
+	float: left;
+	margin-right: 0px !important;
+	width: 230px;
+	}
+header .center{
+	float: left;
+	width: 460px;
+	}
+header .right{
+	float: right;
+	margin-left: 0px !important;
+	margin-bottom: 10px;
+	width: 250px;
+	}
+	header .right .line{
+		float: left;
+		height: 22px;
+		width: 100%;
+		}
+		header .right .line .text{
+			color: #929292;
+			float:left;
+			font: 10px/22px Tahoma, Verdana, Arial;
+			text-align: right;
+			width: 100px;
+			}
+		header .right .line .forma{
+			float: right;
+			text-align: center;
+			width: 140px;
+			}
+			header .right .line .forma input{
+				font: 10px Tahoma, Verdana, Arial;
+				height: 20px;
+				margin: 0;
+				padding:0;
+				width: 100%;
+				}
+			header .right .line .forma select{
+				font: 10px Tahoma, Verdana, Arial;
+				height: 20px;
+				margin: 0;
+				padding:0;
+				width: 100%;
+				}
+			header .right .line .forma button{
+				font: 10px Tahoma, Verdana, Arial;
+				height: 20px;
+				margin: 0;
+				padding:0;
+				width: 100%;
+				}
+#logo{
+	float: left;
+	height: 110px;
+	width: 100%;
+	}
+
+
+				
+/*top menu*/
+#top_menu{
+    background: -webkit-linear-gradient(top, #4f4f4f, #020202);
+	border-radius: 5px;
+	float: left;
+	height: 50px;
+	width: 100%;
+	}
+    #top_menu_ul{	        
+        float:left;
+        height:50px; 	
+        width: 100%;     			
+        }
+        .top_menu_li {
+		    float:left; 
+		    height:50px;   
+		    position: relative;
+		   }
+		   .top_menu_li:first-child{
+		   		margin-left: 10px;
+		   	}
+
+			.top_menu_li:hover{
+				background: -webkit-linear-gradient(top, #a3c15b, #558430);
+				}
+				.top_menu_li:hover .top_menu_a{
+					color: #edede1;
+					text-decoration:none; 
+					}
+		.active.top_menu_li {
+		  	height:50px;
+		    }
+		.active.top_menu_li .top_menu_a{
+			background: -webkit-linear-gradient(top, #a3c15b, #558430);   
+		  	color: #edede1;
+		    }
+		    .top_menu_a {
+	        	color: #929292; 
+	            display:-moz-inline-stack; 
+	            display:inline-block;           
+	            font:normal normal bold 16px/50px Tahoma, Verdana, Arial, sans-serif;
+	            padding:0 10px;
+	            text-decoration:none; 
+	            vertical-align:top;             
+	            }
+/*konec top menu*/
+
+/*bread_crumbs*/
+#bread_crumbs{
+	float: left;
+	margin-top: 5px;
+	width: 100%; 
+	}
+	#bread_crumbs ul{
+		float:left;
+        height:20px; 	
+        width: 100%; 
+		}
+		#bread_crumbs ul li{
+			background: url('../img/bullet.png') 0px 9px no-repeat;
+			float: left;
+			margin-right: 10px;
+			padding-left: 10px;
+			}
+			#bread_crumbs ul li:first-child{
+				background: none;
+				padding: 0;
+				}
+			#bread_crumbs ul li:last-child a{
+				text-decoration:none;
+				}
+			#bread_crumbs ul li:last-child a:hover{
+				text-decoration:underline;
+				}
+			#bread_crumbs ul li a{
+				font: 10px/20px Arial, Sans-Serif;
+				text-decoration:underline;
+				}
+			#bread_crumbs ul li a:hover{
+				font: 10px/20px Arial, Sans-Serif;
+				text-decoration:none;
+				}
+/*end bread_crumbs*/
+
+
+/*ens search*/

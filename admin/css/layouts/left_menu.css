@@ -1,0 +1,270 @@
+.left_menu{
+    float: left;
+    /*margin-left: 24px;*/
+    width: 100%;
+    min-height: 600px;
+    padding-bottom: 200px;
+    margin-top: 20px;
+}
+/*элемент меню уровень1*/
+.left_menu li.l1_li{
+    float: left;
+    min-height: 40px;
+    position: relative;
+    width: 100%;
+}
+.left_menu li.l1_li a.l1_a:hover{
+    /*background-color: #222;*/
+}
+.left_menu li.l1_li a.l1_a:hover .title{
+    /*box-shadow: inset  0px 3px 20px 3px  #fff;*/
+    color: #FF6000;                
+
+}
+/*кнопка скрыть/раскрыть уровень1*/
+.left_menu li.l1_li .openhide{
+    background: url('../../images/play.png') no-repeat;
+    background-size: 15px;
+    background-position: center center ;
+    background-color: rgba(0,0,0, 0.1);
+    cursor: pointer;
+    display: table-cell;
+    height: 40px;
+    position: absolute;
+    right: 1px;
+    top: -1px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    width: 40px;
+}
+.left_menu li.l1_li .openhide:hover{
+    background-color: rgba(0,0,0, 0.4);
+}
+/*ссылки меню уровень1*/
+.left_menu li.l1_li a.l1_a{
+    /*background: #333;*/
+    /*border: 1px solid rgba(0,0,0,0.1);*/
+    border-radius: 0px;
+    box-shadow: inset  0px 0px 0px 0px  silver;
+    float: left;
+    min-height: 40px;
+    /*margin-bottom: 1px;*/
+    transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    width: 100%;
+}
+/*иконка ссылки меню уровень1*/
+.left_menu li.l1_li a.l1_a .ico{
+    display: table-cell;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+}
+.left_menu li.l1_li a.l1_a .ico img{
+   max-height: 30px;
+   max-width: 30px;
+}
+/*текст ссылки меню уровень1*/
+.left_menu li.l1_li a.l1_a .title{
+    color: #000;
+    display: table-cell;
+    font-size: 14px;
+    height: 40px;
+    vertical-align: middle;
+    width: 210px;
+}
+/*start active li level1*/
+.left_menu li.l1_li.active{
+    /*border-left:2px solid #00CE9B;*/
+}
+.left_menu li.l1_li.active:hover a.l1_a{
+    box-shadow: none;
+}
+.left_menu li.l1_li.active .openhide{
+    /*background-color: rgba(0,0,0,0.1);*/
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.left_menu li.l1_li.active a.l1_a{
+    /*background: #b4cacf;*/
+
+
+}
+.left_menu li.l1_li.active a.l1_a .title{
+    color: #FF6000;            
+}
+/*end active li level1*/
+
+/*следующие уровени меню*/
+/*2-й*/
+.l1_li.open .children{
+   display: block;
+   background: #CCC;
+   width: 100%;
+   float: right;
+}
+.l1_li .children{
+   display: none;
+   /*float: right;*/
+   padding-left: 1px;
+   padding-top: 1px;
+   /*width: 298px;*/
+}
+.l1_li .children li{
+    /*background: rgba(0,0,0,0.0) url('../../images/b1.png')  repeat-x;;*/
+    float: left;
+    min-height: 30px;
+    margin-right: 2px;
+    padding-left: 20%;
+    position: relative;
+    width: 80%;
+}.l1_li .children li:hover{
+        background-color: #B8BDC8;             
+
+}
+
+.l1_li .children li .openhide{
+   background: url('../../images/show.png') no-repeat;
+   background-color: transparent !important;
+   background-position: center center;
+   border-radius: 3px;
+   box-shadow: inset  0px 0px 0px 0px  #fff;
+   height: 30px;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 30px;
+}
+.l1_li .children li .openhide:hover .title{
+    color:#00CE9B;              
+}  
+.l1_li .children li.open .openhide{
+   background: url('../../images/hide.png') no-repeat;
+   background-position: center center;
+   transform: rotate(0deg) !important;
+   -webkit-transform: rotate(0deg) !important;
+   -moz-transform: rotate(0deg) !important;
+   -ms-transform: rotate(0deg) !important;
+   -o-transform: rotate(0deg) !important;
+}
+.l1_li .children li a{
+    /*background: #252525;*/
+    box-shadow: inset 0px 0px 0px 0px silver;
+    border-radius: 0px;
+    color: #000;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+    /*margin-bottom: 1px;*/
+    /*margin-left:20%;*/
+    /*padding: 0 3%;*/
+    /*border-left: 5px solid #A1B5B9;*/
+    transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    width: 80%;
+}
+.l1_li .children li a.active {
+    color:#00CE9B;              
+}  
+.l1_li .children li a .ico{
+
+    background-size: 20px;
+    background-position: center center ;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.l1_li .children li a .ico img{
+   max-width: 20px;
+   max-height: 20px;
+   margin-top: 5px;
+}
+
+/*3-й*/
+.l1_li .children .open .children{
+	display: block;			
+}
+.l1_li .children .children{
+	background: none;
+	display: none;
+}
+.l1_li .children .children li{
+	/*background: rgba(0,0,0,0.0) url('../../images/b1.png') repeat-x;*/
+    float: right;
+    margin-right: 0px;
+    padding-left: 62px;
+    /*width: 234px;*/
+}
+.l1_li .children .children li .openhide{
+  background: url('../../images/show.png') no-repeat;
+  background-position: center center;
+  left: 31px;
+}
+.l1_li .children .children li.open .openhide{
+   background: url('../../images/hide.png') no-repeat;
+   background-position: center center;
+}
+/*4-й*/
+.l1_li .children .children .open .children li{
+	display: block;
+}
+.l1_li .children .children .children li{
+	/*background: rgba(0,0,0,0.0) url('../../images/b1.png') repeat-x;*/
+	display: none;
+	float: right;
+    margin-left: 0px;
+    padding-left: 93px;
+    width: 203px;
+}
+.l1_li .children .children .children li .openhide{
+  background: url('../../images/show.png') no-repeat;
+  background-position: center center;
+  left: 62px;
+}
+.l1_li .children .children .children li.open .openhide{
+   background: url('../../images/hide.png') no-repeat;
+   background-position: center center;
+}
+/*5-й*/
+.l1_li .children .children .children .open .children li{
+	display: block;
+}
+.l1_li .children .children .children .children li{
+	background: rgba(0,0,0,0.0) url('../../images/b1.png') repeat-x;
+	display: none;
+	float: right;
+    margin-left: 0px;
+    padding-left: 124px;
+    width: 172px;
+}
+.l1_li .children .children .children .children li .openhide{
+  background: url('../../images/show.png') no-repeat;
+  background-position: center center;
+  left: 93px;
+}
+.l1_li .children .children .children .children li.open .openhide{
+   background: url('../../images/hide.png') no-repeat;
+   background-position: center center;
+}
+
+.l1_li .children .children .children .children li .title{
+	font-size: 12px;
+}

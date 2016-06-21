@@ -1,0 +1,8 @@
+.stat{
+	float: left;
+	width: 270px;
+}
+.stat a{
+	width: 258px;
+	margin-bottom: 10px;
+}

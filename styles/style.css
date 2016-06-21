@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background: #e6e6e6;
+}
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+pre {
+	padding: 10px;
+	border: 1px solid #e6e6e6;
+	background: #F7F7F7;
+}
+
+#layout {
+	margin: auto;
+	width: 800px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 20px;
+	background: #FFF;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+#logo {
+	font-size: 20px;
+}
+
+.showItem {
+	padding: 10px;
+	border: 1px solid #e6e6e6;
+	background: #F7F7F7;
+}
+.showItemWarning {
+	padding: 10px;
+	border: 1px solid #FFBCAE;
+    background: #FFF6DC;
+}
+.showItemAllPage {
+	padding: 10px;
+	border: 1px solid #A5ECAD;
+    background: #E9FFF7;
+}
+
+/*SITEMAP*/
+
+#cont {
+	margin:auto;
+	width: 100%;
+	text-align:left;
+}
+#cont thead .rightLink {
+	float: right;
+}
+#cont thead td {
+	font-size:12px;
+	margin:0px;
+	padding:10px;
+	border: 1px solid #e6e6e6;
+	background: #F7F7F7;
+}
+#cont tbody td {
+	padding: 5px 10px;
+	font:normal 12px verdana;
+	border: 1px solid #e6e6e6;
+	border-top: 0;
+	background: #fff;
+	margin: 0;
+}
+#cont tbody td:hover {
+	background: #F7F7F7;
+}
+#cont tfoot td {
+	border: 1px solid #e6e6e6;
+	border-top: 0;
+	background: #F7F7F7;
+	padding:10px;
+}

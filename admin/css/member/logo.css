@@ -1,0 +1,37 @@
+#logo{
+	height: 60px;
+	/*width: 350px;*/
+	padding-top: 20px; 
+		/*background-color: #333;*/
+	text-align: center;
+
+	}
+	#logo .name{
+		float: left;
+		font: bold 1.6em/1.8em Verdana, Arial, Sans-serif;
+		/*height: 26px;*/
+		text-align: center;
+		width: 100%;
+		color: #fff;
+		}
+		#logo .name span{
+			color: #00CE9B;
+			}
+	#logo .title{
+		color: silver;
+		float: left;
+		font-size: 10px;
+		height: 14px;
+		line-height: 14px;
+		text-align: center;
+		width: 100%;
+		}
+		
+		/*логотип в модальных окнах*/
+		.m #logo{
+			margin-left: 130px;
+			margin-bottom: 20px;
+			}
+			.m #logo .title{
+				color: grey;
+				}

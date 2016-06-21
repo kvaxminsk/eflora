@@ -1,0 +1,222 @@
+.form{
+    /*background: #fefefe;*/
+    float: left;
+    padding: 5px 10px 0 10px;
+    margin-bottom: 20px;
+    width: 845px;
+}
+.form .line{
+border-bottom: 1px solid #eee;
+    /*border-top: 1px solid #ccc;*/
+    float: left;
+    margin: 5px;
+    min-height: 40px;
+    width: 100%;
+}
+.form .line:last-child{
+    border-bottom: none;
+}
+.form_pretext{
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle;
+    width: 855px;
+}
+.form_title_marker{
+    color: red;
+    font-size: 12px;
+    margin: 0 5px;
+}
+.form .line .title{
+    display: table-cell;
+    height: 35px;
+    vertical-align: top;
+    padding-top: 7px;
+    padding-right: 6px;
+    /*margin-top: 20px;*/
+    width: 220px;
+    font-size: 18px;
+    text-align: right;
+}
+.form .line .value{
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle;
+    width: 575px;
+}
+.form .line .value .item{
+    float: left;
+}
+/*хакк для yii*/
+.form .line .value .item .error{
+    color: #706c56;
+    line-height: 18px;
+}
+.error{
+    color: red;
+    font: normal 10px/25px Tahoma, Verdana, Arial;
+    float: left;
+    margin: 0 10px;
+}
+.radio_label{
+    margin: 0 15px 0 5px;
+}
+
+select{
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	color: #706c56;
+	font-size: 18px;
+	padding: 3px 5px;
+	width: 575px;
+	transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+	}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="range"],
+input[type="color"]{
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #706c56;
+	float: left;
+	height: 30px;
+	margin: 0px;
+	padding: 1px;
+	width: 575px;
+	text-indent: 5px;
+	font-size: 18px;
+	transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+}
+textarea{
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #565656;
+	float: left;
+	min-height: 160px;
+	padding: 0;
+	transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+	width: 575px;
+}
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="tel"]:focus,{
+	border: 1px solid #333;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin: 0px;
+}
+#flash-success{
+	
+	width:50%;
+	font-size: 16px;
+	float:right;
+	height:20px;
+	color:green;
+	text-align: right;
+	vertical-align: middle;
+}
+#flash-error{
+	
+	width:50%;
+	font-size: 16px;
+	float:right;
+	height:20px;
+	color:red;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.form_pretext{
+padding: 8px 35px 12px 14px;
+margin-bottom: 20px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: #fcf8e3;
+border: 1px solid #fbeed5;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+width:805px;
+
+}
+
+.button_panel{
+	position: fixed;
+	float:none;
+	right: 30px;
+	top: 30%;
+	width:230px!important;
+	/*height: 50px;*/
+}
+.button_panel button{
+/*	float:none;
+width:300px;
+*/	margin-bottom: 10px;
+}
+
+.button_panel_new{
+	position: fixed;
+	float:none;
+	right: 30px;
+	top: 30%;
+	width:130px!important;
+    text-align: right;
+}
+.button_panel_new button{
+    margin-bottom: 10px;
+    padding:5px;
+    float:none;
+    height: auto;
+    line-height: 20px;
+}
+
+.button-simple{
+    padding:5px;
+    height: auto;
+    line-height: 15px;
+    font-size:14px !important;
+    float:none;
+}
+.input-simple{
+    width:200px !important;
+    float:none !important;
+}

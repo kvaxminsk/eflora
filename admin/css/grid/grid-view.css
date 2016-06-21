@@ -1,0 +1,226 @@
+.grid-view{
+	float: left;
+	position: relative;
+	margin-bott
+	width: 100%;
+}
+
+.grid-view table.items{
+	border: 1px solid rgba(0,0,0,0.1);
+	border-collapse: collapse;
+	width: 100%;
+	}
+	.grid-view table.items td img{
+		max-height: 40px;
+		max-width: 120px;
+		}
+	.grid-view table.items td{
+		text-align: center;
+		}
+	.grid-view input[type="checkbox"]{
+		cursor: pointer;
+	}
+
+	.grid-view table thead{
+		background: #333;
+		}
+		.grid-view table thead td{
+			height: 30px;
+			padding: 10px;
+			}
+		.grid-view table.items th{
+			font-size: 16px;
+			font-weight: normal;
+			height: 50px;
+			padding: 5px;
+			}
+			
+			.grid-view table.items th a{
+				color: #ccc;
+				float: left;
+				font-weight: normal;
+				text-decoration: none;
+				width: 100%;
+				}
+				.grid-view table.items th a.asc{
+					background:  url('/admin/images/arroy_bottom.png') no-repeat;
+					background-size: 20px;
+					background-position: right center;	
+					}
+				.grid-view table.items th a.desc{
+					background:  url('/admin/images/arroy_top.png') no-repeat;
+					background-size: 20px;
+					background-position: right center;
+					}
+					
+	.grid-view table.items tbody{
+		color: #333;
+		font-size: 12px;
+		min-height: 45px;
+		}
+		.grid-view table.items tbody td{
+			color: #222;
+			font-size: 14px;
+			padding: 7px;
+			border:1px solid #ccc;
+			}
+			.grid-view table.items tbody .row-unpublic td{
+				color: #333;
+				font-size: 13px;
+				opacity: 0.3;
+				padding: 5px;
+				}
+				.grid-view table.items tbody .row-unpublic td.button-column{
+					opacity: 1;
+					}
+				.grid-view table.items tbody .row-unpublic td.checkbox-column{
+					opacity: 1;
+					}
+
+
+/* GridView loading*/
+ .grid-view-loading .ajax-loading{
+display: block;
+} 
+.ajax-loading{
+	/*background:  url('../images/loading.gif') no-repeat; */
+	background:  url('/admin/images/ajax-loader.gif') no-repeat; 
+	display: none;
+	height: 32px;
+	right: 0px;
+	position: absolute;
+	top: -15px;
+	width: 32px;
+	z-index: 100;
+}
+
+li.page, li.next, li.previous {margin:0}
+
+
+
+
+.grid-view table.items th, .grid-view table.items td
+{
+	
+	
+}
+
+
+.grid-view table tbody tr:nth-child(2n){
+	 background: #fff; 
+}
+
+
+.grid-view table.items tr.selected
+{
+	background: rgba(158,236,85, 0.5);
+}
+
+.grid-view table.items tbody tr:hover td
+{
+	background: rgba(255, 127, 0, 0.1);
+
+}
+
+.grid-view  td
+{
+    /*text-align: center;*/
+}
+
+
+.grid-view .button-column
+{
+	text-align: right;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+/*.grid-view .summary*/
+div.summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+	font-size:0.8em
+}
+
+/*.grid-view .pager*/
+div.pager
+{
+	margin: 15px 0 0 0;
+	text-align: right;
+	padding:0;
+	height:30px;
+}
+
+ul.yiiPager
+{
+	font-size:16px !important;
+}
+
+ul.yiiPager li
+{
+	display:inline;
+}
+
+ul.yiiPager a:link,
+ul.yiiPager a:visited
+{
+	border:solid 1px #ACAFB7 !important;
+	font-weight:bold;
+	color:#242527!important;
+	padding:1px 8px !important;
+	text-decoration:none;
+}
+
+ul.yiiPager .page a
+{
+	font-weight:normal;
+}
+
+ul.yiiPager a:hover
+{
+	border:solid 1px #66696C;
+}
+
+ul.yiiPager .selected a
+{
+	background:#5A5F65 !important;
+	color:#FFFFFF !important;
+	font-weight:bold;
+}
+
+ul.yiiPager .hidden a
+{
+	border:solid 1px #DEDEDE;
+	color:#888888;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yiiPager .first,
+ul.yiiPager .last
+{
+	display:none;
+}
+
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 100%;
+	
+}
+.button-column{
+width:150px;
+}
+
+

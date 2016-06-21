@@ -1,0 +1,271 @@
+/* Slider */
+.slick-slider
+{
+   
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/* .slick-next ,.slick-arrow
+{
+    display: none ;
+} */
+
+.slick-dots li
+{
+    list-style: none;
+    text-align: right;
+    margin:0;
+    padding:0;
+    font: 20px/20px arial,sans-serif;
+    font-family: 'Roboto Regular', arial;
+    float: left
+}
+.slick-list , .draggable {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.slick-dots{
+    padding: 0;
+    top: 0px;
+    color: #b54e74;
+}
+
+ul.slick-dots
+{
+    padding: 0;
+    margin: 0;
+}
+
+.fade, .slick-initialized, .slick-slider{
+    height: 100%;
+}
+
+.slick-slide ,.slick-current ,.slick-active p
+{
+    height: 592px;
+    margin: 0;
+}
+* {
+    outline: none;
+}
+
+
+.slick-slide{
+width: 270px;
+}
+.slider-nav>.slick-list>.slick-track>.slick-slide ,
+.slider-nav>.slick-list>.slick-track>.slick-current ,
+.slider-nav>.slick-list>.slick-track>.slick-active p
+{
+    height: 67px;
+    width: 67px;
+    margin-right: 20px;
+}
+
+
+.slider-nav>.slick-list>.slick-track>.slick-slide>p>img 
+{
+    opacity: 0.3;
+    cursor:pointer;
+}
+.slider-nav>.slick-list>.slick-track>.slick-current>p>img 
+{
+    opacity: 1;
+
+}
+
+.slider-nav>.slick-list{
+    padding: 0 !important;
+    width: 267px;
+    padding-left:50%;
+    padding-right:50%;
+    position: relative;
+    margin: 0 auto;
+}
+.slick-slide img {
+    width: 67px;
+    height: 67px;
+    margin:0 auto;
+
+}
+.slider-nav>.slick-list>.slick-track>.slick-current{
+    opacity: 1;
+}
+
+.slick-prev{
+     height: 50px;
+    background: url(../img/btn-prev.png) no-repeat ;
+    background-size: cover;
+}
+.slick-next{
+    height: 50px;
+    background: url(../img/btn-next.png) no-repeat ;
+    background-size: cover;
+}
+
+/* .slick-slide:nth-child(1) ,.slick-current:nth-child(1) ,.slick-active:nth-child(1) p
+{
+    height: 595px;
+    margin: 0;
+} */
+
+.slider-nav{}
+/* 
+.slick-active, .active {
+    background-color: #b54e74;
+    color: #fff;
+    position: relative;
+    transition:1s;
+}
+.reason_link{
+
+    width: 100%;
+    line-height: 60px;
+    border-bottom: 1px dotted #b54e74 ;
+    margin-right: 60px;
+}
+.active {
+    background-color: #b54e74;
+    color: #fff;
+    position: relative;
+    transition:1s;
+}
+.reason_link>.active:hover{
+    color: #fff;
+}
+
+.reason_link>not.active{
+    color: #fff;
+}
+ */
+.slick-slide
+{
+    width: 100%;
+}
+@media only screen and (max-width: 700px){
+    .slick-next{
+        right: -15px;
+        
+    }
+    .slick-prev{
+        left:-15px;
+    }
+    .slider-nav{
+        margin-top:-40px;
+    }
+    
+}

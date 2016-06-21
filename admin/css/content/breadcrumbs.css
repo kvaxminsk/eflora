@@ -1,0 +1,27 @@
+.breadcrumbs{
+float: left;
+margin-bottom: 10px;
+width: 100%;
+font-size: 12px;
+font-weight: bold;
+/*color: #00CE9B;*/
+color: #FF6000;
+/*height: 40px;*/
+margin-top: 10px;
+/*border-bottom: 1px dotted #ccc;*/
+	}
+	.breadcrumbs a{
+
+		font-size: 12px;
+
+		text-decoration: none;
+		}
+		.breadcrumbs a:hover{
+			text-decoration: underline;
+		}
+		.breadcrumbs a:first-child{
+			 
+		}
+		.breadcrumbs a:last-child{
+			color: #6d6d6d;
+		}

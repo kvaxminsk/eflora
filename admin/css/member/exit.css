@@ -1,0 +1,81 @@
+#exit{
+	float: right;
+	height: 40px;
+	}
+	#exit a{
+		/*background: #333;*/
+		margin-top:20px;
+		border-radius: 3px;
+		float: left;
+		height: 38px;
+		
+		width: 100%;
+		}
+		#exit a:hover{
+			/*background: #222;*/
+			}
+		#exit a:hover .ico{
+			opacity: 1;
+			}
+		#exit a:hover .name{
+			color:#FF6000;
+			}
+		#exit a .name{
+			float: left;
+			line-height: 38px;
+			padding: 0 20px 0 10px;
+			
+			}
+		#exit a .ico{
+			float: left;
+			margin-top: 8px;
+			height: 25px;
+			opacity: 0.6;
+			transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-webkit-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			width: 23px;
+
+			}
+			#exit a .ico_mail{
+							background: url('../../images/mail.png') no-repeat ;
+										background-size: 25px;
+
+
+
+
+			}	
+			#exit a .ico_config{
+							background: url('../../images/config.png') no-repeat ;
+										background-size: 25px;
+
+
+
+
+			}
+			#exit a .ico_site{
+							background: url('../../images/site.png') no-repeat ;
+										background-size: 25px;
+
+
+
+			
+			}
+			#exit a .ico_ask{
+							background: url('../../images/faq.png') no-repeat ;
+										background-size: 25px;
+
+
+
+			
+			}
+			#exit a .ico_power{
+							background: url('../../images/power.png') no-repeat ;
+										background-size: 25px;
+
+
+
+			
+			}

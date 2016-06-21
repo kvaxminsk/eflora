@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/radio.sitemania.by/webstat"
+AuthUserFile /var/www/asimple/data/etc/161616997.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

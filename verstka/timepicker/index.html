@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Document</title>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<script src="jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+	<script src="jquery-ui-1.11.4/jquery-ui.js"></script>
+	<!-- Javascript -->
+	<script>
+
+		$(function() {
+			
+    $( "#button" ).datepicker( $.datepicker.regional[ "ru" ] );
+			$( "#button" ).datepicker({
+
+				showWeek:true,
+				showAnim: "fadeIn",
+				minDate: "0"
+
+			});
+		
+		});
+	</script>
+
+</head>
+<script>
+
+	
+</script>
+<body>
+	<p>Enter Date: 
+	<input type= "submit" id="button" value=""></p>
+</body>
+</html>

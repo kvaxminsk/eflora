@@ -1,0 +1,29 @@
+#wrapper_middle{
+	/*display: block;*/
+	height: auto !important;
+	min-height: 100%;	
+	margin: 0 auto;
+	width: 100%;	
+	background: #333 url('../../images/bg/blackorchid.png');
+
+	    display: table;
+    table-layout: fixed;
+	}
+	#middle{
+		line-height: 1;
+		margin: 0 auto;
+		padding: 0 0 100px;
+		/*position: relative;*/
+		/*width: 1255px;*/
+		}
+/*		#middle:after {
+			content: '.';	
+			clear: both;
+			display: block;
+			height: 0;
+			visibility: hidden;	
+			}*/
+.col{
+	display: table-cell;
+    vertical-align: top;
+}
