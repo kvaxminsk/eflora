@@ -2,7 +2,7 @@ $(document).ready(function(){
 	/// main js
 
 	var window_width = $(window).width()+17;
-	var window_type ;         ///  keep a type of screen default - desctop 
+	var window_type ;         ///  keep a type of screen default - desctop
 	var instheightMenu ;
 	var instheightQuestion ;
 	var instheightCatalog ;
@@ -36,12 +36,12 @@ $(document).ready(function(){
 	if ( $('.left_sidebar').length  ){
 		left_sibar_pos=  $('.left_sidebar').offset().top;
 	}
-	
+
 	switch(true)
 	{
-		case window_width <= 1000 : window_type = "mobile"; 
+		case window_width <= 1000 : window_type = "mobile";
 		break;
-		case window_width <= 1280: window_type = "tablet"; 
+		case window_width <= 1280: window_type = "tablet";
 		break;
 		default: window_type = "desctop" ;
 	}
@@ -50,9 +50,9 @@ $(document).ready(function(){
 		window_width = $(window).width()+17;
 		switch(true)
 		{
-			case window_width <= 1000 : window_type = "mobile"; 
+			case window_width <= 1000 : window_type = "mobile";
 			break;
-			case window_width <= 1280: window_type = "tablet"; 
+			case window_width <= 1280: window_type = "tablet";
 			break;
 			default: window_type = "desctop" ;
 		}
@@ -137,9 +137,9 @@ $(window).scroll(function(){
 		}
 		/*var rolheight = initiallHeightContent();
 		var right_content= $('.right_main_content').width();
-		
+
 		if (!rolheight && window_type== "desctop"){
-			if (($(window).scrollTop()+$(window).height()) >= 
+			if (($(window).scrollTop()+$(window).height()) >=
 				($('#header').offset().top + $('#header').height()+ $('.left_main_content').height())){
 				$('.left_main_content').css('position' , 'fixed');
 			$('.left_main_content').css('bottom' , '0');
@@ -190,30 +190,30 @@ var time_out = false;
 if ( window_type == 'tablet' || window_type== "mobile"){
 	$('#sandwich').removeClass('active_menu');
 		//$('#menu_selector').find('img').hide();
-		
+
 
 	}
-	
-	
+
+
 
 
 
 	$('#sandwich').click(function showToogle(){
-		
+
 		if ( $('#question_icon').attr('class')=='active_menu' )
 		{
 
 			$('#question_icon').click();
 		}
-		
+
 		if ( $('.mob_list_wrapp').hasClass('show'))
 		{
 				$('.catalog_close').click();
 		}
-		
+
 
 		if ( time_out !=false){
-			
+
 			clearTimeout(time_out);
 
 			console.log('timer is destroy');
@@ -225,18 +225,18 @@ if ( window_type == 'tablet' || window_type== "mobile"){
 		}
 
 		switch(window_type){
-			case 'desctop' :		helpmenuShow(0); 
+			case 'desctop' :		helpmenuShow(0);
 			instheightMenu = installHeight($('.hidden_menu'));
 			break;
-			case 'tablet' : helpmenuShow(0); 
+			case 'tablet' : helpmenuShow(0);
 			instheightMenu = installHeight($('.hidden_menu'));
 			break;
-			case 'mobile' : helpmenuShow(0); 
-			instheightMenu=installHeight($('.hidden_menu')); 
+			case 'mobile' : helpmenuShow(0);
+			instheightMenu=installHeight($('.hidden_menu'));
 			break;
 		}
 	});
-	
+
 	$("#question_icon").click(function(){
 
 		if ( $('#sandwich').attr('class')=='active_menu' )
@@ -255,7 +255,7 @@ if ( window_type == 'tablet' || window_type== "mobile"){
 			instheightQuestion = installHeight($('.question_panel'));
 			questionmenuShow(0);
 			break;
-			case 'mobile' : 
+			case 'mobile' :
 			instheightQuestion = installHeight($('.question_panel'));
 			questionmenuShow(0);
 			break;
@@ -269,7 +269,7 @@ if ( window_type == 'tablet' || window_type== "mobile"){
 			$('#sandwich').click();
 	  }, 1500); // время в мс
 	}
-	
+
 	$('.menu_panel_close').click(function(){
 		switch(window_type){
 			case 'tablet' : helpmenuShow(-365); break;
@@ -287,7 +287,7 @@ if ( window_type == 'tablet' || window_type== "mobile"){
 		$('.mobile_list').click();
 	});
 
-///// insertjs 
+///// insertjs
 
 //$('.fade').slick({
 //	dots: true,
@@ -411,7 +411,7 @@ $('.slider-nav').slick({
 				$('#third_column').animate({height: "0px"}, 1000, function(){
 					$('.list').css('z-index', '9996');
 				});
-					
+
 
 			}
 			else
@@ -447,7 +447,7 @@ $('.slider-nav').slick({
 
 			return;
 		}
-		
+
 		if ($(window).width()+17 <= 1280){
 			if ($('.list').hasClass('show') )
 			{
@@ -466,19 +466,19 @@ $('.slider-nav').slick({
 				$('#third_column').animate({height: "180px"}, 1000);
 				$('.list').addClass('show');
 				$('.list').css('z-index', '9999');
-				
+
 			}
 		}
 	});
 
 
-	//// slider_box_panel 
+	//// slider_box_panel
 
 
 	$('.left_box').click(function(){
 		if ($(".left_box").hasClass("show") )
 
-		{	
+		{
 			$('.left_box').animate({left: "50%"}, 1000);
 			$('.right_box').animate({left: "100%"}, 1000);
 			$('.right_box').animate({width: "hide"}, 1);
@@ -496,7 +496,17 @@ $('.slider-nav').slick({
 		return false;
 	});
 
+	$(".increment").click(function(){
+		var new_val = parseInt($(".count_product").children('input').val());
+		var element = $(this).parent().children(".count_product").children("input");
+		element.val(parseInt(element.val())+1);
+		$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
 
+
+		$(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
+		$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
+
+	});
 	$(".up_button").click(function  () {
 		$('body,html').animate({scrollTop:0},800);
 	})
@@ -510,6 +520,21 @@ $('.slider-nav').slick({
 			//document.write();
 			$('.flower_products').text('');
 			$('.flower_products').append(data);
+			var currency = JSON.parse(localStorage['currency'])
+			if(currency == 'us') {
+				//alert(currency);
+				$('.old_price').hide();
+				$('.new_price').hide();
+				$('.dollar_price').show();
+
+			}
+			else if(currency == 'br')
+			{
+				$('.dollar_price').hide();
+				$('.old_price').show();
+				$('.new_price').show();
+			}
+
 		}
 	});
 
@@ -529,6 +554,19 @@ $('.slider-nav').slick({
 				$('.flower_products').text('');
 				$('.flower_products').append(data);
 				//$("#show_more_item").before(data);
+				var currency = JSON.parse(localStorage['currency'])
+				if(currency == 'us') {
+					$('.old_price').hide();
+					$('.new_price').hide();
+					$('.dollar_price').show();
+
+				}
+				else if(currency == 'br')
+				{
+					$('.dollar_price').hide();
+					$('.old_price').show();
+					$('.new_price').show();
+				}
 			}
 		});
 	});
@@ -559,7 +597,7 @@ $('.slider-nav').slick({
 		//$(this).text('Загрузка');
 		//setTimeout(1000);alert('fff');
 		$.ajax({
-			type: 'POST',
+			type: 'get',
 			data:'category=' + category,
 			url: '/ajax-products',
 			success: function(data){
@@ -568,24 +606,77 @@ $('.slider-nav').slick({
 				$('.flower_products').append(data);
 				//$("#show_more_item").before();
 				//$("#show_more_item").before(data);
+				var currency = JSON.parse(localStorage['currency'])
+				if(currency == 'us') {
+					$('.old_price').hide();
+					$('.new_price').hide();
+					$('.dollar_price').show();
+
+				}
+				else if(currency == 'br')
+				{
+					$('.dollar_price').hide();
+					$('.old_price').show();
+					$('.new_price').show();
+				}
 			}
 		});
 	});
-	$(".increment").click(function(){
+	$( document ).on( "click", ".increment", function() {
 		var new_val = parseInt($(".count_product").children('input').val());
 		var element = $(this).parent().children(".count_product").children("input");
 		element.val(parseInt(element.val())+1);
 		$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
-	});
 
-	$(".decrement").click(function(){
+
+		$(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
+		$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
+	});
+	$( document ).on( "click", ".decrement", function() {
 		var new_val = parseInt($(".count_product").children('input').val());
 		var element = $(this).parent().children(".count_product").children("input");
 		if ( parseInt(element.val()) > 0  ){
 			element.val(parseInt(element.val())-1);
+			$('.in_cart>p').text('В КОРЗИНУ');
+			$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
 		}
 		$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
 	});
+	//$('.increment').live('click', function(event){
+    //
+	//		var new_val = parseInt($(".count_product").children('input').val());
+	//		var element = $(this).parent().children(".count_product").children("input");
+	//		element.val(parseInt(element.val())+1);
+	//		$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
+    //
+    //
+	//		$(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
+	//		$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
+    //
+	//	//event.preventDefault(); // отменяем действие по умолчанию, но не трогаем bubbling - чтобы не мешать другим обработчикам
+	//});
+	//$(".increment").click(function(){
+	//	var new_val = parseInt($(".count_product").children('input').val());
+	//	var element = $(this).parent().children(".count_product").children("input");
+	//	element.val(parseInt(element.val())+1);
+	//	$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
+    //
+    //
+	//	$(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
+	//	$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
+    //
+	//});
+
+	//$(".decrement").click(function(){
+	//	var new_val = parseInt($(".count_product").children('input').val());
+	//	var element = $(this).parent().children(".count_product").children("input");
+	//	if ( parseInt(element.val()) > 0  ){
+	//		element.val(parseInt(element.val())-1);
+	//		$('.in_cart>p').text('В КОРЗИНУ');
+	//		$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
+	//	}
+	//	$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
+	//});
 	$(".flower_car").hover(function(){
 
 		showCirclePicture($(this))
@@ -623,7 +714,7 @@ $('.slider-nav').slick({
 			$('.slick-dots').css('padding-top', '0');
 			$('.mobile_list').css('background-color' , 'rgba(158, 77,105, 1)' );
 
-			
+
 		}
 	});
 	$('#dropdown1>li>a').click(function(event){
@@ -637,15 +728,15 @@ $('.slider-nav').slick({
 	$('#dropdown2>li>a').click(function(event){
 		event.preventDefault();
 		var val = $(this).text();
-		
+
 		if (val == "По цене:"){
-			
+
 			return
 		}
 		else{
 			$('#criterion_filter_text').text(val);
 		}
-		
+
 
 	});
 /// Это что такое???
@@ -678,7 +769,7 @@ $('.slider-nav').slick({
             // Запрещаем всё, кроме клавиш цифр на основной клавиатуре, а также Num-клавиатуре
             if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
             	event.preventDefault();
-            }  
+            }
         }
     });
 	$(".hidden_menu_list").children('li').hover(function (){
@@ -744,10 +835,10 @@ $('.slider-nav').slick({
 		$('.under_slider_left_box').children('img').stop().animate({'opacity': 0}, 1000);
 		$(this).find('.circle_pic').animate({'opacity': 1 }, 1000);
 	})
-	
+
 	initialItemCartPicture();
 
-	
+
 	var feedback_width = $('.feedback').width();
 	$('.feedback').css('right', -feedback_width);
 	$('.message_icon_wrap, .map_info_wrap').click( function (){
@@ -885,7 +976,7 @@ $(".tomorrow_button").removeClass("tomorrow_button_active");
 		$("<input type='text' id='"+ ind +" ' name='telephone' class='cart1_phone_input' placeholder='Телефон (вместе с кодом)'> <div class='del_phone' id='"+ ind +" '   onclick='delPhone(this)'>-</div>").insertAfter(tel_input);
 	});
 
-	
+
 
 	$('.map_contact_icons').find('ul').find('li').find('img').hover(function(){
 		var src = $(this).attr('class');
@@ -937,15 +1028,25 @@ $(".tomorrow_button").removeClass("tomorrow_button_active");
 	$('#dollar').click(function(){
 		$('.header_price_icon>.backet_circle>p').text("$");
 		$('#points').css('margin-left' , '36px');
+		$('.dollar_price').show();
+		$('.old_price').hide();
+		$('.new_price').hide();
+		var currency = 'us';
+		localStorage['currency'] = JSON.stringify(currency);
 	})
 
 	$('#unit').click(function(){
 		$('.header_price_icon>.backet_circle>p').text("Br");
 			$('#points').css('margin-left' , '100px');
+		$('.dollar_price').hide();
+		$('.old_price').show();
+		$('.new_price').show();
+		var currency = 'br';
+		localStorage['currency'] = JSON.stringify(currency);
 	});
 
 	$('.header_price_icon').click(function(){
-		
+
 		if ( $('.header_price_icon>.backet_circle>p').text() == "$"){
 			$('.header_price_icon>.backet_circle>p').text("Br");
 				$('#points').css('margin-left' , '100px');
@@ -957,7 +1058,7 @@ $(".tomorrow_button").removeClass("tomorrow_button_active");
 			return;
 		}
     });
-	
+
 
 });
 
@@ -975,14 +1076,14 @@ function delPhone(element){
 					return;
 				}
 			})
-		}								
+		}
 	})
 
 
 }
 
 function helpmenuShow(left){
-	
+
 	if ( $('#sandwich').hasClass('active_menu')   ){
 			$('#sandwich').removeClass('active_menu');    ///// we hide menu
 
@@ -996,7 +1097,7 @@ function helpmenuShow(left){
 				$('#menu_selector').css('position', 'absolute');
 				$('#menu_selector').css('left', '0');
 			}
-			
+
 
 		}
 		else{
@@ -1012,11 +1113,11 @@ function helpmenuShow(left){
 				$('#menu_selector').css('position', 'fixed');
 				$('#menu_selector').css('left', '365px');
 			}
-			
-		}	
+
+		}
 	}
 	function questionmenuShow(left){
-		if($("#question_icon").hasClass('active_menu')){   
+		if($("#question_icon").hasClass('active_menu')){
 			$("#question_icon").removeClass('active_menu');
 			$("#question_icon").children('a').find('img').stop().animate({opacity: 1}, 800);
 			$("#question_icon").children('img').animate({opacity: 0}, 400);
@@ -1035,11 +1136,11 @@ function helpmenuShow(left){
 
 		}
 	}
-	
+
 	function showCirclePicture(elem){
 
 		var element = elem.parent();
-		
+
 		if ($(window).width()+17 <= 1000){
 			if (!element.hasClass('visible')){
 			//element.css('overflow' , 'visible');
@@ -1064,7 +1165,7 @@ function helpmenuShow(left){
 		}
 
 
-		return;		
+		return;
 	}
 
 
@@ -1103,7 +1204,7 @@ function helpmenuShow(left){
 			element.css('overflow-y', 'scroll');
 		}
 
-		
+
 		return false;
 	}
 
@@ -1113,7 +1214,7 @@ function helpmenuShow(left){
 		var pic_height = $('.fre').height();
 		$('.circle_pic').css('width' , pic_width);
 		$('.circle_pic').css('height' , pic_height);
-		
+
 	}
 	function initiallHeightContent(){
 		if ($('.right_content').height() > $('.left_content').height()  )
@@ -1133,8 +1234,8 @@ function helpmenuShow(left){
 			$('.map_info_wrap').animate({'opacity': 0}, 1500);
 			$('.map_info_wrap').hide();
 
-			
-			
+
+
 		}
 		else{
 			$('.feedback').show();
@@ -1164,6 +1265,6 @@ function helpmenuShow(left){
             // Запрещаем всё, кроме клавиш цифр на основной клавиатуре, а также Num-клавиатуре
             if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
             	event.preventDefault();
-            }  
+            }
         }
     }
