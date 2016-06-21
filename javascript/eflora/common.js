@@ -385,6 +385,12 @@ $(document).ready(function () {
 
     });
 
+
+    $('.slick-dots').children('li').click(function () {
+        var data = $(this).find('span').text();
+        $('.left_box p ').eq(0).text(data);
+    })
+
     ///// drop_down phone number
 
     $(".phone_number").click(function () {
@@ -491,17 +497,7 @@ $(document).ready(function () {
         return false;
     });
 
-    $(".increment").click(function () {
-        var new_val = parseInt($(".count_product").children('input').val());
-        var element = $(this).parent().children(".count_product").children("input");
-        element.val(parseInt(element.val()) + 1);
-        $('.in_cart_count').text('В корзине ' + element.val() + ' шт.');
 
-
-        $(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
-        $(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
-
-    });
     $(".up_button").click(function () {
         $('body,html').animate({scrollTop: 0}, 800);
     })
@@ -563,6 +559,18 @@ $(document).ready(function () {
             }
         });
     });
+
+
+    $(document).on('click',".in_cart",function (e) {
+        if ($(this).parent().parent().find('count_product').children('input').val() != '0') {
+            $(this).find('p').text('В КОРЗИНЕ');
+            $(this).addClass("style_in_cart");
+
+        }
+
+        e.preventDefault();
+
+    });
     var pageCount = 1;
     //$("#show_more_item").click(function(){
     //	var pageCount = 1;
@@ -623,6 +631,7 @@ $(document).ready(function () {
 
         $(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
         $(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
+
     });
     $(document).on("click", ".decrement", function () {
         var new_val = parseInt($(".count_product").children('input').val());
@@ -634,41 +643,6 @@ $(document).ready(function () {
         }
         $('.in_cart_count').text('В корзине ' + element.val() + ' шт.');
     });
-    //$('.increment').live('click', function(event){
-    //
-    //		var new_val = parseInt($(".count_product").children('input').val());
-    //		var element = $(this).parent().children(".count_product").children("input");
-    //		element.val(parseInt(element.val())+1);
-    //		$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
-    //
-    //
-    //		$(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
-    //		$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
-    //
-    //	//event.preventDefault(); // отменяем действие по умолчанию, но не трогаем bubbling - чтобы не мешать другим обработчикам
-    //});
-    //$(".increment").click(function(){
-    //	var new_val = parseInt($(".count_product").children('input').val());
-    //	var element = $(this).parent().children(".count_product").children("input");
-    //	element.val(parseInt(element.val())+1);
-    //	$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
-    //
-    //
-    //	$(this).parent().parent().find($('.in_cart')).find('p').text('В КОРЗИНУ');
-    //	$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
-    //
-    //});
-
-    //$(".decrement").click(function(){
-    //	var new_val = parseInt($(".count_product").children('input').val());
-    //	var element = $(this).parent().children(".count_product").children("input");
-    //	if ( parseInt(element.val()) > 0  ){
-    //		element.val(parseInt(element.val())-1);
-    //		$('.in_cart>p').text('В КОРЗИНУ');
-    //		$(this).parent().parent().find($('.in_cart')).removeClass("style_in_cart");
-    //	}
-    //	$('.in_cart_count').text('В корзине '+ element.val() +' шт.');
-    //});
     $(".flower_car").hover(function () {
 
         showCirclePicture($(this))
@@ -677,6 +651,13 @@ $(document).ready(function () {
 
         showCirclePicture($(this))
     });
+
+    $('.delete_order').click(function () {
+        $(this).parent().parent().addClass('delete');
+        $(this).parent().parent().animate({height: '0'}, 300);
+
+    })
+
 
     var heightmobile_list = $('.slick-dots').height() + 240;
     if ($(window).width() + 17 <= 840) {
