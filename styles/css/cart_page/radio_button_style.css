@@ -1,0 +1,54 @@
+input[type=radio].css-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=radio].css-checkbox + label.css-label {
+	padding-left:26px;
+	padding-right: 8px;
+	height: 15px;
+	display: inline-block;
+	line-height: 30px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 16px;
+	vertical-align: top;
+	cursor: pointer;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	font: 16px/16px arial,sans-serif;
+
+	color: #4d4d4d;
+	font-family: 'Roboto Light', arial ;
+
+
+}
+
+input[type=radio].css-checkbox:checked + label.css-label {
+	background-position: 0 -15px;
+}
+label.css-label {
+	background-image:url(../../img/orange_check.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+input[type=radio].css-checkbox:not(:hover) + label.css-label:not(:hover){
+
+    -webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+
+}
+input[type=radio].css-checkbox:hover + label.css-label:hover{
+	-webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+	color: #ff8150;
+}
