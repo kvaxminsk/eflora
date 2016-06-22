@@ -5,6 +5,7 @@
 .wrapper-dropdown-5 {
     /* Size & position */
     position: absolute;
+	width:220px;
 
 
   font:  18px/16px arial,sans-serif;
@@ -46,7 +47,7 @@
 
 .wrapper-dropdown-5 .dropdown {
     /* Size & position */
-        width: 175px;
+      
     margin-left: -1px;
     position: absolute;
     top: 100%;
@@ -71,13 +72,14 @@
     max-height: 0;
     overflow: hidden;
      z-index: 9999;
+	 width:220px;
 }
 .wrapper-dropdown-5 .dropdown li:nth-child(1){
     padding: 0 10px ;
     margin-top:20px;
 }
 .wrapper-dropdown-5 .dropdown li {
-    width: 175px;
+    width: 100%;
     margin-left: -1px;
     padding: 0 10px ;
     list-style: none;
@@ -132,8 +134,9 @@
 .wrapper-dropdown-5.active .dropdown {
     border-bottom: 1px solid rgba(0,0,0,0.2);
     max-height: 400px;
-    width: 175px;
+    width: 235px;
     margin-left: -1px;
+	overflow-y:scroll;
 }
 
 /* No CSS3 support: none */

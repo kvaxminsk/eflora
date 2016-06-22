@@ -97,11 +97,11 @@
 	margin-left:0px;
 
 }
-.flower_man_pic{
+.text_wrapper>img{
 	float:left; /* Выравнивание по левому краю */
    margin-right: 15px;
  }
-.describe_wrap>h3{
+.text_wrapper>h3{
 	margin:0;
 	color: #242424;
 	font-family: Roboto Regular;
@@ -109,13 +109,13 @@
 	font-weight: 200;
 }
 
-.describe_wrap>p{
+.text_wrapper>p{
 	color: #686666;
 	font-family: Roboto Light;
 	font-size: 14px;
 	line-height: 20px;
 }
-.describe_wrap>h4{
+.text_wrapper>h4{
 	font-family: Roboto Regular;
 	font-size: 18px;
 	color: #242424;
@@ -123,20 +123,20 @@
 	margin-bottom: 35px;
 	font-weight: 200;
 }
-.describe_wrap>ol.pay_type{
+.text_wrapper>ol{
 	margin:0;
 	padding:0;
 	margin-left: 20px;
 
 }
 
-.describe_wrap>ol>li{
+.text_wrapper>ol>li{
 	color: #b54e74;
 	font-style: 14px;
 	font-family: Roboto Regular;
 	margin-bottom: 25px;
 }
-.describe_wrap>ol>li>span{
+.text_wrapper>ol>li>span{
 	color: #686666;
 	font-weight: 200;
 

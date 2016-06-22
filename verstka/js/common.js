@@ -116,6 +116,9 @@ $(window).scroll(function(){
 			$('.mobile_list').css('background-color', 'rgba(158, 77,105, 1)');
 		}
 	}
+
+
+
 	if ( $('.left_sidebar').length  ){
 		if ( ($(window).scrollTop()+$(window).height()) >= (left_sibar_pos+ $('.left_sidebar').height() + 30) ){
 			$(".left_sidebar").css('position' , 'fixed');
@@ -186,6 +189,8 @@ $(window).scroll(function(){
 });
 
 var time_out = false;
+
+
 
 if ( window_type == 'tablet' || window_type== "mobile"){
 	$('#sandwich').removeClass('active_menu');
@@ -377,6 +382,12 @@ $('.slider-nav').slick({
 
 });
 
+
+	$('.slick-dots').children('li').click(function(){
+		var data = $(this).find('span').text();
+		$('.left_box p ').eq(0).text(data);
+	})
+
 	///// drop_down phone number
 
 	$(".phone_number").click(function(){
@@ -545,6 +556,14 @@ $('.slider-nav').slick({
 		showCirclePicture($(this))
 	});
 
+	$('.delete_order').click(function(){
+		$(this).parent().parent().addClass('delete');
+		$(this).parent().parent().animate({height: '0'}, 300);
+
+	})
+
+
+
 	var heightmobile_list = $('.slick-dots').height()+240;
 	if($(window).width()+ 17 <= 840)	{
 		;
@@ -599,6 +618,7 @@ $('.slider-nav').slick({
 	});
 
 	$('.dropdown>li').click(function(){
+		var val = $(this).text();
 		if (val == "По цене:"){
 			
 			return
@@ -906,6 +926,38 @@ $(".tomorrow_button").removeClass("tomorrow_button_active");
 			return;
 		}
     });
+
+	$('.choice_link').eq(0).click(function(){
+
+		$(this).parent().find('img').show();
+		var atr = $(this).parent().find('.popular').attr('src');
+
+		if (atr == 'img/select_icon.png'){
+			atr='img/select_icon1.png';
+			$(this).parent().find('.popular').attr('src', atr);
+		}
+		else{
+			atr='img/select_icon.png';
+			$(this).parent().find('.popular').attr('src', atr);
+		}
+		
+
+	})
+	$('.choice_link').eq(1).click(function(){
+		$(this).parent().find('.price_link').show();
+		var atr = $(this).parent().find('.price_link').attr('src');
+
+		if (atr == 'img/select_icon.png'){
+			atr='img/select_icon1.png';
+			$(this).parent().find('.price_link').attr('src', atr);
+		}
+		else{
+			atr='img/select_icon.png';
+			$(this).parent().find(".price_link").attr('src', atr);
+		}
+	})
+
+
 	
 
 });

@@ -15,9 +15,24 @@
     color: #ff7794;
     margin-bottom: 35px; 
 }
+.dollar_price >.um{
+	font:  19px/19px arial,sans-serif;
+    font-family: 'Roboto Light', arial;
+    margin-bottom: 2px;
+}
+.dollar_price >.line{
+	    border-top: 2px solid #ffb7c5;
+    width: 45px;
+    float: left;
+    position: absolute;
+    left: calc(50% - 37px);
+}
+
+
 
 .dollar_price_second{
-		text-align: center;
+	position: relative;
+		text-align: left;
 		margin: 0 auto;
 	margin-top:30px;
 	letter-spacing: 2px;
@@ -28,8 +43,20 @@
     padding-top: 10px;
     color: #ff7794;
     margin-bottom: 0px; 
+    margin-left: 90px;
 }
-
+.dollar_price_second >.um{
+	font:  19px/19px arial,sans-serif;
+    font-family: 'Roboto Light', arial;
+    margin-bottom: 2px;
+}
+.dollar_price_second >.line{
+	    border-top: 2px solid #ffb7c5;
+    width: 45px;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
 
 .style_in_cart{
 	background: url(../../img/orange_cart.png) no-repeat 20px !important;

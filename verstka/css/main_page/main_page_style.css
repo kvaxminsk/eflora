@@ -1,4 +1,22 @@
+@charset "UTF-8";
 
+.orrange_arrow .popular{
+    position: absolute;
+    left: 302px;
+    width: 7px;
+    height: 7px;
+    top: 41px;
+    display: none;
+}
+
+.orrange_arrow .price_link{
+    position: absolute;
+    left: 402px;
+    width: 7px;
+    height: 7px;
+    top: 41px;
+    display: none;
+}
 
 .clearfix{
 	clear: both;
@@ -216,8 +234,10 @@
 	font-family: 'pt-serif';
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 15%;
-  /*   padding-right: 15%; */
+	padding-left: 4%;
+    padding-right: 4%; 
+    max-width: 300px;
+    margin:0 auto;
 }
 .left_box>p:hover{
 	cursor:pointer;
@@ -918,7 +938,18 @@ a:hover{
     color: #ff7794;
     margin-bottom: 57px; 
 }
-
+.dollar_price >.um{
+	font:  19px/19px arial,sans-serif;
+    font-family: 'Roboto Light', arial;
+    margin-bottom: 2px;
+}
+.dollar_price >.line{
+	    border-top: 2px solid #ffb7c5;
+    width: 43px;
+    float: left;
+    position: absolute;
+    left: calc(50% - 35px);
+}
 
 
 
@@ -930,6 +961,15 @@ a:hover{
 	}
 	.column1, .column2, .column3 {
 		width: 33.3%;
+	}
+	.slide_box{
+		width:620px;
+	}
+}
+
+@media all and (max-width:  1536px)  {
+	.slide_box{
+	
 	}
 }
 @media all and (max-width:  1420px)  {
@@ -969,15 +1009,19 @@ a:hover{
 	}
 
 }
+@media all and (max-width:  1340px)  {
+.choice {
+    margin-right: 10px;
+}
 @media all and (max-width:  1280px) {
 	
 .main_content {
  
-    margin-top: -450px;
+    margin-top: -460px;
 }
-	.slide_box {
-		width: 66.9% ;
-	}
+/* 	.slide_box {
+	width: 66.9% ;
+} */
 	.sort_criterion{
 		display: none;
 	}
@@ -985,7 +1029,7 @@ a:hover{
 		display: block;
 		width: 200px;
 		position: absolute;
-		right: 0;
+		right: 50px;
 		top:0;
 	}
 	.filter_wrapper{
@@ -1025,6 +1069,16 @@ a:hover{
 		width: 50% !important;
 	}
 }
+@media all and (max-width:  1060px) {
+	.theme{
+		margin-left: 25px;
+	}
+	.select_theme_wrapp{
+		left:100px;
+	}
+}
+
+
 @media all and (max-width:  1000px){
 	.mp_left_main_content {
 		width: 240px;
@@ -1121,6 +1175,22 @@ ul.flower_products li:hover .product_wrap{
 
 
 
+}
+
+
+@media all and (max-width:  890px){
+		.left_box>p{
+			font-size:42px;
+		}
+	}
+
+@media all and (max-width:  860px){
+	.theme{
+		margin-left: 15px;
+	}
+	.select_theme_wrapp{
+		left:90px;
+	}	
 }
 @media all and (max-width:  840px){
 	.logo_pic{
