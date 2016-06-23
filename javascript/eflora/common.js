@@ -24,6 +24,49 @@ function number_format(number, decimals, dec_point, thousands_sep) {
     }
     return s.join(dec);
 }
+
+function changeCurrency()
+{
+    var shopArr = getBasketInfo();
+    var shopProductCount = 0;
+    var price_us = 0;
+    var price_br = 0;
+    for(var key in shopArr) {
+        shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
+        //$().first().text('<p>В корзине</p>');
+        //alert(shopArr[key]['id']);
+        $('#count-' + shopArr[key]['id']).val(shopArr[key]['count']);
+        $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').find('p').text('В КОРЗИНЕ');
+        $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').addClass("style_in_cart");
+        price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
+        var currency = JSON.parse(localStorage['currency'])
+        if(currency != 'us'){
+            currency = 'br';
+            price_br = 20100* price_us;
+            price_br = number_format(price_br, 0, ',', ' ');
+        }
+        else {
+            price_br = 20100* price_us;
+            price_br = number_format(price_br, 0, ',', ' ');
+        }
+    }
+
+    $('#header_price_text_br').text(price_br);
+    $('#header_price_text_us').text(price_us);
+
+    var currency = JSON.parse(localStorage['currency'])
+    if (currency == 'us') {
+        //alert(currency);
+        $('.old_price').hide();
+        $('.new_price').hide();
+        $('.dollar_price').show();
+    }
+    else if (currency == 'br') {
+        $('.dollar_price').hide();
+        $('.old_price').show();
+        $('.new_price').show();
+    }
+}
 $(document).ready(function () {
     /// main js
     if(localStorage['currency']) {
@@ -31,18 +74,24 @@ $(document).ready(function () {
         if(currency == 'us'){
             $('.header_price_icon>.backet_circle>p').text("$");
             $('#points').css('margin-left', '36px');
+            $('#header_price_text_us').show();
+            $('#header_price_text_br').hide();
         }
         else {
             currency = 'br';
             localStorage['currency'] = JSON.stringify(currency);
             $('.header_price_icon>.backet_circle>p').text("Br");
             $('#points').css('margin-left', '100px');
+            $('#header_price_text_us').hide();
+            $('#header_price_text_br').show();
         }
     }
     else {
         currency = 'br';
         localStorage['currency'] = JSON.stringify(currency);
         $('#points').css('margin-left', '100px');
+        $('#header_price_text_us').hide();
+        $('#header_price_text_br').show();
     }
 
 
@@ -571,40 +620,7 @@ $(document).ready(function () {
             $('.flower_products').append(data);
 
 
-            var shopArr = getBasketInfo();
-            var shopProductCount = 0;
-            var price = 0;
-            for(var key in shopArr) {
-                shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
-                //$().first().text('<p>В корзине</p>');
-                $('#count-' + shopArr[key]['id']).val(shopArr[key]['count']);
-                $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').find('p').text('В КОРЗИНЕ');
-                $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').addClass("style_in_cart");
-                price = price + parseInt(shopArr[key]['price']) * shopProductCount;
-                var currency = JSON.parse(localStorage['currency'])
-                if(currency != 'us'){
-                    currency = 'br';
-                    price = 20100* price;
-                    number_format(price, 0, ',', ' ');
-                }
-            }
-
-            $('#header_price_text').text(price);
-            var currency = JSON.parse(localStorage['currency'])
-            if (currency == 'us') {
-                //alert(currency);
-                $('.old_price').hide();
-                $('.new_price').hide();
-                $('.dollar_price').show();
-
-
-
-            }
-            else if (currency == 'br') {
-                $('.dollar_price').hide();
-                $('.old_price').show();
-                $('.new_price').show();
-            }
+            changeCurrency();
 
         }
     });
@@ -625,18 +641,7 @@ $(document).ready(function () {
                 $('.flower_products').text('');
                 $('.flower_products').append(data);
                 //$("#show_more_item").before(data);
-                var currency = JSON.parse(localStorage['currency'])
-                if (currency == 'us') {
-                    $('.old_price').hide();
-                    $('.new_price').hide();
-                    $('.dollar_price').show();
-
-                }
-                else if (currency == 'br') {
-                    $('.dollar_price').hide();
-                    $('.old_price').show();
-                    $('.new_price').show();
-                }
+                changeCurrency();
             }
         });
     });
@@ -688,18 +693,7 @@ $(document).ready(function () {
                 $('.flower_products').append(data);
                 //$("#show_more_item").before();
                 //$("#show_more_item").before(data);
-                var currency = JSON.parse(localStorage['currency'])
-                if (currency == 'us') {
-                    $('.old_price').hide();
-                    $('.new_price').hide();
-                    $('.dollar_price').show();
-
-                }
-                else if (currency == 'br') {
-                    $('.dollar_price').hide();
-                    $('.old_price').show();
-                    $('.new_price').show();
-                }
+                changeCurrency();
             }
         });
     });
@@ -1129,13 +1123,13 @@ $(document).ready(function () {
 
         switch (icon_type) {
             case 'facebook':
-                $(this).css('background-image', 'url(images/h_upper_facebook.png)');
+                $(this).css('background-image', 'url(../../images/eflora/h_upper_facebook.png)');
                 break;
             case 'twitter':
-                $(this).css('background-image', 'url(images/h_upper_twitter.png) ');
+                $(this).css('background-image', 'url(../../images/eflora/h_upper_twitter.png) ');
                 break;
             case 'vk':
-                $(this).css('background-image', 'url(images/h_upper_vk.png)');
+                $(this).css('background-image', 'url(../../images/eflora/h_upper_vk.png)');
                 break;
         }
 
@@ -1144,13 +1138,13 @@ $(document).ready(function () {
 
         switch (icon_type) {
             case 'facebook':
-                $(this).css('background-image', 'url(images/upper_facebook.png) ');
+                $(this).css('background-image', 'url(../../images/eflora/upper_facebook.png) ');
                 break;
             case 'twitter':
-                $(this).css('background-image', 'url(images/upper_twitter.png) ');
+                $(this).css('background-image', 'url(../../images/eflora/upper_twitter.png) ');
                 break;
             case 'vk':
-                $(this).css('background-image', 'url(images/upper_vk.png) ');
+                $(this).css('background-image', 'url(../../images/eflora/upper_vk.png) ');
                 break;
                 $(this).css('background-size', 'auto 17px');
         }
@@ -1159,6 +1153,8 @@ $(document).ready(function () {
         $('.header_price_icon>.backet_circle>p').text("$");
         $('#points').css('margin-left', '36px');
         $('.dollar_price').show();
+        $('#header_price_text_us').show();
+        $('#header_price_text_br').hide();
         $('.old_price').hide();
         $('.new_price').hide();
         var currency = 'us';
@@ -1169,6 +1165,8 @@ $(document).ready(function () {
         $('.header_price_icon>.backet_circle>p').text("Br");
         $('#points').css('margin-left', '100px');
         $('.dollar_price').hide();
+        $('#header_price_text_us').hide();
+        $('#header_price_text_br').show();
         $('.old_price').show();
         $('.new_price').show();
         var currency = 'br';
@@ -1182,6 +1180,8 @@ $(document).ready(function () {
             $('#points').css('margin-left', '100px');
 
             $('.dollar_price').hide();
+            $('#header_price_text_us').hide();
+            $('#header_price_text_br').show();
             $('.old_price').show();
             $('.new_price').show();
             var currency = 'br';
@@ -1193,6 +1193,8 @@ $(document).ready(function () {
             $('.header_price_icon>.backet_circle>p').text("$");
 
             $('.dollar_price').show();
+            $('#header_price_text_us').show();
+            $('#header_price_text_br').hide();
             $('.old_price').hide();
             $('.new_price').hide();
             var currency = 'us';
@@ -1206,12 +1208,12 @@ $(document).ready(function () {
         $(this).parent().find('img').show();
         var atr = $(this).parent().find('.popular').attr('src');
 
-        if (atr == 'img/select_icon.png'){
-            atr='img/select_icon1.png';
+        if (atr == '../../images/eflora/select_icon.png'){
+            atr='../../images/eflora/select_icon1.png';
             $(this).parent().find('.popular').attr('src', atr);
         }
         else{
-            atr='img/select_icon.png';
+            atr='../../images/eflora/select_icon.png';
             $(this).parent().find('.popular').attr('src', atr);
         }
 
@@ -1221,12 +1223,12 @@ $(document).ready(function () {
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
 
-        if (atr == 'img/select_icon.png'){
-            atr='img/select_icon1.png';
+        if (atr == '../../images/eflora/select_icon.png'){
+            atr='../../images/eflora/select_icon1.png';
             $(this).parent().find('.price_link').attr('src', atr);
         }
         else{
-            atr='img/select_icon.png';
+            atr='../../images/eflora/select_icon.png';
             $(this).parent().find(".price_link").attr('src', atr);
         }
     })

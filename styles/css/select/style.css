@@ -5,6 +5,7 @@
 .wrapper-dropdown-5 {
     /* Size & position */
     position: absolute;
+    width:220px;
 
 
   font:  18px/16px arial,sans-serif;
@@ -12,13 +13,13 @@
         border-radius: 20px;
         padding-left: 15px;
         padding-top: 10px;
-        background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;
+        /*background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;*/
         color: #898787;
         -webkit-appearance: none;
         -moz-appearance: none;
 
         height: 30px;
-   
+
     cursor: pointer;
     outline: none;
     -webkit-transition: all 0.3s ease-out;
@@ -70,14 +71,15 @@
     /* Hiding */
     max-height: 0;
     overflow: hidden;
-     z-index: 9999;
+    z-index: 9999;
+    width:220px;
 }
 .wrapper-dropdown-5 .dropdown li:nth-child(1){
     padding: 0 10px ;
     margin-top:20px;
 }
 .wrapper-dropdown-5 .dropdown li {
-    width: 175px;
+    width: 100%;
     margin-left: -1px;
     padding: 0 10px ;
     list-style: none;
@@ -113,7 +115,7 @@
 /* Hover state */
 
 .wrapper-dropdown-5 .dropdown li:hover a {
-  color:#ff8b4e;
+    color:#ff8b4e;
 }
 
 /* Active state */
@@ -122,7 +124,7 @@
     background: #fff;
     box-shadow: none;
     color: inherit;
-    
+
 }
 
 .wrapper-dropdown-5.active:after {
@@ -132,8 +134,9 @@
 .wrapper-dropdown-5.active .dropdown {
     border-bottom: 1px solid rgba(0,0,0,0.2);
     max-height: 400px;
-    width: 175px;
+    width: 235px;
     margin-left: -1px;
+    overflow-y:scroll;
 }
 
 /* No CSS3 support: none */

@@ -99,44 +99,73 @@
                 </div>
             </div>
 
+<!--            <div class="slider-for">-->
+<!--                <div>-->
+<!--                    <p  class = "first_slide" style="background: url(--><?//=$imageUrl?>/*)  no-repeat;*/
+/*                        background-position:center; background-size: 75%">*/
+<!--/*                    </p>*/-->
+<!--/*                </div>*/-->
+<!--/**/-->
+<!--/*                */--><?//// foreach($model->images as $i => $img): ?>
+<!--                    --><?//
+//                    $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
+//                    $image = image($image, 'resize', '440', false);
+//                    ?>
+<!--                    <div>-->
+<!--                        <p title="--><?//=$img->name?><!--" alt="--><?//=$img->name?><!--" style="background: url(--><?//=$image?>/*/*/*)  no-repeat;background-size:75%; background-position:center;"></p>*/*/*/
+<!--/*                   </div>*/-->
+<!--/*                */--><?//// endforeach; ?>
+<!---->
+<!--            </div>-->
+<!--            <div class="slider-nav">-->
+<!--                <div>-->
+<!--                    <p>  <img title="--><?//=$imageMain['name']?><!--" alt="--><?//=$imageMain['name']?><!--" src="--><?//=$imageUrl?><!--"></p>-->
+<!--                </div>-->
+<!--                --><?// foreach($model->images as $i => $img): ?>
+<!--                    --><?//
+//                    $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
+//                    $image = image($image, 'resize', '440', false);
+//                    ?>
+<!--                    <div>-->
+<!--                        <p>  <img title="--><?//=$img->name?><!--" alt="--><?//=$img->name?><!--"src="--><?//=$image?><!--" alt=""></p>-->
+<!--                    </div>-->
+<!--                --><?// endforeach; ?>
+<!---->
+<!--            </div>-->
+            <?
+            $imageMain = (isset($model->img['path'])) ? $model->img : '/images/no-photo.gif';
+            $imageUrl = image($imageMain['path'], 'resize', '440', false);
+            ?>
             <div class="slider-for">
                 <div>
-                    <p  class = "first_slide" style="background: url(<?=$image?>)  no-repeat;background-position:center; background-size: 75%"></p>
+                    <p  class = "first_slide" style="background: url(<?=$imageUrl?>)  no-repeat;background-position:center; background-size: 75%"></p>
                 </div>
                 <? foreach($model->images as $i => $img): ?>
                     <?
+//                    var_dump($img->photo['name']);continue;
                     $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
                     $image = image($image, 'resize', '440', false);
                     ?>
                     <div>
-                        <p title="<?=$img->name?>" alt="<?=$img->name?>" style="background: url(<?=$image?>)  no-repeat;background-size:75%; background-position:center;"></p>
+                        <p style="background: url(<?=$image?>)  no-repeat;background-size: 75%; background-position:center; "></p>
                     </div>
-
                 <? endforeach; ?>
-
             </div>
             <div class="slider-nav">
                 <div>
-                    <p  >  <img src="/images/eflora/itemcart1.png" alt=""></p>
+                    <p>  <img src="<?=$imageUrl?>" alt=""></p>
                 </div>
-                <div>
-                    <p  >  <img src="/images/eflora/flower1.png" alt=""></p>
-                </div>
-                <div>
-                    <p  >  <img src="/images/eflora/flower2.png" alt=""></p>
-                </div>
-                <div>
-                    <p  >  <img src="/images/eflora/flower3.png" alt=""></p>
-                </div>
-                <div>
-                    <p  >  <img src="/images/eflora/flower4.png" alt=""></p>
-                </div>
-                <div>
-                    <p  >  <img src="/images/eflora/flower7.png" alt=""></p>
-                </div>
-                <div>
-                    <p  >  <img src="/images/eflora/flower6.png" alt=""></p>
-                </div>
+                <? foreach($model->images as $i => $img): ?>
+                    <?
+//                    var_dump($img->photo['name']);continue;
+                    $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
+                    $image = image($image, 'resize', '440', false);
+                    ?>
+                    <div>
+                        <p>  <img src="<?=$image?>" alt="<?=$img->photo['name']?>"></p>
+                    </div>
+
+                <? endforeach; ?>
             </div>
         </div>
 

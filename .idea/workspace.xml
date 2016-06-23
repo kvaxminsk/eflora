@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="commit prosto">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/eflora/orange_cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/eflora/select_icon1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000090/407-cart1-pic4-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000090/407-cart1-pic4-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000090/407-cart1-pic4-resize-440x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000090/407-cart1-pic4-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000090/407-cart1-pic4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000091/655-flower6-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000091/655-flower6-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000091/655-flower6-resize-440x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000091/655-flower6-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/000/000091/655-flower6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002007/899-toys3-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002007/899-toys3-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002007/899-toys3-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002007/899-toys3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002017/290-toys9-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002017/290-toys9-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002017/290-toys9-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002017/290-toys9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002027/142-march38-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002027/142-march38-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002027/142-march38-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002027/142-march38.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002037/461-march39-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002037/461-march39-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002037/461-march39-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002037/461-march39.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002047/474-march40-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002047/474-march40-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002047/474-march40-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002047/474-march40.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002057/192-march25-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002057/192-march25-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002057/192-march25-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002057/192-march25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002067/121-march26-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002067/121-march26-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002067/121-march26-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002067/121-march26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002077/260-march22-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002077/260-march22-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002077/260-march22-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002077/260-march22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002087/128-march23-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002087/128-march23-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002087/128-march23-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002087/128-march23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002097/614-march11-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002097/614-march11-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002097/614-march11-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002097/614-march11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002107/937-march12-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002107/937-march12-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002107/937-march12-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002107/937-march12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002117/513-march31-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002117/513-march31-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002117/513-march31-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002117/513-march31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002127/385-march32-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002127/385-march32-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002127/385-march32-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002127/385-march32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002137/770-march33-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002137/770-march33-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002137/770-march33-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002137/770-march33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002147/558-march34-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002147/558-march34-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002147/558-march34-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002147/558-march34.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002157/328-march15-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002157/328-march15-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002157/328-march15-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002157/328-march15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002167/879-march16-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002167/879-march16-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002167/879-march16-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002167/879-march16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002177/923-thevalentinesday16-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002177/923-thevalentinesday16-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002177/923-thevalentinesday16-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002177/923-thevalentinesday16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002187/389-thevalentinesday17-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002187/389-thevalentinesday17-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002187/389-thevalentinesday17-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002187/389-thevalentinesday17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002197/536-thevalentinesday29-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002197/536-thevalentinesday29-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002197/536-thevalentinesday29-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002197/536-thevalentinesday29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002207/358-thevalentinesday30-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002207/358-thevalentinesday30-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002207/358-thevalentinesday30-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002207/358-thevalentinesday30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002217/775-thevalentinesday14-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002217/775-thevalentinesday14-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002217/775-thevalentinesday14-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002217/775-thevalentinesday14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002227/172-thevalentinesday15-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002227/172-thevalentinesday15-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002227/172-thevalentinesday15-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002227/172-thevalentinesday15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002237/635-thevalentinesday31-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002237/635-thevalentinesday31-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002237/635-thevalentinesday31-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002237/635-thevalentinesday31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002247/825-thevalentinesday32-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002247/825-thevalentinesday32-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002247/825-thevalentinesday32-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002247/825-thevalentinesday32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002257/611-thevalentinesday26-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002257/611-thevalentinesday26-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002257/611-thevalentinesday26-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002257/611-thevalentinesday26.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002267/880-thevalentinesday27-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002267/880-thevalentinesday27-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002267/880-thevalentinesday27-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002267/880-thevalentinesday27.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002277/964-thevalentinesday12-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002277/964-thevalentinesday12-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002277/964-thevalentinesday12-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002277/964-thevalentinesday12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002287/717-christmas4-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002287/717-christmas4-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002287/717-christmas4-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002287/717-christmas4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002297/409-christmas5-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002297/409-christmas5-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002297/409-christmas5-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002297/409-christmas5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002307/471-roses43-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002307/471-roses43-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002307/471-roses43-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002307/471-roses43.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002317/209-roses44-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002317/209-roses44-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002317/209-roses44-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002317/209-roses44.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002327/799-roses34-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002327/799-roses34-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002327/799-roses34-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002327/799-roses34.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002337/509-roses35-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002337/509-roses35-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002337/509-roses35-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002337/509-roses35.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002347/347-roses51-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002347/347-roses51-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002347/347-roses51-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002347/347-roses51.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002357/796-roses5-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002357/796-roses5-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002357/796-roses5-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002357/796-roses5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002367/506-roses51-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002367/506-roses51-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002367/506-roses51-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002367/506-roses51.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002377/798-roses31-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002377/798-roses31-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002377/798-roses31-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002377/798-roses31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002387/134-roses32-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002387/134-roses32-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002387/134-roses32-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002387/134-roses32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002397/860-roses60-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002397/860-roses60-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002397/860-roses60-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002397/860-roses60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002407/333-roses61-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002407/333-roses61-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002407/333-roses61-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002407/333-roses61.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002417/987-roses3-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002417/987-roses3-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002417/987-roses3-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002417/987-roses3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002427/254-roses4-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002427/254-roses4-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002427/254-roses4-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002427/254-roses4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002437/457-flowersbaskets20-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002437/457-flowersbaskets20-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002437/457-flowersbaskets20-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002437/457-flowersbaskets20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002447/662-flowersbaskets21-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002447/662-flowersbaskets21-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002447/662-flowersbaskets21-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002447/662-flowersbaskets21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002457/280-flowersbaskets17-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002457/280-flowersbaskets17-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002457/280-flowersbaskets17-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002457/280-flowersbaskets17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002467/480-flowersbaskets18-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002467/480-flowersbaskets18-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002467/480-flowersbaskets18-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002467/480-flowersbaskets18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002477/576-flowersbaskets14-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002477/576-flowersbaskets14-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002477/576-flowersbaskets14-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002477/576-flowersbaskets14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002487/895-flowersbaskets15-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002487/895-flowersbaskets15-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002487/895-flowersbaskets15-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002487/895-flowersbaskets15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002497/149-flowersbaskets11-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002497/149-flowersbaskets11-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002497/149-flowersbaskets11-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002497/149-flowersbaskets11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002507/886-flowersbaskets12-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002507/886-flowersbaskets12-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002507/886-flowersbaskets12-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002507/886-flowersbaskets12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002517/621-flowersbaskets8-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002517/621-flowersbaskets8-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002517/621-flowersbaskets8-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002517/621-flowersbaskets8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002527/222-flowersbaskets9-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002527/222-flowersbaskets9-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002527/222-flowersbaskets9-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002527/222-flowersbaskets9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002537/123-flowersbaskets32-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002537/123-flowersbaskets32-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002537/123-flowersbaskets32-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002537/123-flowersbaskets32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002547/867-flowersbaskets33-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002547/867-flowersbaskets33-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002547/867-flowersbaskets33-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002547/867-flowersbaskets33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002557/710-flowersbaskets29-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002557/710-flowersbaskets29-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002557/710-flowersbaskets29-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002557/710-flowersbaskets29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002567/774-flowersbaskets30-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002567/774-flowersbaskets30-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002567/774-flowersbaskets30-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002567/774-flowersbaskets30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002577/512-flowersbaskets32-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002577/512-flowersbaskets32-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002577/512-flowersbaskets32-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002577/512-flowersbaskets32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002587/148-flowersbaskets33-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002587/148-flowersbaskets33-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002587/148-flowersbaskets33-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002587/148-flowersbaskets33.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002597/241-flowersbaskets50-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/002/002597/241-flowersbaskets50-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003007/901-march6-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003007/901-march6-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003007/901-march6-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003007/901-march6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003017/435-march7-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003017/435-march7-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003017/435-march7-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003017/435-march7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003027/311-march5-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003027/311-march5-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003027/311-march5-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003027/311-march5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003037/132-march6-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003037/132-march6-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003037/132-march6-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003037/132-march6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003047/650-march23-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003047/650-march23-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003047/650-march23-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003047/650-march23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003057/688-march24-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003057/688-march24-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003057/688-march24-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003057/688-march24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003067/364-march12-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003067/364-march12-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003067/364-march12-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003067/364-march12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003077/227-march13-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003077/227-march13-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003077/227-march13-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003077/227-march13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003087/388-march18-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003087/388-march18-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003087/388-march18-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003087/388-march18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003097/123-march19-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003097/123-march19-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003097/123-march19-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003097/123-march19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003107/429-march36-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003107/429-march36-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003107/429-march36-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003107/429-march36.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003117/197-march37-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003117/197-march37-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003117/197-march37-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003117/197-march37.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003127/987-march14-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003127/987-march14-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003127/987-march14-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003127/987-march14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003137/303-march15-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003137/303-march15-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003137/303-march15-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003137/303-march15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003147/554-march16-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003147/554-march16-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003147/554-march16-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003147/554-march16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003157/404-march18-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003157/404-march18-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003157/404-march18-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003157/404-march18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003167/385-march19-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003167/385-march19-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003167/385-march19-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003167/385-march19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003177/662-thevalentinesday4-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003177/662-thevalentinesday4-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003177/662-thevalentinesday4-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003177/662-thevalentinesday4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003187/412-thevalentinesday5-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003187/412-thevalentinesday5-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003187/412-thevalentinesday5-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003187/412-thevalentinesday5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003197/621-thevalentinesday45-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003197/621-thevalentinesday45-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003197/621-thevalentinesday45-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003197/621-thevalentinesday45.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003207/112-thevalentinesday46-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003207/112-thevalentinesday46-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003207/112-thevalentinesday46-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003207/112-thevalentinesday46.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003217/461-thevalentinesday16-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003217/461-thevalentinesday16-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003217/461-thevalentinesday16-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003217/461-thevalentinesday16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003227/954-thevalentinesday17-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003227/954-thevalentinesday17-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003227/954-thevalentinesday17-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003227/954-thevalentinesday17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003237/717-thevalentinesday43-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003237/717-thevalentinesday43-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003237/717-thevalentinesday43-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003237/717-thevalentinesday43.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003247/728-thevalentinesday44-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003247/728-thevalentinesday44-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003247/728-thevalentinesday44-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003247/728-thevalentinesday44.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003257/558-thevalentinesday8-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003257/558-thevalentinesday8-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003257/558-thevalentinesday8-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003257/558-thevalentinesday8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003267/500-thevalentinesday9-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003267/500-thevalentinesday9-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003267/500-thevalentinesday9-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003267/500-thevalentinesday9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003277/514-christmas5-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003277/514-christmas5-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003277/514-christmas5-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003277/514-christmas5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003287/750-christmas6-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003287/750-christmas6-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003287/750-christmas6-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003287/750-christmas6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003297/305-gifts15-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003297/305-gifts15-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003297/305-gifts15-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003297/305-gifts15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003307/381-gifts16-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003307/381-gifts16-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003307/381-gifts16-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003307/381-gifts16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003317/605-gifts1-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003317/605-gifts1-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003317/605-gifts1-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003317/605-gifts1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003327/197-gifts2-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003327/197-gifts2-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003327/197-gifts2-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003327/197-gifts2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003337/599-ritual2-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003337/599-ritual2-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003337/599-ritual2-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003337/599-ritual2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003347/803-ritual3-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003347/803-ritual3-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003347/803-ritual3-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003347/803-ritual3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003357/817-ritual7-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003357/817-ritual7-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003357/817-ritual7-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003357/817-ritual7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003367/962-ritual8-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003367/962-ritual8-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003367/962-ritual8-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003367/962-ritual8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003377/246-ritual5-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003377/246-ritual5-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003377/246-ritual5-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003377/246-ritual5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003387/274-ritual6-big-500x500.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003387/274-ritual6-medium-200x200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003387/274-ritual6-small-80x80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003387/274-ritual6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003397/514-ritual1-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003397/514-ritual1-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003397/514-ritual1-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003397/514-ritual1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003407/115-ritual2-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003407/115-ritual2-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003407/115-ritual2-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003407/115-ritual2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003417/181-gift137-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003417/181-gift137-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003417/181-gift137-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003417/181-gift137.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003427/978-gift138-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003427/978-gift138-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003427/978-gift138-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003427/978-gift138.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003437/723-gift54-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003437/723-gift54-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003437/723-gift54-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003437/723-gift54.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003447/619-gift55-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003447/619-gift55-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003447/619-gift55-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003447/619-gift55.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003457/571-gift48-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003457/571-gift48-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003457/571-gift48-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003457/571-gift48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003467/289-gift49-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003467/289-gift49-medium-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003467/289-gift49-small-80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image/003/003467/289-gift49.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/000/000049/878-exotic8-resize-440x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/css/catalog_page/catalog.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/css/main_style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php" afterPath="$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/eflora/common.js" afterPath="$PROJECT_DIR$/javascript/eflora/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/eflora/shop.js" afterPath="$PROJECT_DIR$/javascript/eflora/shop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" afterPath="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/main_style.css" afterPath="$PROJECT_DIR$/styles/css/main_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/select/style.css" afterPath="$PROJECT_DIR$/styles/css/select/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/text_page/text_page.css" afterPath="$PROJECT_DIR$/styles/css/text_page/text_page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/_products.php" afterPath="$PROJECT_DIR$/templates/catalog/_products.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/ajax_product.php" afterPath="$PROJECT_DIR$/templates/catalog/ajax_product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/category.php" afterPath="$PROJECT_DIR$/templates/catalog/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/index.php" afterPath="$PROJECT_DIR$/templates/catalog/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/product-one.php" afterPath="$PROJECT_DIR$/templates/catalog/product-one.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout-internal.php" afterPath="$PROJECT_DIR$/templates/layout-internal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout-product.php" afterPath="$PROJECT_DIR$/templates/layout-product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.php" afterPath="$PROJECT_DIR$/templates/layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/verstka/css/main_page/main_page_style.css" afterPath="$PROJECT_DIR$/verstka/css/main_page/main_page_style.css" />
+    </list>
+    <ignored path="eflora.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="eflora" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/catalog/product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-one.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/catalog/product-one.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+              <folding>
+                <element signature="e#3896#3898#0#PHP" expanded="true" />
+                <element signature="e#4823#4825#0#PHP" expanded="true" />
+                <marker date="1466687968696" expanded="true" signature="4537:4583" placeholder="..." />
+                <marker date="1466687968696" expanded="true" signature="6385:6420" placeholder="..." />
+                <marker date="1466687968696" expanded="true" signature="9765:9901" placeholder="..." />
+                <marker date="1466687968696" expanded="true" signature="10434:10567" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/catalog/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.03935185">
+              <caret line="11" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="6" />
+              <folding>
+                <element signature="e#1831#1833#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_products.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/catalog/_products.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontCatalogController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.23077">
+              <caret line="353" column="27" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/catalog/category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+              <folding>
+                <element signature="e#1835#1837#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1125" column="73" selection-start-line="1125" selection-start-column="73" selection-end-line="1125" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/catalog/catalog_internal_tree.php" />
+        <option value="$PROJECT_DIR$/templates/articles/category.php" />
+        <option value="$PROJECT_DIR$/admin/protected/components/widgets/SMListView.php" />
+        <option value="$PROJECT_DIR$/templates/catalog/order_number.php" />
+        <option value="$PROJECT_DIR$/admin/protected/framework/yiilite.php" />
+        <option value="$PROJECT_DIR$/admin/protected/components/OrderNumberBlock.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/shop/models/Order.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/models/Product.php" />
+        <option value="$PROJECT_DIR$/verstka/itemcart.html" />
+        <option value="$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/common.js" />
+        <option value="$PROJECT_DIR$/admin/protected/framework/gii/controllers/DefaultController.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/material/controllers/FrontMaterialController.php" />
+        <option value="$PROJECT_DIR$/templates/layout-error.php" />
+        <option value="$PROJECT_DIR$/styles/css/404/404.css" />
+        <option value="$PROJECT_DIR$/styles/css/cart_page/radio_button_style.css" />
+        <option value="$PROJECT_DIR$/styles/css/contact_page/contact_page.css" />
+        <option value="$PROJECT_DIR$/styles/css/cart_page/cart_style.css" />
+        <option value="$PROJECT_DIR$/javascript/shop.js" />
+        <option value="$PROJECT_DIR$/verstka/js/common.js" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/articles/models/ArticleCategory.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/models/ArticleCategory.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/models/Subjects.php" />
+        <option value="$PROJECT_DIR$/templates/catalog/product.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/models/Category.php" />
+        <option value="$PROJECT_DIR$/templates/catalog/catalog_main_tree.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/views/category/_form_main.php" />
+        <option value="$PROJECT_DIR$/templates/catalog/_article.php" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/views/product/_form_main.php" />
+        <option value="$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css" />
+        <option value="$PROJECT_DIR$/verstka/slick_item/slick.css" />
+        <option value="$PROJECT_DIR$/styles/css/slick_item/slick.css" />
+        <option value="$PROJECT_DIR$/templates/catalog/ajax_product.php" />
+        <option value="$PROJECT_DIR$/admin/css/main_style.css" />
+        <option value="$PROJECT_DIR$/styles/css/main_style.css" />
+        <option value="$PROJECT_DIR$/styles/css/select/style.css" />
+        <option value="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" />
+        <option value="$PROJECT_DIR$/templates/catalog/index.php" />
+        <option value="$PROJECT_DIR$/templates/layout.php" />
+        <option value="$PROJECT_DIR$/verstka/css/main_page/main_page_style.css" />
+        <option value="$PROJECT_DIR$/styles/css/catalog_page/catalog.css" />
+        <option value="$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/text_page(1).css" />
+        <option value="$PROJECT_DIR$/styles/css/text_page/text_page.css" />
+        <option value="$PROJECT_DIR$/javascript/eflora/shop.js" />
+        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php" />
+        <option value="$PROJECT_DIR$/templates/layout-internal.php" />
+        <option value="$PROJECT_DIR$/templates/layout-product.php" />
+        <option value="$PROJECT_DIR$/templates/catalog/product-one.php" />
+        <option value="$PROJECT_DIR$/templates/catalog/_products.php" />
+        <option value="$PROJECT_DIR$/templates/catalog/category.php" />
+        <option value="$PROJECT_DIR$/javascript/eflora/common.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="000001" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../glushiteli-online.reactive.by" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\eflora\images\eflora" />
+      <recent name="C:\OpenServer\domains\eflora\styles\css\catalog_page" />
+      <recent name="C:\OpenServer\domains\eflora\javascript\eflora" />
+      <recent name="C:\OpenServer\domains\eflora\styles\css" />
+      <recent name="C:\OpenServer\domains\eflora\verstka\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="" />
+      <created>1466476809171</created>
+      <option name="number" value="Default" />
+      <updated>1466476809171</updated>
+      <workItem from="1466476815082" duration="1525000" />
+    </task>
+    <task id="LOCAL-00001" summary="js common&#10;">
+      <created>1466498430708</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1466498430708</updated>
+    </task>
+    <task id="LOCAL-00002" summary="js common 2">
+      <created>1466499025517</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1466499025517</updated>
+    </task>
+    <task id="LOCAL-00003" summary="js test 2&#10;">
+      <created>1466508706645</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1466508706645</updated>
+    </task>
+    <task id="LOCAL-00004" summary="verstka commit">
+      <created>1466592228169</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1466592228169</updated>
+    </task>
+    <task id="LOCAL-00005" summary="js common commit">
+      <created>1466606737618</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1466606737618</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit prosto">
+      <created>1466672002785</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1466672002786</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1525000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.260745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26044568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.256447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="js common&#10;" />
+    <MESSAGE value="js common 2" />
+    <MESSAGE value="js test 2&#10;" />
+    <MESSAGE value="verstka commit" />
+    <MESSAGE value="js common commit" />
+    <MESSAGE value="commit prosto" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit prosto" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/catalog/catalog_internal_tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/order_number.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/catalog_main_tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6247241">
+          <caret line="53" column="142" selection-start-line="53" selection-start-column="142" selection-end-line="53" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/views/category/_form_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0545454">
+          <caret line="88" column="33" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.807693">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.206897">
+          <caret line="1035" column="8" selection-start-line="1035" selection-start-column="8" selection-end-line="1035" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/eflora/search_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/views/product/_form_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44567627">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/slick_item/slick-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5454545">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/slick_item/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1923077">
+          <caret line="210" column="20" selection-start-line="210" selection-start-column="20" selection-end-line="210" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/slick_item/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35">
+          <caret line="215" column="23" selection-start-line="215" selection-start-column="23" selection-end-line="215" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/views/subjects/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10625">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/css/main_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35">
+          <caret line="405" column="20" selection-start-line="405" selection-start-column="20" selection-end-line="405" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/testimonials/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3522976">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/ajax_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33259425">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/layout-internal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="277" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/text_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/text_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="181" column="44" selection-start-line="181" selection-start-column="44" selection-end-line="181" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/material/document.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17708333">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="341.80768">
+          <caret line="730" column="0" selection-start-line="730" selection-start-column="0" selection-end-line="730" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/eflora/triangle.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/components/widgets/SMListView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="23.538462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/eflora/select_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/img/select_icon1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/img/orange_cart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2363636">
+          <caret line="419" column="50" selection-start-line="416" selection-start-column="24" selection-end-line="419" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/select/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6363635">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/select/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/main_page/main_page_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.927273">
+          <caret line="341" column="19" selection-start-line="341" selection-start-column="19" selection-end-line="341" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/css/main_page/main_page_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="922" column="1" selection-start-line="908" selection-start-column="0" selection-end-line="922" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/catalog_page/catalog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8679245">
+          <caret line="1080" column="0" selection-start-line="1080" selection-start-column="0" selection-end-line="1080" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/text_page(1).css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1153846">
+          <caret line="95" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="316" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/main_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5916115">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/text_page/text_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.840399">
+          <caret line="313" column="23" selection-start-line="313" selection-start-column="23" selection-end-line="313" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/eflora/shop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="94.37931">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layoutAjax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/itemcart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.10625">
+          <caret line="302" column="34" selection-start-line="256" selection-start-column="28" selection-end-line="302" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/eflora/itemcart1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout-error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51875">
+          <caret line="437" column="30" selection-start-line="437" selection-start-column="30" selection-end-line="437" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout-internal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="235" column="42" selection-start-line="235" selection-start-column="42" selection-end-line="235" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3125">
+          <caret line="212" column="43" selection-start-line="212" selection-start-column="43" selection-end-line="212" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/product-one.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#3896#3898#0#PHP" expanded="true" />
+            <element signature="e#4823#4825#0#PHP" expanded="true" />
+            <marker date="1466687968696" expanded="true" signature="4537:4583" placeholder="..." />
+            <marker date="1466687968696" expanded="true" signature="6385:6420" placeholder="..." />
+            <marker date="1466687968696" expanded="true" signature="9765:9901" placeholder="..." />
+            <marker date="1466687968696" expanded="true" signature="10434:10567" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/_products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.23077">
+          <caret line="353" column="27" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding>
+            <element signature="e#1835#1837#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1125" column="73" selection-start-line="1125" selection-start-column="73" selection-end-line="1125" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03935185">
+          <caret line="11" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="6" />
+          <folding>
+            <element signature="e#1831#1833#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

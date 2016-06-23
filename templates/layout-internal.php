@@ -15,9 +15,41 @@
 
 
 	<script type="text/javascript" src="/javascript/eflora/common.js"></script>
+	<script type="text/javascript" src="/javascript/eflora/shop.js"></script>
 
 
 	<link rel="stylesheet" type="text/css" href="/styles/css/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/styles/css/catalog_page/catalog.css"/>
+	<script type="text/javascript">
+
+		function DropDown(el) {
+			this.dd = el;
+			this.initEvents();
+		}
+		DropDown.prototype = {
+			initEvents : function() {
+				var obj = this;
+
+				obj.dd.on('click', function(event){
+					$(this).toggleClass('active');
+					event.stopPropagation();
+				});
+			}
+		}
+
+		$(function() {
+			var dd1 = new DropDown( $('#criterion_filter'));
+			var dd = new DropDown( $('#theme_filter') );
+
+			$(document).click(function() {
+				// all dropdowns
+				$('.wrapper-dropdown-5').removeClass('active');
+			});
+
+		});
+
+	</script>
+
 </head>
 <body>
 <div id ="container">
@@ -125,10 +157,12 @@
 			</ul>
 			<div id= "backet_wrap">
 				<div id = "header_price">
-					<p id = "header_price_text">0></p>
+					<p id = "header_price_text_br" class="header_price_text" >0</p>
+					<p id = "header_price_text_us" class="header_price_text"  style="display:none">0</p>
 				</div>
 				<div id = "header_backet">
-					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" /> <div class="backet_circle"><p>0</p></div> </a>
+					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" />
+						<div class="backet_circle"><p class="baskettext shop-count">0</p></div> </a>
 				</div>
 				<div id = "header_price_symbol">
 					<p id = "symbol">Цены в   <span id ="dollar">$</span>   <span id = "delimeter">/</span>  <span id = "unit">Br</span>    						<p id = "points" style="margin-left: 100px;">   .....  </p>
@@ -199,7 +233,7 @@
 	</div>
 	<div class = "footer_down_part">
 		<div class="text_author">
-			<p>&#169;2006-2016</p>
+			<p>&#169;2006-<?= Date('Y');?></p>
 			<p> eFlora.by</p>
 			<p id ="t_author_3">	flowers delivery service</p>
 		</div>

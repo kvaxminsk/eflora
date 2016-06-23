@@ -76,31 +76,15 @@ class FrontCatalogController extends FrontController
         $categories = Category::model()->getTreeDataActive();
                
         $this->render('index', array(
-	       'model'         => $model,
+//	       'model'         => $model,
            'meta'          => $meta,
            'products'      => $products,
            'pages'         => $pages,
-           'categories'    => $categories
+//           'categories'    => $categories
         ));  
     }
 
-    public function actionProducts1 (){ die('fsaf');
-        $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
 
-        parent::meta($model, $meta);
-
-        list($products, $pages) = $this->getProducts();
-
-        $categories = Category::model()->getTreeDataActive();
-
-        $this->render('index', array(
-            'model'         => $model,
-            'meta'          => $meta,
-            'products'      => $products,
-            'pages'         => $pages,
-            'categories'    => $categories
-        ));
-    }
     /**
      *  страница товара  
      **/

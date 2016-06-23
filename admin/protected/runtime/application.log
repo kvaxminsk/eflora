@@ -21792,3 +21792,1565 @@ Stack trace:
 REQUEST_URI=/images/eflora/orange_cart.png
 HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
 ---
+2016/06/23 11:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 11:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 11:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 11:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:00:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:01:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:02:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:05:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:05:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:06:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:07:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:07:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:09:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:18:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:19:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:23:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:27:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 12:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:02:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:13:58 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 14:14:06 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 14:14:19 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers
+2016/06/23 14:20:17 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers
+2016/06/23 14:21:42 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers
+2016/06/23 14:22:32 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers
+2016/06/23 14:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:23:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "styles/css/catalog_page/img/select_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('styles/css/cata...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/css/catalog_page/img/select_icon.png
+HTTP_REFERER=http://eflora/styles/css/catalog_page/catalog.css
+---
+2016/06/23 14:23:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "styles/img/in_backet_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('styles/img/in_b...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/img/in_backet_icon.png
+HTTP_REFERER=http://eflora/styles/css/catalog_page/catalog.css
+---
+2016/06/23 14:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "styles/img/in_backet_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('styles/img/in_b...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/img/in_backet_icon.png
+HTTP_REFERER=http://eflora/styles/css/catalog_page/catalog.css
+---
+2016/06/23 14:26:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "styles/css/catalog_page/img/select_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('styles/css/cata...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/css/catalog_page/img/select_icon.png
+HTTP_REFERER=http://eflora/styles/css/catalog_page/catalog.css
+---
+2016/06/23 14:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/select_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('img/select_icon...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/select_icon.png
+HTTP_REFERER=http://eflora/
+---
+2016/06/23 14:34:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/select_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('img/select_icon...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/select_icon.png
+HTTP_REFERER=http://eflora/
+---
+2016/06/23 14:35:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:35:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/select_icon1.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/s...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/select_icon1.png
+HTTP_REFERER=http://eflora/
+---
+2016/06/23 14:35:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "styles/css/select/img/select_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('styles/css/sele...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/css/select/img/select_icon.png
+HTTP_REFERER=http://eflora/styles/css/select/style.css
+---
+2016/06/23 14:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:38:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:39:31 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 14:40:42 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 14:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/orange_cart.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/o...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/orange_cart.png
+HTTP_REFERER=http://eflora/styles/css/main_page/main_page_style.css
+---
+2016/06/23 14:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/select_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('img/select_icon...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/select_icon.png
+HTTP_REFERER=http://eflora/
+---
+2016/06/23 14:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/select_icon1.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('img/select_icon...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/select_icon1.png
+HTTP_REFERER=http://eflora/
+---
+2016/06/23 14:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "img/select_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('img/select_icon...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/select_icon.png
+HTTP_REFERER=http://eflora/
+---
+2016/06/23 15:20:44 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "News".
+in C:\OpenServer\domains\eflora\admin\protected\modules\news\controllers\NewsController.php (25)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:22:47 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:22:47 [warning] [application] Не удалось присвоить небезопасный атрибут "menu_id" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:23:09 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:23:09 [warning] [application] Не удалось присвоить небезопасный атрибут "menu_id" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:23:48 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:23:48 [warning] [application] Не удалось присвоить небезопасный атрибут "menu_id" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:24:03 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:24:03 [warning] [application] Не удалось присвоить небезопасный атрибут "menu_id" класса "Material".
+in C:\OpenServer\domains\eflora\admin\protected\modules\material\controllers\MaterialController.php (108)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:29:05 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(165): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 15:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:29:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:29:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:29:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:29:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/gift-flavor/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/gift-fl...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/gift-flavor/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/gift-flavor/produkt-3
+---
+2016/06/23 15:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "styles/images/eflora/search_icon.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('styles/images/e...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/images/eflora/search_icon.png
+HTTP_REFERER=http://eflora/styles/css/404/404.css
+---
+2016/06/23 15:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "styles/images/eflora/404.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('styles/images/e...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/images/eflora/404.png
+HTTP_REFERER=http://eflora/styles/css/404/404.css
+---
+2016/06/23 15:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:44:29 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Product".
+in C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\ProductController.php (28)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:44:45 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Product".
+in C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\ProductController.php (28)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 15:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:50:03 [error] [php] explode() expects parameter 2 to be string, array given (C:\OpenServer\domains\eflora\admin\functions.php:24)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#3 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#4 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#5 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#6 unknown(0): FrontController->actionAlias()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:50:29 [error] [php] explode() expects parameter 2 to be string, array given (C:\OpenServer\domains\eflora\admin\functions.php:24)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#3 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#4 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#5 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#6 unknown(0): FrontController->actionAlias()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:51:01 [error] [php] Illegal string offset 'name' (C:\OpenServer\domains\eflora\templates\catalog\product-one.php:126)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#2 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#3 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#4 unknown(0): FrontController->actionAlias()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:52:00 [error] [php] Illegal string offset 'name' (C:\OpenServer\domains\eflora\templates\catalog\product-one.php:126)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#2 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#3 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#4 unknown(0): FrontController->actionAlias()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:52:13 [error] [php] Illegal string offset 'name' (C:\OpenServer\domains\eflora\templates\catalog\product-one.php:126)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#2 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#3 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#4 unknown(0): FrontController->actionAlias()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:52:35 [error] [php] Illegal string offset 'name' (C:\OpenServer\domains\eflora\templates\catalog\product-one.php:125)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#2 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#3 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#4 unknown(0): FrontController->actionAlias()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:52:54 [error] [php] Illegal string offset 'path' (C:\OpenServer\domains\eflora\templates\catalog\product-one.php:118)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#2 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#3 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#4 unknown(0): FrontController->actionAlias()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:53:50 [error] [php] Illegal string offset 'name' (C:\OpenServer\domains\eflora\templates\catalog\product-one.php:126)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#2 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#3 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#4 unknown(0): FrontController->actionAlias()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:54:07 [error] [php] Illegal string offset 'path' (C:\OpenServer\domains\eflora\templates\catalog\product-one.php:107)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#2 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(120): FrontCatalogController->render()
+#3 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionProduct()
+#4 unknown(0): FrontController->actionAlias()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#9 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#10 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/exotic-flowers/veter-peremen
+2016/06/23 15:57:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/img/itemcart1.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/img/itemcart1.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/img/flower3.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/img/flower3.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/img/flower4.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/img/flower4.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/img/flower1.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/img/flower1.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/img/flower2.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/img/flower2.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/img/flower7.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/img/flower7.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 15:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/img/flower6.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/img/flower6.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 16:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/h_upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/h_upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 16:03:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 16:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 16:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 16:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 16:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/exotic-flowers/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/exotic-...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/exotic-flowers/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/exotic-flowers/veter-peremen
+---
+2016/06/23 17:10:47 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 17:10:55 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/flavor-roses
+2016/06/23 17:11:01 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/bridal-flavor
+2016/06/23 17:12:23 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 17:15:43 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Product".
+in C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\ProductController.php (28)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 17:15:52 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 17:18:01 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Product".
+in C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\ProductController.php (28)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 17:18:25 [warning] [application] Не удалось присвоить небезопасный атрибут "img" класса "Category".
+in C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\CategoryController.php (79)
+in C:\OpenServer\domains\eflora\admin\index.php (18)
+2016/06/23 17:18:36 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 17:18:54 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 17:19:03 [error] [php] require(C:\OpenServer\domains\eflora): failed to open stream: Permission denied (C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(152): FrontCatalogController->renderFile()
+#1 C:\OpenServer\domains\eflora\admin\protected\components\widgets\SMListView.php(134): SMListView->renderItems()
+#2 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(173): SMListView->run()
+#3 C:\OpenServer\domains\eflora\templates\catalog\category.php(10): FrontCatalogController->widget()
+#4 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\eflora\admin\protected\framework\web\CBaseController.php(95): FrontCatalogController->renderInternal()
+#6 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(870): FrontCatalogController->renderFile()
+#7 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(782): FrontCatalogController->renderPartial()
+#8 C:\OpenServer\domains\eflora\admin\protected\modules\catalog\controllers\FrontCatalogController.php(149): FrontCatalogController->render()
+#9 C:\OpenServer\domains\eflora\admin\protected\controllers\FrontController.php(126): FrontCatalogController->actionCategory()
+#10 unknown(0): FrontController->actionAlias()
+#11 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\OpenServer\domains\eflora\admin\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(286): FrontController->runAction()
+#15 C:\OpenServer\domains\eflora\admin\protected\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#16 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(285): FrontController->run()
+#17 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\eflora\index.php(22): CWebApplication->run()
+REQUEST_URI=/catalog/gift-flavor
+2016/06/23 17:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_vk.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_vk.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_vk.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog/images/upper_twitter.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('catalog/images/...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog/images/upper_twitter.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:39:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/h_upper_...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:39:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/upper_fa...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---
+2016/06/23 17:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/eflora/eflora/h_upper_facebook.png".' in C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php:289
+Stack trace:
+#0 C:\OpenServer\domains\eflora\admin\protected\framework\web\CWebApplication.php(142): CWebApplication->runController('images/eflora/e...')
+#1 C:\OpenServer\domains\eflora\admin\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\eflora\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/eflora/eflora/h_upper_facebook.png
+HTTP_REFERER=http://eflora/catalog/slastene
+---

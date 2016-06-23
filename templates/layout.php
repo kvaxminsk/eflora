@@ -172,7 +172,8 @@
 			</ul>
 			<div id= "backet_wrap">
 				<div id = "header_price">
-					<p id = "header_price_text">0</p>
+					<p id = "header_price_text_br" class="header_price_text" >0</p>
+					<p id = "header_price_text_us" class="header_price_text"  style="display:none">0</p>
 				</div>
 				<div id = "header_backet">
 					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" />
@@ -212,48 +213,6 @@
 
 		<div class="fade">
 			<? $this->widget('CatalogCategoryBlock', array('file' => 'catalog_main_tree')) ?>
-<!--			<div>-->
-<!--				<p   style="background: url(images/eflora/slide1.jpg) 0 0 no-repeat; "></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide2.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide3.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide4.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide5.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide6.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide7.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide8.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide9.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide10.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide11.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide12.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide13.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
-<!--			<div>-->
-<!--				<p style="background: url(images/eflora/slide14.jpg) 100% 100% no-repeat;background-size: cover;"></p>-->
-<!--			</div>-->
 		</div>
 	</div>
 
@@ -341,8 +300,8 @@
 				<div class ="sort_criterion" >
 					<p class = "choice">
 						Сортировать по:
-						<a class="choice_link" href="#">Популярности</a>
-						<a class="choice_link" href="#">Цене</a>
+						<a class="choice_link" href="#">Популярности</a><img class="orrange_arrow popular" src="">
+						<a class="choice_link" href="#">Цене</a><img class="orrange_arrow  price_link" src="">
 						<a class="choice_link" href="#">До 50</a>
 						<a class="choice_link" href="#">До 100</a>
 						<a class="choice_link" href="#">До 200</a>

@@ -8,8 +8,8 @@
 									<span id='criterion_filter_text'>
 									Фильтр</span>
 				<ul class="dropdown " id="dropdown2">
-					<li><a href=""><i class="icon-user"></i>По популярности</a></li>
-					<li><a href=""><i class="icon-cog"></i>По цене:</a></li>
+					<li><a href=""><i class="icon-user"></i>По популярности</a><img class="orrange_arrow popular" src=""></li>
+					<li><a href=""><i class="icon-cog"></i>По цене:</a><img class="orrange_arrow  price_link" src=""></li>
 					<li><a href=""><i class="icon-remove"></i>До 100</a></li>
 					<li><a href=""><i class="icon-remove"></i> До 200</a></li>
 				</ul>
@@ -26,8 +26,8 @@
 <div class ="sort_criterion" >
 	<p class = "choice">
 		Сортировать по:
-		<a class="choice_link" href="#">Популярности</a>
-		<a class="choice_link" href="#">Цене</a>
+		<a class="choice_link" href="#">Популярности</a><img class="orrange_arrow popular" src="">
+		<a class="choice_link" href="#">Цене</a><img class="orrange_arrow  price_link" src="">
 		<a class="choice_link" href="#">До 50</a>
 		<a class="choice_link" href="#">До 100</a>
 		<a class="choice_link" href="#">До 200</a>
@@ -36,7 +36,7 @@
 </div>
 <div class="list_product">
 	<? if(!empty($products->data)): ?>
-		<div class="show_list">
+		<ul class="flower_products_catalog">
 			<?
 			$this->widget('SMListView',
 				array(
@@ -48,7 +48,7 @@
 				)
 			);
 			?>
-		</div>
+		</ul>
 	<? else: ?>
 <!--		По вашим параметрам ничего не найдено-->
 	<? endif; ?>

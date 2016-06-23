@@ -1,0 +1,1097 @@
+
+
+
+
+
+
+
+.under_slider{
+	width: calc(100% - 366px);
+	float: left;
+	height: 90px;
+	background-color: #fff;
+	vertical-align: middle;
+	border-bottom: 1px solid #f1ecea;
+	border-left: 1px solid #f1ecea;
+	position: relative;
+	border-top: 1px solid #f1ecea;
+}
+.theme 
+{
+	width: 100px;
+	margin-top:35px;
+	margin-left: 60px;
+	font:  15px/15px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	color: #898787;
+}
+.select_theme_wrapp{
+	position: relative;
+	width:160px;
+	left: 150px;
+	top:  -46px;
+}
+
+.select_theme{
+	border: 1px solid #dcdbdb;
+	width:235px;
+	font:  18px/40px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	border-radius: 20px;
+	padding-left: 10px;
+	/*background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;*/
+	color: #898787;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	height: 40px;
+
+}
+.sort_criterion{
+	position: absolute;
+	right: 0;
+	top:0;
+	width:580px;
+	height: 90px;
+}
+.choice{
+	margin-top: 35px;
+	margin-right: 30px;
+	float: right;
+	font:  15px/17px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+
+}
+
+.choice_link {
+	margin-right: 5px;
+	margin-left: 10px;
+	color:#898787;
+	text-decoration: none;
+	border-bottom: 1px dotted #898787;
+}
+.choice_link:hover, .dropdown>li>a:hover{
+	color:#ff8b4e;
+	border-bottom: 1px dotted #ff8b4e;
+}
+
+
+
+/* DEMO 5 */
+
+.wrapper-dropdown-5 {
+	/* Size & position */
+	position: absolute;
+	width:220px;
+
+
+	font:  18px/16px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	border-radius: 20px;
+	padding-left: 15px;
+	padding-top: 10px;
+	/*background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;*/
+	color: #898787;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	height: 30px;
+
+	cursor: pointer;
+	outline: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+
+}
+
+.wrapper-dropdown-5:after { /* Little arrow */
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -3px;
+	border-width: 6px 6px 0 6px;
+	border-style: solid;
+	border-color: #ff8b4e transparent;
+}
+
+
+
+.wrapper-dropdown-5 .dropdown {
+	/* Size & position */
+	padding-left: 0;
+	margin-left: -1px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	top:14px;
+	/* Styles */
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	border: 1px solid #dcdbdb;
+	border-top: none;
+	border-bottom: none;
+	list-style: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	background-color: transparent;
+
+	/* Hiding */
+	max-height: 0;
+	overflow: hidden;
+	z-index: 9999;
+	width:220px;
+}
+.wrapper-dropdown-5 .dropdown li:nth-child(1){
+	padding: 0 10px ;
+	margin-top:20px;
+}
+.wrapper-dropdown-5 .dropdown li {
+	width: 100%;
+	margin-left: -1px;
+	padding: 0 10px ;
+	list-style: none;
+	background-color: #fff;
+	margin-bottom: 0;
+	margin-left: 0;
+	height: 45px;
+}
+
+.wrapper-dropdown-5 .dropdown li a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 10px 0;
+	transition: all 0.3s ease-out;
+	border-bottom: 1px solid #e6e8ea;
+}
+.wrapper-dropdown-5> .dropdown> li >a:hover{
+	color:#ff8b4e;
+}
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+	border: none;
+}
+.wrapper-dropdown-5.active:after {
+	border-width: 0 6px 6px 6px;
+}
+.wrapper-dropdown-5 .dropdown li i {
+	margin-right: 5px;
+	color: inherit;
+	vertical-align: middle;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-5 .dropdown li:hover a {
+	color:#ff8b4e;
+}
+
+/* Active state */
+
+.wrapper-dropdown-5.active {
+	background: #fff;
+	box-shadow: none;
+	color: inherit;
+
+}
+
+.wrapper-dropdown-5.active:after {
+	border-color: #ff8b4e transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	max-height: 400px;
+	width: 235px;
+	margin-left: -1px;
+	overflow-y:scroll;
+	padding-left: 0;
+	margin-top: 12px;
+}
+
+
+
+
+.list_product{
+	width: calc(100% - 366px);
+	display: inline-block;
+	    border-left: 1px solid #f1ecea;
+}
+ul.flower_products_catalog{
+	margin: 0;
+	padding: 0 ;
+	width: 100% ;
+	height: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #f1ecea;
+
+
+}
+
+ul.flower_products_catalog li{
+
+	width: 25%;
+	list-style: none;
+	float:left;
+	height: 640px;
+	/*border-bottom: 1px solid #f1ecea;*/
+	margin:0px;
+	margin-top:1px;
+	/*min-width: 290px;*/
+}
+
+ul.flower_products_catalog li:hover .product_wrap{
+	width: 100%;
+	position: absolute;
+	height: calc(100% + 5px);
+	z-index: 99;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 12px 50px -16px rgba(168,164,168,1);
+	-moz-box-shadow: 1px 12px 50px -16px rgba(168,164,168,1);
+	box-shadow: 1px 12px 50px -16px rgba(168,164,168,1);
+	transition-duration: 0.7s;
+	padding-bottom: 0px;
+}
+
+
+ul.flower_products_catalog li:hover  .hover_description {
+	
+	height: auto;
+ 	transition: 0.6s;
+}
+/* ul.flower_products li:not(:hover)  .hover_description {
+	
+ 	transition: 0.5s;
+} */
+ul.flower_products_catalog li:hover  .count_product_selector{
+	display: block;
+	height: 40px;
+ 	transition: 0.6s;
+ 	margin-top: 30px;
+	
+}
+.filter_wrapper{
+	position: relative;
+	height: 40px;
+}
+ul.flower_products_catalog li:not(:hover) .count_product_selector {
+	transition-duration:0.7s;
+}
+
+ul.flower_products_catalog li:hover  .in_cart:hover{
+	background-color: #fff;
+	color: #e9646d;
+	transition-duration:0.5s;
+}
+ul.flower_products_catalog li:hover  .in_cart:not(:hover){
+	transition-duration:0.5s;
+}
+ul.flower_products_catalog li:hover  .discount{
+	background-color: #fa7163;
+	transition: 0.5s;
+}
+ul.flower_products_catalog li:not(:hover) .discount{
+	transition: 0.5s;
+}
+ul.flower_products_catalog li:hover  .discount>p{
+	color: #fff;
+	transition: 0.5s;
+}
+
+
+
+.count_product_selector{
+	margin: 0 auto;
+	height: 40px;
+	width:104px;
+	text-align: center;
+	position: relative;
+	font:  22px/17px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	margin-bottom: 0px;
+	height: 0;
+	overflow: hidden;
+}
+.increment{
+
+	float:left;
+	width:30px;
+
+	background-color: #dfdfdf;
+	height: 30px;
+	line-height:30px;
+	border-radius: 50%;
+	cursor:pointer;
+	text-align: center;
+	color:#fff;
+}
+.increment:hover, .decrement:hover{
+	background-color:#fd904f;
+	transition-duration:0.5s;
+}
+.increment:not(:hover), .decrement:not(:hover){
+	transition-duration:0.5s;
+}
+.count_product{
+	float:left;
+	width:44px;
+	line-height:30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+
+}
+.count_product>input{
+	width: 100%;
+	border: 1px none;
+	text-align: center;
+	background-color: #fff;
+	font:  18px/18px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+}
+.count_product>input:focus{
+	outline: none;
+}
+
+.decrement{
+	float:left;
+	width:30px;
+	background-color: #dfdfdf;
+	height: 30px;
+	line-height:30px;
+	border-radius: 50%;
+	cursor:pointer;
+	text-align: center;
+	color: #fff;
+}
+
+
+.hover_description {
+	margin-top: 0px;
+	position: absolute;
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	font: 14px/20px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	-webkit-box-shadow: 3px 40px 58px -25px rgba(168,164,168,1);
+	-moz-box-shadow: 3px 40px 58px -25px rgba(168,164,168,1);
+	box-shadow: 9px 14px 58px -25px rgba(168,164,168,1);
+	height: 0;
+	overflow: hidden;
+	color: #686666;
+
+}
+.hover_description>p{
+	margin: 30px 60px;
+	font:  14px/20px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	margin-top:20px;
+}
+
+
+
+.flower {
+	height:250px;
+	text-align: center;
+	position: relative;
+
+}
+.flower_pic
+{
+	margin-top: 50px;
+
+}
+
+.discount
+{
+	width: 80px;
+	height:80px;
+
+	padding-bottom: 0;
+	overflow: hidden; /* clearfix */
+	position: absolute;
+	background-color: #f1ecea;
+	right: 0;
+
+}
+.discount:before {
+	content: "";
+	padding-top: 100%;
+	float: right;
+} 
+.discount p {
+	margin-top: 34%;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	color:#f37f89;
+	font:  25px/25px arial,sans-serif;
+	font-family: 'Roboto Thin', arial;
+}
+
+.mobile_list {
+	display: none;
+}
+
+.old_price {
+	position: relative;
+	margin-top: 70px;
+	width:100%;
+	text-align: center;
+	letter-spacing: 2px;
+	font: bold 42px/42px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	font-weight: 400;
+	vertical-align: middle;
+	padding-top: 10px;
+	color:#ff7794;
+}
+.under_line{
+	position: relative;
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
+
+}
+.six{
+	margin-left: -2px;
+}
+.zero_old_price{
+
+	font: bold  21px/21px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	vertical-align: top;
+
+}
+.um{
+	font: bold 19px/19px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	margin-bottom: 2px;
+}
+.new_price >.um
+{
+	margin-left: 10px;
+}
+
+.line {
+	border-top:2px solid #ffb7c5;
+	width: 78px;
+	float: left;
+	position: absolute;
+	left: calc(50% - 83px);
+
+}
+.new_price {
+	position: relative;
+	margin-top: 10px;
+	width:100%;
+	text-align: center;
+	letter-spacing: 2px;
+	font: bold 42px/42px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	font-weight: 200;
+	vertical-align: middle;
+	padding-top: 10px;
+	color:#a9a9a9;
+}
+
+.flower_discribe p {
+
+	text-align: center;
+	margin-top: 25px;
+	font: 18px/18px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	color:#6f7c84;
+	margin-bottom: 0px;
+
+}
+.product {
+	position: relative;
+}
+.in_cart {
+	background: url(../../../images/eflora/in_backet_icon.png) no-repeat 20px ;
+	background-color:#f35a69;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	border:2px solid #f35a69;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	text-decoration:none;
+	font: 18px/18px arial,sans-serif;
+	font-family: 'Roboto Light';
+	width: 205px;
+	-webkit-box-shadow: 0px 0px 15px rgba(234,45,63, 0.7);
+	-moz-box-shadow: 0px 0px 15px rgba(234,45,63, 0.7);
+	box-shadow: 0 0 15px  rgba(234,45,63, 0.5) ; /* Параметры тени */
+	height: 55px;
+	margin-top: 15px;
+	margin-bottom:15px;
+
+
+
+}
+.in_cart:hover {
+	background-color:#e43a4b;
+	transition-duration:0.5s;
+}
+.in_cart:active {
+	position:relative;
+	top:1px;
+} 
+.in_cart_wrap{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+
+@media all and (max-width:  1646px)  {
+
+	ul.flower_products_catalog li
+	{
+		width: 33.3%;
+	}
+
+}
+
+@media all and (max-width:  1340px)  {
+	.choice {
+		margin-right: 10px;
+	}
+}
+	@media all and (max-width:  1280px) {
+
+		.main_content {
+
+			margin-top: -460px;
+		}
+		/* 	.slide_box {
+            width: 66.9% ;
+        } */
+		.sort_criterion{
+			display: none;
+		}
+		.mobile_filter{
+			display: block;
+			width: 200px;
+			position: absolute;
+			right: 50px;
+			top:0;
+		}
+		.filter_wrapper{
+			top:21px;
+		}
+		.select_filter
+		{
+			display: inline-block;
+			border: 1px solid #dcdbdb;
+
+			width: 220px;
+
+			top:  0px;
+			font:  18px/40px arial,sans-serif;
+			font-family: 'Roboto Light', arial;
+			border-radius: 20px;
+			padding-left: 10px;
+			background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;
+			color: #898787;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			height: 40px;
+			padding-top:0;
+		}
+		.happen_text{
+			margin-left:15px;
+			margin-right: 15px;
+		}
+
+	}
+	@media all and (max-width:  1177px) {
+
+
+
+		ul.flower_products_catalog li {
+			width: 50% ;
+		}
+	}
+	@media all and (max-width:  1060px) {
+		.theme{
+			margin-left: 25px;
+		}
+		.select_theme_wrapp{
+			left:100px;
+		}
+	}
+
+
+	@media all and (max-width:  1000px){
+		.mp_left_main_content {
+			width: 240px;
+		}
+		.mp_right_main_content{
+			width: calc(100% - 240px);
+			position: relative;
+			z-index: 9;
+		}
+		.left_sidebar{
+			width: 240px;
+		}
+		.flower_car{
+			width: 240px;
+			margin-left: -30px;
+			background-position: 50% 100%;
+		}
+		.flower_smile
+		{
+			width: 240px;
+			margin-left: -35px;
+			background-position: 50% 100%;
+		}
+		.square{
+			margin: 0 auto;
+		}
+		.where_deliver{
+			font-size: 26px;
+			margin-left: 5px;
+		}
+		.where_deliver_text,.happen_text{
+			font-size: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.happen_count li {
+
+			text-align: right;
+			display: flex;
+			justify-content: space-around;
+		}
+		.happen_number{
+			font-size: 28px;
+		}
+		.left_sidebar{
+			padding-bottom:40px;
+		}
+		.search_area{
+			width: 240px;
+		}
+		.search_area>input{
+			margin-left: 20px;
+			width: 180px;
+			background: url(../../../images/eflora/search_icon.png) no-repeat 170px;
+		}
+		.go_find {
+
+			right: -190px;
+
+		}
+		ul.flower_products li{
+			padding-bottom: 0px;
+		}
+		ul.flower_products li  .count_product_selector{
+			display: block;
+
+		}
+		ul.flower_products> li:hover .hover_description {
+			display: none;
+		}
+		ul.flower_products li:hover .product_wrap{
+			width: 100%;
+			position: absolute;
+			height: calc(100% + 0px);
+			z-index: 0;
+			background-color: #fff;
+			-webkit-box-shadow: 1px 12px 50px -16px rgba(168,164,168,0);
+			-moz-box-shadow: 1px 12px 50px -16px rgba(168,164,168,0);
+			box-shadow: 1px 12px 50px -16px rgba(168,164,168,0);
+			transition-duration: 0.0s;
+			padding-bottom: 30px;
+		}
+		ul.flower_products li:hover .product_wrap{
+			height: 640px;
+		}
+
+		.reason_link:hover{
+			color: #fff;
+		}
+		.count_product_selector{
+			height: 40px;
+			margin-top:30px;
+		}
+
+
+
+	}
+
+
+	@media all and (max-width:  890px){
+		.left_box>p{
+			font-size:42px;
+		}
+	}
+
+	@media all and (max-width:  860px){
+		.theme{
+			margin-left: 15px;
+		}
+		.select_theme_wrapp{
+			left:90px;
+		}
+	}
+	@media all and (max-width:  840px){
+		.logo_pic{
+			margin-top:25px;
+		}
+		.slick-dots{
+			top:80px ;
+			padding-top: 80px  ;
+			z-index: 9999;
+			position: fixed;
+			left: -720px ;
+			background-color: #9e4d69;
+			top:159px;
+		}
+		.slick-active, .active {
+			background-color: #fff !important;
+			color: #ddd !important;
+
+		}
+		.column_list{
+			position: relative;
+			z-index: 3;
+		}
+		#second_column{
+			top: -80px;
+		}
+		#third_column{
+			top:-80px;
+			position: relative;
+			z-index: 10;
+		}
+		/* .under_slider{
+            z-index: 0;
+            } */
+		.mp_right_main_content{
+			z-index: 1;
+		}
+
+
+		#header_price_symbol{
+			display: none;
+		}
+		.column_list>ul.list{
+
+		}
+		.main_slick_slider{
+			width: 100% !important;
+			position: relative;
+			right: 0 !important;
+			height: 160px !important;
+			top: -80px;
+		}
+		.main_content{
+			margin-top: -80px;
+		}
+		.mp_left_main_content{
+			display: none;
+		}
+		.mp_right_main_content{
+			width: 100%;
+		}
+		.header_price_icon{
+			top:0px;
+
+		}
+		#header_backet{
+			top: 80px;
+			right: 0px;
+			z-index: 999;
+		}
+		#header_price{
+			display: none;
+		}
+		ul.list{
+			width: calc(100% - 80px)!important;
+		}
+		.phone{
+			margin-top: -110px;
+		}
+		#first_description{
+			margin-top:-110px;
+		}
+		#logo_text_mobile{
+			margin-top:-55px;
+		}
+		.mobile_list{
+			display: block;
+			position: absolute;
+			top: 160px;
+			z-index: 2;
+			width: 240px;
+			height: 80px;
+			background-color: rgba(158, 77,105, 0.88);
+
+		}
+		.show>.mobile_list{
+			position: fixed;
+		}
+		.mobile_list>p{
+			line-height: 80px;
+			color: #fff;
+			width: 100%;
+			margin-left: 20px;
+			position: absolute;
+		}
+		.mobile_list>p>span{
+			font-size: 26px;
+		}
+		.question_panel{
+			z-index: 9998;
+		}
+		.theme{
+			display: none;
+		}
+		.select_theme_wrapp{
+			display: none;
+		}
+		.catalog_logo{
+			display: block;
+			position: fixed;
+			top:0;
+			height: 160px;
+			width: 240px;
+			background-color:#9e4d69;
+			z-index: 7;
+			left:-365px;
+		}
+		.catalog_close{
+			position: absolute;
+			right: 0;
+			top:0;
+			width: 80px;
+			height: 80px;
+			background-color: #974a65;
+			cursor: pointer;
+		}
+		.catalog_close>img{
+			display: block;
+			margin:0 auto;
+			margin-top: 25px;
+		}
+
+
+	}
+
+
+	@media all and (max-width:  760px){
+		#container{
+			overflow: hidden;
+		}
+
+		ul.list {
+			width: 100% !important;
+		}
+		.phone{
+			margin-top: -110px !important;
+		}
+		#first_description{
+			margin-top:-45px !important;
+		}
+		#logo_text_mobile{
+			margin-top:-55px !important;
+		}
+		.header_price_icon{
+			right: 0;
+			top:80px;
+			z-index: 99;
+		}
+		.phone_number{
+			margin-top: 139px;
+		}
+		#header_backet{
+			top:160px;
+		}
+		.column1, .column2{
+			width: 100%;
+
+		}
+		.column2_text, .column1_text{
+			padding-bottom: 70px;
+		}
+		.flower_pic{
+
+			height: 80%;
+		}
+		#second_column{
+			top: 0px;
+		}
+		#third_column{
+			top:0px;
+			position: relative;
+			z-index: 10;
+		}
+		.column1>p, .column2>p{
+			margin-left: 0;
+		}
+	}
+
+	@media all and (max-width:  440px){
+		ul.flower_products li {
+			width: 100% !important;
+		}
+
+
+	}
+	@media all and (max-width: 480px){
+		#logo{
+			height: 160px;
+		}
+	}
+
+	@media all and (max-width:  440px){
+
+		.mobile_filter{
+			width: 150px;
+			right:10px;
+		}
+		.wrapper-dropdown-5{
+			width: 130px !important;
+		}
+		.wrapper-dropdown-5.active .dropdown{
+			width: 145px !important;
+		}
+		.wrapper-dropdown-5 .dropdown li a{
+			font-size: 14px;
+		}
+
+		#question_icon{
+			top:-80px;
+		}
+		.phone_number{
+			margin-top:110px;
+			background-color: #fff;
+		}
+		.first_phone{
+			margin-bottom: -100px !important;
+			display: block;
+			position: relative;
+			top:25px;
+
+		}
+		.mobile_list{
+			/* width:calc(100% - 80px); */
+			min-width: 240px;
+			width: calc(100% - 160px);
+		}
+		#second_column, #third_column{
+			top:80px;
+			left:-160px;
+			width:100%;
+			min-width: 240px;
+		}
+		#first_description{
+			margin-top:8px !important;
+		}
+		#logo_text_mobile{
+			margin-top:-55px !important;
+		}
+		.phone_number{
+			min-width: 240px;
+			width:calc(100% + 80px);
+		}
+
+		#question_icon{
+			left:auto;
+			right: 0;
+		}
+		.phone_number{
+			position: relative;
+			left: -240px;
+			width: 100%;
+			top:80px;
+		}
+		.header_price_icon{
+			top:80px;
+			z-index: 9999;
+		}
+		#menu_selector{
+			left:auto;
+			right: 80px;
+		}
+		#logo{
+			position: absolute;
+			width:calc(100% - 160px);
+		}
+		.column_list{
+			left:160px;
+		}
+		.catalog_logo{
+			width: calc(100% - 160px);
+		}
+		.slick-dots{
+			width: calc(100% - 160px)!important;
+		}
+		.slick-dots>li{
+			width: calc(100% - 20px) !important;
+		}
+		.hidden_menu{
+			width: calc(100% - 160px);
+			min-width: 240px;
+		}
+		.help_panel_close{
+			position: absolute;
+			left: auto;
+			right: 0;
+			top:0;
+		}
+		ul.help_list{
+			width: calc(100% - 160px) !important;
+		}
+		ul.help_list>li{
+			width: calc(100% + 40px) !important;
+		}
+		.question_panel{
+			width: calc(100% - 160px);
+		}
+
+
+		.menu_panel_close{
+			position: absolute;
+			left: auto;
+			right: 0;
+			top:0;
+		}
+
+
+	}
+	@media all and (max-width:  360px){
+		.mobile_categoria{
+			text-align: left;
+			margin-left: 20px;
+		}
+	}
+.style_in_cart{
+	background: url(../../../images/eflora/orange_cart.png) no-repeat 20px;
+	background-color: #ff8b4e;
+	transition:0.5s;
+
+	border: 2px solid #ff8b4e ;
+
+
+
+}
+.style_in_cart:hover{
+	background-color: #fff;
+	transition:0.5s;
+	color: #ff8b4e !important;
+}

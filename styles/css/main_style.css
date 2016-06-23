@@ -7,6 +7,33 @@
 
 
 
+
+.dollar_price {
+	text-align: center;
+	margin-top:100px;
+	letter-spacing: 2px;
+	font: bold 42px/42px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	font-weight: 400;
+	vertical-align: middle;
+	padding-top: 10px;
+	color: #ff7794;
+	margin-bottom: 57px;
+}
+.dollar_price >.um{
+	font:  19px/19px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	margin-bottom: 2px;
+}
+.dollar_price >.line{
+	border-top: 2px solid #ffb7c5;
+	width: 43px;
+	float: left;
+	position: absolute;
+	left: calc(50% - 35px);
+}
+
+
 #container
 {
 	width: 100%;
@@ -151,7 +178,7 @@ html ,body{
 	.catalog_logo_pic{
 		width: 240px;
 		height: 160px;
-		background: url(../../../images/eflora/white_logo.png) no-repeat;
+		background: url(../../images/eflora/white_logo.png) no-repeat;
 		display: block;
 		margin-top:30px;
 		margin-left:60px;
@@ -403,7 +430,7 @@ html ,body{
 	display: none;
 }
 /* Font need include Roboto Regular  */
-#header_price_text {
+.header_price_text {
 	margin-top: 20px;
 	color: #ff6267;
 	font-size: 30px;
@@ -710,7 +737,7 @@ sup{
 	width:365px;
 	height: 170px;
 	float: left;
-	background: url(../../../images/eflora/footer_logo.png) no-repeat 100% 100%;
+	background: url(../../images/eflora/footer_logo.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .footer_logo_describe{
@@ -770,7 +797,7 @@ sup{
 	height: 45px;
 	background-color: red;
 	margin-top: 40px;
-	background: url(../../../images/eflora/phone_icon.png) no-repeat 100% 100%;
+	background: url(../../images/eflora/phone_icon.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .col1_wrapp{
@@ -814,7 +841,7 @@ sup{
 	width: 45px;
 	height: 170px;
 	margin-top: -23px;
-	background: url(../../../images/eflora/adress_icon.png) no-repeat 100% 100%;
+	background: url(../../images/eflora/adress_icon.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .adress_info {
@@ -847,7 +874,7 @@ sup{
 	width: 47px;
 	height: 170px;
 	margin-top: -23px;
-	background: url(../../../images/eflora/shop_icon.png) no-repeat 100% 100%;
+	background: url(../../images/eflora/shop_icon.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .third_contact_column p {
@@ -866,7 +893,7 @@ sup{
 .footer_down_part{
 	width: 100%;
 	height: 82px;
-	background: url(../../../images/eflora/footer_fon.jpg) no-repeat 100% 100%; 
+	background: url(../../images/eflora/footer_fon.jpg) no-repeat 100% 100%;
 	background-size: cover;
 	position: relative;
 }
@@ -945,7 +972,7 @@ sup{
 	margin-left: 5px;
 	width: 102px;
 	height: 26px;
-	background: url(../../../images/eflora/reactive_logo.png) no-repeat 100% 100%;
+	background: url(../../images/eflora/reactive_logo.png) no-repeat 100% 100%;
 }
 
 .up_button{
@@ -1118,7 +1145,7 @@ sup{
  .first_phone, .second_phone, .third_phone{
 	font-size: 22px ;
 } 
-#header_price_text{
+.header_price_text{
 	font-size: 22px;
 	text-align: center;
 	margin-top:25px;
@@ -1306,7 +1333,7 @@ sup{
 		text-align: center;
 		margin-top: 130px;
 		width: 240px;
-		background: url(../../../images/eflora/triangle.png) no-repeat;
+		background: url(../../images/eflora/triangle.png) no-repeat;
 		background-position: calc(50% + 105px) 30px;
 	}
 	
@@ -1380,7 +1407,7 @@ sup{
 	.catalog_logo_pic{
 		width: 240px;
 		height: 100px;
-		background: url(../../../images/eflora/white_logo.png) no-repeat;
+		background: url(../../images/eflora/white_logo.png) no-repeat;
 		display: block;
 
 	}
@@ -1542,7 +1569,7 @@ sup{
 		margin-left: 25px;
 		padding-right: 30px;
 	}
-	 */
+
 }
 @media all and (max-width: 1083px){
 	.footer {
@@ -1733,7 +1760,7 @@ sup{
 	.catalog_logo_pic{
 		width: 123px;
 		height: 40px;
-		background: url(../../../images/eflora/catalog_logo.png);
+		background: url(../../images/eflora/catalog_logo.png);
 		display: block;
 		margin-top:20px;
 		margin-left:10px;
@@ -1815,7 +1842,7 @@ sup{
 	#points{
 		margin-left:40px;
 	}
-	#header_price_text{
+	.header_price_text {
 		text-align: center;
 		font-size: 23px;
 	}
@@ -1872,7 +1899,7 @@ sup{
 		text-align: center;
 		margin-top: 0px;
 		width: 240px;
-		background: url(../../../images/eflora/triangle.png) no-repeat;
+		background: url(../../images/eflora/triangle.png) no-repeat;
 		background-position: 100% 30px;
 	}
 	.phone_number{

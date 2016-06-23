@@ -338,7 +338,7 @@
 	font-family: 'Roboto Light', arial;
 	border-radius: 20px;
 	padding-left: 10px;
-	background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;
+	/*background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;*/
 	color: #898787;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -1398,8 +1398,8 @@ ul.flower_products li:hover .product_wrap{
 	}
 	@media all and (max-width: 480px){
 		#logo{
-		height: 160px;
-	}
+			height: 160px;
+		}
 	}
 
 	@media all and (max-width:  440px){

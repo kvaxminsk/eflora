@@ -23,8 +23,9 @@
 			<span class="zero_old_price"><?= round (($data->price * $kurs / 10000 -  ((int)($data->price * $kurs / 10000)) ) *100) ?> коп</span>
 		</div>
 		<div class="dollar_price">
-			<span class="um"> </span>
-			$<?=$data->price?>
+			<span class="um"> $</span>
+			<?=$data->price?>
+			<div class = "line"></div>
 		</div>
 		<div class="flower_discribe">
 			<p><?= $data->name ?></p>
@@ -45,6 +46,5 @@
 
 
 
-			
-			
-			
+
+

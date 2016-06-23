@@ -48,6 +48,37 @@ $this->widget('SMListView',
                     //document.write();
                     $('#show_more_item').remove();
                     $('.flower_products').append(data);
+                    changeCurrency();
+                    if(localStorage['currency']) {
+                        var currency = JSON.parse(localStorage['currency']);
+                        if(currency == 'us'){
+                            $('.header_price_icon>.backet_circle>p').text("$");
+                            $('#points').css('margin-left', '36px');
+                            $('#header_price_text_us').show();
+                            $('#header_price_text_br').hide();
+                            $('.old_price').hide();
+                            $('.new_price').hide();
+                            $('.dollar_price').show();
+                        }
+                        else {
+                            currency = 'br';
+                            localStorage['currency'] = JSON.stringify(currency);
+                            $('.header_price_icon>.backet_circle>p').text("Br");
+                            $('#points').css('margin-left', '100px');
+                            $('#header_price_text_us').hide();
+                            $('#header_price_text_br').show();
+                            $('.old_price').show();
+                            $('.new_price').show();
+                            $('.dollar_price').hide();
+                        }
+                    }
+                    else {
+                        currency = 'br';
+                        localStorage['currency'] = JSON.stringify(currency);
+                        $('#points').css('margin-left', '100px');
+                        $('#header_price_text_us').hide();
+                        $('#header_price_text_br').show();
+                    }
                 }
             });
         });

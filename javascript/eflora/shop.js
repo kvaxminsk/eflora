@@ -2,24 +2,29 @@ var lang = {
 	basketButtonText : "0",
 	inBasketButtonText : "0",
 	basketTextNull : "0",
-	basketText : "товар(ов)",
+	basketText : "",
 }
 var shopProductCount = 0;
 
 function updatePage() {
 	var shopArr = getBasketInfo();
 	var shopProductCount = 0;
-	var price = 0;
+	var price_us = 0;
+	var price_br = 0;
 	for(var key in shopArr) {
 		shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
-		price = price + parseInt(shopArr[key]['price']) * shopProductCount;
+		price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
 
 	}
 	var currency = JSON.parse(localStorage['currency'])
 	if(currency != 'us'){
 		currency = 'br';
-		price = 20100* price;
-		number_format(price, 2, ',', ' ');
+		price_br = 20100* price_us;
+		price_br = number_format(price_br, 0, ',', ' ');
+	}
+	else {
+		price_br = 20100* price_us;
+		price_br = number_format(price_br, 0, ',', ' ');
 	}
 
 
@@ -47,12 +52,14 @@ function updatePage() {
 
 	if (shopProductCount == 0) {
 		$('.baskettext').text(lang.basketTextNull);
-		$('#header_price_text').text(price);
+		$('#header_price_text_br').text(price_br);
+		$('#header_price_text_us').text(price_us);
 	}
 	else
 	{
 		$('.baskettext').text(shopProductCount + ' ' + lang.basketText);
-		$('#header_price_text').text(price);
+		$('#header_price_text_br').text(price_br);
+		$('#header_price_text_us').text(price_us);
 	}
 
 }
