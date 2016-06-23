@@ -129,7 +129,7 @@ html ,body{
 		padding: 0 ;
 		width: 100% ;
 		text-align: left;
-		padding-left: 35px;
+	/* 	padding-left: 35px; */
 		height: 70px;
 		border: 1px solid #f1727b;
 		line-height: 70px;
@@ -151,7 +151,7 @@ html ,body{
 	.catalog_logo_pic{
 		width: 240px;
 		height: 160px;
-		background: url(../../images/eflora/white_logo.png) no-repeat;
+		background: url(../../../images/eflora/white_logo.png) no-repeat;
 		display: block;
 		margin-top:30px;
 		margin-left:60px;
@@ -201,6 +201,8 @@ html ,body{
 {
 	color: #fff;
 	width: 100%;
+	display: block;
+	padding-left: 30px;
 }
 
 
@@ -246,6 +248,8 @@ html ,body{
 
 .help_list li>a{
 	width: 100%;
+	display: block;
+	padding-left: 30px;
 
 	color: #fff;
 }
@@ -466,8 +470,8 @@ sup{
 	color: #adadad;
 	font-size: 28px;
 	font-family: 'Roboto Thin', arial;
-	margin-left:5px;
-	margin-right: 5px;
+	margin-left:0px;
+	margin-right: 0px;
 }
 #unit {
 	color:#adadad;
@@ -706,7 +710,7 @@ sup{
 	width:365px;
 	height: 170px;
 	float: left;
-	background: url(../../images/eflora/footer_logo.png) no-repeat 100% 100%;
+	background: url(../../../images/eflora/footer_logo.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .footer_logo_describe{
@@ -718,6 +722,8 @@ sup{
 	font:  italic  14px/14px sans-serif;
 	font-family: 'pt-serif';
 	text-align: right;
+	width: 140px;
+	float: right;
 }
 
 .phones{
@@ -764,7 +770,7 @@ sup{
 	height: 45px;
 	background-color: red;
 	margin-top: 40px;
-	background: url(../../images/eflora/phone_icon.png) no-repeat 100% 100%;
+	background: url(../../../images/eflora/phone_icon.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .col1_wrapp{
@@ -794,13 +800,21 @@ sup{
 	height: 170px;
 	float:left;
 }
+.third_contact_column p>a:hover{
+	color: #ff8b4e;
+	transition: 0.5s;
+}
+.third_contact_column p>a:not(:hover){
+
+	transition: 0.5s;
+}
 
 .adress_icon {
 	float: left;
 	width: 45px;
 	height: 170px;
 	margin-top: -23px;
-	background: url(../../images/eflora/adress_icon.png) no-repeat 100% 100%;
+	background: url(../../../images/eflora/adress_icon.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .adress_info {
@@ -833,7 +847,7 @@ sup{
 	width: 47px;
 	height: 170px;
 	margin-top: -23px;
-	background: url(../../images/eflora/shop_icon.png) no-repeat 100% 100%;
+	background: url(../../../images/eflora/shop_icon.png) no-repeat 100% 100%;
 	background-position: center;
 }
 .third_contact_column p {
@@ -852,7 +866,7 @@ sup{
 .footer_down_part{
 	width: 100%;
 	height: 82px;
-	background: url(../../images/eflora/footer_fon.jpg) no-repeat 100% 100%;
+	background: url(../../../images/eflora/footer_fon.jpg) no-repeat 100% 100%; 
 	background-size: cover;
 	position: relative;
 }
@@ -931,7 +945,7 @@ sup{
 	margin-left: 5px;
 	width: 102px;
 	height: 26px;
-	background: url(../../images/eflora/reactive_logo.png) no-repeat 100% 100%;
+	background: url(../../../images/eflora/reactive_logo.png) no-repeat 100% 100%;
 }
 
 .up_button{
@@ -1071,7 +1085,7 @@ sup{
 		margin: 0 auto ;
 		text-decoration: none;
 		margin-top: 10px ;
-		margin-left:30px ;
+	/* 	margin-left:30px ; */
 	}
 
 	#help_close_cross{
@@ -1292,7 +1306,7 @@ sup{
 		text-align: center;
 		margin-top: 130px;
 		width: 240px;
-		background: url(../../images/eflora/triangle.png) no-repeat;
+		background: url(../../../images/eflora/triangle.png) no-repeat;
 		background-position: calc(50% + 105px) 30px;
 	}
 	
@@ -1366,7 +1380,7 @@ sup{
 	.catalog_logo_pic{
 		width: 240px;
 		height: 100px;
-		background: url(../../images/eflora/white_logo.png) no-repeat;
+		background: url(../../../images/eflora/white_logo.png) no-repeat;
 		display: block;
 
 	}
@@ -1528,7 +1542,8 @@ sup{
 		margin-left: 25px;
 		padding-right: 30px;
 	}
- }
+	 */
+}
 @media all and (max-width: 1083px){
 	.footer {
 		height: auto !important;
@@ -1718,7 +1733,7 @@ sup{
 	.catalog_logo_pic{
 		width: 123px;
 		height: 40px;
-		background: url(../../images/eflora/catalog_logo.png);
+		background: url(../../../images/eflora/catalog_logo.png);
 		display: block;
 		margin-top:20px;
 		margin-left:10px;
@@ -1857,7 +1872,7 @@ sup{
 		text-align: center;
 		margin-top: 0px;
 		width: 240px;
-		background: url(../../images/eflora/triangle.png) no-repeat;
+		background: url(../../../images/eflora/triangle.png) no-repeat;
 		background-position: 100% 30px;
 	}
 	.phone_number{

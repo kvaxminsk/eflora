@@ -197,7 +197,30 @@ class Order extends CActiveRecord
         }
         return $result;
     }
-    
+
+	public function getOrderNumberAll() {
+			$criteria=new CDbCriteria;
+			$criteria->addCondition('t.active=1');
+			$count = Order::model()->count($criteria);
+			return $count;
+	}
+	public function getOrderNumberToday() {
+		$criteria=new CDbCriteria;
+		$criteria->addCondition('t.active=1');
+		$criteria->addCondition('t.date=' . date('Y-m-d'));
+//		var_dump(Order::model()->findAll($criteria));die();
+		$count = Order::model()->count($criteria);
+		return $count;
+	}
+
+	public function getOrderNumberYesterday() {
+		$criteria=new CDbCriteria;
+		$criteria->addCondition('t.active=1');
+		$criteria->addCondition('t.date=' . date("Y-m-d", time()-(60*60*24)));
+		$count = Order::model()->count($criteria);
+		return $count;
+	}
+
     public function getShop()
     {
     	return array(

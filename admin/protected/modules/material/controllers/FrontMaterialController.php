@@ -121,6 +121,7 @@ class FrontMaterialController extends FrontController
     #страница не найдена
     public function actionError($alias, $meta)
 	{
+		$this->layout='webroot.templates.layout-error';
         $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
         
         if(empty($model)){

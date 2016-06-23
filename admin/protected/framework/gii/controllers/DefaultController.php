@@ -19,6 +19,7 @@ class DefaultController extends CController
 
 	public function actionError()
 	{
+		$this->layout='webroot.templates.layout-error';
 	    if($error=Yii::app()->errorHandler->error)
 	    {
 	    	if(Yii::app()->request->isAjaxRequest)

@@ -12,7 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="/styles/css/main_page/slider_style.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/css/select/style.css"/>
 
-
+<style>
+	.dollar_price{display:none}
+</style>
 
 
 	<script type="text/javascript" src="javascript/eflora/jquery-1.12.3.js"></script>
@@ -20,6 +22,8 @@
 
 
 	<script type="text/javascript" src="javascript/eflora/common.js"></script>
+	<script type="text/javascript" src="javascript/eflora/shop.js"></script>
+	<script type="text/javascript" src="javascript/eflora/shop-lib.js"></script>
 
 	<script type="text/javascript">
 
@@ -168,13 +172,14 @@
 			</ul>
 			<div id= "backet_wrap">
 				<div id = "header_price">
-					<p id = "header_price_text">		1 256  <span id = "zero"> 000 </span></p>
+					<p id = "header_price_text">0</p>
 				</div>
 				<div id = "header_backet">
-					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" /> <div class="backet_circle"><p> 2</p></div> </a>
+					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" />
+						<div class="backet_circle"><p class="baskettext shop-count"> 0</p></div> </a>
 				</div>
 				<div id = "header_price_symbol">
-					<p id = "symbol">Цены в   <span id ="dollar">$</span>   <span id = "delimeter">/</span>  <span id = "unit">Br</span>    						<p id = "points">   ......  </p>
+					<p id = "symbol">Цены в   <span id ="dollar">$</span>   <span id = "delimeter">/</span>  <span id = "unit">Br</span>    						<p id = "points" style="margin-left: 100px;">   ......  </p>
 				</div>
 				<div class="header_price_icon">
 					<img src="/images/eflora/header_price.png" alt="">
@@ -294,15 +299,9 @@
 				<p class = "happen_text">
 					Мы всегда доставляем свежие цветы, поскольку доставка выполняется из ближайшего салона цветов.
 				</p>
-				<ul class= "happen_count">
-					<li class="happen_number" >7160  </li>
-					<li class="happen_number" >71    </li>
-					<li class="happen_number" >5     </li>
-					<li class="happen_value">всего	 </li>
-					<li class="happen_value">вчера   </li>
-					<li class="happen_value">сегодня </li>
-					<div class= "clearfix" style="clear:both"> </div>
-				</ul>
+
+				<? $this->widget('OrderNumberBlock', array('file' => 'order_number')) ?>
+
 			</div>
 		</div>
 
@@ -349,256 +348,10 @@
 						<a class="choice_link" href="#">До 200</a>
 					</p>
 				</div>
-
 			</div>
 
 			<div class="flower_container">
 				<ul class="flower_products">
-<!--					<li class = "product">-->
-<!--						<div class="product_wrap">-->
-<!--							<div class="flower">-->
-<!--								<div class="discount">-->
-<!--									<p>-15%</p>-->
-<!--								</div>-->
-<!--								<img class ="flower_pic"  src="/images/eflora/flower1.png" alt="menu" />-->
-<!--							</div>-->
-<!--							<div class="old_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								116-->
-<!--								<div class = "line"></div>-->
-<!--								<span class="zero_old_price">000</span>-->
-<!--							</div>-->
-<!--							<div class="new_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								11-->
-<!--								<span class="zero_old_price">16 коп</span>-->
-<!--							</div>-->
-<!--							<div class="flower_discribe">-->
-<!--								<p>«25 роз РБ.»</p>-->
-<!--							</div>-->
-<!--							<div class="count_product_selector">-->
-<!--								<div class="decrement">-</div>-->
-<!--								<div class="count_product"><input type="text" value="0" maxlength="4"> </div>-->
-<!--								<div class="increment">+</div>-->
-<!--							</div>-->
-<!--							<div class="in_cart_wrap">-->
-<!--								<a href="" class="in_cart"><p> В КОРЗИНУ </p></a>-->
-<!--							</div>-->
-<!--							<div class="hover_description">-->
-<!--								<p>	Добродушная корзинка из 5 веток белой ромашковой хризатемы, 3 веток синей статицы и зелени. Диаметр готовой корзинки около 40 см</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class = "product">-->
-<!--						<div class="product_wrap">-->
-<!--							<div class="flower">-->
-<!--								<div class="discount">-->
-<!--									<p>-15%</p>-->
-<!--								</div>-->
-<!--								<img class ="flower_pic"  src="/images/eflora/flower2.png" alt="menu" />-->
-<!--							</div>-->
-<!--							<div class="old_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								116-->
-<!--								<div class = "line"></div>-->
-<!--								<span class="zero_old_price">000</span>-->
-<!--							</div>-->
-<!--							<div class="new_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								11-->
-<!--								<span class="zero_old_price">16 коп</span>-->
-<!--							</div>-->
-<!--							<div class="flower_discribe">-->
-<!--								<p>«25 роз РБ.»</p>-->
-<!--							</div>-->
-<!--							<div class="count_product_selector">-->
-<!--								<div class="decrement">-</div>-->
-<!--								<div class="count_product"><input type="text" value="0" maxlength="4"> </div>-->
-<!--								<div class="increment">+</div>-->
-<!--							</div>-->
-<!--							<div class="in_cart_wrap">-->
-<!--								<a href="" class="in_cart"><p> В КОРЗИНУ </p></a>-->
-<!--							</div>-->
-<!--							<div class="hover_description">-->
-<!--								<p>	Добродушная корзинка из 5 веток белой ромашковой хризатемы, 3 веток синей статицы и зелени. Диаметр готовой корзинки около 40 см</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class = "product">-->
-<!--						<div class="product_wrap">-->
-<!--							<div class="flower">-->
-<!--								<div class="discount">-->
-<!--									<p>-10%</p>-->
-<!--								</div>-->
-<!--								<img class ="flower_pic"  src="/images/eflora/flower3.png" alt="menu" />-->
-<!--							</div>-->
-<!--							<div class="old_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								116-->
-<!--								<div class = "line"></div>-->
-<!--								<span class="zero_old_price">000</span>-->
-<!--							</div>-->
-<!--							<div class="new_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								11-->
-<!--								<span class="zero_old_price">16 коп</span>-->
-<!--							</div>-->
-<!--							<div class="flower_discribe">-->
-<!--								<p>«Дочка родилась»</p>-->
-<!--							</div>-->
-<!--							<div class="count_product_selector">-->
-<!--								<div class="decrement">-</div>-->
-<!--								<div class="count_product"><input type="text" value="0" maxlength="4"> </div>-->
-<!--								<div class="increment">+</div>-->
-<!--							</div>-->
-<!--							<div class="in_cart_wrap">-->
-<!--								<a href="" class="in_cart"><p> В КОРЗИНУ </p></a>-->
-<!--							</div>-->
-<!--							<div class="hover_description">-->
-<!--								<p>	Добродушная корзинка из 5 веток белой ромашковой хризатемы, 3 веток синей статицы и зелени. Диаметр готовой корзинки около 40 см</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class = "product">-->
-<!--						<div class="product_wrap">-->
-<!--							<div class="flower">-->
-<!--								<div class="discount">-->
-<!--									<p>-25%</p>-->
-<!--								</div>-->
-<!--								<img class ="flower_pic"  src="/images/eflora/flower4.png" alt="menu" />-->
-<!--							</div>-->
-<!--							<div class="old_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								116-->
-<!--								<div class = "line"></div>-->
-<!--								<span class="zero_old_price">000</span>-->
-<!--							</div>-->
-<!--							<div class="new_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								11-->
-<!--								<span class="zero_old_price">16 коп</span>-->
-<!--							</div>-->
-<!--							<div class="flower_discribe">-->
-<!--								<p>«Утренний поцелуй»</p>-->
-<!--							</div>-->
-<!--							<div class="count_product_selector">-->
-<!--								<div class="decrement">-</div>-->
-<!--								<div class="count_product"><input type="text" value="0" maxlength="4"> </div>-->
-<!--								<div class="increment">+</div>-->
-<!--							</div>-->
-<!--							<div class="in_cart_wrap">-->
-<!--								<a href="" class="in_cart"><p> В КОРЗИНУ </p></a>-->
-<!--							</div>-->
-<!--							<div class="hover_description">-->
-<!--								<p>	Добродушная корзинка из 5 веток белой ромашковой хризатемы, 3 веток синей статицы и зелени. Диаметр готовой корзинки около 40 см</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class = "product">-->
-<!--						<div class="product_wrap">-->
-<!--							<div class="flower">-->
-<!--								<div class="discount">-->
-<!--									<p>-15%</p>-->
-<!--								</div>-->
-<!--								<img class ="flower_pic"  src="/images/eflora/flower5.png" alt="menu" />-->
-<!--							</div>-->
-<!--							<div class="old_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								116-->
-<!--								<div class = "line"></div>-->
-<!--								<span class="zero_old_price">000</span>-->
-<!--							</div>-->
-<!--							<div class="new_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								11-->
-<!--								<span class="zero_old_price">16 коп</span>-->
-<!--							</div>-->
-<!--							<div class="flower_discribe">-->
-<!--								<p>«Сельский мотив»</p>-->
-<!--							</div>-->
-<!--							<div class="count_product_selector">-->
-<!--								<div class="decrement">-</div>-->
-<!--								<div class="count_product"><input type="text" value="0" maxlength="4"> </div>-->
-<!--								<div class="increment">+</div>-->
-<!--							</div>-->
-<!--							<div class="in_cart_wrap">-->
-<!--								<a href="" class="in_cart"><p> В КОРЗИНУ </p></a>-->
-<!--							</div>-->
-<!--							<div class="hover_description">-->
-<!--								<p>	Добродушная корзинка из 5 веток белой ромашковой хризатемы, 3 веток синей статицы и зелени. Диаметр готовой корзинки около 40 см</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class = "product">-->
-<!--						<div class="product_wrap">-->
-<!--							<div class="flower">-->
-<!--								<div class="discount">-->
-<!--									<p>-10%</p>-->
-<!--								</div>-->
-<!--								<img class ="flower_pic"  src="/images/eflora/flower6.png" alt="menu" />-->
-<!--							</div>-->
-<!--							<div class="old_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								116-->
-<!--								<div class = "line"></div>-->
-<!--								<span class="zero_old_price">000</span>-->
-<!--							</div>-->
-<!--							<div class="new_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								11-->
-<!--								<span class="zero_old_price">16 коп</span>-->
-<!--							</div>-->
-<!--							<div class="flower_discribe">-->
-<!--								<p>«25 роз»</p>-->
-<!--							</div>-->
-<!--							<div class="count_product_selector">-->
-<!--								<div class="decrement">-</div>-->
-<!--								<div class="count_product"><input type="text" value="0" maxlength="4"> </div>-->
-<!--								<div class="increment">+</div>-->
-<!--							</div>-->
-<!--							<div class="in_cart_wrap">-->
-<!--								<a href="" class="in_cart"><p> В КОРЗИНУ </p></a>-->
-<!--							</div>-->
-<!--							<div class="hover_description">-->
-<!--								<p>	Добродушная корзинка из 5 веток белой ромашковой хризатемы, 3 веток синей статицы и зелени. Диаметр готовой корзинки около 40 см</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class = "product">-->
-<!--						<div class="product_wrap">-->
-<!--							<div class="flower">-->
-<!--								<div class="discount">-->
-<!--									<p>-10%</p>-->
-<!--								</div>-->
-<!--								<img class ="flower_pic"  src="/images/eflora/flower7.png" alt="menu" />-->
-<!--							</div>-->
-<!--							<div class="old_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								116-->
-<!--								<div class = "line"></div>-->
-<!--								<span class="zero_old_price">000</span>-->
-<!--							</div>-->
-<!--							<div class="new_price">-->
-<!--								<span class="um">BR </span>-->
-<!--								11-->
-<!--								<span class="zero_old_price">16 коп</span>-->
-<!--							</div>-->
-<!--							<div class="flower_discribe">-->
-<!--								<p>«Сиреневая вуаль»</p>-->
-<!--							</div>-->
-<!--							<div class="count_product_selector">-->
-<!--								<div class="decrement">-</div>-->
-<!--								<div class="count_product"><input type="text" value="0" maxlength="4"> </div>-->
-<!--								<div class="increment">+</div>-->
-<!--							</div>-->
-<!--							<div class="in_cart_wrap">-->
-<!--								<a href="" class="in_cart"><p> В КОРЗИНУ </p></a>-->
-<!--							</div>-->
-<!--							<div class="hover_description">-->
-<!--								<p>	Добродушная корзинка из 5 веток белой ромашковой хризатемы, 3 веток синей статицы и зелени. Диаметр готовой корзинки около 40 см</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</li>-->
 					<li class = "product" id="show_more_item">
 						<div class="download_more">
 							<div class="download_icon">

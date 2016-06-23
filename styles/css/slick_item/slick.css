@@ -208,12 +208,12 @@ width: 270px;
 
 .slick-prev{
      height: 50px;
-    background: url(../../images/eflora/btn-prev.png) no-repeat ;
+    background: url(../../../images/eflora/btn-prev.png) no-repeat ;
     background-size: cover;
 }
 .slick-next{
     height: 50px;
-    background: url(../../images/eflora/btn-next.png) no-repeat ;
+    background: url(../../../images/eflora/btn-next.png) no-repeat ;
     background-size: cover;
 }
 

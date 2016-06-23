@@ -65,6 +65,8 @@ class FrontCatalogController extends FrontController
      *  Главная страница каталога  
      **/
     public function actionIndex($alias, $meta){
+        $this->layout ='webroot.templates.layout-internal';
+
         $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
         
         parent::meta($model, $meta);
@@ -103,11 +105,11 @@ class FrontCatalogController extends FrontController
      *  страница товара  
      **/
     public function actionProduct($alias, $meta){
-        
+        $this->layout = 'webroot.templates.layout-product';
         $criteria=new CDbCriteria;
         $criteria->addCondition('t.meta_id=' . $meta->id);
 		
-        $model = Product::model()->with('brand')->find($criteria);
+        $model = Product::model()->find($criteria);
         
         if($model->category_id > 0){
             $brc_category = self::metaCategory($model->category_id);
@@ -127,8 +129,8 @@ class FrontCatalogController extends FrontController
         
         
         parent::meta($model, $meta);
-        
-        $this->render('product',array(
+
+        $this->render('product-one',array(
 	       'model' => $model,
            'meta'  => $meta,
         ));  
@@ -138,41 +140,29 @@ class FrontCatalogController extends FrontController
      *  страница категории  
      **/
     public function actionCategory($alias, $meta){
+        $this->layout = 'webroot.templates.layout-internal';
+
         $model = Category::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
-        
+//        var_dump($model->name);die();
         $brc_category = self::metaCategory($model->id);
         $brc_category = array_reverse($brc_category);
-        $this->breadcrumbs = array_merge($this->breadcrumbs, $brc_category);
-        
+
         parent::meta($model, $meta);
         
         $categories = array();
         $categories[] = $model->id;
         
-        $sub_categories = Category::getChildsId($model->id);
-        if(!empty($sub_categories))
-            $categories = array_merge($categories, $sub_categories);
-        
+
         
         $this->conditions['addInCondition'][] = array('category_id', $categories);
         
         list($products, $pages) = $this->getProducts();
         
-        $criteria = new CDbCriteria;        
-        $criteria->addCondition('t.active=1');
-		$criteria->addCondition('t.parent_id=' . $model->id);
-		$criteria->order = "t.order ASC, t.name ASC";
-        $criteria->with = 'metatag';
-		
-		$subcategories = Category::model()->findAll($criteria);
-                        
+
         $this->render('category',array(
-	       'model'             => $model,
-           'meta'              => $meta,
            'products'          => $products,
            'pages'             => $pages,
-           'subcategories'     => $subcategories
-        ));  
+        ));
     }
     
     public function actionTop($alias, $meta){
@@ -344,6 +334,7 @@ class FrontCatalogController extends FrontController
     }
 
     public function actionSearch($alias, $meta){
+
         $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
                 
         parent::meta($model, $meta);       
@@ -385,10 +376,13 @@ class FrontCatalogController extends FrontController
     }
     
     public function getProducts($group = false){
-        
+//        var_dump($this->conditions);die();
         $criteria = new CDbCriteria;
         if(!empty($this->conditions)){
             foreach($this->conditions as $name => $value){
+//                if($value[0][1][0] == 17) {
+//                    $criteria->addCondition('t.stock=1');
+//                }
                 switch ($name){
                     case 'addInCondition':
                         foreach($value as $i => $param){
@@ -403,7 +397,7 @@ class FrontCatalogController extends FrontController
                 }
             }
         }
-        
+//        $criteria->addCondition('t.stock=1');
 		$criteria->addCondition('t.active=1');
 		$criteria->order = "t.order ASC, t.name ASC";
         $criteria->with = 'metatag';
@@ -446,239 +440,7 @@ class FrontCatalogController extends FrontController
         
         return array($products, $pages);
     }
-    public function actionAjaxProducts2(){
-////        var_dump($_POST);
-////       die($_POST);
-//        if (empty($_POST))
-//        {
-//            $criteria = new CDbCriteria();
-//
-////            $count=Product::model()->count($criteria);
-////            if ($_POST['category'] && ($_POST['category'] != 17)) {
-////                $criteria->addCondition('t.category_id=\'' . $_POST['category'] . "'");
-////            }
-////            else {
-////                $criteria->addCondition('t.stock=\'1\'');
-////            }
-//            $criteria=new CDbCriteria;
-//            $criteria->addCondition('t.active=1');
-//            $count = Article::model()->count($criteria);
-//
-//            $pages=new CPagination($count);
-//            $pages->pageSize = self::PAGE;
-//            $pages->applyLimit($criteria);
-//            $pages->route = $_SERVER['REDIRECT_URL'];
-//
-//            $models = new CActiveDataProvider('Article', array(
-//                'pagination' => array(
-//                    'pageSize' => self::PAGE,
-//                    'pageVar' => 'page',
-//                ),
-//                'criteria' => $criteria,
-//            ));
-//            
-////            $models = Product::model()->findAll($criteria);
-////            $pages=new CPagination($count);
-////            $pages->pageSize = 1;
-////            $pages->applyLimit($criteria);
-////            $pages->route = $_SERVER['REDIRECT_URL'];
-////
-////            $models = new CActiveDataProvider('Product', array(
-////                'pagination' => array(
-////                    'pageSize' => self::PAGE,
-////                    'pageVar' => $_POST['pageCount']+1,
-////                ),
-////                'criteria' => $criteria,
-////            ));
-//            // элементов на страницу
-////            if ($_POST['pageCount']) {
-////                $pages->pageSize=1 * ($_POST['pageCount']+1);
-////            }
-////            else {
-////                $pages->pageSize=1;
-////            }
-////            $pages->pageSize=1;
-////            $pages->pageVar =  $_POST['pageCount']+1;
-////            $pages->applyLimit($criteria);
-//
-//            
-//
-////            foreach($models as $model) {
-////
-////            }
-////            die('fdsaf');
-//            $this->render('ajax_product', array(
-//                'models' => $models,
-//                'pages' => $pages
-//            ));
-//
-//
-//////            foreach($models as $model) {
-//////                var_dump($model->name);
-//////            }
-////
-////
-//            $html = '';
-//            $kurs = 20100;
-//            foreach($models as $model) {
-//                $html .=  ' <li class = "product">
-//						<div class="product_wrap">
-//						<div class="flower">
-//					';
-//
-//                if($model->discount > 0) {
-//                    $html .= '
-//                                <div class="discount">
-//                                    <p>-' . $model->discount . '%</p>
-//                                </div>';
-//
-//                }
-////                    die('ddd');
-//                $html .= '<img class ="flower_pic"  src="' . $model->img['medium'] . '" alt="' . $model->name . '" />
-//                            </div>
-//                                <div class="old_price">
-//                                    <span class="um">BR </span>
-//                                           ' . (int)($model->price * $kurs / 1000) . '
-//                                    <div class = "line"></div>
-//                                    <span class="zero_old_price"> '.  round (($model->price * $kurs / 1000 -  ((int)($model->price * $kurs / 1000)) ) *1000) . '</span>
-//                                </div>
-//                                <div class="new_price">
-//                                    <span class="um">BR </span>
-//                                        ' . (int)($model->price * $kurs / 1000) . '
-//                                    <span class="zero_old_price">' . round (($model->price * $kurs / 1000 -  ((int)($model->price * $kurs / 1000)) ) *10) . ' коп</span>
-//                                </div>
-//                                <div class="flower_discribe">
-//                                    <p>' . $model->name . '</p>
-//                                </div>
-//                                <div class="count_product_selector">
-//                                    <div class="decrement">-</div>
-//                                    <div class="count_product"><input type="text" value="0" maxlength="4"> </div>
-//                                    <div class="increment">+</div>
-//                                </div>
-//                                <div class="in_cart_wrap">
-//                                    <a href="" class="in_cart"><p> В КОРЗИНУ </p></a>
-//                                </div>
-//                                <div class="hover_description">
-//                                    ' . $model->content . '
-//                                </div>
-//                            </div>
-//                        </li>';
-//            }
-//            $html .= "<li class = \"product\" id=\"show_more_item\">
-//						<div class=\"download_more\">
-//							<div class=\"download_icon\">
-//								+
-//							</div>
-//                            <span >
-//								ПОКАЗАТЬ ЕЩЕ
-//							</span>
-//						</div>
-//					</li>";
-//            $html .= '<script>
-//
-//$("#show_more_item").click(function(){
-//		var pageCount = ' . ($_POST['pageCount'] + 1) . ';
-//		alert(' .  ($_POST['pageCount']+1) . ' );
-//		var category = $(this).attr(\'data-category\');
-//
-//		$.ajax({
-//			type: \'POST\',
-//			data:\'pageCount=\' + 1,
-//			url: \'/ajax-products\',
-//			success: function(data){
-//				//document.write();
-//				$(\'#show_more_item\').remove();
-//				$(\'.flower_products\').append(data);
-//			}
-//		});
-//	});
-//</script>';
-//            echo ($html);
-//            //die('ddd');
-//            //return $html;
-////            $count = Product::model()->count(/*$criteria*/);
-//////            var_dump($count);
-////            if ($_GET['page_list']) $page_count = $_GET['page_list'];
-////            else $page_count = self::PAGE;
-////
-////            if(!empty($_GET['count'])){
-////                $page_count = $_GET['count'];
-////            }
-////
-////            $pages = new CPagination($count);
-////            $pages->pageSize = $page_count;
-//////            $pages->applyLimit($criteria);
-////            $pages->route = $_SERVER['REDIRECT_URL'];
-////
-////
-////
-//////            $products = new CActiveDataProvider('Product', array(
-//////                'pagination' => array(
-//////                    'pageSize'     => 10,
-//////                    'pageVar'      => 'page',
-//////                ),
-////////                'criteria' => $criteria,
-//////            ));
-//////            foreach($products as $product) {
-//////                var_dump($product->name);
-//////            }
-////            $criteria=new CDbCriteria;
-////            $criteria->addCondition('t.meta_id=' . 11);
-////
-////            $products = new CActiveDataProvider('Product', array(
-////                'pagination' => array(
-////                    'pageSize'     => 10,
-////                    'pageVar'      => 'page',
-////                ),
-////                'criteria' => $criteria,
-////            ));
-//////            $models = Product::model()->findAll();
-////            foreach($products as $model) {
-////                var_dump($model->name);
-////            }
-////
-////            die();//p($products);
-////            return 'fadsfdsa';
-//            //return array($products, $pages);
-//        }
 
-
-        $criteria=new CDbCriteria;
-//        $criteria->addCondition('t.active=1');
-
-
-
-        $count = Article::model()->count($criteria);
-
-        $pages=new CPagination($count);
-        $pages->pageSize = self::PAGE;
-        $pages->applyLimit($criteria);
-        $pages->route = $_SERVER['REDIRECT_URL'];
-        $articles = new CActiveDataProvider('Article', array(
-            'pagination' => array(
-                'pageSize' => self::PAGE,
-                'pageVar' => 'page',
-            ),
-            'criteria' => $criteria,
-        ));
-//        $_GET['page'] = 1;
-//        $models = new CActiveDataProvider('Article', array(
-//            'pagination' => array(
-//                'pageSize' => 10,
-//                'pageVar' => 'page',
-//            ),
-//            'criteria' => $criteria,
-//        ));
-//        $_GET['page'] = 1;
-        foreach ($articles as $model) {
-            var_dump($model->name);
-        }
-        die('sdafds');
-        $this->render('ajax_product', array(
-            'models'      => $models,
-            'pages'         => $pages,
-        ));
-    }
     public function actionAjaxProducts(){
         if (!empty($_GET)) {
 //            $this->layout = '';
@@ -713,7 +475,7 @@ class FrontCatalogController extends FrontController
             $pages->applyLimit($criteria);
             $pages->route = $_SERVER['REDIRECT_URL'];
 
-            $articles = new CActiveDataProvider('Product', array(
+            $products = new CActiveDataProvider('Product', array(
                 'pagination' => array(
                     'pageSize' => 1,
                     'pageVar' => 'page',
@@ -724,7 +486,7 @@ class FrontCatalogController extends FrontController
 
 
             $this->render('ajax_product', array(
-                'articles'      => $articles,
+                'products'      => $products,
                 'pages'         => $pages,
                 'pagevar' => $pageVar,
             ));

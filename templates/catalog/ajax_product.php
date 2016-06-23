@@ -1,8 +1,8 @@
 <?
 $this->widget('SMListView',
     array(
-        'dataProvider'      => $articles,
-        'itemView'          => '_article',
+        'dataProvider'      => $products,
+        'itemView'          => '_products',
         'ajaxUpdate'        => true,
         'template'          => "{items}\n{pager}",
         'enablePagination'  => false

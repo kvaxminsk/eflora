@@ -19,10 +19,10 @@ class Category extends Back
 	public function rules()
 	{
 		return array(
-			array('name', 'required'),
+			array('name', 'required'), //
 			array('parent_id, active, order, is_main', 'numerical', 'integerOnly'=>true),
             
-			array('id, summary, content, img', 'safe'),
+			array('id, summary,title_main,description_main,content, img', 'safe'),
 		);
 	}
     
@@ -84,10 +84,13 @@ class Category extends Back
                 'id'         => 'ID',
                 'name'       => 'Название',
                 'parent_id'  => 'Родительская категория',
-                'active'     => 'Отоброжать на сайте',
-                'is_main'    => 'Отоброжать на главной',
+                'active'     => 'Отображать на сайте',
+                'title_main'     => 'название для главной страницы',
+                'description_main'     => 'Описание для главной страницы',
+                'content'     => 'Seo текст для страницы каталог',
+                'is_main'    => 'Отображать на главной',
                 'summary'    => 'Описание',
-                'content'    => 'Содержание',
+//                'content'    => 'Содержание',
                 'img'        => 'Изображение',
                 'order'      => 'Порядок'
     	);

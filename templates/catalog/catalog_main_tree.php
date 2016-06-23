@@ -17,6 +17,8 @@
 <?// endforeach; ?>
 <? $i=0;
 foreach($categories as $item): ?>
+
+<!--	--><?// var_dump($item); ?>
 	<div>
 		<?
 //		var_dump($item['img']);die('fdsaf');
@@ -39,12 +41,21 @@ foreach($categories as $item): ?>
 
 		cssEase: 'linear',
 		customPaging: function(slick,index) {
-			var title ="";
+			var title = "";
+			var rb_title = "";
+			var rb_description = "";
 			switch(index){
 			<? $i=0;
 				foreach($categories as $item): ?>
+
 				case  <?=$i++;?>:
 					title = "<?=$item['name']?>";
+					rb_title = '<?= trim($item['title_main'] ? $item['title_main']  : $item['name']) ?>';
+					rb_description = '<?= str_replace('\n', '', trim($item['description_main'] ? $item['description_main']  : $item['name'])); ?>';
+//					rb_title = "<?//= $item['title_main'] ? $item['title_main']  : $item['name'] ?>//";
+//					rb_title = "<?//=$item['title_main']?>//"+'fdsaf';
+
+//					rb_description = "<?//= $item['description_main'] ? $item['description_main']  : $item['name'] ?>//";
 					idCategory = "<?=$item['id']?>";
 
 					break;
@@ -90,14 +101,8 @@ foreach($categories as $item): ?>
 //					title = "Ритуальные"
 //					break;
 			}
-			if ( index == 0 ) {
-				return '<span data-category="' + idCategory + '" class="reason_link" > ' + title + '</span>';
+			return '<span data-category="' + idCategory  + '"class="reason_link"     data-title="' + rb_title + '  "  data-description  = "' + rb_description + '"  >' + title + '</span>';
 
-			}else{
-				return '<span data-category="' + idCategory + '" class="reason_link" > ' + title + '</span>';
-
-
-			}
 
 		}
 	});

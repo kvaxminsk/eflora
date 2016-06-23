@@ -197,7 +197,7 @@ h2.map_contact_skype{
 
 }
 .message_icon_wrap{
-	background: url(../../img/message.png) no-repeat;
+	background: url(../../images/eflora/message.png) no-repeat;
 	background-position: center;
 	width: 70px;
 	height: 70px;
@@ -213,7 +213,7 @@ h2.map_contact_skype{
 	box-shadow: 0 0 15px  rgba(234,45,63, 0.5) ; /* Параметры тени */
 }
 .map_info_wrap{
-	background: url(../../img/map_icon.png) no-repeat;
+	background: url(../../images/eflora/map_icon.png) no-repeat;
 	background-position: center;
 	width: 70px;
 	height: 70px;
@@ -240,7 +240,7 @@ cursor: pointer; */
 }
 
 .message_icon_wrap:hover{
-	 background: url(../../img/message_icon_hover.png) no-repeat;
+	 background: url(../../images/eflora/message_icon_hover.png) no-repeat;
 	 background-position: center;
 	 background-color: #fff;
 	 -webkit-transition: background 0.5s;
@@ -258,7 +258,7 @@ cursor: pointer; */
 .map_info_wrap:hover{
 	
  
-	 background: url(../../img/map_info_icon_hover.png) no-repeat;
+	 background: url(../../images/eflora/map_info_icon_hover.png) no-repeat;
 	 background-color: #ff6161;
 	 background-position: center;
 	 

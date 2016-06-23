@@ -15,9 +15,24 @@
     color: #ff7794;
     margin-bottom: 35px; 
 }
+.dollar_price >.um{
+	font:  19px/19px arial,sans-serif;
+    font-family: 'Roboto Light', arial;
+    margin-bottom: 2px;
+}
+.dollar_price >.line{
+	    border-top: 2px solid #ffb7c5;
+    width: 45px;
+    float: left;
+    position: absolute;
+    left: calc(50% - 37px);
+}
+
+
 
 .dollar_price_second{
-		text-align: center;
+	position: relative;
+		text-align: left;
 		margin: 0 auto;
 	margin-top:30px;
 	letter-spacing: 2px;
@@ -28,11 +43,23 @@
     padding-top: 10px;
     color: #ff7794;
     margin-bottom: 0px; 
+    margin-left: 90px;
+}
+.dollar_price_second >.um{
+	font:  19px/19px arial,sans-serif;
+    font-family: 'Roboto Light', arial;
+    margin-bottom: 2px;
+}
+.dollar_price_second >.line{
+	    border-top: 2px solid #ffb7c5;
+    width: 45px;
+    float: left;
+    position: absolute;
+    left: 0px;
 }
 
-
 .style_in_cart{
-	background: url(../../img/orange_cart.png) no-repeat 20px !important;
+	background: url(../../../images/eflora/orange_cart.png) no-repeat 20px !important;
 	background-color: #ff8b4e !important;;
 	transition:0.5s;
 	border: 2px solid #ff8b4e !important;;
@@ -274,7 +301,7 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 	font: 18px/15px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	width: 220px;
-	background: url(../../img/search_icon.png) no-repeat 220px;
+	background: url(../../../images/eflora/search_icon.png) no-repeat 220px;
 }
 
 
@@ -337,7 +364,7 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 	font: 14px/48px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	color: #9b9b9b;
-	background: url(img/return_icon.png) no-repeat 10px;
+	background: url(../../../images/eflora/return_icon.png) no-repeat 10px;
 	cursor: pointer;
 	line-height: 55px;
 	margin-bottom: 0px;
@@ -459,14 +486,14 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 	color: #c8c7c7;
 }
 .upper_social_icons>p:nth-child(1) {
-	background: url(../../img/upper_facebook.png) no-repeat 0px 30px;
+	background: url(../../../images/eflora/upper_facebook.png) no-repeat 0px 30px;
 }
 .upper_social_icons>p:nth-child(2) {
-	background: url(../../img/upper_twitter.png) no-repeat 0px 30px;
+	background: url(../../../images/eflora/upper_twitter.png) no-repeat 0px 30px;
 	padding-left: 30px;
 }
 .upper_social_icons>p:nth-child(3) {
-	background: url(../../img/upper_vk.png) no-repeat 0px 30px;
+	background: url(../../../images/eflora/upper_vk.png) no-repeat 0px 30px;
 	padding-left: 35px;
 	margin-right: 0px;
 }
@@ -600,7 +627,7 @@ transition: background-color 400ms linear;
 
 }
 .item_selector>.in_cart_wrap>.in_cart {
-	background: url(../../img/in_backet_icon.png) no-repeat 20px ;
+	background: url(../../../images/eflora/in_backet_icon.png) no-repeat 20px ;
 	background-color:#f35a69;
 	-moz-border-radius:30px;
 	-webkit-border-radius:30px;
@@ -1070,7 +1097,7 @@ height: 492px !important;
 		margin-top: 60px;
 		margin-bottom: 40px;
 		width:150px;
-		background: url(../../img/search_icon.png) no-repeat 150px;
+		background: url(../../../images/eflora/search_icon.png) no-repeat 150px;
 	}
 	.twitter_comment{
 		width: 240px;

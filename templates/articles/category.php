@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <? endif; ?>
-                    
-                    <div class="center-block col-xs-4 col-xs-7 <? if (!empty($cat->img['path'])): ?>col-md-8<? else: ?>col-md-12<? endif; ?>">    
+
+                    <div class="center-block col-xs-4 col-xs-7 <? if (!empty($cat->img['path'])): ?>col-md-8<? else: ?>col-md-12<? endif; ?>">
                         <h5>
                             <a class="product-name" href="<?=$cat['url'];?>" title="<?=$cat->name;?>">
                                 <span class="list-name"><?=$cat->name;?></span>
@@ -40,7 +40,7 @@
                         <? endif; ?>
                         <a href="<?=$cat['url'];?>" title="<?=$cat->name;?>">Подробнее...</a>
                     </div>
-                    
+
                 </div>
             </div>
         </li>
@@ -57,8 +57,8 @@
 </div>
 
 <ul class="product_list row list">
-    <?php 
-        $this->widget('SMListView', 
+    <?php
+        $this->widget('SMListView',
             array(
                 'dataProvider'      => $articles,
                 'itemView'          => '_article',
@@ -70,7 +70,7 @@
     ?>
 </ul>
 
-<div class="content_sortPagiBar">    
+<div class="content_sortPagiBar">
     <!-- Pagination -->
     <?php $this->widget('SMLinkPager', array('pages' => $pages, 'file' => 'pager')); ?>
     <!-- /Pagination -->

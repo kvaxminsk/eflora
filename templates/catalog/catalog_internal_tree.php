@@ -3,7 +3,7 @@
 		<ul>
 			<? $i=0;
 			foreach($categories as $item): ?>
-				<li><a href="/<?=$item['url'];?>" data-category="<?=$item['id']?>"><?=$item['name']?></a></li>
+				<li><a href="<?=$item['url'];?>" data-category="<?=$item['id']?>"><?=$item['name']?></a></li>
 			<? endforeach; ?>
 		</ul>
 	</div>

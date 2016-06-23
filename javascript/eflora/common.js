@@ -1,5 +1,53 @@
+function number_format(number, decimals, dec_point, thousands_sep) {
+    number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
+    var n = !isFinite(+number) ? 0 : +number,
+        prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+        sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+        dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+        s = '',
+        toFixedFix = function(n, prec) {
+            var k = Math.pow(10, prec);
+            return '' + (Math.round(n * k) / k)
+                    .toFixed(prec);
+        };
+    // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+    s = (prec ? toFixedFix(n, prec) : '' + Math.round(n))
+        .split('.');
+    if (s[0].length > 3) {
+        s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+    }
+    if ((s[1] || '')
+            .length < prec) {
+        s[1] = s[1] || '';
+        s[1] += new Array(prec - s[1].length + 1)
+            .join('0');
+    }
+    return s.join(dec);
+}
 $(document).ready(function () {
     /// main js
+    if(localStorage['currency']) {
+        var currency = JSON.parse(localStorage['currency'])
+        if(currency == 'us'){
+            $('.header_price_icon>.backet_circle>p').text("$");
+            $('#points').css('margin-left', '36px');
+        }
+        else {
+            currency = 'br';
+            localStorage['currency'] = JSON.stringify(currency);
+            $('.header_price_icon>.backet_circle>p').text("Br");
+            $('#points').css('margin-left', '100px');
+        }
+    }
+    else {
+        currency = 'br';
+        localStorage['currency'] = JSON.stringify(currency);
+        $('#points').css('margin-left', '100px');
+    }
+
+
+
+
 
     var window_width = $(window).width() + 17;
     var window_type;         ///  keep a type of screen default - desctop
@@ -389,6 +437,16 @@ $(document).ready(function () {
     $('.slick-dots').children('li').click(function () {
         var data = $(this).find('span').text();
         $('.left_box p ').eq(0).text(data);
+
+        var title = $(this).find('span').attr('data-title');
+        $('.right_box_title ').eq(0).text(title);
+
+        var describe = $(this).find('span').attr('data-description');
+
+
+        $('.rb_discribe ').eq(0).text(describe);
+
+
     })
 
     ///// drop_down phone number
@@ -511,12 +569,35 @@ $(document).ready(function () {
             //document.write();
             $('.flower_products').text('');
             $('.flower_products').append(data);
+
+
+            var shopArr = getBasketInfo();
+            var shopProductCount = 0;
+            var price = 0;
+            for(var key in shopArr) {
+                shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
+                //$().first().text('<p>В корзине</p>');
+                $('#count-' + shopArr[key]['id']).val(shopArr[key]['count']);
+                $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').find('p').text('В КОРЗИНЕ');
+                $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').addClass("style_in_cart");
+                price = price + parseInt(shopArr[key]['price']) * shopProductCount;
+                var currency = JSON.parse(localStorage['currency'])
+                if(currency != 'us'){
+                    currency = 'br';
+                    price = 20100* price;
+                    number_format(price, 0, ',', ' ');
+                }
+            }
+
+            $('#header_price_text').text(price);
             var currency = JSON.parse(localStorage['currency'])
             if (currency == 'us') {
                 //alert(currency);
                 $('.old_price').hide();
                 $('.new_price').hide();
                 $('.dollar_price').show();
+
+
 
             }
             else if (currency == 'br') {
@@ -1099,14 +1180,58 @@ $(document).ready(function () {
         if ($('.header_price_icon>.backet_circle>p').text() == "$") {
             $('.header_price_icon>.backet_circle>p').text("Br");
             $('#points').css('margin-left', '100px');
+
+            $('.dollar_price').hide();
+            $('.old_price').show();
+            $('.new_price').show();
+            var currency = 'br';
+            localStorage['currency'] = JSON.stringify(currency);
             return;
         }
         if ($('.header_price_icon>.backet_circle>p').text() == "Br") {
             $('#points').css('margin-left', '36px');
             $('.header_price_icon>.backet_circle>p').text("$");
+
+            $('.dollar_price').show();
+            $('.old_price').hide();
+            $('.new_price').hide();
+            var currency = 'us';
+            localStorage['currency'] = JSON.stringify(currency);
             return;
         }
     });
+
+    $('.choice_link').eq(0).click(function(){
+
+        $(this).parent().find('img').show();
+        var atr = $(this).parent().find('.popular').attr('src');
+
+        if (atr == 'img/select_icon.png'){
+            atr='img/select_icon1.png';
+            $(this).parent().find('.popular').attr('src', atr);
+        }
+        else{
+            atr='img/select_icon.png';
+            $(this).parent().find('.popular').attr('src', atr);
+        }
+
+
+    })
+    $('.choice_link').eq(1).click(function(){
+        $(this).parent().find('.price_link').show();
+        var atr = $(this).parent().find('.price_link').attr('src');
+
+        if (atr == 'img/select_icon.png'){
+            atr='img/select_icon1.png';
+            $(this).parent().find('.price_link').attr('src', atr);
+        }
+        else{
+            atr='img/select_icon.png';
+            $(this).parent().find(".price_link").attr('src', atr);
+        }
+    })
+
+
 
 
 });

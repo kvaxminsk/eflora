@@ -83,7 +83,7 @@ class ArticleCategory extends Back
                 'id'         => 'ID',
                 'name'       => 'Название ',
                 'parent_id'  => 'Родитель',
-                'active'     => 'Отоброжать',
+                'active'     => 'Отображать',
                 'is_main'    => 'На главную',
                 'order'      => 'Порядок',
                 'summary'    => 'Описание',

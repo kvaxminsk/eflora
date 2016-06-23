@@ -236,7 +236,7 @@ a.submit {
 	padding: 15px 40px;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
-	/*border-radius;*/
+	border-radius;
 	}
 	
 #donate p {

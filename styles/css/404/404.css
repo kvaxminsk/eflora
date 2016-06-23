@@ -75,7 +75,7 @@
 .main_foto{
 	overflow: hidden;
 	height: 886px;
-	background: url(../../img/404.png) no-repeat;
+	background: url(../../images/eflora/404.png) no-repeat;
 	background-size: 1920px 900px;
 	background-position: center;
 
@@ -153,7 +153,7 @@
 	border: 1px solid #dcdbdb;
 	border-radius: 20px;
 	width: 220px;
-	background: url(../../img/search_icon.png) no-repeat 220px;
+	background: url(../../images/eflora/search_icon.png) no-repeat 220px;
 	padding-left: 20px;
 	height: 42px;
 	background-color: #fff;
@@ -199,7 +199,7 @@
 	.main_foto{
 		overflow: hidden;
 		height: 886px;
-		background: url(../../img/404.png) no-repeat;
+		background: url(../../images/eflora/404.png) no-repeat;
 		background-size: 1630px ;
 		background-position: top center;
 
@@ -255,7 +255,7 @@
 	.main_foto{
 		overflow: hidden;
 		height: 886px;
-		background: url(../../img/404.png) no-repeat;
+		background: url(../../images/eflora/404.png) no-repeat;
 		background-size: 1200px 610px;
 		background-position: center top;
 
@@ -327,7 +327,7 @@
 	.main_foto{
 		overflow: hidden;
 		height: 886px;
-		background: url(../../img/404.png) no-repeat;
+		background: url(../../images/eflora/404.png) no-repeat;
 		background-size: 1000px 520px;
 		background-position: center top;
 

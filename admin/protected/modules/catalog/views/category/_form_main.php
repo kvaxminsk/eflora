@@ -12,7 +12,9 @@
                 array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'order'),
                 //array('type' => FormElems::ELEM_TYPE_CHECKBOX, 'attribute' => 'is_main'),
     			array('type' => FormElems::ELEM_TYPE_CHECKBOX, 'attribute' => 'active'),
-                
+				array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'title_main', 'placeholder' => 'Название для главной'),
+				array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'description_main', 'placeholder' => 'Описание для главной'),
+				array('type' => FormElems::ELEM_TYPE_TEXTEDIT, 'attribute' => 'content', 'placeholder' => 'Описание для страницы в каталоге'),
     		)
     ));
     

@@ -19,8 +19,9 @@ class SMListView extends CBaseListView
 	 * </ul>
 	 */
      
-    public $emptyText = 'На данной странице ничего не найдено'; 
-    
+//    public $emptyText = 'На данной странице ничего не найдено';
+    public $emptyText = '';
+
 	public $itemView;
 	/**
 	 * @var string the HTML code to be displayed between any two consecutive items.

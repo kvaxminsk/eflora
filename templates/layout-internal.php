@@ -10,11 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="/styles/css/main_style.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/css/text_page/text_page.css"/>
 
-	<script type="text/javascript" src="javascript/eflora/jquery-1.12.3.js"></script>
-	<script type="text/javascript" src="javascript/eflora/slick/slick.min.js"></script>
+	<script type="text/javascript" src="/javascript/eflora/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="/javascript/eflora/slick/slick.min.js"></script>
 
 
-	<script type="text/javascript" src="javascript/eflora/common.js"></script>
+	<script type="text/javascript" src="/javascript/eflora/common.js"></script>
 
 
 	<link rel="stylesheet" type="text/css" href="/styles/css/slick/slick.css"/>
@@ -125,13 +125,13 @@
 			</ul>
 			<div id= "backet_wrap">
 				<div id = "header_price">
-					<p id = "header_price_text">		1 256  <span id = "zero"> 000 </span></p>
+					<p id = "header_price_text">0></p>
 				</div>
 				<div id = "header_backet">
-					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" /> <div class="backet_circle"><p>2</p></div> </a>
+					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" /> <div class="backet_circle"><p>0</p></div> </a>
 				</div>
 				<div id = "header_price_symbol">
-					<p id = "symbol">Цены в   <span id ="dollar">$</span>   <span id = "delimeter">/</span>  <span id = "unit">Br</span>    						<p id = "points">   .....  </p>
+					<p id = "symbol">Цены в   <span id ="dollar">$</span>   <span id = "delimeter">/</span>  <span id = "unit">Br</span>    						<p id = "points" style="margin-left: 100px;">   .....  </p>
 				</div>
 				<div class="header_price_icon">
 					<img src="/images/eflora/header_price.png" alt="">
