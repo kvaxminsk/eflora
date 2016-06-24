@@ -30,7 +30,7 @@
 		<a class="choice_link" href="#">Цене</a><img class="orrange_arrow  price_link" src="">
 		<a class="choice_link" href="#">До 50</a>
 		<a class="choice_link" href="#">До 100</a>
-		<a class="choice_link" href="#">До 200</a>
+		<a class="choice_link" href="#">До 2000</a>
 	</p>
 </div>
 </div>
