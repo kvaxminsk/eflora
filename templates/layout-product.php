@@ -198,7 +198,7 @@
             <div class = "col3_wrapp">
                 <div class="shop_icon">
                 </div>
-                <p><a href="">Наши магазины</a></p>
+                <p> <a href="/shops">Наши магазины </a> </p>
             </div>
 
         </div>

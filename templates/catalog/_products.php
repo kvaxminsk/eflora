@@ -36,7 +36,8 @@
 			<div class="increment">+</div>
 		</div>
 		<div class="in_cart_wrap" >
-			<a href="" class="in_cart addtobasket addtocart" data-productid="<?=$data->id?>" data-productprice="<?=$data->price?>"><p> В КОРЗИНУ </p></a>
+			<a href="" class="in_cart addtobasket addtocart" data-productid="<?=$data->id?>" data-productprice="<?=$data->price?>">
+				<p> В КОРЗИНУ </p></a>
 		</div>
 		<div class="hover_description">
 			<?= $data->content ?>

@@ -45,7 +45,8 @@ class FrontShopController extends FrontController
     
 	public function actionIndex($alias, $meta)
     {
-        
+        $this->layout='webroot.templates.layout-basket';
+//        die('fdsf');
         $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
     
         if (!empty($_GET['result']))
@@ -143,10 +144,10 @@ class FrontShopController extends FrontController
         
         parent::meta($model, $meta);
         
-        /*$this->render('index',array(
+        $this->render('index',array(
            'model' => $model,
            'meta'  => $meta
-        ));  */
+        ));
     }
     
     public function getViewPath() {

@@ -68,7 +68,7 @@ class FrontCatalogController extends FrontController
         $this->layout ='webroot.templates.layout-internal';
 
         $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
-        
+
         parent::meta($model, $meta);
         
         list($products, $pages) = $this->getProducts();
@@ -94,7 +94,11 @@ class FrontCatalogController extends FrontController
         $criteria->addCondition('t.meta_id=' . $meta->id);
 		
         $model = Product::model()->find($criteria);
-        
+////        var_dump($model->img);die();
+//        $model->img = $model->img;
+//        $model->views +=1;
+//        $model->update(['views','img']);
+//        $model = Product::model()->find($criteria);
         if($model->category_id > 0){
             $brc_category = self::metaCategory($model->category_id);
             $brc_category = array_reverse($brc_category);
@@ -466,13 +470,25 @@ class FrontCatalogController extends FrontController
                 ),
                 'criteria' => $criteria,
             ));
-
-
-
             $this->render('ajax_product', array(
                 'products'      => $products,
                 'pages'         => $pages,
                 'pagevar' => $pageVar,
+            ));
+        }
+
+    }
+    public function actionAjaxProductCart(){
+        if (!empty($_GET)) {
+            $this->layout = 'webroot.templates.layoutAjax';
+            $criteria=new CDbCriteria;
+
+//            $criteria=new CDbCriteria;
+//            $criteria->addCondition('t.id=' . (int)$_GET['id']);
+
+            $product = Product::model()->findByPk((int)$_GET['id']);
+            $this->render('ajax_product_cart', array(
+                'product'      => $product,
             ));
         }
 
