@@ -717,6 +717,7 @@ $(document).ready(function () {
         //alert(category);
         //$(this).text('Загрузка');
         //setTimeout(1000);alert('fff');
+
         $.ajax({
             type: 'get',
             data: 'category=' + category,
@@ -870,14 +871,15 @@ $(document).ready(function () {
 
 
     });
-/// Это что такое???
-    //$('.dropdown>li').click(function(){
-    //	if (val == "По цене:"){
-    //
-    //		return
-    //	}
-    //	$(this).parent().parent().find('span').text($(this).text());
-    //});
+/// Это что такое???    а это выбор стран!!!!
+    $('.wrapper-dropdown-2>.dropdown>li').click(function(){
+
+ /*   	/!*if (val == "По цене:"){
+      		return
+    	}*!/
+        alert($(this).text());*/
+    	$(this).parent().parent().find('span').text($(this).text());
+    });
 
 
     $(".count_product").children("input").keydown(function (event) {

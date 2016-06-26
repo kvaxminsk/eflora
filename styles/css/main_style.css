@@ -276,9 +276,10 @@ html ,body{
 .help_list li>a{
 	width: 100%;
 	display: block;
-	padding-left: 30px;
+	/*padding-left: 30px;*/
 
 	color: #fff;
+
 }
 
 
@@ -1745,8 +1746,7 @@ sup{
 	ul.help_list a{
 		margin: 0 auto !important;
 		text-decoration: none;
-		margin-top: 10px !important;
-		margin-left:30px !important;
+	    margin-left:30px !important;
 	}
 
 	#help_close_cross{
@@ -1974,6 +1974,9 @@ sup{
 		top: 80px;
 		height: 80px;
 	}
+	.mobile_filter{
+		right: 10px;
+	}
 	ul.list {
 		width: calc(100% - 80px) !important;
 	}
@@ -1986,13 +1989,13 @@ sup{
 		width: 100% !important;
 	}
 	.wrapper-dropdown-5{
-		width:170px;
+		width:170px !important;
 	}
 	.wrapper-dropdown-5.active .dropdown{
-		width:185px;
+		width:185px !important;
 	}
 	.wrapper-dropdown-5 .dropdown{
-		width: 185px;
+		width: 185px !important;
 	}
 	.mobile_filter{
 		right: 10px;
