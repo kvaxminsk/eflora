@@ -438,6 +438,7 @@ html ,body{
 	width: 115px;
 	margin: 0 auto;
 	margin-top: 20px;
+	text-align: center;
 }
 /* Font need include Roboto Regular  */
 #zero {
@@ -1111,7 +1112,7 @@ sup{
 	ul.help_list a{
 		margin: 0 auto ;
 		text-decoration: none;
-		margin-top: 10px ;
+		/*margin-top: 10px ;*/
 	/* 	margin-left:30px ; */
 	}
 
@@ -1305,7 +1306,7 @@ sup{
 	#logo_text_mobile{
 		display: block;
 		text-align: center;
-		margin-top: -50px;
+		margin-top: 0px;
 	}
 	#first_description{
 		text-align: center;
@@ -1494,8 +1495,9 @@ sup{
 		font-size: 27px;
 	}
 	#second_description{
-		margin-top: -40px;
+
 	margin: 0 auto;
+		margin-top: -40px;
 		font-size: 14px;
 
 	}
@@ -1508,7 +1510,7 @@ sup{
 	}
 	#third_description{
 		margin:0;
-		margin-top: 40px !important;
+		margin-top: -40px !important;
 	/* 	margin-right: 10px;
 	margin-left:110px; */
 		text-align: center;
@@ -1533,8 +1535,12 @@ sup{
 		color:#fd904f !important;
 	}
 
-
-
+	.phone_number{
+		height: 80px;
+	}
+	.description{
+		margin-top:50px;
+	}
 
 }
 @media all and (max-width: 1220px){
@@ -1558,7 +1564,7 @@ sup{
 	}
 	
 	#logo_text_mobile{
-		margin-top: -25px;
+		margin-top: 10px;
 		font-size: 20px;
 	}
 	.first_phone{
@@ -1603,7 +1609,7 @@ sup{
 @media all and (max-width: 1000px){
 
 	#logo_text_mobile{
-		margin-top: -40px;
+		margin-top: 0px;
 	}
 	#first_description{
 		margin-top: -155px;
@@ -1823,8 +1829,9 @@ sup{
 		width: 240px;
 		height: 90px;
 		text-align: center;
-		line-height: 90px;
+		line-height: 27px;
 		color: #9e4d69;
+		margin-top:20px;
 	}
 
 	#symbol{
@@ -1858,10 +1865,10 @@ sup{
 		width: 100%;
 	}
 	#first_description{
-		margin-top:-160px;
+		margin-top:-155px;
 	}
 	#logo_text_mobile{
-		margin-top: -30px;
+		margin-top: -20px;
 	}
 
 
@@ -1978,7 +1985,18 @@ sup{
 	ul.list{
 		width: 100% !important;
 	}
-
+	.wrapper-dropdown-5{
+		width:170px;
+	}
+	.wrapper-dropdown-5.active .dropdown{
+		width:185px;
+	}
+	.wrapper-dropdown-5 .dropdown{
+		width: 185px;
+	}
+	.mobile_filter{
+		right: 10px;
+	}
 }
 @media all and (max-width: 640px){
 	.social_icons{
