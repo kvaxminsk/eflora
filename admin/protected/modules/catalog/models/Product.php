@@ -14,6 +14,7 @@ class Product extends Back
         'is_new'        =>  'Новинки',
         'is_pop'        =>  'Популярные',
         'is_sale'       =>  'Распродажа',
+        'views'       =>  'Количество просмотров',
     );
     
     
@@ -31,7 +32,7 @@ class Product extends Back
 	{
        return array(
 			array('name', 'required'),
-			array('category_id, brand_id, active,stock,gift, meta_id, is_top, is_new, order, is_main, is_sale, is_pop, count', 'numerical', 'integerOnly'=>true),
+			array('category_id, brand_id, active,stock,gift, meta_id, is_top, is_new, order, is_main, is_sale, is_pop, count, views', 'numerical', 'integerOnly'=>true),
             
 			array('id, summary, content, img, articul, price, discount, specifications, desc, price_1c, price_xls, 1c_id, img_size, articul, brand_model, manufacturer, original', 'safe')
 		);
@@ -189,6 +190,9 @@ class Product extends Back
 
         $this->url = $url;
     }
-    
+    public function saveViews($views) {
+		$this->views = $views;
+		$this->save();
+	}
 	
 }

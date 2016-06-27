@@ -5,7 +5,7 @@ var lang = {
 	basketText : "",
 }
 var shopProductCount = 0;
-
+var kurs = 20100;
 function updatePage() {
 	var shopArr = getBasketInfo();
 	var shopProductCount = 0;
@@ -14,7 +14,6 @@ function updatePage() {
 	for(var key in shopArr) {
 		shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
 		price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
-
 	}
 	var currency = JSON.parse(localStorage['currency'])
 	if(currency != 'us'){
@@ -39,25 +38,30 @@ function updatePage() {
 		}
 	});
 
-	//for(var key in shopArr) {
-	//	shopProductCount = shopProductCount + shopArr[key]['count']
-	//}
-	//for (var i = 0; i <= shopArr.length - 1; i++) {
-	//	var shop1 = shopArr[i];
-	//	//for(var key in shop1)
-	//	alert(shop1[i]['count']);
-	//	console.log(shop1[i]['count']);
-	//	//$count =  JSON.parse(localStorage['shop_product_' + shopArr[i]])['count'];
-	//}
-
 	if (shopProductCount == 0) {
 		$('.baskettext').text(lang.basketTextNull);
 		$('#header_price_text_br').text(price_br);
+		$('#header_price_text_us').text(price_us);
+
+
+		$('#order_list_price_old').html(0);
+		$('#order_list_price_new').html(0);
+
 		$('#header_price_text_us').text(price_us);
 	}
 	else
 	{
 		$('.baskettext').text(shopProductCount + ' ' + lang.basketText);
+
+		$('#order_list_price_old').html( "<sub> " + parseInt(price_us * kurs / 1000)  + "</sub>" + "<sup>" +
+			Math.round(((price_us * kurs / 1000) -  (parseInt(price_us * kurs / 1000)))*1000) +"</sup>" );
+
+
+		$('#order_list_price_new').html( "<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
+			Math.round(((price_us * kurs / 1000) -  (parseInt(price_us * kurs / 1000)))*100) +"коп</sup>" );
+
+		$('#order_list_price_dollar').html(price_us );
+
 		$('#header_price_text_br').text(price_br);
 		$('#header_price_text_us').text(price_us);
 	}

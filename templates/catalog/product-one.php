@@ -1,4 +1,5 @@
 <?// var_dump($model->content);die();?>
+<? $kurs =20100;?>
 <div class="right_main_content">
     <div class="last_view">
         <p class="view_erlier"> <a href="">Вы просматривали</a></p>
@@ -88,53 +89,32 @@
     <p class="return_to_catalog"> <a href=""> <span>&lsaquo;</span>  Вернуться в каталог</a> </p>
     <div class="flower_slider">
         <div id ="reason_list">
-            <div class="discount_wrapp">
-                <div class="discount_symbol">
-                    <img src="/images/eflora/discount_symbol.png" alt="">
-                    <div class="discount_circle"></div>
-                </div>
-
-                <div class="discount_procent">
-                    -15%
-                </div>
-            </div>
-
-<!--            <div class="slider-for">-->
-<!--                <div>-->
-<!--                    <p  class = "first_slide" style="background: url(--><?//=$imageUrl?>/*)  no-repeat;*/
-/*                        background-position:center; background-size: 75%">*/
-<!--/*                    </p>*/-->
-<!--/*                </div>*/-->
-<!--/**/-->
-<!--/*                */--><?//// foreach($model->images as $i => $img): ?>
-<!--                    --><?//
-//                    $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
-//                    $image = image($image, 'resize', '440', false);
-//                    ?>
-<!--                    <div>-->
-<!--                        <p title="--><?//=$img->name?><!--" alt="--><?//=$img->name?><!--" style="background: url(--><?//=$image?>/*/*/*)  no-repeat;background-size:75%; background-position:center;"></p>*/*/*/
-<!--/*                   </div>*/-->
-<!--/*                */--><?//// endforeach; ?>
-<!---->
-<!--            </div>-->
-<!--            <div class="slider-nav">-->
-<!--                <div>-->
-<!--                    <p>  <img title="--><?//=$imageMain['name']?><!--" alt="--><?//=$imageMain['name']?><!--" src="--><?//=$imageUrl?><!--"></p>-->
+            <? if($model->discount > 0) {?>
+<!--                <div class="discount">-->
+<!--                    <p>---><?//= $model->discount ?><!--%</p>-->
 <!--                </div>-->
-<!--                --><?// foreach($model->images as $i => $img): ?>
-<!--                    --><?//
-//                    $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
-//                    $image = image($image, 'resize', '440', false);
-//                    ?>
-<!--                    <div>-->
-<!--                        <p>  <img title="--><?//=$img->name?><!--" alt="--><?//=$img->name?><!--"src="--><?//=$image?><!--" alt=""></p>-->
-<!--                    </div>-->
-<!--                --><?// endforeach; ?>
-<!---->
-<!--            </div>-->
+                <div class="discount_wrapp">
+                    <div class="discount_symbol">
+                        <img src="/images/eflora/discount_symbol.png" alt="">
+                        <div class="discount_circle"></div>
+                    </div>
+
+                    <div class="discount_procent">
+                        -<?= $model->discount ?>%
+                    </div>
+                </div>
+            <?}?>
+
+
+
             <?
+//            var_dump(isset($model->img));
+//            die();
             $imageMain = (isset($model->img['path'])) ? $model->img : '/images/no-photo.gif';
+//            var_dump($imageMain);
+//            die();
             $imageUrl = image($imageMain['path'], 'resize', '440', false);
+//            $imageUrl =$imageMain;
             ?>
             <div class="slider-for">
                 <div>
@@ -211,12 +191,13 @@
         <div class="item_selector" >
             <div class="count_product_selector">
                 <div class="decrement">-</div>
-                <div class="count_product"><input type="text" value="0" maxlength="5"> </div>
+                <div class="count_product"><input id="count-<?=$model->id?>"  type="text" value="0" maxlength="4"> </div>
                 <div class="increment">+</div>
             </div>
             <div class="in_cart_wrap">
-                <a href="" class="in_cart">
-                    <p> В КОРЗИНУ </p></a>
+                <a href="" class="in_cart addtobasket addtocart" data-productid="<?=$model->id?>" data-productprice="<?=$model->price?>">
+                    <p> В КОРЗИНУ </p>
+                </a>
             </div>
             <p class="in_cart_count" >В корзине  </p>
         </div>

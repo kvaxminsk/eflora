@@ -93,7 +93,7 @@ ul.order_list>li>img{
 	margin-right: 10px;
 	float: left;
 	height: auto;
-	-moz-user-select: none; 
+	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
@@ -102,7 +102,7 @@ ul.order_list>li>img{
 
 ul.order_list>li>.order_list_describe>p.order_list_title{
 	margin-top:40px;
-	
+
 }
 .order_list_describe
 {
@@ -130,7 +130,7 @@ p.order_list_title>a{
 .order_list_price_old>sup{
 	font-family: 'Roboto Regular', arial;
 	font-size: 14px;
-}	
+}
 .order_list_describe>hr,.order_list_total_describe>hr{
 	width: 70px;
 	margin-left: 0;
@@ -156,7 +156,7 @@ p.order_list_title>a{
 	font-family: 'Roboto Regular', arial;
 	color: #b7b6b6;
 
-}	
+}
 .order_list_count_wrapper
 {
 	width: calc(100% - 285px);
@@ -174,13 +174,13 @@ p.order_list_title>a{
 	position: relative;
 }
 .order_list>li:hover .order_count_increment{
-	background: url(../../images/eflora/inc.png) no-repeat;
+	background: url(../../../images/eflora/inc.png) no-repeat;
 	background-position: center;
 	background-color: #dfdfdf;
 	transition-duration:0.5s;
 }
 .order_list>li:hover .order_count_decrement{
-	background: url(../../images/eflora/dec.png) no-repeat;
+	background: url(../../../images/eflora/dec.png) no-repeat;
 	background-position: center;
 	background-color: #dfdfdf;
 	transition-duration:0.5s;
@@ -212,7 +212,7 @@ p.order_list_title>a{
 	border-radius: 50%;
 	font-size: 21px;
 	text-align: center;
-	background: url(../../images/eflora/grey_inc.png) no-repeat;
+	background: url(../../../images/eflora/grey_inc.png) no-repeat;
 	background-position: center;
 
 
@@ -231,7 +231,7 @@ ul.order_list>li:last-of-type{
 }
 
 .order_count_increment>p{
-	
+
 	margin-top:10px;
 	padding-left: 20px;
 	position: relative;
@@ -239,7 +239,7 @@ ul.order_list>li:last-of-type{
 
 }
 .order_count_decrement>p{
-	
+
 	margin-top:12px;
 	padding-left: 20px;
 	position: relative;
@@ -259,9 +259,9 @@ ul.order_list>li:last-of-type{
 	color: #fff;
 	border-radius: 50%;
 	font-size: 21px;
-	background: url(../../images/eflora/grey_dec.png) no-repeat;
+	background: url(../../../images/eflora/grey_dec.png) no-repeat;
 	background-position: center;
-	
+
 }
 .order_list_count_symbols>input{
 	margin-top:20px;
@@ -304,7 +304,7 @@ ul.order_list>li:last-of-type{
 	color: #b7b6b6;
 	position: relative;
 	top:5px;
-	
+
 }
 .order_list_total_describe
 {
@@ -359,7 +359,7 @@ ul.cart1_item>li>img{
 }
 .cart1_item>li>span.active{
 	border: none;
-	background: url(../../images/eflora/check.png) no-repeat;
+	background: url(../../../images/eflora/check.png) no-repeat;
 	background-position: center;
 	background-color: #ff864f;
 }
@@ -367,15 +367,29 @@ ul.cart1_item>li>img{
 .cart1_checkbox{
 	display: none;
 }
-ul.cart1_item>li>p
-{
+.cart1_name {
 	text-align: center;
 	color: #707b82;
 	font:  18px/18px arial,sans-serif ;
 	font-family: 'Roboto Light', arial;
 	margin-top:5px;
 }
-ul.cart1_item>li>p.cart1_item_old_price{
+.cart1_item_old_price hr {
+	width: 74px;
+	margin-left:calc(50% - 79px);
+	border:1px solid #ffb7c5;
+	margin-top:-5px;
+	margin-bottom: 5px;
+}
+/*ul.cart1_item>li*/
+/*{*/
+	/*text-align: center;*/
+	/*color: #707b82;*/
+	/*font:  18px/18px arial,sans-serif ;*/
+	/*font-family: 'Roboto Light', arial;*/
+	/*margin-top:5px;*/
+/*}*/
+ul.cart1_item>li>.cart1_item_old_price{
 	text-align: center;
 	margin-top:25px;
 	color: #ff768f;
@@ -383,12 +397,12 @@ ul.cart1_item>li>p.cart1_item_old_price{
 	font-family: 'Roboto Light', arial;
 
 }
-ul.cart1_item>li>p.cart1_item_old_price>sub{
+ul.cart1_item>li>.cart1_item_old_price>span{
 	font-size: 24px;
 	position: relative;
-	top:-9px;
+	top:0px;
 }
-ul.cart1_item>li>p.cart1_item_old_price>sup{
+ul.cart1_item>li>.cart1_item_old_price>sup{
 	font-size: 24px;
 	color: #ff768f;
 	font-family: 'Roboto Light', arial;
@@ -397,11 +411,11 @@ ul.cart1_item>li>hr{
 	width: 74px;
 	margin-left:calc(50% - 79px);
 	border:1px solid #ffb7c5;
-	margin-top:-15px;
+	margin-top:-5px;
 	margin-bottom: 5px;
 }
 
-ul.cart1_item>li>p.cart1_item_new_price{
+ul.cart1_item>li>.cart1_item_new_price{
 	text-align: center;
 	margin-top:0px;
 	color: #a8a8a8;
@@ -410,17 +424,17 @@ ul.cart1_item>li>p.cart1_item_new_price{
 	margin-left: 7px;
 	margin-bottom: 40px;
 }
-ul.cart1_item>li>p.cart1_item_new_price>sub{
+ul.cart1_item>li>.cart1_item_new_price>span{
 	font-size: 24px;
 	position: relative;
 	top:-9px;
 }
-ul.cart1_item>li>p.cart1_item_new_price>sup{
+ul.cart1_item>li>.cart1_item_new_price>sup{
 	font-size: 24px;
 	color: #a8a8a8;
 	font-family: 'Roboto Regular', arial;
 	position: relative;
-	left:-10px;
+	left:5px;
 }
 
 .crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
@@ -432,7 +446,7 @@ ul.cart1_item>li>p.cart1_item_new_price>sup{
 	margin-left: 30px;
 }
 .now_button{
-	background: url(../../images/eflora/button_now.png) no-repeat;
+	background: url(../../../images/eflora/button_now.png) no-repeat;
 	background-position:25px 10px;
 	background-color: #fff;
 	width: 180px;
@@ -488,7 +502,7 @@ ul.cart1_item>li>p.cart1_item_new_price>sup{
 
 
 .tomorrow_button_active{
-	background: url(../../images/eflora/button_now.png) no-repeat;
+	background: url(../../../images/eflora/button_now.png) no-repeat;
 	background-position: 25px 10px;
 	background-color: #fff;
 	border-radius: 25px;
@@ -518,7 +532,7 @@ ul.cart1_item>li>p.cart1_item_new_price>sup{
 	font-family: 'Roboto Light', arial ;
 	color: #707b82;
 	position: relative;
-	
+
 	left: 0px;
 }
 #datepicker{
@@ -537,10 +551,10 @@ ul.cart1_item>li>p.cart1_item_new_price>sup{
 }
 .fake_datepicker_title{
 	display: inline-block;
-	width: 125px;
+	width: 120px;
 	height: 40px;
 	border-radius: 25px;
-	background: url(../../images/eflora/datepicker_icon.png) no-repeat;
+	background: url(../../../images/eflora/datepicker_icon.png) no-repeat;
 	background-position: 20px 6px;
 	background-color: #ff864f;
 	border: none;
@@ -567,7 +581,7 @@ ul.cart1_item>li>p.cart1_item_new_price>sup{
 	width: 190px;
 	display: inline-block;
 	position: relative;
-	
+
 }
 .date_delivery_wrapp{
 	padding-bottom: 90px;
@@ -645,7 +659,7 @@ input.cart1_email_input{
 	transition-duration:1s;
 }
 .del_phone:not(:hover){
-	
+
 	transition-duration:1s;
 }
 
@@ -683,7 +697,7 @@ input.cart1_address_input{
 	margin-bottom: 90px;
 }
 .cart1_right_contact_block>.add_input_phone{
-	
+
 	color: #c0bfbe;
 	background-color: #f0e4c3;
 }
@@ -694,7 +708,7 @@ input.cart1_address_input{
 }
 
 .cart1_note_block>h1
-{	
+{
 	margin:0;
 	text-align: center;
 	font: 24px/54px arial,sans-serif ;
@@ -914,7 +928,7 @@ p.interval{
 .tab2_text_note{
 	background-color: #f6f5f5;
 	padding-bottom: 65px;
-	
+
 }
 .tab2_text_note>p{
 	font:17px/26px arial,sans-serif ;
@@ -1022,7 +1036,7 @@ ul.tabs_list>li.active{
 	margin-top:-70px;
 }
 .cart1_right_contact_block>.del_phone{
-	
+
 	color: #c0bfbe;
 	background-color: #f0e4c3;
 }
@@ -1033,7 +1047,7 @@ ul.tabs_list>li.active{
 
 }
 .delete_order{
-	background: url(../../images/eflora/grey_cross.png) no-repeat;
+	background: url(../../../images/eflora/grey_cross.png) no-repeat;
 	background-position: center;
 	height: 100%;
 	width: 30px;
@@ -1048,7 +1062,7 @@ ul.tabs_list>li.active{
 	font-size: 18px;
 }
 .delete_order:hover{
-	background: url(../../images/eflora/white_cross.png) no-repeat;
+	background: url(../../../images/eflora/white_cross.png) no-repeat;
 	background-position:center;
 	color: #fff;
 	background-color: #ff6267;
@@ -1085,7 +1099,7 @@ textarea::-webkit-input-placeholder
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-textarea:-moz-placeholder       
+textarea:-moz-placeholder
 {
 	color:#868484;
 	font-weight: 100;
@@ -1093,14 +1107,14 @@ textarea:-moz-placeholder
 	font-family: 'Roboto Regular', arial;
 }
 
-textarea::-moz-placeholder    
+textarea::-moz-placeholder
 {
 	color:#868484;
 	font-weight: 100;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-textarea:-ms-input-placeholder    
+textarea:-ms-input-placeholder
 {
 	color:#868484;
 	font: 15px/30px arial,sans-serif;
@@ -1120,7 +1134,7 @@ textarea:-ms-input-placeholder
 	vertical-align: middle;
 	padding-top: 10px;
 	color: #ff7794;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 .dollar_price_cart2{
 	text-align: center;
@@ -1133,7 +1147,7 @@ textarea:-ms-input-placeholder
 	vertical-align: middle;
 	padding-top: 10px;
 	color: #ff7794;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 .dollar_price_cart >.um{
 	font:  19px/19px arial,sans-serif;
@@ -1176,7 +1190,7 @@ textarea:-ms-input-placeholder
 	transition:0.5s;
 	color: #ff8b4e !important;
 
-	
+
 }
 ul.order_list>li.delete{
 
@@ -1221,7 +1235,14 @@ ul.order_list>li.delete{
 		margin: 0 auto;
 	}
 
-}   
+}
+@media only screen and (max-width: 1280px) {
+	.description{
+		/*margin-top:-30px;*/
+	}
+}
+
+
 @media only screen and (max-width: 1184px){
 	ul.cart1_item{
 		justify-content: space-around;
@@ -1329,7 +1350,7 @@ ul.order_list>li.delete{
 	.order_list_describe{
 		clear: left;
 		width: 100%;
-	} 
+	}
 	ul.order_list>li>.order_list_describe>p.order_list_title{
 		text-align: center;
 
@@ -1360,7 +1381,7 @@ ul.order_list>li.delete{
 		width: 100%;
 	}
 	.order_count_increment{
-		
+
 	}
 	.order_list_count_symbols>input{
 		left:0;
@@ -1382,14 +1403,14 @@ height: 30px;
 line-height: 30px;
 width: 100%;
 margin-bottom: 0px; */
-background: url(../../images/eflora/grey_cross.png) no-repeat;
+background: url(../../../images/eflora/grey_cross.png) no-repeat;
 background-position: 9px 88px;
 top:80px;
 }
 
 .delete_order:hover{
 
-	background: url(../../images/eflora/white_cross.png) no-repeat;
+	background: url(../../../images/eflora/white_cross.png) no-repeat;
 	background-color: #ff6267;
 	background-position: 9px 88px;
 
@@ -1409,8 +1430,8 @@ ul.tabs_list>li.active{
 	line-height: 19px;
 }
 .cart1_note_block > p{
-	margin-left: calc(50% - 150px);
-	padding-right: 20px;
+/*	margin-left: calc(50% - 150px);
+	padding-right: 20px;*/
 }
 .cart1_note_block>input{
 	width: 300px;
@@ -1459,9 +1480,38 @@ ul.tabs_list>li.active{
 		width: 80%;
 		margin: 0 auto;
 	}
+	.cart1_note_block > p{
+		padding-right: 0;
+	}
 
 
 }
+
+@media only screen and (max-width: 840px){
+	#first_description{
+		margin-top: -125px !important;
+	}
+	#logo_text_mobile{
+		margin-top: 13px;
+	}
+	.description{
+		margin-top:-30px;
+	}
+	#third_description {
+		margin-top:30px !important;
+	}
+}
+@media only screen and (max-width: 760px) {
+	#first_description{
+		margin-top: -60px !important;
+	}
+	#logo_text_mobile{
+		margin-top: -15px;
+	}
+
+
+}
+
 @media only screen and (max-width: 670px){
 	.tomorrow_button{
 		top: 20px;
@@ -1488,7 +1538,7 @@ ul.tabs_list>li.active{
 			height: 160px;
 		}
 		.crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
-			margin:0;
+			/*margin:0;*/
 		}
 		.tomorrow_button{
 			top:20px;
@@ -1584,50 +1634,9 @@ ul.tabs_list>li.active{
 		}
 		.cart1_item>li>span{
 			right: 10px;
-		}
-	}
-
-	@media only screen and (max-width: 580px){
-		ul.cart1_item {
-			flex-direction:column;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			border-bottom: 1px solid #e8e8e8;
-		}
-		ul.cart1_item>li>img{
-			display: block;
-			margin: 0 auto;
-
-		}
-		.crt_right_main_content>.tab1>p{
-			text-align: center;
-		}
-		.crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
-			text-align: center;
-			width: 100%;
-		}
-		.last_label{
-			margin-top: 50px !important;
-			display: block !important; 
-		}
-		.button_continue {
-			width: 190px;
-		}
-	}
-
-
-
-
-
-
-
-
-
-
-	@media only screen and (max-width: 480px){
-		.crt_left_main_content{
-			border:none;
-		}
+		}.crt_left_main_content{
+			 border:none;
+		 }
 		ul.tabs_list>li{
 			clear: both;
 			width: 100%;
@@ -1698,13 +1707,158 @@ ul.tabs_list>li.active{
 		.delete_order{
 			top:70px;
 			height: calc(100% + 10px);
-			background: url(../../images/eflora/grey_cross.png) no-repeat;
+			background: url(../../../images/eflora/grey_cross.png) no-repeat;
 			background-position: 9px 120px;
 		}
 		.delete_order:hover{
 			height: calc(100% + 10px);
 
-			background: url(../../images/eflora/white_cross.png) no-repeat;
+			background: url(../../../images/eflora/white_cross.png) no-repeat;
+			background-position: 9px 120px;
+			background-color: #ff6267;
+		}
+		.now_button{
+			margin: 0px auto;
+			margin-top: 20px;
+
+		}
+		.tomorrow_button{
+			margin: 0px auto;
+			margin-top: 20px;
+			display: block;
+			padding: 0;
+			left: 0;
+		}
+		.datepicker_wrapp{
+			margin: 0 auto;
+		}
+		.crt_right_main_content>.tab1>p{
+			text-align: center;
+			margin: 20px auto;
+			margin-bottom: 20px;
+
+		}
+		.crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	@media only screen and (max-width: 580px){
+		ul.cart1_item {
+			flex-direction:column;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			border-bottom: 1px solid #e8e8e8;
+		}
+		ul.cart1_item>li>img{
+			display: block;
+			margin: 0 auto;
+
+		}
+		.crt_right_main_content>.tab1>p{
+			text-align: center;
+		}
+		.crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
+			text-align: center;
+			width: 100%;
+		}
+		.last_label{
+			margin-top: 50px !important;
+			display: block !important;
+		}
+		.button_continue {
+			width: 190px;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	@media only screen and (max-width: 480px){
+		.crt_left_main_content{
+			border:none;
+		}
+		ul.tabs_list>li{
+			clear: both;
+			width: 100%;
+
+		}
+		.order_list_total_describe>p{
+			text-align: left;
+			margin-left: 55px;
+		}
+		.order_list_total_describe>hr{
+			text-align: left;
+			margin-left: 55px;
+		}
+		ul.tabs_list>li>a{
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.cart1_note_block>p{
+			margin: 0 auto;
+			padding-right: 0;
+			line-height: 20px;
+		}
+		.cart1_note_block>input
+		{
+			margin-left: 30px;
+			width:80%;
+		}
+		.tab2_contact_info_left>p, .tab2_contact_info_right>p{
+			margin-left: 40px;
+		}
+		.tab2_text_note>p{
+			margin-left: 40px;
+			width: 300px
+		}
+		.crt_right_main_content>.tab1>p{
+			font-size: 16px;
+		}
+
+		.crt_left_main_content{
+			width: 100%;
+		}
+		ul.order_list>li>img{
+			margin: 10px auto;
+			display: block;
+			float: none;
+			width: 200px;
+
+		}
+		.crt_right_main_content{
+			width: 100%;
+		}
+		.tomorrow_button {
+			top: 15px;
+		}
+		.datepicker_wrapp{
+			display: block;
+			margin-top: 0px;
+		}
+		.button_continue{
+			left:30px;
+		}
+
+		.delete_order{
+			top:70px;
+			height: calc(100% + 10px);
+			background: url(../../../images/eflora/grey_cross.png) no-repeat;
+			background-position: 9px 120px;
+		}
+		.delete_order:hover{
+			height: calc(100% + 10px);
+
+			background: url(../../../images/eflora/white_cross.png) no-repeat;
 			background-position: 9px 120px;
 			background-color: #ff6267;
 		}

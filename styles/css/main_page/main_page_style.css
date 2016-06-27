@@ -1009,9 +1009,10 @@ a:hover{
 	}
 
 }
-@media all and (max-width:  1340px)  {
-.choice {
-    margin-right: 10px;
+@media all and (max-width:  1340px) {
+	.choice {
+		margin-right: 10px;
+	}
 }
 @media all and (max-width:  1280px) {
 	
@@ -1047,7 +1048,7 @@ a:hover{
 		font-family: 'Roboto Light', arial;
 		border-radius: 20px;
 		padding-left: 10px;
-		background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;
+	/*	background: url(../../../images/eflora/select_icon.png) no-repeat 130px #fff;*/
 		color: #898787;
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -1271,10 +1272,10 @@ ul.flower_products li:hover .product_wrap{
 			margin-top: -110px;
 		}
 		#first_description{
-			margin-top:-110px;
+			margin-top:-120px;
 		}
 		#logo_text_mobile{
-			margin-top:-55px;
+			margin-top:-15px;
 		}
 		.mobile_list{
 			display: block;
@@ -1349,7 +1350,7 @@ ul.flower_products li:hover .product_wrap{
 			margin-top: -110px !important;
 		}
 		#first_description{
-			margin-top:-45px !important;
+			margin-top: -95px ;
 		}
 		#logo_text_mobile{
 			margin-top:-55px !important;
@@ -1385,7 +1386,8 @@ ul.flower_products li:hover .product_wrap{
 			z-index: 10;
 		}
 		.column1>p, .column2>p{
-			margin-left: 0;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 	}
 
@@ -1401,14 +1403,26 @@ ul.flower_products li:hover .product_wrap{
 			height: 160px;
 		}
 	}
+@media all and (max-width: 470px) {
+	.under_slider{
+		height: 160px;
+	}
+	.mobile_filter{
+		top:70px;
+		right: auto;
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+
+}
 
 	@media all and (max-width:  440px){
 
 		.mobile_filter{
-			 width: 150px; 
 			right:10px;
 		}
-		.wrapper-dropdown-5{
+		/*.wrapper-dropdown-5{
 			width: 130px !important;
 		}
 		.wrapper-dropdown-5.active .dropdown{
@@ -1417,7 +1431,7 @@ ul.flower_products li:hover .product_wrap{
 		.wrapper-dropdown-5 .dropdown li a{
 			font-size: 14px;
 		}
-
+*/
 		#question_icon{
 			top:-80px;
 		}
@@ -1444,7 +1458,7 @@ ul.flower_products li:hover .product_wrap{
 			min-width: 240px;
 		}
 		#first_description{
-			margin-top:8px !important;
+			margin-top:-60px !important;
 		}
 		#logo_text_mobile{
 			margin-top:-55px !important;
@@ -1481,7 +1495,11 @@ ul.flower_products li:hover .product_wrap{
 	}
 	.catalog_logo{
 		width: calc(100% - 160px);
+		min-width: 240px;
 	}
+		ul.slick-dots{
+			min-width: 240px;
+		}
 	.slick-dots{
 		width: calc(100% - 160px)!important;
 	}
@@ -1500,12 +1518,14 @@ ul.flower_products li:hover .product_wrap{
 	}
 	ul.help_list{
 	width: calc(100% - 160px) !important;
+		min-width: 240px;
 	}
 	ul.help_list>li{
 	width: calc(100% + 40px) !important;
 	}
 .question_panel{
 	width: calc(100% - 160px);
+	min-width: 240px;
 }
 
 
