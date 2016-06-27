@@ -11,8 +11,8 @@ foreach($products as $product): ?>
 		?>
 	<li>
 		<img src="<?=$image?>" alt="">
-		<span class="niceCheck">
-			<input type="checkbox" name="cart1_checkbox"  class="cart1_checkbox" />
+		<span class="niceCheck"  data-productid="<?=$product->id?>" data-productprice="<?=$product->price?>">
+			<input type="checkbox" name="cart1_checkbox"  class="cart1_checkbox" value="<?=$product->id?>"/>
 		</span>
 		<div class="cart1_name"><?=$product->name?></div>
 <!--		--><?//var_dump((int)($product->price * $kurs / 1000));die();?>

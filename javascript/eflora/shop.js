@@ -173,7 +173,29 @@ $(document).ready(function () {
 		//
 		//}
 	});
+	// $( ".niceCheck" ).on( "click", function() {
+	// 	alert($(this).first().val());
+	// });
+	$(".niceCheck").on('click',function () {
+		var newProductId = $(this).attr('data-productid');
+		var newProduct = {
+			"id" : newProductId,
+			//"name" : $(this).attr('data-productname'),
+			//"url" : $(this).attr('data-proucturl'),
+			//"img" : $(this).attr('data-productimg'),
+			"price" : $(this).attr('data-productprice'),
+			"count" : 1,
+		};
 
+		if (!localStorage['shop_product_' + newProductId]) {
+			localStorage['shop_product_' + newProductId] = JSON.stringify(newProduct);
+			addShopId(newProductId);
+			updatePage();
+		}
+		else {
+			deleteShopId(newProductId);
+		}
+	});
 	$('.basket').click(function () {
 		var shopId = getShopId();
 		var shopArr = getBasketInfo();

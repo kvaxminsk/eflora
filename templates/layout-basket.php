@@ -191,7 +191,7 @@
 					<p id = "header_price_text_us" class="header_price_text"  style="display:none">0</p>
 				</div>
 				<div id = "header_backet">
-					<a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" />
+					<a href="/korzina"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" />
 						<div class="backet_circle"><p class="baskettext shop-count">0</p></div> </a>
 				</div>
 				<div id = "header_price_symbol">
@@ -259,8 +259,47 @@
 				<? $this->widget('GiftBlock', array('file' => 'gift_list')) ?>
 				<p> Дата доставки:</p>
 				<div class="date_delivery_wrapp">
-
-					<p class="date_delivery"> 20 мая 2016 </p>
+					<?
+					switch (date('m')) {
+						case 0:
+							$fMonth = "января";
+							break;
+						case 1:
+							$fMonth = "февраля";
+							break;
+						case 2:
+							$fMonth = "марта";
+							break;
+						case 3:
+							$fMonth = "апреля";
+							break;
+						case 4:
+							$fMonth = "мая";
+							break;
+						case 5:
+							$fMonth = "июня";
+							break;
+						case 6:
+							$fMonth = "июля";
+							break;
+						case 7:
+							$fMonth = "августа";
+							break;
+						case 8:
+							$fMonth = "сентября";
+							break;
+						case 9:
+							$fMonth = "октября";
+							break;
+						case 10:
+							$fMonth = "ноября";
+							break;
+						case 11:
+							$fMonth = "декабря";
+							break;
+					}
+					?>
+					<p class="date_delivery"> <?=date('d') . ' '. $fMonth . ' ' . date('Y');?> </p>
 					<button class="now_button" name="now_button"><span>Сегодня</span></button>
 					<button class="tomorrow_button" name="now_button"><span>Завтра</span> </button>
 					<div class="datepicker_wrapp">
@@ -273,20 +312,20 @@
 
 						<h1>Отправитель</h1>
 						<hr>
-						<input type="text" name="name" class="cart1_name_input" placeholder= "Имя (псевдоним)">
-						<input type="text" name="telephone" class="cart1_phone_input" placeholder= "Телефон (вместе с кодом)">
+						<input type="text" name="name_to" class="cart1_name_input" placeholder= "Имя (псевдоним)">
+						<input type="text" name="phone_to" class="cart1_phone_input" placeholder= "Телефон (вместе с кодом)">
 						<!-- <input type="text" name="country" class="cart1_country_input" placeholder= "Страна"> -->
-						<div id="dropDown" class="wrapper-dropdown-2" tabindex="1"> 		<span>Страна</span>
+						<div id="dropDown" class="wrapper-dropdown-2" tabindex="1"> 		<span  name="country_to">Страна</span>
 							<ul class="dropdown">
-								<li>  Германия   </li>
+								<li>Германия   </li>
 								<li>  Франция   </li>
 								<li>  Беларусь  </li>
 							</ul>
 						</div>
-						<input type="email" name="email" class="cart1_email_input" placeholder= "Электронная почта">
-						<div class="add_input_phone">
-							+
-						</div>
+						<input type="email" name="email_to" class="cart1_email_input" placeholder= "Электронная почта">
+<!--						<div class="add_input_phone">-->
+<!--							+-->
+<!--						</div>-->
 
 
 					</div>
@@ -295,26 +334,26 @@
 						</div>
 						<h1>Получатель</h1>
 						<hr>
-						<input type="text" name="name" class="cart1_name_input" placeholder= "Имя (псевдоним)">
-						<input type="text" name="telephone" class="cart1_phone_input" placeholder= "Телефон (вместе с кодом)">
-						<div id="dropDown1" class="wrapper-dropdown-2" tabindex="1"><span>Страна	</span>
+						<input type="text" name="name_from" class="cart1_name_input" placeholder= "Имя (псевдоним)">
+						<input type="text" name="phone_from" class="cart1_phone_input" placeholder= "Телефон (вместе с кодом)">
+						<div id="dropDown1" class="wrapper-dropdown-2" tabindex="1"><span name="country_from">Страна	</span>
 							<ul class="dropdown">
-								<li>  Германия   </li>
-								<li>  Франция   </li>
-								<li>  Беларусь  </li>
+								<li>Германия</li>
+								<li>Франция</li>
+								<li>Беларусь</li>
 							</ul>
 						</div>
-						<div id="dropDown2" class="wrapper-dropdown-2" tabindex="1"><span>Город	</span>
+						<div id="dropDown2" class="wrapper-dropdown-2" tabindex="1"><span  name="city_from">Город</span>
 							<ul class="dropdown">
-								<li>  Вилейка   </li>
-								<li>  Минск   </li>
-								<li>  Молодечно  </li>
+								<li>Вилейка</li>
+								<li>Минск</li>
+								<li>Молодечно</li>
 							</ul>
 						</div>
-						<input type="text" name="address" class="cart1_address_input" placeholder= "Адрес">
-						<div class="add_input_phone">
-							+
-						</div>
+						<input type="text" name="address_from" class="cart1_address_input" placeholder= "Адрес">
+<!--						<div class="add_input_phone">-->
+<!--							+-->
+<!--						</div>-->
 					</div>
 					<div class="clearfix"></div>
 
@@ -332,19 +371,19 @@
 				<p> Способы оплаты </p>
 				<div class="way_pay_wrapp">
 
-					<input type="radio" name="radiog_dark" id="radio1" class="css-checkbox" />
+					<input type="radio" name="radiog_dark" id="radio1" value="1" class="css-checkbox" />
 					<label for="radio1" class="css-label radGroup2">Наличные деньги курьеру</label><br>
-					<input type="radio" name="radiog_dark" id="radio2" class="css-checkbox" checked="checked"/>
+					<input type="radio" name="radiog_dark" id="radio2" value="2" class="css-checkbox" checked="checked"/>
 					<label for="radio2" class="css-label radGroup2">VISA/MasterCard/Белкарт</label><br>
-					<input type="radio" name="radiog_dark" id="radio3" class="css-checkbox" />
+					<input type="radio" name="radiog_dark" id="radio3 value="3" class="css-checkbox" />
 					<label for="radio3" class="css-label radGroup2">Оплата наличными в одном из наших салонов</label><br>
-					<input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" />
+					<input type="radio" name="radiog_dark" id="radio4" value="4" class="css-checkbox" />
 					<label for="radio4" class="css-label radGroup2">WebMoney</label><br>
-					<input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" checked="checked"/>
+					<input type="radio" name="radiog_dark" id="radio5" value="5" class="css-checkbox" checked="checked"/>
 					<label for="radio5" class="css-label radGroup2">ЕРИП Расчёт</label><br>
-					<input type="radio" name="radiog_dark" id="radio6" class="css-checkbox" />
+					<input type="radio" name="radiog_dark" id="radio6" value="6" class="css-checkbox" />
 					<label for="radio6" class="css-label radGroup7">Оплата по безналичному расчету на наш расчетный счет для юридечиских лиц</label><br>
-					<input type="radio" name="radiog_dark" id="radio7" class="css-checkbox" />
+					<input type="radio" name="radiog_dark" id="radio7" value="7" class="css-checkbox" />
 					<label  for="radio7" class="css-label radGroup2 last_label" >Яндекс Деньги</label><br>
 					<button class="button_continue">ПРОДОЛЖИТЬ</button>
 				</div>
@@ -359,10 +398,10 @@
 
 						<h1>Отправитель</h1>
 						<hr>
-						<p>Имя (псевдоним): <span>Дмитрий Новиков</span> </p>
-						<p>Телефон: <span>375299636568</span> </p>
-						<p>Страна: <span>Беларусь</span> </p>
-						<p>Электронная почта: <span>mymail.gmail.com</span> </p>
+						<p>Имя (псевдоним): <span id="name_to"></span> </p>
+						<p>Телефон: <span id="phone_to"></span> </p>
+						<p>Страна: <span id="country_to"></span> </p>
+						<p>Электронная почта: <span id="email_to"></span> </p>
 					</div>
 
 					<div class="tab2_contact_info_right">
@@ -370,25 +409,23 @@
 						</div>
 						<h1>Получатель</h1>
 						<hr>
-						<p>Имя (псевдоним): <span>Александрова Татьяна</span> </p>
-						<p>Телефон: <span>375293686365</span> </p>
-						<p>Страна: <span>Беларусь</span> </p>
-						<p>Город: <span>Минск</span> </p>
-						<p class="last_tab2_contact_info">Адрес: <span>ул. Горовца, д.6, кв. 105</span> </p>
+						<p>Имя (псевдоним): <span id="name_from"></span> </p>
+						<p>Телефон: <span id="phone_from"></span> </p>
+						<p>Страна: <span id="country_from"></span> </p>
+						<p>Город: <span id="city_from"></span> </p>
+						<p class="last_tab2_contact_info">Адрес: <span id="address_from"></span> </p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="tab2_text_note">
 					<h1>Текст записки</h1>
 					<hr>
-					<p>
-						Ввиду цветочных традиций международные флористы с целью обеспечения доставки в назначенный день могут заменить
-						заказанные цветы на свежие цветы, которые есть в наличии. Это считается нормой.
+					<p id="text_from">
 					</p>
 				</div>
 				<div class="tab2_way_pay">
 					<img src="/images/eflora/way_pay.png" alt="">
-					<p> Способ оплаты: <br> <span>Наличные деньги курьеру</span></p>
+					<p> Способ оплаты: <br> <span id="method_pay">Наличные деньги курьеру</span></p>
 					<div class="clearfix"></div>
 				</div>
 				<div class="control_button_wrapp">

@@ -493,5 +493,20 @@ class FrontCatalogController extends FrontController
         }
 
     }
+    public function actionAjaxProductReviews(){
+        if (!empty($_GET)) {
+            $this->layout = 'webroot.templates.layoutAjax';
+            $criteria=new CDbCriteria;
+
+//            $criteria=new CDbCriteria;
+//            $criteria->addCondition('t.id=' . (int)$_GET['id']);
+
+            $product = Product::model()->findByPk((int)$_GET['id']);
+            $this->render('ajax_product_reviews', array(
+                'product'      => $product,
+            ));
+        }
+
+    }
         
 }

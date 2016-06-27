@@ -137,7 +137,7 @@
                     <p id = "header_price_text_us" class="header_price_text"  style="display:none">0</p>
                 </div>
                 <div id = "header_backet">
-                    <a href="#"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" />
+                    <a href="/korzina"   ><img class ="backet_pic"  src="/images/eflora/header_backet.png" alt="menu" />
                         <div class="backet_circle"><p class="baskettext shop-count">0</p></div> </a>
                 </div>
                 <div id = "header_price_symbol">

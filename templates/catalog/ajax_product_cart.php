@@ -24,7 +24,7 @@ $imageUrl = image($imageMain['path'], 'resize', '440', false);
             <input id="count-<?=$product->id?>" type="text" class="order_count" name="order_count" maxlength="3" value="4">
             <div class="order_count_decrement addtobasket" data-productid="<?=$product->id?>" data-productprice="<?=$product->price?>"></div>
         </div>
-        <div class="delete_order"></div>
+        <div class="delete_order" data-productid="<?=$product->id?>"></div>
     </div>
     <div class="clearfix"></div>
 
