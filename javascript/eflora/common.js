@@ -76,21 +76,6 @@ function changeCurrency()
     }
 }
 function renderBlockCart() {
-    //$.ajax({
-    //    type: 'get',
-    //    data: 'category=' + category,
-    //    url: '/ajax-products',
-    //    success: function (data) {
-    //        //document.write();
-    //        $('.flower_products').text('');
-    //        $('.flower_products').append(data);
-    //
-    //
-    //        changeCurrency();
-    //
-    //    }
-    //});
-
     var shopArr = getBasketInfo();
     var shopProductCount = 0;
     var price_us = 0;
@@ -113,28 +98,6 @@ function renderBlockCart() {
             }
         });
     }
-    //var currency = JSON.parse(localStorage['currency'])
-    //if(currency != 'us'){
-    //    currency = 'br';
-    //    price_br = 20100* price_us;
-    //    price_br = number_format(price_br, 0, ',', ' ');
-    //}
-    //else {
-    //    price_br = 20100* price_us;
-    //    price_br = number_format(price_br, 0, ',', ' ');
-    //}
-    //
-    //
-    //$('.addtobasket').each(function () {
-    //    var id = $(this).attr('data-productid');
-    //    if (shopArr[id]) {
-    //        $(this).find('.basketButtonText').text(lang.inBasketButtonText);
-    //        $(this).addClass('inBasket');
-    //    } else {
-    //        $(this).find('.basketButtonText').text(lang.basketButtonText);
-    //        $(this).removeClass('inBasket');
-    //    }
-    //});
 
     if (shopProductCount == 0) {
         $('.baskettext').text(lang.basketTextNull);
@@ -148,8 +111,72 @@ function renderBlockCart() {
         $('#header_price_text_us').text(price_us);
     }
 }
-$(document).ready(function () {
 
+function renderBlockReviews() {
+    var reviewsArr = JSON.parse(localStorage['reviews']);
+    $('.reviews_product').text('');
+    for (var i = 0; i <= reviewsArr.length - 1; i++) {
+        if (i > 3) {
+            break;
+        }
+        $.ajax({
+            type: 'get',
+            data: 'id=' + reviewsArr[i],
+            url: '/ajax-product-reviews',
+            success: function (data) {
+                //document.write();
+
+                $('.reviews_product').append(data);
+                // changeCurrency();
+            }
+        });
+    }
+    var reviewsProductCount = 0;
+    var price_us = 0;
+    var price_br = 0;
+    var id = 0;
+
+    // for(var key in reviewsArr) {
+    //     //reviewsProductCount = reviewsProductCount + parseInt(reviewsArr[key]['count']);
+    //     //price_us = price_us + parseInt(reviewsArr[key]['price']) * reviewsProductCount;
+    //     id = parseInt(reviewsArr[key]['id'])
+    //
+    // }
+    //
+    // if (reviewsProductCount == 0) {
+    //     $('.baskettext').text(lang.basketTextNull);
+    //     $('#header_price_text_br').text(price_br);
+    //     $('#header_price_text_us').text(price_us);
+    // }
+    // else
+    // {
+    //     $('.baskettext').text(reviewsProductCount + ' ' + lang.basketText);
+    //     $('#header_price_text_br').text(price_br);
+    //     $('#header_price_text_us').text(price_us);
+    // }
+}
+
+
+$(document).ready(function () {
+    renderBlockReviews();
+    $('.button_continue').on('click', function() {
+        // alert($('input[name=name_to]').val());
+        $('#name_to').append ($('input[name=name_to]').val());
+        // alert($('span #name_to').text);
+
+        $('#phone_to').text($('input[name=phone_to]').val());
+        $('#country_to').text($('input[name=country_to]').val());
+        $('#email_to').text($('input[name=email_to]').val());
+
+        $('#name_from').text($('input[name=name_from]').val());
+        $('#phone_from').text($('input[name=phone_from]').val());
+        $('#country_from').text($('input[name=country_from]').val());
+        $('#city_from').text($('input[name=city_from]').val());
+        $('#address_from').text($('input[name=address_from]').val());
+        $('#text_from').text($('input[name=text_postcard]').val());
+        $('#method_pay').text($('input[name=radiog_dark]').val());
+        
+    });
     renderBlockCart();
     /// main js
     if(localStorage['currency']) {
@@ -813,6 +840,7 @@ $(document).ready(function () {
     $(document).on('click', '.delete_order' ,function () {
         $(this).parent().parent().addClass('delete');
         $(this).parent().parent().animate({height: '0'}, 300);
+        deleteShopId($(this).attr('data-productid'));
 
     })
 
@@ -1101,7 +1129,7 @@ $(document).ready(function () {
     });
 
     $(".button_continue").click(function () {
-
+        eere
         $('.tabs_list li').eq(0).removeClass('active');
         $('.tabs_list li').eq(1).addClass('active');
         $('.tab1').animate({opacity: 0}, 400, function () {
