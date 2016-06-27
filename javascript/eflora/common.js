@@ -113,24 +113,27 @@ function renderBlockCart() {
 }
 
 function renderBlockReviews() {
-    var reviewsArr = JSON.parse(localStorage['reviews']);
-    $('.reviews_product').text('');
-    for (var i = 0; i <= reviewsArr.length - 1; i++) {
-        if (i > 3) {
-            break;
-        }
-        $.ajax({
-            type: 'get',
-            data: 'id=' + reviewsArr[i],
-            url: '/ajax-product-reviews',
-            success: function (data) {
-                //document.write();
-
-                $('.reviews_product').append(data);
-                // changeCurrency();
+    if(localStorage['reviews']) {
+        var reviewsArr = JSON.parse(localStorage['reviews']);
+        $('.reviews_product').text('');
+        for (var i = 0; i <= reviewsArr.length - 1; i++) {
+            if (i > 3) {
+                break;
             }
-        });
+            $.ajax({
+                type: 'get',
+                data: 'id=' + reviewsArr[i],
+                url: '/ajax-product-reviews',
+                success: function (data) {
+                    //document.write();
+
+                    $('.reviews_product').append(data);
+                    // changeCurrency();
+                }
+            });
+        }
     }
+
     var reviewsProductCount = 0;
     var price_us = 0;
     var price_br = 0;
@@ -607,7 +610,6 @@ $(document).ready(function () {
         $('.rb_discribe ').eq(0).text(describe);
 
 
-
     })
 
     ///// drop_down phone number
@@ -744,7 +746,6 @@ $(document).ready(function () {
         //alert(category);
         //$(this).text('Загрузка');
         //setTimeout(1000);alert('fff');
-
         $.ajax({
             type: 'get',
             data: 'category=' + category,
