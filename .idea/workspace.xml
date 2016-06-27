@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="Merge branches 'master' and 'pasha-verstka' of https://github.com/kvaxminsk/eflora&#10;&#10;# Conflicts:&#10;#&#9;admin/protected/runtime/application.log&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/eflora/common.js" afterPath="$PROJECT_DIR$/javascript/eflora/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css" afterPath="$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/catalog_main_tree.php" afterPath="$PROJECT_DIR$/templates/catalog/catalog_main_tree.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.php" afterPath="$PROJECT_DIR$/templates/layout.php" />
     </list>
     <ignored path="eflora.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -444,7 +439,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467015302466</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge branches 'master' and 'pasha-verstka' of https://github.com/kvaxminsk/eflora&#10;&#10;# Conflicts:&#10;#&#9;admin/protected/runtime/application.log&#10;">
+      <created>1467017211555</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1467017211555</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
