@@ -394,8 +394,8 @@ class FrontCatalogController extends FrontController
 		if ($_GET['brand_model']) $criteria->addCondition('t.brand_model=\'' . $_GET['brand_model'] . "'");
 		if ($_GET['count']) $criteria->addCondition('t.manufacturer=\'' . $_GET['count'] . "'");
 		if ($_GET['year']) $criteria->addCondition('t.original=\'' . $_GET['year'] . "'");
-		
-        #сортировка      
+
+        #сортировка
         if ($_GET['sort']) $criteria->order = "t." . $_GET['sort'] . " ASC, t.name ASC";
         
 			
@@ -507,6 +507,43 @@ class FrontCatalogController extends FrontController
             ));
         }
 
+    }
+    public function actionAjaxProductReviewsCatalog(){
+        if (!empty($_GET)) {
+            $this->layout = 'webroot.templates.layoutAjax';
+            $criteria=new CDbCriteria;
+
+//            $criteria=new CDbCriteria;
+//            $criteria->addCondition('t.id=' . (int)$_GET['id']);
+
+            $product = Product::model()->findByPk((int)$_GET['id']);
+            $this->render('ajax_product_reviews_catalog', array(
+                'product'      => $product,
+            ));
+        }
+
+    }
+    /**
+     *  просмотренные товары
+     **/
+    public function actionReviews($alias, $meta){
+        $this->layout ='webroot.templates.layout-internal';
+
+        $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
+
+        parent::meta($model, $meta);
+
+        list($products, $pages) = $this->getProducts();
+
+//        $categories = Category::model()->getTreeDataActive();
+
+        $this->render('reviews', array(
+//	       'model'         => $model,
+            'meta'          => $meta,
+            'products'      => $products,
+            'pages'         => $pages,
+//           'categories'    => $categories
+        ));
     }
         
 }

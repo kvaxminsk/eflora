@@ -10,11 +10,11 @@ $imageUrl = image($imageMain['path'], 'resize', '440', false);
     <li ><a href="<?=$product->url?>">
             <div class="product_wrap">
                 <div class="flower">
-                    <? if ((((int)$product->discount) != 0)) ?>
+                    <? if ((((int)$product->discount) != 0)){ ?>
                         <div class="discount">
                             <p>-<?=$product->discount?>%</p>
                         </div>
-                    <? ?>
+                    <? } ?>
 
                     <img class ="flower_pic"  src="<?=$imageUrl?>" alt="<?=$product->name?>"/>
                 </div>

@@ -6,7 +6,7 @@
     		'elems' => array(
     			array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'name', 'req'=>1, 'placeholder' => 'Введите имя товара'),
                 array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'price', 'placeholder' => 'Введите стоимость товара'),
-                //array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'discount', 'placeholder' => 'Введите скидку в процентах'),
+                array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'discount', 'placeholder' => 'Введите скидку в процентах'),
                 array('type' => FormElems::ELEM_TYPE_IMAGE, 'attribute' => 'img', 'htmlOptions' => array('style' => 'width:280px;')),
     			array('type' => FormElems::ELEM_TYPE_SELECT, 'attribute' => 'category_id', 'datalist' => $categories),
 //                array('type' => FormElems::ELEM_TYPE_SELECT, 'attribute' => 'brand_id', 'datalist' => $brands),

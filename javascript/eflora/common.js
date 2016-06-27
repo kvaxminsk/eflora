@@ -116,8 +116,8 @@ function renderBlockReviews() {
     if(localStorage['reviews']) {
         var reviewsArr = JSON.parse(localStorage['reviews']);
         $('.reviews_product').text('');
-        for (var i = 0; i <= reviewsArr.length - 1; i++) {
-            if (i > 3) {
+        for (var i = reviewsArr.length - 1; i >= 0; i--) {
+            if (i == (reviewsArr.length -4)) {
                 break;
             }
             $.ajax({
@@ -133,35 +133,11 @@ function renderBlockReviews() {
             });
         }
     }
-
-    var reviewsProductCount = 0;
-    var price_us = 0;
-    var price_br = 0;
-    var id = 0;
-
-    // for(var key in reviewsArr) {
-    //     //reviewsProductCount = reviewsProductCount + parseInt(reviewsArr[key]['count']);
-    //     //price_us = price_us + parseInt(reviewsArr[key]['price']) * reviewsProductCount;
-    //     id = parseInt(reviewsArr[key]['id'])
-    //
-    // }
-    //
-    // if (reviewsProductCount == 0) {
-    //     $('.baskettext').text(lang.basketTextNull);
-    //     $('#header_price_text_br').text(price_br);
-    //     $('#header_price_text_us').text(price_us);
-    // }
-    // else
-    // {
-    //     $('.baskettext').text(reviewsProductCount + ' ' + lang.basketText);
-    //     $('#header_price_text_br').text(price_br);
-    //     $('#header_price_text_us').text(price_us);
-    // }
 }
 
 
 $(document).ready(function () {
-    renderBlockReviews();
+
     $('.button_continue').on('click', function() {
         // alert($('input[name=name_to]').val());
         $('#name_to').append ($('input[name=name_to]').val());
@@ -608,6 +584,7 @@ $(document).ready(function () {
 
 
         $('.rb_discribe ').eq(0).text(describe);
+        $('#theme_text').text(data);
 
 
     })
@@ -741,11 +718,17 @@ $(document).ready(function () {
 
     $("#dropdown1>li").click(function () {
 
-        //alert($(this).attr('data-category'));
         category = $(this).attr('data-category');
-        //alert(category);
-        //$(this).text('Загрузка');
-        //setTimeout(1000);alert('fff');
+
+        //$('.slick-dots li').each(function() {
+        //    var attr = $(this).find('span').attr('data-category');
+        //   if( category == attr) {
+        //       $(this).click();
+        //   }
+        //});
+
+
+
         $.ajax({
             type: 'get',
             data: 'category=' + category,
@@ -758,6 +741,7 @@ $(document).ready(function () {
                 changeCurrency();
             }
         });
+
     });
 
 
@@ -1187,22 +1171,22 @@ $(document).ready(function () {
         var path;
         switch (src) {
             case 'h_facebook':
-                path = 'images/h_facebook.png';
+                path = '/images/eflora/h_facebook.png';
                 break;
             case 'h_twitter':
-                path = 'images/h_twitter.png';
+                path = '/images/eflora/h_twitter.png';
                 break;
             case 'h_vk':
-                path = 'images/h_vk.png';
+                path = '/images/eflora/h_vk.png';
                 break;
             case 'h_inst':
-                path = 'images/h_inst.png';
+                path = '/images/eflora/h_inst.png';
                 break;
             case 'h_gmail':
-                path = 'images/h_gmail.png';
+                path = '/images/eflora/h_gmail.png';
                 break;
             case 'h_ri':
-                path = 'images/h_rist.png';
+                path = '/images/eflora/h_rist.png';
                 break;
 
         }
@@ -1212,22 +1196,22 @@ $(document).ready(function () {
         var path;
         switch (src) {
             case 'h_facebook':
-                path = 'images/map_facebook.png';
+                path = '/images/eflora/map_facebook.png';
                 break;
             case 'h_twitter':
-                path = 'images/contact_twitter.png';
+                path = '/images/eflora/contact_twitter.png';
                 break;
             case 'h_vk':
-                path = 'images/contact_vk.png';
+                path = '/images/eflora/contact_vk.png';
                 break;
             case 'h_inst':
-                path = 'images/contact_inst.png';
+                path = '/images/eflora/contact_inst.png';
                 break;
             case 'h_gmail':
-                path = 'images/contact_gmail.png';
+                path = '/images/eflora/contact_gmail.png';
                 break;
             case 'h_ri':
-                path = 'images/contact_ri.png';
+                path = '/images/eflora/contact_ri.png';
                 break;
 
         }

@@ -1,9 +1,17 @@
 <?// var_dump($model->content);die();?>
 <? $kurs =20100;?>
 <script>
-    var reviewsArr = JSON.parse(localStorage['reviews']);
-    reviewsArr.push(<?=$model->id?>);
+    renderBlockReviews();
     if (localStorage['reviews']) {
+        var reviewsArr = JSON.parse(localStorage['reviews']);
+        if(reviewsArr.indexOf(<?=$model->id?>) == -1) {
+            reviewsArr.push(<?=$model->id?>);
+            localStorage['reviews'] = JSON.stringify(reviewsArr);
+        }
+
+    }
+    else {
+        var reviewsArr = [];
         reviewsArr.push(<?=$model->id?>);
         localStorage['reviews'] = JSON.stringify(reviewsArr);
     }

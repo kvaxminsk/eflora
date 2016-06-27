@@ -20,6 +20,54 @@
 
 	<link rel="stylesheet" type="text/css" href="/styles/css/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="/styles/css/catalog_page/catalog.css"/>
+
+<!--	/*********************/-->
+	<link rel="stylesheet" type="text/css" href="/styles/css/contact_page/contact_page.css"/>
+	<script type="text/javascript" src="/javascript/eflora/slick_item/slick.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<!--	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/1.1/_YMaps.js?v=1.1.21-58"></script>-->
+	<script type="text/javascript">
+//		var geocoder = new YMaps.Geocoder(<?//=$this->variables['address']?>//);
+////		map.addOverlay(geocoder);
+//		alert(geocoder.precision);
+
+
+
+
+		ymaps.ready(function () {
+			var myMap = new ymaps.Map('map', {
+					center: [53.866202,27.670114],
+					zoom: 14,
+					controls: ["zoomControl"]
+
+				}, {
+					searchControlProvider: 'yandex#search'
+				}),
+
+				myPlacemark = new ymaps.Placemark(
+					[53.87093016878826,27.64616492821899], {
+						hintContent: false,
+						balloonContent: false
+					}, {
+						iconLayout: 'default#image',
+						iconImageHref: '/images/eflora/icon_for_map.png',
+						iconImageSize: [135, 150],
+						iconImageOffset: [-60, -70]
+					});
+
+			if ($(window).width() <= 1000 ){
+
+				myMap.behaviors.disable('scrollZoom');
+				myMap.behaviors.disable('scroll');
+
+			}
+
+			myMap.geoObjects.add(myPlacemark);
+
+		});
+	</script>
+<!--	/*************/-->
 	<script type="text/javascript">
 
 		function DropDown(el) {
@@ -240,12 +288,6 @@
 		<div class="social_icons">
 			<div class="social_icons_wrap">
 				<ul>
-<!--					<li><a href=""><img src="/images/eflora/facebook_icon.png" alt=""></a></li>-->
-<!--					<li><a href=""><img src="/images/eflora/twitter_icon.png" alt=""></a></li>-->
-<!--					<li><a href=""><img src="/images/eflora/vk_icon.png" alt=""></a></li>-->
-<!--					<li><a href=""><img src="/images/eflora/instagram_icon.png" alt=""></a></li>-->
-<!--					<li><a href=""><img src="/images/eflora/gmail_icon.png" alt=""></a></li>-->
-<!--					<li><a href=""><img src="/images/eflora/R-icon.png" alt=	""></a></li>-->
 					<li><a href="<?=$this->variables['social_fb']?>"><img src="/images/eflora/facebook_icon.png" alt=""></a></li>
 					<li><a href="<?=$this->variables['social_tw']?>"><img src="/images/eflora/twitter_icon.png" alt=""></a></li>
 					<li><a href="<?=$this->variables['social_vk']?>"><img src="/images/eflora/vk_icon.png" alt=""></a></li>
@@ -253,23 +295,14 @@
 					<li><a href="<?=$this->variables['social_google']?>"><img src="/images/eflora/gmail_icon.png" alt=""></a></li>
 					<li><a href="<?=$this->variables['social_pinterest']?>"><img src="/images/eflora/R-icon.png" alt=	""></a></li>
 				</ul>
-
-
-
-
-
-
 			</div>
-
 		</div>
 		<div class="reactive_logo">
 			<div class="reactive_logo_wrap">
 				<p>Дизайн и разработка-</p>
 				<div class = "logo_picture">
 				</div>
-
 			</div>
-
 		</div>
 		<div class ="up_button">
 			<img class ="" src="/images/eflora/up_button.png" alt="menu" />
