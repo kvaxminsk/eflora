@@ -1453,7 +1453,9 @@ ul.tabs_list>li.active{
 	margin-top:40px;
 }
 
-
+	.dollar_price_cart{
+		text-align: center !important;
+	}
 
 }
 @media only screen and (max-width: 860px){
@@ -1742,6 +1744,9 @@ ul.tabs_list>li.active{
 			margin: 0 auto;
 			display: block;
 			text-align: center;
+		}
+		.dollar_price_cart{
+			text-align: center !important;
 		}
 	}
 
