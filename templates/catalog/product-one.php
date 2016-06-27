@@ -1,5 +1,14 @@
 <?// var_dump($model->content);die();?>
 <? $kurs =20100;?>
+<script>
+    var reviewsArr = JSON.parse(localStorage['reviews']);
+    reviewsArr.push(<?=$model->id?>);
+    if (localStorage['reviews']) {
+        reviewsArr.push(<?=$model->id?>);
+        localStorage['reviews'] = JSON.stringify(reviewsArr);
+    }
+        
+</script>
 <div class="right_main_content">
     <div class="last_view">
         <p class="view_erlier"> <a href="">Вы просматривали</a></p>
@@ -8,71 +17,10 @@
         </div>
         <div class="clearfix" style="clear:both"></div>
     </div>
-
-    <ul class="flower_view">
-        <li ><a href="">
-                <div class="product_wrap">
-                    <div class="flower">
-                        <div class="discount">
-                            <p>-15%</p>
-                        </div>
-                        <img class ="flower_pic"  src="/images/eflora/flower1.png" />
-                    </div>
-                    <div class="old_price">
-                        <span class="um">BR </span>
-                        116
-                        <div class = "line"></div>
-                        <span class="zero_old_price">000</span>
-                    </div>
-                    <div class="new_price">
-                        <span class="um">BR </span>
-                        11
-                        <span class="zero_old_price">16 коп</span>
-                    </div>
-                    <div class="flower_discribe">
-                        <p>asdfsadfasdf</p>
-                    </div>
-                </div>
-            </a>
-
-
-        </li>
-        <li >
-            <a href="">
-                <div class="product_wrap">
-                    <div class="flower">
-                        <div class="discount">
-                            <p>-15%</p>
-                        </div>
-                        <img class ="flower_pic"  src="/images/eflora/flower2.png" alt="menu" />
-                    </div>
-                    <div class="dollar_price">
-                        <span class="um"> </span>
-                        $
-                        25
-                    </div>
-
-                    <!-- <div class="old_price">
-                        <span class="um">BR </span>
-                        116
-                        <div class = "line"></div>
-                        <span class="zero_old_price">000</span>
-                    </div>
-                    <div class="new_price">
-                        <span class="um">BR </span>
-                        11
-                        <span class="zero_old_price">16 коп</span>
-                    </div> -->
-                    <div class="flower_discribe">
-                        <p>«25 роз РБ.»</p>
-                    </div>
-
-                </div>
-
-            </a>
-
-        </li>
+    <ul class="flower_view reviews_product">
+        
     </ul>
+   
     <div class="search_area">
         <input type="text" placeholder="Поиск...">
         <div class="go_find"></div>
@@ -86,7 +34,7 @@
 
 </div>
 <div class="left_main_content">
-    <p class="return_to_catalog"> <a href=""> <span>&lsaquo;</span>  Вернуться в каталог</a> </p>
+    <p class="return_to_catalog"> <a href="/catalog">  Вернуться в каталог</a> </p>
     <div class="flower_slider">
         <div id ="reason_list">
             <? if($model->discount > 0) {?>
