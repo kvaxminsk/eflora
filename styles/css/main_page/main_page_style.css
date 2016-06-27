@@ -1214,6 +1214,7 @@ ul.flower_products li:hover .product_wrap{
 	.column_list{
 		position: relative;
 		z-index: 3;
+		height: 80px;
 	}
 	#second_column{
 		top: -80px;
@@ -1235,7 +1236,7 @@ ul.flower_products li:hover .product_wrap{
 			display: none;
 		}
 		.column_list>ul.list{
-
+			height: 80px;
 		}
 		.main_slick_slider{
 			width: 100% !important;
