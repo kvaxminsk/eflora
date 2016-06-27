@@ -327,7 +327,7 @@ $(document).ready(function () {
                 $('.mobile_list').css('background-color', 'rgba(158, 77,105, 1)');
             }
         }
-        if ($('.left_sidebar').length) {
+        if ($('.left_sidebar').length && ($('.mp_left_main_content').height() < $('.mp_right_main_content').height() )) {
             if (($(window).scrollTop() + $(window).height()) >= (left_sibar_pos + $('.left_sidebar').height() + 30)) {
                 $(".left_sidebar").css('position', 'fixed');
                 $(".left_sidebar").css('bottom', '0px');
@@ -596,6 +596,7 @@ $(document).ready(function () {
     $('.slick-dots').children('li').click(function () {
         var data = $(this).find('span').text();
         $('.left_box p ').eq(0).text(data);
+        $('.mobile_categoria').text(data);
 
         var title = $(this).find('span').attr('data-title');
         $('.right_box_title ').eq(0).text(title);
@@ -604,6 +605,7 @@ $(document).ready(function () {
 
 
         $('.rb_discribe ').eq(0).text(describe);
+
 
 
     })
@@ -742,6 +744,7 @@ $(document).ready(function () {
         //alert(category);
         //$(this).text('Загрузка');
         //setTimeout(1000);alert('fff');
+
         $.ajax({
             type: 'get',
             data: 'category=' + category,
@@ -896,14 +899,15 @@ $(document).ready(function () {
 
 
     });
-/// Это что такое???
-    //$('.dropdown>li').click(function(){
-    //	if (val == "По цене:"){
-    //
-    //		return
-    //	}
-    //	$(this).parent().parent().find('span').text($(this).text());
-    //});
+/// Это что такое???    а это выбор стран!!!!
+    $('.wrapper-dropdown-2>.dropdown>li').click(function(){
+
+ /*   	/!*if (val == "По цене:"){
+      		return
+    	}*!/
+        alert($(this).text());*/
+    	$(this).parent().parent().find('span').text($(this).text());
+    });
 
 
     $(".count_product").children("input").keydown(function (event) {
