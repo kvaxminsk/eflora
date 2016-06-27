@@ -260,7 +260,7 @@
 						if (settings.selectableRows > 0) {
 							selectCheckedRows(id);
 						}
-      
+
                         if($('#total-order').length > 0){
                             $.get('/admin/shop/oproducts/totalorder?orderid=' + $('#order-id').val(), function(data) {
                                 if(data != '0')
@@ -275,7 +275,7 @@
                     			dateFormat: 'yy-mm-dd',
                     			changeMonth: true,
                     			changeYear: true
-                    
+
                     	});
 					},
 					error: function (XHR, textStatus, errorThrown) {
@@ -318,7 +318,7 @@
 				}, options || {});
 				if (options.data !== undefined && options.type === 'GET') {
 					options.url = $.param.querystring(options.url, options.data);
-				
+
 					options.data = {};
 				}
 

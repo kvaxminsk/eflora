@@ -1,12 +1,12 @@
 <?php
-$this->breadcrumbs=array(
-	'Новости' => array('index'),
+$this->breadcrumbs = array(
+    'Новости' => array('index'),
     'Добавить новость'
 );
 ?>
 <div class="conteiner">
-<?php $this->renderPartial('_form', array(
-    'model'       => $model, 
-         
-));?>
+    <?php $this->renderPartial('_form', array(
+        'model' => $model,
+
+    )); ?>
 </div>

@@ -26,15 +26,15 @@
   width:400%;
   height:100%;
   /* La transition sur tout les navigateurs */
-     /* Chrome */ 
+     /* Chrome */
     -webkit-transition-property:all;
     -webkit-transition-duration:1s;
 
-     /* Firefox */ 
+     /* Firefox */
     -moz-transition-property:all;
     -moz-transition-duration:1s;
-    
-     /* Opera */ 
+
+     /* Opera */
     transition-property:all;
     transition-duration:1s;
 }
@@ -74,7 +74,7 @@
   bottom:-25px;
   top:359px;
 }
-  
+
 /* les points, avec leur background non selectionné */
 #dots li{
   float:left;

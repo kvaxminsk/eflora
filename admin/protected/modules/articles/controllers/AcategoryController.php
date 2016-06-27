@@ -1,15 +1,17 @@
 <?php
 
-class AcategoryController extends BackController {
+class AcategoryController extends BackController
+{
 
     public $h1 = "Категории статей";
-    
+
     public $title = "Категории статей";
 
     #указываем модель, по которой должны работать массовые элементы
     public $modulerun = 'ArticleCategory';
 
-    public function actionIndex() {
+    public function actionIndex()
+    {
         $categories = ArticleCategory::model()->getTreeList('..');
         $categories = array('0' => 'Нет') + $categories;
 
@@ -22,16 +24,17 @@ class AcategoryController extends BackController {
         $this->render('index', array('model' => $model, 'categories' => $categories));
     }
 
-    public function actionCreate() {
+    public function actionCreate()
+    {
         $model = new ArticleCategory;
 
         $model->metatag = new MetaTag;
 
         if (isset($_POST['ArticleCategory'])) {
-            if((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')){
+            if ((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')) {
                 $this->redirect(array('index'));
             }
-            
+
             $model->attributes = $_POST['ArticleCategory'];
 
             $model->metatag->module = 'articles';
@@ -45,23 +48,23 @@ class AcategoryController extends BackController {
             if (empty($model->metatag->alias) || ($model->metatag->alias == '')) {
                 $model->metatag->alias = MetaTag::model()->createAlias($_POST['ArticleCategory']['name']);
             }
-            
+
             $model->metatag->uri = MetaTag::model()->createUri($model, 'ArticleCategory');
-            
+
             #сохранение со связующей моделью    
             if ($model->withRelated->save(true, array('metatag'))) {
                 #сохранение фото
                 if (!empty($_FILES['Image'])) {
                     Image::model()->savephoto($_FILES['Image'], $model->id, ArticleCategory::model()->imagefolder);
                 }
-                if(!empty($_POST['save'])){
-                    switch ($_POST['save']){
+                if (!empty($_POST['save'])) {
+                    switch ($_POST['save']) {
                         case 'save':
                             $this->redirect(array('update', 'id' => $model->id));
                             break;
                         case 'save-exit':
                             $this->redirect(array('index'));
-                            break;                        
+                            break;
                     }
                 }
                 $this->redirect(array('index'));
@@ -79,7 +82,8 @@ class AcategoryController extends BackController {
         ));
     }
 
-    public function actionUpdate($id) {
+    public function actionUpdate($id)
+    {
         $model = $this->loadModel($id);
 
         if (empty($model->metatag)) {
@@ -88,10 +92,10 @@ class AcategoryController extends BackController {
 
 
         if (isset($_POST['ArticleCategory'])) {
-            if((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')){
+            if ((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')) {
                 $this->redirect(array('index'));
             }
-                
+
             $model->attributes = $_POST['ArticleCategory'];
 
             $model->metatag->module = 'articles';
@@ -105,25 +109,25 @@ class AcategoryController extends BackController {
             if (empty($model->metatag->alias) || ($model->metatag->alias == '')) {
                 $model->metatag->alias = MetaTag::model()->createAlias($_POST['ArticleCategory']['name']);
             }
-            
+
             $old_model = $this->loadModel($id);
-            $model->metatag->uri =  MetaTag::model()->updateUri($old_model, $model, 'ArticleCategory');
-          
-            
+            $model->metatag->uri = MetaTag::model()->updateUri($old_model, $model, 'ArticleCategory');
+
+
             #сохранение со связующей моделью    
             if ($model->withRelated->save(true, array('metatag'))) {
                 #сохранение фото
                 if (!empty($_FILES['Image'])) {
                     Image::model()->savephoto($_FILES['Image'], $model->id, ArticleCategory::model()->imagefolder);
                 }
-                if(!empty($_POST['save'])){
-                    switch ($_POST['save']){
+                if (!empty($_POST['save'])) {
+                    switch ($_POST['save']) {
                         case 'save':
                             $this->redirect(array('update', 'id' => $model->id));
                             break;
                         case 'save-exit':
                             $this->redirect(array('index'));
-                            break;                        
+                            break;
                     }
                 }
                 $this->redirect(array('index'));
@@ -141,7 +145,8 @@ class AcategoryController extends BackController {
         ));
     }
 
-    public function loadModel($id) {
+    public function loadModel($id)
+    {
         $model = ArticleCategory::model()->with('metatag', 'images')->findByPk($id);
 
         if ($model === null)
@@ -149,7 +154,8 @@ class AcategoryController extends BackController {
         return $model;
     }
 
-    protected function performAjaxValidation($model) {
+    protected function performAjaxValidation($model)
+    {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'category-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();

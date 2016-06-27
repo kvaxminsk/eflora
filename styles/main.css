@@ -63,7 +63,7 @@ div.green{
 .basketClose:hover {
 	background: #005800;
 }
-			
+
 div.wrap_logo{
 	height: 122px;
 	background-color: #ffffff;
@@ -243,11 +243,11 @@ div.wrap_menu div.content_menu{
 			padding: 0;
 			border-radius: 0;
 		}
-		
+
 div.wrap_slider{
 	background: #E1E1E1;
 }
-		
+
 div.wrap_avto{
 	min-height: 526px;
 	max-height: 761px;
@@ -392,7 +392,7 @@ div.content_avto{
 				color: #373636;
 				padding-left: 2px;
 			}
-			
+
 div.wrap_news{
 	padding-bottom: 60px;
 }
@@ -473,7 +473,7 @@ div.wrap_news hr{
 			font-size:12px;
 			padding: 4px;
 		}
-		
+
 div.wrap_footer{
 	height: 83px;
 	background: url("/images/bgavto.png");
@@ -1180,7 +1180,7 @@ div.map_site{
 	}
 	div.map_menu ul li ul li{
 		float: none;
-		width: 100%;	
+		width: 100%;
 	}
 	div.map_menu ul li ul li a{
 		color: #1f1f1f;

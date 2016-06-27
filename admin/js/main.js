@@ -5,7 +5,7 @@ $(window).load(function() {
 	    }
 	    var t = $(this);
         var href = t.attr('href');
-        	
+
         $.get(href, function(data) {
             id = $('.grid-view').attr('id');
             $.fn.yiiGridView.update(id);
@@ -16,16 +16,16 @@ $(window).load(function() {
 
 	    var t = $(this);
         var href = t.attr('href');
-        	
+
         $.get(href, function(data) {
             id = $('.grid-view').attr('id');
             $.fn.yiiGridView.update(id);
         });
         return false;
 	})
-    
+
     $('input[type=password]').val('');
-    
+
     $('#add-product-order').click(function(){
         var orderid = $('#order-id').val();
         var id = $('#product-id').val();
@@ -38,12 +38,12 @@ $(window).load(function() {
             alert('Введите только один параметр!');
             return false;
         }
-        
+
         res   =   {
 		      'orderid': orderid,
 		      'id': id,
               'articul': articul
-        };	
+        };
 		jQuery.ajax({
 			'type':      'POST',
 			'dataType':  'json',
@@ -52,11 +52,11 @@ $(window).load(function() {
 			'success':function(data) {
 			    if(data == '-1'){
 		              alert('Товар уже есть в данном заказе!');
-                      return false;  
+                      return false;
 			    }else if(data == '0'){
 			          alert('Запрашиваемый Вами товар не найден, попробуйте ещё раз.');
                       return false;
-			    }else{ 
+			    }else{
 				    id = 'order-products-grid';
 				    $.fn.yiiGridView.update(id);
                     $('#product-id').val('');
@@ -65,13 +65,13 @@ $(window).load(function() {
 			}
 		});
         return false;
-        
+
     });
-        
+
 });
 
 $(document).ready(function() {
-    
+
     $('.datepicker').datepicker({
 			numberOfMonths: 1,
 			showOn: 'button',

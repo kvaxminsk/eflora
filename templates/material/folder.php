@@ -1,5 +1,5 @@
-<h3><?=$this->h1;?></h3>
+<h3><?= $this->h1; ?></h3>
 
 <p class="p1">
-    <?=$model->content;?>
+    <?= $model->content; ?>
 </p>

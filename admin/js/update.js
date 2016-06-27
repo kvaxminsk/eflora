@@ -31,11 +31,11 @@ $(window).load(function() {
 
 // значения характеристик ид от 101 и дальше
 // значения продукта от 201 и дальше
-	
-	
-	
-	
-	
+
+
+
+
+
 	$('.ok').click(function() {
 		id=$(this).attr('id').split('_');
 		if($('#elem_'+id[2]).attr('type')=='checkbox'){
@@ -71,7 +71,7 @@ $(window).load(function() {
 	         			$('#button_ok_'+data.id).hide();
 	         			$('#button_cancel_'+data.id).hide();
 	         			$('#button_edit_'+data.id).show();
-	         		} 
+	         		}
 	         		$('#text_'+data.id).show();
 	         		$('#elem_'+data.id).hide();
 	         	}catch(ex){

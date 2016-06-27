@@ -1,10 +1,10 @@
-<?// var_dump($model->content);die();?>
-<? $kurs =20100;?>
+<? // var_dump($model->content);die();?>
+<? $kurs = 20100; ?>
 <script>
     renderBlockReviews();
     if (localStorage['reviews']) {
         var reviewsArr = JSON.parse(localStorage['reviews']);
-        if(reviewsArr.indexOf(<?=$model->id?>) == -1) {
+        if (reviewsArr.indexOf(<?=$model->id?>) == -1) {
             reviewsArr.push(<?=$model->id?>);
             localStorage['reviews'] = JSON.stringify(reviewsArr);
         }
@@ -15,20 +15,20 @@
         reviewsArr.push(<?=$model->id?>);
         localStorage['reviews'] = JSON.stringify(reviewsArr);
     }
-        
+
 </script>
 <div class="right_main_content">
     <div class="last_view">
-        <p class="view_erlier"> <a href="">Вы просматривали</a></p>
-        <div class= "view_erlier_cross">
+        <p class="view_erlier"><a href="">Вы просматривали</a></p>
+        <div class="view_erlier_cross">
             <a href="">+</a>
         </div>
         <div class="clearfix" style="clear:both"></div>
     </div>
     <ul class="flower_view reviews_product">
-        
+
     </ul>
-   
+
     <div class="search_area">
         <input type="text" placeholder="Поиск...">
         <div class="go_find"></div>
@@ -42,13 +42,13 @@
 
 </div>
 <div class="left_main_content">
-    <p class="return_to_catalog"> <a href="/catalog">  Вернуться в каталог</a> </p>
+    <p class="return_to_catalog"><a href="/catalog"> Вернуться в каталог</a></p>
     <div class="flower_slider">
-        <div id ="reason_list">
-            <? if($model->discount > 0) {?>
-<!--                <div class="discount">-->
-<!--                    <p>---><?//= $model->discount ?><!--%</p>-->
-<!--                </div>-->
+        <div id="reason_list">
+            <? if ($model->discount > 0) { ?>
+                <!--                <div class="discount">-->
+                <!--                    <p>---><? //= $model->discount ?><!--%</p>-->
+                <!--                </div>-->
                 <div class="discount_wrapp">
                     <div class="discount_symbol">
                         <img src="/images/eflora/discount_symbol.png" alt="">
@@ -59,46 +59,47 @@
                         -<?= $model->discount ?>%
                     </div>
                 </div>
-            <?}?>
+            <? } ?>
 
 
 
             <?
-//            var_dump(isset($model->img));
-//            die();
+            //            var_dump(isset($model->img));
+            //            die();
             $imageMain = (isset($model->img['path'])) ? $model->img : '/images/no-photo.gif';
-//            var_dump($imageMain);
-//            die();
+            //            var_dump($imageMain);
+            //            die();
             $imageUrl = image($imageMain['path'], 'resize', '440', false);
-//            $imageUrl =$imageMain;
+            //            $imageUrl =$imageMain;
             ?>
             <div class="slider-for">
                 <div>
-                    <p  class = "first_slide" style="background: url(<?=$imageUrl?>)  no-repeat;background-position:center; background-size: 75%"></p>
+                    <p class="first_slide"
+                       style="background: url(<?= $imageUrl ?>)  no-repeat;background-position:center; background-size: 75%"></p>
                 </div>
-                <? foreach($model->images as $i => $img): ?>
+                <? foreach ($model->images as $i => $img): ?>
                     <?
 //                    var_dump($img->photo['name']);continue;
                     $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
                     $image = image($image, 'resize', '440', false);
                     ?>
                     <div>
-                        <p style="background: url(<?=$image?>)  no-repeat;background-size: 75%; background-position:center; "></p>
+                        <p style="background: url(<?= $image ?>)  no-repeat;background-size: 75%; background-position:center; "></p>
                     </div>
                 <? endforeach; ?>
             </div>
             <div class="slider-nav">
                 <div>
-                    <p>  <img src="<?=$imageUrl?>" alt=""></p>
+                    <p><img src="<?= $imageUrl ?>" alt=""></p>
                 </div>
-                <? foreach($model->images as $i => $img): ?>
+                <? foreach ($model->images as $i => $img): ?>
                     <?
 //                    var_dump($img->photo['name']);continue;
                     $image = (isset($img->photo['path'])) ? $img->photo['path'] : '/images/no-photo.gif';
                     $image = image($image, 'resize', '440', false);
                     ?>
                     <div>
-                        <p>  <img src="<?=$image?>" alt="<?=$img->photo['name']?>"></p>
+                        <p><img src="<?= $image ?>" alt="<?= $img->photo['name'] ?>"></p>
                     </div>
 
                 <? endforeach; ?>
@@ -130,39 +131,44 @@
             <div class="old_price">
                 <span class="um">BR </span>
                 <?= (int)($model->price * $kurs / 1000) ?>
-                <div class = "line"></div>
-                <span class="zero_old_price"> <?=  round (($model->price * $kurs / 1000 -  ((int)($model->price * $kurs / 1000)) ) *1000) ?></span>
+                <div class="line"></div>
+                <span
+                    class="zero_old_price"> <?= round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) ?></span>
             </div>
             <div class="new_price">
                 <span class="um">BR </span>
                 <?= (int)($model->price * $kurs / 1000) ?>
-                <span class="zero_old_price"><?= round (($model->price * $kurs / 1000 -  ((int)($model->price * $kurs / 1000)) ) *10) ?> коп</span>
+                <span
+                    class="zero_old_price"><?= round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 10) ?>
+                    коп</span>
             </div>
             <div class="dollar_price">
                 <span class="um"> </span>
-                $<?=$model->price?>
+                $<?= $model->price ?>
             </div>
             <div class="clearfix" style="clear:both"></div>
         </div>
-        <div class="item_selector" >
+        <div class="item_selector">
             <div class="count_product_selector">
                 <div class="decrement">-</div>
-                <div class="count_product"><input id="count-<?=$model->id?>"  type="text" value="0" maxlength="4"> </div>
+                <div class="count_product"><input id="count-<?= $model->id ?>" type="text" value="0" maxlength="4">
+                </div>
                 <div class="increment">+</div>
             </div>
             <div class="in_cart_wrap">
-                <a href="" class="in_cart addtobasket addtocart" data-productid="<?=$model->id?>" data-productprice="<?=$model->price?>">
+                <a href="" class="in_cart addtobasket addtocart" data-productid="<?= $model->id ?>"
+                   data-productprice="<?= $model->price ?>">
                     <p> В КОРЗИНУ </p>
                 </a>
             </div>
-            <p class="in_cart_count" >В корзине  </p>
+            <p class="in_cart_count">В корзине </p>
         </div>
 
         <div class="clearfix"></div>
     </div>
 
     <div class="item_under_slider">
-        <div class="under_slider_left_box" >
+        <div class="under_slider_left_box">
             <img class="fre" src="/images/eflora/item-us-pic1.jpg">
             <div class="item_circle_left">
 
@@ -171,15 +177,15 @@
                 </div>
                 <img class="into_circle_icon" src="/images/eflora/icon2.png">
             </div>
-            <div class="item_left_text" >
+            <div class="item_left_text">
                 <h1> Куда доставить?</h1>
-                <p class="item_left_text_line"> </p>
-                <p><?=$this->variables['item_where_delivery'];?></p>
+                <p class="item_left_text_line"></p>
+                <p><?= $this->variables['item_where_delivery']; ?></p>
             </div>
         </div>
-        <div class="under_slider_right_box" >
+        <div class="under_slider_right_box">
 
-            <img  class="fre"  src="/images/eflora/item_us_pic2.png">
+            <img class="fre" src="/images/eflora/item_us_pic2.png">
             <div class="item_circle_right">
                 <div class="item_under_slider_pic">
                     <img class="circle_pic" src="/images/eflora/item_us_pic2.png">
@@ -187,10 +193,10 @@
                 </div>
                 <img class="into_circle_icon" src="/images/eflora/into_circle_icon.png">
             </div>
-            <div class="item_right_text" >
+            <div class="item_right_text">
                 <h1> Подарочки !</h1>
-                <p class="item_right_text_line"> </p>
-                <p><?=$this->variables['item_gift'];?></p>
+                <p class="item_right_text_line"></p>
+                <p><?= $this->variables['item_gift']; ?></p>
             </div>
         </div>
         <div class="clearfix"></div>

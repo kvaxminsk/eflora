@@ -18,7 +18,7 @@
 }
 .left_menu li.l1_li a.l1_a:hover .title{
     /*box-shadow: inset  0px 3px 20px 3px  #fff;*/
-    color: #FF6000;                
+    color: #FF6000;
 
 }
 /*кнопка скрыть/раскрыть уровень1*/
@@ -106,7 +106,7 @@
 
 }
 .left_menu li.l1_li.active a.l1_a .title{
-    color: #FF6000;            
+    color: #FF6000;
 }
 /*end active li level1*/
 
@@ -134,7 +134,7 @@
     position: relative;
     width: 80%;
 }.l1_li .children li:hover{
-        background-color: #B8BDC8;             
+        background-color: #B8BDC8;
 
 }
 
@@ -151,8 +151,8 @@
    width: 30px;
 }
 .l1_li .children li .openhide:hover .title{
-    color:#00CE9B;              
-}  
+    color:#00CE9B;
+}
 .l1_li .children li.open .openhide{
    background: url('../../images/hide.png') no-repeat;
    background-position: center center;
@@ -182,8 +182,8 @@
     width: 80%;
 }
 .l1_li .children li a.active {
-    color:#00CE9B;              
-}  
+    color:#00CE9B;
+}
 .l1_li .children li a .ico{
 
     background-size: 20px;
@@ -200,7 +200,7 @@
 
 /*3-й*/
 .l1_li .children .open .children{
-	display: block;			
+	display: block;
 }
 .l1_li .children .children{
 	background: none;

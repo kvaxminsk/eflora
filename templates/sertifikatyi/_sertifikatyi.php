@@ -3,39 +3,39 @@ $month = array('01' => "Янв", '02' => "Фев", '03' => "Мар", '04' => "А
 $time = explode("-", $data->date);
 ?>
 
-<div class="post">
-   <div class="row">
-      <div class="grid_1">
-         <div class="post_date">
-            <div class="post_date_icon"><i class="fa fa-file-text"></i></div>
-            <time datetime="<?=$data['date'];?>" title="<?=$month[$time['1']]; ?> <?=$time['2']; ?>"><?=$time['0']; ?></time>
-			<div class="date-carousel_date_comments"></div>
-         </div>
-      </div> 
-      <div class="grid_7">
-         <div class="post_info">
-            <h4><a href="<?=$data->url;?>"><?=$data->name;?></a></h4>
-            <div class="post_link"><a href="#">Adminl</a></div>
-            <div class="row">
-               <div class="grid_3" style="float:left; margin: 7px 7px 7px 0px">
-			      <? if (!empty($data->img['path'])): ?>
-                     <img src="<?= $data->img['path']; ?>" alt="">
-				  <? else: ?>
-				     <img src="/../images/product-photo.jpg">
-				  <? endif; ?>
-               </div>
-               <div class="grid_4" style="margin: 7px 0 7px 7px; float:right;">
-				  <?=$data->summary;?>
-			      <a class="link" href="<?=$data['url'];?>">подробнее...</a>
-               </div>
+    <div class="post">
+        <div class="row">
+            <div class="grid_1">
+                <div class="post_date">
+                    <div class="post_date_icon"><i class="fa fa-file-text"></i></div>
+                    <time datetime="<?= $data['date']; ?>"
+                          title="<?= $month[$time['1']]; ?> <?= $time['2']; ?>"><?= $time['0']; ?></time>
+                    <div class="date-carousel_date_comments"></div>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-</div>
-			
-			
-			
+            <div class="grid_7">
+                <div class="post_info">
+                    <h4><a href="<?= $data->url; ?>"><?= $data->name; ?></a></h4>
+                    <div class="post_link"><a href="#">Adminl</a></div>
+                    <div class="row">
+                        <div class="grid_3" style="float:left; margin: 7px 7px 7px 0px">
+                            <? if (!empty($data->img['path'])): ?>
+                                <img src="<?= $data->img['path']; ?>" alt="">
+                            <? else: ?>
+                                <img src="/../images/product-photo.jpg">
+                            <? endif; ?>
+                        </div>
+                        <div class="grid_4" style="margin: 7px 0 7px 7px; float:right;">
+                            <?= $data->summary; ?>
+                            <a class="link" href="<?= $data['url']; ?>">подробнее...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <?php
 /*
 

@@ -9,8 +9,8 @@
 	top: 0;
 	right: 0;
 	overflow: auto;
-	text-align: center;	
-	z-index: 100;		
+	text-align: center;
+	z-index: 100;
 	}
 	.m_m{
 		display: table;
@@ -58,7 +58,7 @@
 						width: 32px;
 						}
 				.m_m_m_content{
-					
+
 					}
 
 #view_pictures{
@@ -108,7 +108,7 @@
 			-webkit-transition: all 0.3s ease-in-out;
 			-ms-transition: all 0.3s ease-in-out;
 			width: 35px;
-			}	
+			}
 			#left_right #right:hover{
 				background: #d82027 url('../images/img/right_str.png') 10px 10px no-repeat;
 				opacity: 0.9;
@@ -140,7 +140,7 @@
 			display: block !important;
 			text-align: center;
 			}
-				
+
 			#view_pictures #all_pictures .image a img{
 				max-width: 940px;
 			}

@@ -1,16 +1,18 @@
 <?php
 
-class CategoryController extends BackController {
+class CategoryController extends BackController
+{
 
     public $h1 = "Категории каталога";
-    
+
     public $title = "Категории каталога";
 
     #указываем модель, по которой должны работать массовые элементы
     public $modulerun = 'Category';
 
 
-    public function actionIndex() {
+    public function actionIndex()
+    {
 
         $categories = Category::model()->getTreeList('..');
         $categories = array('0' => 'Нет') + $categories;
@@ -24,7 +26,8 @@ class CategoryController extends BackController {
         $this->render('index', array('model' => $model, 'categories' => $categories));
     }
 
-    public function actionCreate() {
+    public function actionCreate()
+    {
         $model = new Category;
 
         $model->metatag = new MetaTag;
@@ -43,9 +46,9 @@ class CategoryController extends BackController {
             if (empty($model->metatag->alias) || ($model->metatag->alias == '')) {
                 $model->metatag->alias = MetaTag::model()->createAlias($_POST['Category']['name']);
             }
-            
+
             $model->metatag->uri = MetaTag::model()->createUri($model, 'Category');
-            
+
             #сохранение со связующей моделью    
             if ($model->withRelated->save(true, array('metatag'))) {
                 #сохранение фото
@@ -67,7 +70,8 @@ class CategoryController extends BackController {
         ));
     }
 
-    public function actionUpdate($id) {
+    public function actionUpdate($id)
+    {
         $model = $this->loadModel($id);
 
         if (empty($model->metatag)) {
@@ -89,11 +93,11 @@ class CategoryController extends BackController {
             if (empty($model->metatag->alias) || ($model->metatag->alias == '')) {
                 $model->metatag->alias = MetaTag::model()->createAlias($_POST['Category']['name']);
             }
-            
+
             $old_model = $this->loadModel($id);
-            $model->metatag->uri =  MetaTag::model()->updateUri($old_model, $model, 'Category');
-          
-            
+            $model->metatag->uri = MetaTag::model()->updateUri($old_model, $model, 'Category');
+
+
             #сохранение со связующей моделью    
             if ($model->withRelated->save(true, array('metatag'))) {
                 #сохранение фото
@@ -115,7 +119,8 @@ class CategoryController extends BackController {
         ));
     }
 
-    public function loadModel($id) {
+    public function loadModel($id)
+    {
         $model = Category::model()->with('metatag', 'images')->findByPk($id);
 
         if ($model === null)
@@ -123,7 +128,8 @@ class CategoryController extends BackController {
         return $model;
     }
 
-    protected function performAjaxValidation($model) {
+    protected function performAjaxValidation($model)
+    {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'category-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();

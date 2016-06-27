@@ -8,7 +8,7 @@
         docElem = document.documentElement;
 
     function extend( a, b ) {
-        for( var key in b ) { 
+        for( var key in b ) {
             if( b.hasOwnProperty( key ) ) {
                 a[key] = b[key];
             }
@@ -32,15 +32,15 @@
     }
 
     // http://snipplr.com/view.php?codeview&id=5259
-    function isMouseLeaveOrEnter(e, handler) { 
-        if (e.type != 'mouseout' && e.type != 'mouseover') return false; 
-        var reltg = e.relatedTarget ? e.relatedTarget : 
-        e.type == 'mouseout' ? e.toElement : e.fromElement; 
-        while (reltg && reltg != handler) reltg = reltg.parentNode; 
-        return (reltg != handler); 
+    function isMouseLeaveOrEnter(e, handler) {
+        if (e.type != 'mouseout' && e.type != 'mouseover') return false;
+        var reltg = e.relatedTarget ? e.relatedTarget :
+        e.type == 'mouseout' ? e.toElement : e.fromElement;
+        while (reltg && reltg != handler) reltg = reltg.parentNode;
+        return (reltg != handler);
     }
 
-    function cbpTooltipMenu( el, options ) {    
+    function cbpTooltipMenu( el, options ) {
         this.el = el;
         this.options = extend( this.defaults, options );
         this._init();

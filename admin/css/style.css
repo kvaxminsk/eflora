@@ -3,7 +3,7 @@
 
 
 html{
-	
+
 	display: block;
 	height:100%;
 	}
@@ -26,11 +26,11 @@ i{
 strong{
 	font-weight: bold;
 }
-	
+
 #wrapper{
 	display: block;
 	height: auto !important;
-	min-height: 100%;	
+	min-height: 100%;
 	margin: 0 auto;
 	width: 960px;
 	}
@@ -39,32 +39,32 @@ strong{
 		width: 100%;
 		}
 		header:after {
-			content: '.';	
+			content: '.';
 			clear: both;
 			display: block;
 			height: 0;
-			visibility: hidden;	
+			visibility: hidden;
 			}
 	#content {
 		line-height: 1;
-		padding: 0 0 150px;	
-		position: relative;	
+		padding: 0 0 150px;
+		position: relative;
 		width: 100%;
 		}
 		#content:after {
-			content: '.';	
+			content: '.';
 			clear: both;
 			display: block;
 			height: 0;
-			visibility: hidden;	
+			visibility: hidden;
 			}
 footer {
 	background: #414141;
-	height: 155px;	
+	height: 155px;
 	margin: -155px auto 0;
 	position: relative;
 	text-align: center;
-	width: 960px;	
+	width: 960px;
 	}
 	footer  .footer_content{
 		display: block;
@@ -160,7 +160,7 @@ footer {
 	}
 	.city ul{
 		display: block;
-		} 
+		}
 		.city ul li{
 			float: left;
 			margin-right: 20px;
@@ -194,7 +194,7 @@ footer {
 		}
 .create_sait{
 	display: block;
-	padding-left: 70px; 
+	padding-left: 70px;
 	}
 	.create_sait a{
 		background: url('../images/bhz.png') 190px 4px no-repeat;
@@ -203,13 +203,13 @@ footer {
 		font: normal 18px/44px Tahoma, Verdana, Arial, Sans-Serif;
 		display: block;
 		height: 45px;
-		padding-left: 20px; 
+		padding-left: 20px;
 		}
 		.create_sait a:hover{
 			background:#ec4343 url('../images/bhz.png') 190px 4px no-repeat;
 			color: #f1f1f1;
 			text-decoration:none;
-			
+
 			}
 .header_line2{
 	margin-top: 10px;
@@ -278,7 +278,7 @@ footer {
 				position: absolute;
 				pointer-events: none;
 			}
-			
+
 			.level2:after {
 				border-color: rgba(255, 255, 255, 0);
 				border-bottom-color: #ffffff;
@@ -360,7 +360,7 @@ footer {
 		}
 		.title_menu ul{
 			float: left;
-			} 
+			}
 			.title_menu ul li{
 				float: left;
 				margin-left: 20px;
@@ -536,7 +536,7 @@ footer {
 		font: normal 18px/24px Tahoma, Verdana, Arial, Sans-Serif;
 		}
 .usluga{
-	display: block;	
+	display: block;
 	}
 	.usluga .title{
 		color: #f1f1f1;
@@ -614,7 +614,7 @@ footer {
 	.tarif_line .title{
 		color: #414141;
 		float: left;
-		} 
+		}
 	.tarif_line .price{
 		color: #EC4343;
 		float: right;
@@ -636,7 +636,7 @@ footer {
 	.tarif_line2 .title{
 		color: #461777;
 		float: left;
-		} 
+		}
 	.tarif_line2 .check{
 		float: left;
 		width: 40px;
@@ -655,7 +655,7 @@ footer {
 	.tarif_line3_title{
 		color: #414141;
 		float: left;
-		} 
+		}
 	.tarif_line3 .price{
 		color: #EC4343;
 		float: right;
@@ -674,7 +674,7 @@ footer {
 		color: #64c9f5;
 		font: normal 13px/14px Tahoma, Verdana, Arial, Sans-Serif;
 		text-decoration: underline;
-		} 
+		}
 		.footer_menu li a:hover{text-decoration:none;}
 	.footer_menu li ul{
 		margin-top: 20px;
@@ -704,20 +704,20 @@ footer {
 		color: #64c9f5;
 		font: normal 13px/14px Tahoma, Verdana, Arial, Sans-Serif;
 		text-decoration: underline;
-		} 
+		}
 		.link a:hover{text-decoration:none;}
 .mail{
 	color: #64c9f5;
 	display: block;
 	font: normal 13px/14px Tahoma, Verdana, Arial, Sans-Serif;
 	margin-top: 40px;
-	text-align: left;	
+	text-align: left;
 	}
 .copy{
 	color: #fefefe;
 	display: block;
 	font: normal 13px/14px Tahoma, Verdana, Arial, Sans-Serif;
 	margin-top: 40px;
-	text-align: left;		
+	text-align: left;
 }
 /*end footer*/

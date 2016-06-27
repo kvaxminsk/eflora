@@ -39,7 +39,7 @@
 	width: 100%;
 	min-width: 320px;
 	max-width: 1920px;
-	
+
 }
 
 
@@ -61,8 +61,8 @@ html ,body{
 	left:0;
 	text-align:center;
 	z-index: 9999;
-	
-}	
+
+}
 .hidden_menu{
 
 	width: calc(100% - 80px);
@@ -72,17 +72,17 @@ html ,body{
 	left:80px;
 	z-index: 10;
 	overflow: hidden;
-	
+
 }
 
    .hidden_menu_list {
 	margin:0;
 	padding:0;
-	
+
 	position: relative;
 
 
-	
+
 }
 
 .hidden_menu_list li
@@ -94,7 +94,7 @@ html ,body{
 	font: 18px/18px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	margin-left:10px;
-} 
+}
  .backet_circle{
  	position: absolute;
  	width: 30px;
@@ -145,7 +145,7 @@ html ,body{
 	}
 
 	ul.hidden_menu_list{
-		width: 365px ; 
+		width: 365px ;
 		min-width: 240px;
 		margin-top: -30px;
 
@@ -173,7 +173,7 @@ html ,body{
 	.hidden_menu_list>li>a {
 		margin:0 ;
 		padding: 0 ;
-		text-decoration: none; 
+		text-decoration: none;
 	}
 	.catalog_logo_pic{
 		width: 240px;
@@ -236,8 +236,8 @@ html ,body{
 
 
 .question_panel{
-	
-	
+
+
 	background-color: #FB9864;
 	display: block;
 	position: fixed;
@@ -323,7 +323,7 @@ html ,body{
 #logo {
 	height: 160px;
 	width: 365px;
-	min-width: 365px; 
+	min-width: 365px;
 	background-color: #f3f3f3;
 	float:left;
 }
@@ -332,12 +332,12 @@ html ,body{
 	margin-left: 60px;
 	margin-top: 30px;
 	margin-right: 60px;
-	margin-bottom: 40px; 
+	margin-bottom: 40px;
 }
 #logo_text
 {
 	font:italic 12px/8px arial,sans-serif;
-	margin-left: 140px; 
+	margin-left: 140px;
 	margin-top: -50px;
 	color: #9b9a9a;
 }
@@ -356,7 +356,7 @@ html ,body{
 	position: relative;
 	width: calc(100% - 365px);
 	height:  160px;
-	
+
 }
 
 
@@ -373,7 +373,7 @@ html ,body{
 	background-color: #fdf5d5;
 	height: 80px;
 	width: calc(100% - 80px);
-	
+
 	text-align: center;
 
 }
@@ -408,14 +408,14 @@ html ,body{
 	height: 80px;
 	width: calc(100% - 80px);
 
-	
+
 }
 .header_price_icon{
 	width: 80px;
 	height: 80px;
 	float: left;
 	background-color:  #d1d1d1;
-	position: absolute; 
+	position: absolute;
 	right: 0;
 	top:80px;
 	cursor: pointer;
@@ -471,7 +471,7 @@ html ,body{
 	color:#898989;
 	cursor: pointer;
 
-} 
+}
 .mobile_categoria
 {
 	display: none
@@ -557,10 +557,10 @@ ul.list>li:nth-child(1){
 	font-family: 'Roboto Light', arial;
 	font-size: 23px;
 	height: 100%;
-	width: calc(100% - 80px); 
+	width: calc(100% - 80px);
 	position: relative;
 
-} 
+}
 .phone {
 	margin-top: -40px;
 	width:100%;
@@ -639,7 +639,7 @@ sup{
 	font-family: 'Roboto Light', arial;
 	font-size: 23px;
 	height: 100%;
-	width: 100%; 
+	width: 100%;
 	position: relative;
 	top: -40px !important;
 	padding-left: 60px;
@@ -670,7 +670,7 @@ sup{
 }
 
 .third_column_number{
-	
+
 	font-family: 'Roboto Light', arial;
 	font-size: 23px;
 	height: 100%;
@@ -678,7 +678,7 @@ sup{
 	position: relative;
 	top: -45px;
 	padding-left: 60px;
-	
+
 }
 .third_phone {
 	position: relative;
@@ -783,7 +783,7 @@ sup{
 	color: #414040;
 }
 .fotter_phone>a:hover{
-	
+
 	color: #414040;
 }
 
@@ -850,11 +850,11 @@ sup{
 	float: left;
 	width: calc(100% - 45px);
 	height: 170px;
-	
+
 }
 
 .adress_info p{
-	
+
 	font: 15px/22px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	color: #3f3e3e;
@@ -1018,7 +1018,7 @@ sup{
 .in_cart p{
 	margin-top:19px;
 	margin-left: 60px;
-}	
+}
 
 .mobile_list:hover {
 	cursor:pointer;
@@ -1036,7 +1036,7 @@ sup{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;	
+	left: 0;
 	right: 0;
 	margin: auto;
 	padding-left: 20px;
@@ -1056,7 +1056,7 @@ sup{
 	height: 3px;
 	background: #fff;
 	border: none;
-	transition-duration:0.2s; 
+	transition-duration:0.2s;
 }
 .sw-bottom {
 	position: relative;
@@ -1065,7 +1065,7 @@ sup{
 	top: 10px;
 	background: #fff;
 	border: none;
-	transition-duration:0.2s; 
+	transition-duration:0.2s;
 }
 .sw-footer {
 	position: relative;
@@ -1074,7 +1074,7 @@ sup{
 	top: 20px;
 	background: #fff;
 	border: none;
-	transition-duration:0.2s; 
+	transition-duration:0.2s;
 }
 .help_panel_close, .menu_panel_close{
 	display: none;
@@ -1140,12 +1140,12 @@ sup{
 	}
 
 
-	
+
 }
 @media  all and (max-width: 1490px){
  .first_phone, .second_phone, .third_phone{
 	font-size: 22px ;
-} 
+}
 .header_price_text{
 	font-size: 22px;
 	text-align: center;
@@ -1192,9 +1192,9 @@ sup{
 	.first_phone, .second_phone, .third_phone{
 		font-size: 22px ;
 	}
-	
+
 	#first_description{
-	
+
 		font-size: 20px;
 	/* 	margin-right: calc(50% - 92px); */
 	}
@@ -1202,8 +1202,8 @@ sup{
 	/* 	padding-left: calc(50% - 80px); */
 	}
 	#third_description{
-		
-		
+
+
 	}
 
 }
@@ -1226,8 +1226,8 @@ sup{
 		color: #898989;
 	}
 	#third_description{
-		width: 150px;	
-		
+		width: 150px;
+
 	}
 
 }
@@ -1237,7 +1237,7 @@ sup{
 	}
 	.first_phone{
 		margin-left: 0;
-	} 
+	}
 	sup{
 		font-size: 14px;
 	}
@@ -1337,7 +1337,7 @@ sup{
 		background: url(../../images/eflora/triangle.png) no-repeat;
 		background-position: calc(50% + 105px) 30px;
 	}
-	
+
 	.hidden_menu{
 		display: block;
 		position: fixed;
@@ -1364,7 +1364,7 @@ sup{
 		margin-top: 100px;
 	}
 	ul.hidden_menu_list{
-		width: 365px !important; 
+		width: 365px !important;
 		min-width: 240px;
 		margin-top: 30px;
 
@@ -1383,7 +1383,7 @@ sup{
 	.hidden_menu_list>li>a {
 		margin:0 !important;
 		padding: 0 !important;
-		text-decoration: none; 
+		text-decoration: none;
 	}
 	.mobile_list >p
 	{
@@ -1436,8 +1436,8 @@ sup{
 		display: block !important;
 		text-align: center;
 	}
-	
-	
+
+
 	.question_panel{
 		display: block !important;
 		position: fixed;
@@ -1517,7 +1517,7 @@ sup{
 		font-size: 14px;
 		padding-right: 10px;
 		margin-left: 10px;
-		width: auto; 
+		width: auto;
 
 	}
 	.active_hidden_menu{
@@ -1544,11 +1544,11 @@ sup{
 
 }
 @media all and (max-width: 1220px){
-	
+
 	.social_icons_wrap>ul{
 		display: flex;
 		flex-direction: row;
-		justify-content: center; 
+		justify-content: center;
 	}
 }
 @media all and (max-width: 1155px){
@@ -1562,7 +1562,7 @@ sup{
 		font-size: 20px;
 		margin-top: -175px;
 	}
-	
+
 	#logo_text_mobile{
 		margin-top: 10px;
 		font-size: 20px;
@@ -1637,7 +1637,7 @@ sup{
 		width:240px;
 
 	}
-	
+
 	#backet_wrap {
 		width: 33.3%;
 	}
@@ -1690,7 +1690,7 @@ sup{
 		margin-top: 100px;
 	}
 	ul.hidden_menu_list{
-		width: 240px !important; 
+		width: 240px !important;
 		min-width: 240px;
 		margin-top: 100px;
 
@@ -1710,7 +1710,7 @@ sup{
 	.hidden_menu_list>li>a {
 		margin:0 !important;
 		padding: 0 !important;
-		text-decoration: none; 
+		text-decoration: none;
 	}
 
 	.question_panel{
@@ -1932,7 +1932,7 @@ sup{
 	}
 	.social_icons_wrap>ul {
 		display: block;
-	} 
+	}
 	.social_icons_wrap>ul>li>a>img{
 
 		height: 20px;
@@ -2044,7 +2044,7 @@ sup{
 		display: inline;
 		margin-left: 10px;
 		font:  16px/10px arial,sans-serif;
-		
+
 
 	}
 	.first_phone{
@@ -2146,7 +2146,7 @@ sup{
 
 	}
 	.footer{
-		min-width: 320px !important; 
+		min-width: 320px !important;
 
 	}
 }
@@ -2175,7 +2175,7 @@ sup{
 
 		background-position: 95% 30px;
 	}
-	
+
 }
 
 

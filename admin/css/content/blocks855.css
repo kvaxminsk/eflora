@@ -2,7 +2,7 @@
 	background: #fff;
 	/*border-top: 1px solid #e3ebed;*/
 	/*border-right: 1px solid #e3ebed;*/
-	float: left;	
+	float: left;
 	font-size: 12px;
 	margin-bottom: 10px;
 	}
@@ -17,14 +17,14 @@
 			width: 100%;
 			}
 			.thead .row{
-				
+
 				height: 40px;
 				}
 			.tbody .row{
-				 background: rgba(205, 220, 223, 0.1); 
+				 background: rgba(205, 220, 223, 0.1);
 				}
 			.tbody .row:hover{
-				 background: rgba(205, 220, 223, 0.3); 
+				 background: rgba(205, 220, 223, 0.3);
 				}
 			.tbody .row:hover .unpublic span{
 				opacity: 1;
@@ -49,7 +49,7 @@
 				.thead .cell{
 					height: 40px;
 					color: #333;
-					}	
+					}
 					.thead .cell a{
 						background: inherit;
 						box-shadow: inset  0px 0px 0px 0px  silver;
@@ -61,7 +61,7 @@
 			                -moz-transition: all 0.1s ease-in-out;
 			                -webkit-transition: all 0.1s ease-in-out;
 			                -ms-transition: all 0.1s ease-in-out;
-			            
+
 						vertical-align: middle;
 						width: 855px;
 						}
@@ -74,7 +74,7 @@
 								margin-right: 10px;
 								width: 15px;
 								}
-								
+
 								.thead .cell .asc .ico{
 									background:  url('../../images/play.png') no-repeat;
 									background-position: center center;
@@ -119,13 +119,13 @@
 					margin: 5px 0;
 					}
 				.tbody .cell.unpublic span{
-					opacity: 0.5; 
+					opacity: 0.5;
 					}
 				.tbody .cell.unpublic a{
-					opacity: 0.9; 
+					opacity: 0.9;
 					}
-				
-		
+
+
 /*razmeru blokov*/
 .block71{
 	/*width: 855px;*/

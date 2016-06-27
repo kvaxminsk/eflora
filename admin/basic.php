@@ -6,7 +6,7 @@ date_default_timezone_set("Europe/Moscow");
 function p($var, $die = 1, $get = ''){
     if($get != ''){
         if(!empty($_GET[$get])){
-            print '<pre>' . print_r($var, 1) . '</p>';       
+            print '<pre>' . print_r($var, 1) . '</p>';
         }
     }else{
         print '<pre>' . print_r($var, 1) . '</p>';
@@ -25,7 +25,7 @@ function password($password)
 {
     $copyright = 'sitemania';
     $birthday = '22022013';
-    
+
 	return md5($copyright . $password . $birthday);
 }
 
@@ -37,13 +37,13 @@ function isEmail($email)
 
 # получение папки с изображением
 function getImageFolder($imgfolder, $id){
-    $path = '/images/'. $imgfolder; 
-        
+    $path = '/images/'. $imgfolder;
+
     $subdir = substr('00000'.$id, -6);
-    $maindir = substr($subdir, 0, 3);   
-        
-    $dir = $path . DS . $maindir . DS . $subdir . DS;    
-    $dir = str_replace(DS, '/', $dir);        
+    $maindir = substr($subdir, 0, 3);
+
+    $dir = $path . DS . $maindir . DS . $subdir . DS;
+    $dir = str_replace(DS, '/', $dir);
     return $dir;
 }
 
@@ -51,12 +51,12 @@ function getImageFolder($imgfolder, $id){
 function getImageName($image, $type = '', $width = 100, $height = 100){
     $ext = end(explode('.', $image));
     $name = str_replace('.'.$ext, '', $image);
-    
+
     $imageName = $name;
     if($type == ''){
         $imageName = $imageName . '.' .$ext;
     }else{
-        $imageName = $imageName . '-' . $type . '-' . $width . 'x' . $height . '.' . $ext;    
+        $imageName = $imageName . '-' . $type . '-' . $width . 'x' . $height . '.' . $ext;
     }
     return $imageName;
 }
@@ -76,7 +76,7 @@ function totranslit($str, $lower = true, $punkt = false)
         'ч' => 'ch',  'ш' => 'sh',  'щ' => 'sch',
         'ь' => '\'',  'ы' => 'y',   'ъ' => '\'',
         'э' => 'e',   'ю' => 'yu',  'я' => 'ya',
-        
+
         'А' => 'A',   'Б' => 'B',   'В' => 'V',
         'Г' => 'G',   'Д' => 'D',   'Е' => 'E',
         'Ё' => 'E',   'Ж' => 'Zh',  'З' => 'Z',
@@ -94,14 +94,14 @@ function totranslit($str, $lower = true, $punkt = false)
 	$str = strtolower($str);
 	$str = preg_replace('~[^-a-z0-9_]+~u', '-', $str);
 	$str = trim($str, "-");
-	
+
 	return $str;
 }
 
 
 function sendEmail($message, $subject, $from, $to){
     $host = str_replace('www.', '', getEnv('HTTP_HOST'));
-    
+
     $headers =  "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 
@@ -110,20 +110,20 @@ function sendEmail($message, $subject, $from, $to){
     } else {
         $from = $from;
     }
-   
+
     $headers .= 'From: '.$from;
-    
+
     #Кому отправлять сообщение
     if(!is_array($to)){
         $to = explode(',' , $to);
         $to = array_map('trim', $to);
     }
-    
+
     $flag = false;
     foreach ($to as $i => $mail){
 	    if(@mail($mail, $subject, $message, $headers)){
-            $flag = true;    
-        }    
+            $flag = true;
+        }
     }
     return $flag;
 }
@@ -133,10 +133,10 @@ function rusdate($string, $showYear = false) {
 
 	if (is_numeric($string))
 		$string = date('Y-m-d', $string);
-        
+
 	list($y, $m, $d) = explode('-', $string);
-	
-	
+
+
 	if (!intval($d)) $d = 1;
 
 	$tmp = mktime($m, $d, $y);

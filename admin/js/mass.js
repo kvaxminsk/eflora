@@ -5,7 +5,7 @@ $(window).load(function() {
         action = $('#massselect');
 		action = action[0].value;
 		out = '';
-  
+
         if (action == 'save'){
             var rows_count = boxes.size();
             var inputArr = new Array();
@@ -14,7 +14,7 @@ $(window).load(function() {
                 var inputObj = new Object();
                 if(boxes.eq(num).val() > 0){
                     inputObj.id = boxes.eq(num).val();
-                    
+
                     inputs = boxes.eq(num).parent().parent().find('input');
                     var inputs_count = inputs.size();
                     //alert(inputs_count);
@@ -24,8 +24,8 @@ $(window).load(function() {
                     }
                     inputArr[num] = inputObj;
                 }
-            }    
-            var out = JSON.stringify(inputArr); 
+            }
+            var out = JSON.stringify(inputArr);
         }else{
             for(i = 0; i < boxes.length; i++){
     			if(boxes[i].checked == true){
@@ -36,11 +36,11 @@ $(window).load(function() {
     			}
     		}
         }
-		
+
 		res   =   {
 		      'values': out,
 		      'action': action
-        };	
+        };
 		jQuery.ajax({
 			'type':      'POST',
 			'dataType':  'json',

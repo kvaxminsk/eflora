@@ -34,7 +34,7 @@
 			height: 50px;
 			padding: 5px;
 			}
-			
+
 			.grid-view table.items th a{
 				color: #ccc;
 				float: left;
@@ -45,14 +45,14 @@
 				.grid-view table.items th a.asc{
 					background:  url('/admin/images/arroy_bottom.png') no-repeat;
 					background-size: 20px;
-					background-position: right center;	
+					background-position: right center;
 					}
 				.grid-view table.items th a.desc{
 					background:  url('/admin/images/arroy_top.png') no-repeat;
 					background-size: 20px;
 					background-position: right center;
 					}
-					
+
 	.grid-view table.items tbody{
 		color: #333;
 		font-size: 12px;
@@ -81,10 +81,10 @@
 /* GridView loading*/
  .grid-view-loading .ajax-loading{
 display: block;
-} 
+}
 .ajax-loading{
 	/*background:  url('../images/loading.gif') no-repeat; */
-	background:  url('/admin/images/ajax-loader.gif') no-repeat; 
+	background:  url('/admin/images/ajax-loader.gif') no-repeat;
 	display: none;
 	height: 32px;
 	right: 0px;
@@ -101,13 +101,13 @@ li.page, li.next, li.previous {margin:0}
 
 .grid-view table.items th, .grid-view table.items td
 {
-	
-	
+
+
 }
 
 
 .grid-view table tbody tr:nth-child(2n){
-	 background: #fff; 
+	 background: #fff;
 }
 
 
@@ -217,7 +217,7 @@ ul.yiiPager .last
 .grid-view .filters select
 {
 	width: 100%;
-	
+
 }
 .button-column{
 width:150px;
