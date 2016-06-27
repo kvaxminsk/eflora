@@ -438,6 +438,7 @@ class FrontCatalogController extends FrontController
 
     public function actionAjaxProducts()
     {
+
         if (!empty($_GET)) {
 //            $this->layout = '';
             $this->layout = 'webroot.templates.layoutAjax';
@@ -447,10 +448,22 @@ class FrontCatalogController extends FrontController
             } else {
                 $criteria->addCondition('t.stock=\'1\'');
             }
+
+
+            if($_GET['price'] && $_GET['type'] == 'ASC') {
+                $criteria->order = "t.price ASC";
+//                die($_GET['type']);
+
+            }
+            elseif($_GET['price'] && $_GET['type'] == 'DESC') {
+                $criteria->order = "t.price DESC";
+//                die($_GET['type']);
+            }
+
             $count = Product::model()->count($criteria);
 
             $pages = new CPagination($count);
-            $pages->pageSize = 1;
+            $pages->pageSize = 2;
 
 //            die(($_GET));
             if (!empty($_GET['page'])) {
@@ -458,12 +471,19 @@ class FrontCatalogController extends FrontController
             } else {
                 $pageVar = 1;
             }
-            if ($count == 1) {
-                if ($pageVar > $count) {
-                    die();
-                }
-            }
-            if ($pageVar > $count) {
+//            if ($count == 1) {
+//                if (($pageVar) > 2) {
+//                    die();
+//                }
+//            }
+//            if(($pages->pageSize < ($pageVar*$pages->pageSize - $count))  {
+//
+//            }
+//            if (!(($pageVar*$pages->pageSize - $count) >0))
+//            {
+//                die();
+//            }
+            if (($pageVar*$pages->pageSize - $count) > 1) {
                 die();
             }
             $pages->applyLimit($criteria);
@@ -471,15 +491,21 @@ class FrontCatalogController extends FrontController
 
             $products = new CActiveDataProvider('Product', array(
                 'pagination' => array(
-                    'pageSize' => 1,
+                    'pageSize' => 2,
                     'pageVar' => 'page',
                 ),
                 'criteria' => $criteria,
             ));
+//            die($_GET['price']);
+            if(!$_GET['price']) { $_GET['price']=0;}
+            if(!$_GET['type']) { $_GET['type']=0;}
+
             $this->render('ajax_product', array(
                 'products' => $products,
                 'pages' => $pages,
                 'pagevar' => $pageVar,
+                'price' => $_GET['price'],
+                'type' => $_GET['type'],
             ));
         }
 

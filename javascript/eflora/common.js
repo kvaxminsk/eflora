@@ -586,6 +586,7 @@ $(document).ready(function () {
         $('.rb_discribe ').eq(0).text(describe);
         $('#theme_text').text(data);
 
+        $('#theme_text').attr('data-category',$(this).find('span').attr('data-category'));
 
     })
 
@@ -1118,7 +1119,7 @@ $(document).ready(function () {
     });
 
     $(".button_continue").click(function () {
-        eere
+        //eere
         $('.tabs_list li').eq(0).removeClass('active');
         $('.tabs_list li').eq(1).addClass('active');
         $('.tab1').animate({opacity: 0}, 400, function () {
@@ -1327,6 +1328,7 @@ $(document).ready(function () {
 
         $(this).parent().find('img').show();
         var atr = $(this).parent().find('.popular').attr('src');
+        $('.price_link').attr('src', '');
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
@@ -1342,14 +1344,56 @@ $(document).ready(function () {
     $('.choice_link').eq(1).click(function(){
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
+        $('.popular').attr('src', '');
+        var category = $('.slick-active span').attr('data-category');
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
             $(this).parent().find('.price_link').attr('src', atr);
+
+            /*****/
+
+            alert($('.slick-active span').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=DESC",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /****/
         }
         else{
             atr='../../images/eflora/select_icon.png';
             $(this).parent().find(".price_link").attr('src', atr);
+
+
+
+            /******/
+
+            alert($('.slick-active span').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=ASC",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /***/
         }
     })
 

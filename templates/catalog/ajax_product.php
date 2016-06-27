@@ -1,3 +1,6 @@
+<?//=$price?>
+<?//=$type?>
+
 <?
 $this->widget('SMListView',
     array(
@@ -37,12 +40,9 @@ $this->widget('SMListView',
         else {
             category3 = 17;
         }
-//            alert(category1);
-//            alert(category2);
-//            alert(category3);
         $.ajax({
             type: 'get',
-            data: 'page=' + page + '&category=' + category3,
+            data: 'page=' + page + '&category=' + category3+ "&price=" + "<?=$price?>" + "&type="+ "<?=$type?>",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
