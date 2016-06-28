@@ -460,7 +460,7 @@
     <div class="footer">
         <div class="footer_logo">
             <div class="footer_logo_describe">
-                <p>Белорусская служба доставки цветов</p>
+                <p><?= $this->variables['header_slogan_rus'] ?></p>
             </div>
         </div>
         <div class="footer_contact_info">
@@ -470,13 +470,13 @@
                     </div>
                     <div class="phones">
                         <p class="fotter_phone">
-                            <span class="code">375 29</span> 335-43-43
+                            <a href="tel:<?= strip_tags($this->variables['phone']) ?>">     <?= $this->variables['phone'] ?> </a>
                         </p>
                         <p class="fotter_phone">
-                            <span class="code">375 29</span> 335-43-43
+                            <a href="tel:<?= strip_tags($this->variables['phone_mts']) ?>">     <?= $this->variables['phone_mts'] ?> </a>
                         </p>
                         <p class="fotter_phone">
-                            <span class="code">375 29</span> 335-43-43
+                            <a href="tel:<?= strip_tags($this->variables['phone_velcom']) ?>">     <?= $this->variables['phone_velcom'] ?> </a>
                         </p>
                     </div>
                 </div>
@@ -488,7 +488,7 @@
                     <div class="adress_info">
                         <p id="our_adress">Наш адрес:</p>
                         <p>
-                            ул. Мележа, 4 к. 5 г. Минск, Беларусь Время работы: 9:00-19:00 без выходных
+                            <?= $this->variables['address'] ?> <?= $this->variables['time_work'] ?>
                         </p>
                     </div>
                 </div>
@@ -497,14 +497,14 @@
                 <div class="col3_wrapp">
                     <div class="shop_icon">
                     </div>
-                    <p><a href="/shops">Наши магазины</a></p>
+                    <p><a href="/shops">Наши магазины </a></p>
                 </div>
 
             </div>
         </div>
         <div class="footer_down_part">
             <div class="text_author">
-                <p>&#169;2006-2016</p>
+                <p>&#169;2006-<?= Date('Y'); ?></p>
                 <p> eFlora.by</p>
                 <p id="t_author_3"> flowers delivery service</p>
             </div>
@@ -524,19 +524,14 @@
                         <li><a href="<?= $this->variables['social_pinterest'] ?>"><img src="/images/eflora/R-icon.png"
                                                                                        alt=""></a></li>
                     </ul>
-
-
                 </div>
-
             </div>
             <div class="reactive_logo">
                 <div class="reactive_logo_wrap">
                     <p>Дизайн и разработка-</p>
                     <div class="logo_picture">
                     </div>
-
                 </div>
-
             </div>
             <div class="up_button">
                 <img class="" src="/images/eflora/up_button.png" alt="menu"/>

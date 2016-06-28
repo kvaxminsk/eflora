@@ -1854,7 +1854,7 @@ function addOrder() {
         success: function (data) {
           alert(data);
             $('#order_id').text(data);
-
+            localStorage.clear();
         }
     });
 }
