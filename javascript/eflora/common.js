@@ -1,3 +1,5 @@
+
+
 function number_format(number, decimals, dec_point, thousands_sep) {
     number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
     var n = !isFinite(+number) ? 0 : +number,
@@ -42,11 +44,11 @@ function changeCurrency()
         var currency = JSON.parse(localStorage['currency']);
         if(currency != 'us'){
             currency = 'br';
-            price_br = 20100* price_us;
+            price_br = kurs * price_us;
             price_br = number_format(price_br, 0, ',', ' ');
         }
         else {
-            price_br = 20100* price_us;
+            price_br = kurs* price_us;
             price_br = number_format(price_br, 0, ',', ' ');
         }
     }

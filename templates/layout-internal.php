@@ -6,7 +6,7 @@
     <title><?= $this->title; ?></title>
     <meta name="description" content="<?= $this->description; ?>"/>
     <meta name="keywords" content="<?= $this->keywords; ?>"/>
-
+    <script> var kurs = <?=$this->kurs?></script>
     <link rel="stylesheet" type="text/css" href="/styles/css/main_style.css"/>
     <link rel="stylesheet" type="text/css" href="/styles/css/text_page/text_page.css"/>
 

@@ -1,7 +1,7 @@
 <ul class="cart1_item">
 
     <? $i = 0;
-    $kurs = 20100;
+    $kurs = $this->kurs;
     foreach ($products as $product): ?>
         <!--	--><? // var_dump($item); ?>
         <?

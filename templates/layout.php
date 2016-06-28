@@ -18,7 +18,7 @@
         }
     </style>
 
-
+    <script> var kurs = <?=$this->kurs?></script>
     <script type="text/javascript" src="javascript/eflora/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="javascript/eflora/slick/slick.min.js"></script>
 
@@ -26,6 +26,7 @@
     <script type="text/javascript" src="javascript/eflora/common.js"></script>
     <script type="text/javascript" src="javascript/eflora/shop.js"></script>
     <script type="text/javascript" src="javascript/eflora/shop-lib.js"></script>
+
 
     <script type="text/javascript">
 

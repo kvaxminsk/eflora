@@ -1,4 +1,4 @@
-<? $kurs = 20100; ?>
+<? $kurs = $this->kurs; ?>
 <?
 $imageMain = (isset($product->img['path'])) ? $product->img : '/images/no-photo.gif';
 $imageUrl = image($imageMain['path'], 'resize', '440', false);

@@ -98,11 +98,7 @@ class FrontCatalogController extends FrontController
         $criteria->addCondition('t.meta_id=' . $meta->id);
 
         $model = Product::model()->find($criteria);
-////        var_dump($model->img);die();
-//        $model->img = $model->img;
-//        $model->views +=1;
-//        $model->update(['views','img']);
-//        $model = Product::model()->find($criteria);
+        Product::model()->updateByPk($model->id,array('views'=> $model->views+=1));
         if ($model->category_id > 0) {
             $brc_category = self::metaCategory($model->category_id);
             $brc_category = array_reverse($brc_category);
@@ -134,9 +130,9 @@ class FrontCatalogController extends FrontController
     public function actionCategory($alias, $meta)
     {
         $this->layout = 'webroot.templates.layout-internal';
-if($meta->id == 243) {
-    $this->stock = true;
-}
+        if($meta->id == 243) {
+            $this->stock = true;
+        }
         $model = Category::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
 //        var_dump($model->name);die();
         $brc_category = self::metaCategory($model->id);
@@ -156,6 +152,7 @@ if($meta->id == 243) {
         $this->render('category', array(
             'products' => $products,
             'pages' => $pages,
+            'contentCategory' => $model->content,
         ));
     }
 
@@ -450,7 +447,7 @@ if($meta->id == 243) {
 
     public function actionAjaxProducts()
     {
-        $kurs = 20100;
+        $kurs = $this->kurs;
         if (!empty($_GET)) {
 //            $this->layout = '';
             $this->layout = 'webroot.templates.layoutAjax';

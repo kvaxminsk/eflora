@@ -1,4 +1,4 @@
-<? $kurs = 20100; ?>
+<? $kurs = $this->kurs; ?>
 <li class="product">
     <div class="product_wrap">
         <div class="flower">

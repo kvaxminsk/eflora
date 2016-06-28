@@ -1,5 +1,5 @@
 <? // var_dump($model->content);die();?>
-<? $kurs = 20100; ?>
+<? $kurs = $this->kurs; ?>
 <script>
     renderBlockReviews();
     if (localStorage['reviews']) {
@@ -36,7 +36,8 @@
     <div class="twitter_comment">
         <p> Твиты от <a href="">@eFlora.by</a></p>
         <div class="twitter_comment_block">
-            here a twitter block
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 350px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="275273175225483264" title="Twitter Timeline"></iframe>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
     </div>
 

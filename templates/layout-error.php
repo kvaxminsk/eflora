@@ -10,12 +10,12 @@
 
     <link rel="stylesheet" type="text/css" href="/styles/css/main_style.css"/>
     <link rel="stylesheet" type="text/css" href="/styles/css/404/404.css"/>
-
+    <script> var kurs = <?=$this->kurs?></script>
     <script type="text/javascript" src="/javascript/eflora/jquery-1.12.3.js"></script>
     <!--	<script type="text/javascript" src="/javascript/eflora/slick_item/slick.min.js"></script>-->
     <script type="text/javascript" src="/javascript/eflora/slick/slick.min.js"></script>
 
-
+    <script type="text/javascript" src="javascript/eflora/shop.js"></script>
     <script src="/javascript/eflora/common.js"></script>
 
     <link rel="stylesheet" type="text/css" href="/styles/css/slick/slick.css"/>

@@ -1103,3 +1103,6 @@ ul.flower_products_catalog li:hover  .discount>p{
 	transition:0.5s;
 	color: #ff8b4e !important;
 }
+.in_cart p{
+	margin-left: 30px;
+}

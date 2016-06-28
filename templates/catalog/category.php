@@ -57,7 +57,7 @@
     <? else: ?>
         <!--		По вашим параметрам ничего не найдено-->
     <? endif; ?>
-
+    <?=$contentCategory?>
     <!--	<div class="show_tile">-->
     <!--		--><? //
     //		$this->widget('SMListView',

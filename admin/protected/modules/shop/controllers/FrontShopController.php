@@ -43,7 +43,7 @@ class FrontShopController extends FrontController
         );
     }
     public function actionAjaxCreateOrder() {
-        $kurs = 20100;
+        $kurs = $this->kurs;
         $totalAmout =0;
         $date = json_decode($_POST['data']);
 //        var_dump($date->products);
@@ -77,7 +77,7 @@ class FrontShopController extends FrontController
 
         $order->date = Date('d m Y');
         $order->date_delivery = $date->date_delivery;
-        $order->total_amount = $date->total_amount;
+        $order->total_amount = $totalAmout;
         $order->text_postcard = $date->text_postcard;
         $order->method_pay = $date->method_pay;
 
@@ -97,7 +97,20 @@ class FrontShopController extends FrontController
         }
         echo $order->id;
 
-//        var_dump($date->currency);
+        $email_to = $this->variables['email'];
+        $email = explode(',', $email_to);
+        $email_from = $email[0];
+        if ($email) {
+            $message = $this->createLetter($order, $products, $totalAmout, true);
+            $subject = 'Заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
+            sendEmail($message, $subject, $email_from, $email_to);
+        }
+        if (isEmail($date->email_to)) {
+            $message = $this->createLetter($order, $products, $totalAmout, false);
+            $subject = 'Ваш заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
+            sendEmail($message, $subject, $email_from, array($_POST['data']['order']['user_email']));
+        }
+
         die();
     }
     public function actionIndex($alias, $meta)

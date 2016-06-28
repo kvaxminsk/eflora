@@ -7,7 +7,7 @@
     <meta name="description" content="<?= $this->description; ?>"/>
     <meta name="keywords" content="<?= $this->keywords; ?>"/>
 
-
+    <script> var kurs = <?=$this->kurs?></script>
     <script type="text/javascript" src="/javascript/eflora/jquery-1.12.3.js"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
