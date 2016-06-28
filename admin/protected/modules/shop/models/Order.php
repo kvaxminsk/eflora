@@ -85,6 +85,7 @@ class Order extends CActiveRecord
             'address_from' => 'Адрес получателя',
 
             'date_delivery' => 'Дата доставки',
+            'method_pay' => 'Метод оплаты',
             'currency' => 'Валюта',
             'total_amount' => 'Итоговая сумма',
 
@@ -193,6 +194,29 @@ class Order extends CActiveRecord
         $products = $product_result;
 
         return $products;
+    }
+
+    public function loadProduct($id)
+    {
+//        var_dump($id);die();
+        Yii::import('application.modules.catalog.models.Product');
+
+        $criteria = new CDbCriteria;
+        $criteria->compare('t.id', (int) $id);
+//        $criteria->addInCondition('t.id='. (int) $id);
+//        var_dump($id);die();
+        $criteria->addCondition('t.active=1');
+//        var_dump($id);die();
+        $model = Product::model()->find($criteria);
+
+
+//        $criteria = new CDbCriteria;
+
+//        $criteria->order = "t.order ASC, t.name ASC";
+//        $criteria->with = 'metatag';
+
+//        $products = Product::model()->find($criteria);
+        return $model;
     }
 
     public function getCookie()
