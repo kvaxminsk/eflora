@@ -39,7 +39,7 @@ function changeCurrency()
         $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').find('p').text('В КОРЗИНЕ');
         $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').addClass("style_in_cart");
         price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
-        var currency = JSON.parse(localStorage['currency'])
+        var currency = JSON.parse(localStorage['currency']);
         if(currency != 'us'){
             currency = 'br';
             price_br = 20100* price_us;
@@ -148,17 +148,34 @@ $(document).ready(function () {
         // alert($('span #name_to').text);
 
         $('#phone_to').text($('input[name=phone_to]').val());
-        $('#country_to').text($('input[name=country_to]').val());
+        $('#country_to').text($('span[name=country_to]').text());
         $('#email_to').text($('input[name=email_to]').val());
 
         $('#name_from').text($('input[name=name_from]').val());
         $('#phone_from').text($('input[name=phone_from]').val());
-        $('#country_from').text($('input[name=country_from]').val());
-        $('#city_from').text($('input[name=city_from]').val());
+        $('#country_from').text($('span[name=country_from]').text());
+        $('#city_from').text($('span[name=city_from]').text());
         $('#address_from').text($('input[name=address_from]').val());
         $('#text_from').text($('input[name=text_postcard]').val());
-        $('#method_pay').text($('input[name=radiog_dark]').val());
-        
+
+        var methodPay = '';
+        switch ($('input[name=radiog_dark]:checked').val()) {
+            case '1':  methodPay = 'Наличные деньги курьеру';
+                break;
+            case '2': methodPay  = 'VISA/MasterCard/Белкарт';
+                break;
+            case '3': methodPay = 'Оплата наличными в одном из наших салонов' ;
+                break;
+            case '4': methodPay = 'WebMoney' ;
+                break;
+            case '5': methodPay = 'ЕРИП Расчёт' ;
+                break;
+            case '6': methodPay = 'Оплата по безналичному расчету на наш расчетный счет для юридических лиц' ;
+                break;
+            case '7': methodPay = 'Яндекс Деньги' ;
+                break;
+        };
+        $('#method_pay').text(methodPay);
     });
     renderBlockCart();
     /// main js
@@ -1122,8 +1139,86 @@ $(document).ready(function () {
         }
     });
 
+    function IsEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+
     $(".button_continue").click(function () {
         //eere
+        var error = false;
+
+        if ($('input[name = name_to ]').val() ==""){
+
+            $('input[name = name_to ]').addClass('error');
+
+            error = true;
+
+        }
+        if( $('input[name = email_to ]').val() =="" )
+        {
+            if (!IsEmail($('input[name = email_to ]'))){
+                $('input[name = email_to ]').addClass('error');
+
+                error = true;
+            }
+
+            error = true;
+
+        }
+        if ($('input[name = phone_to ]').val() ==""){
+
+            $('input[name = phone_to ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = phone_from ]').val() ==""){
+
+            $('input[name = phone_from ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = name_from ]').val() ==""){
+
+            $('input[name = name_from ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = address_from ]').val() ==""){
+
+            $('input[name = address_from ]').addClass('error');
+
+            error = true;
+
+        }
+        if( $('input[name = email_from ]').val() =="" )
+        {
+            if (!IsEmail($('input[name = email_from ]'))){
+                $('input[name = email_from ]').addClass('error');
+
+                error = true;
+            }
+
+            error = true;
+
+        }
+        if (error){
+            $('html, body').animate({scrollTop: $('.cart1_left_contact_block').offset().top + 30}, 1000);
+            return false;
+        }
+
+
+
+
+
+
+
+
+
         $('.tabs_list li').eq(0).removeClass('active');
         $('.tabs_list li').eq(1).addClass('active');
         $('.tab1').animate({opacity: 0}, 400, function () {
@@ -1700,4 +1795,66 @@ function enableKeyPress(el) {
 function search() {
     var searchText = $('#search').val();
     window.location.href = '/search/?query'+searchText;
+}
+function addOrder() {
+    var data ={};
+    data['name_to'] = $('input[name=name_to]').val();
+    data['phone_to'] = $('input[name=phone_to]').val();
+    data['country_to'] = $('span[name=country_to]').text();
+    data['email_to'] = $('input[name=email_to]').val();
+
+    data['name_from'] = $('input[name=name_from]').val();
+    data['phone_from'] = $('input[name=phone_from]').val();
+    data['country_from'] = $('span[name=country_from]').text();
+    data['city_from'] = $('span[name=city_from]').text();
+    data['address_from'] = $('input[name=address_from]').val();
+    data['text_from'] = $('input[name=text_postcard]').val();
+
+
+    var methodPay = '';
+    switch ($('input[name=radiog_dark]:checked').val()) {
+        case '1':  methodPay = 'Наличные деньги курьеру';
+            break;
+        case '2': methodPay  = 'VISA/MasterCard/Белкарт';
+            break;
+        case '3': methodPay = 'Оплата наличными в одном из наших салонов' ;
+            break;
+        case '4': methodPay = 'WebMoney' ;
+            break;
+        case '5': methodPay = 'ЕРИП Расчёт' ;
+            break;
+        case '6': methodPay = 'Оплата по безналичному расчету на наш расчетный счет для юридических лиц' ;
+            break;
+        case '7': methodPay = 'Яндекс Деньги' ;
+            break;
+    };
+
+    var shopArr = getBasketInfo();
+    var shopProductCount = 0;
+    var price_us = 0;
+    var price_br = 0;
+    var products = {};
+    var i=0;
+    for(var key in shopArr) {
+        products[i] = [shopArr[key]['id'],shopArr[key]['count']];
+        i++;
+    }
+
+    $('#method_pay').text(methodPay);
+
+    data['method_pay'] = methodPay;
+    data['products'] = products;
+    data['currency'] = JSON.parse(localStorage['currency']);
+    data['date_delivery'] = $('.date_delivery').text();
+
+    $.ajax({
+        type: 'post',
+        data: 'data='+ JSON.stringify(data),
+        url: '/ajax-create-order',
+        success: function (data) {
+          alert(data);
+            $('#order_id').text(data);
+
+        }
+    });
 }

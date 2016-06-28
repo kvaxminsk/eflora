@@ -318,14 +318,14 @@
                         <input type="text" name="phone_to" class="cart1_phone_input"
                                placeholder="Телефон (вместе с кодом)">
                         <!-- <input type="text" name="country" class="cart1_country_input" placeholder= "Страна"> -->
-                        <div id="dropDown" class="wrapper-dropdown-2" tabindex="1"><span name="country_to">Страна</span>
+                        <div id="dropDown" class="wrapper-dropdown-2" tabindex="1"><span name="country_to">Беларусь</span>
                             <ul class="dropdown">
                                 <li>Германия</li>
-                                <li> Франция</li>
-                                <li> Беларусь</li>
+                                <li>Франция</li>
+                                <li>Беларусь</li>
                             </ul>
                         </div>
-                        <input type="email" name="email_to" class="cart1_email_input" placeholder="Электронная почта">
+                        <input type="email" name="email_to" class="cart1_email_input" placeholder="Электронная почта" required>
                         <!--						<div class="add_input_phone">-->
                         <!--							+-->
                         <!--						</div>-->
@@ -341,18 +341,18 @@
                         <input type="text" name="phone_from" class="cart1_phone_input"
                                placeholder="Телефон (вместе с кодом)">
                         <div id="dropDown1" class="wrapper-dropdown-2" tabindex="1"><span
-                                name="country_from">Страна	</span>
+                                name="country_from">Беларусь	</span>
                             <ul class="dropdown">
                                 <li>Германия</li>
                                 <li>Франция</li>
                                 <li>Беларусь</li>
                             </ul>
                         </div>
-                        <div id="dropDown2" class="wrapper-dropdown-2" tabindex="1"><span name="city_from">Город</span>
+                        <div id="dropDown2" class="wrapper-dropdown-2" tabindex="1"><span name="city_from">Минск</span>
                             <ul class="dropdown">
                                 <li>Вилейка</li>
-                                <li>Минск</li>
                                 <li>Молодечно</li>
+                                <li>Минск</li>
                             </ul>
                         </div>
                         <input type="text" name="address_from" class="cart1_address_input" placeholder="Адрес">
@@ -382,7 +382,7 @@
                     <input type="radio" name="radiog_dark" id="radio2" value="2" class="css-checkbox"
                            checked="checked"/>
                     <label for="radio2" class="css-label radGroup2">VISA/MasterCard/Белкарт</label><br>
-                    <input type="radio" name="radiog_dark" id="radio3 value=" 3" class="css-checkbox" />
+                    <input type="radio" name="radiog_dark" id="radio3" value=" 3" class="css-checkbox" />
                     <label for="radio3" class="css-label radGroup2">Оплата наличными в одном из наших
                         салонов</label><br>
                     <input type="radio" name="radiog_dark" id="radio4" value="4" class="css-checkbox"/>
@@ -440,14 +440,17 @@
                 </div>
                 <div class="control_button_wrapp">
                     <button class="return_button">ИЗМЕНИТЬ</button>
-                    <button class="submit_button">ПОДТВЕРДИТЬ</button>
-                </div>
 
+                    <button class="submit_button" onclick="addOrder();">ПОДТВЕРДИТЬ</button>
+                </div>
+                <script>
+
+                </script>
             </div>
             <div class="tab3">
                 <div class="thanks_for_order">
                     <p> Спасибо что выбрали нашу службу.<br>
-                        Ваш заказ <span>#4444</span> получен </p>
+                        Ваш заказ #<span id="order_id"></span> получен </p>
                 </div>
             </div>
         </div>

@@ -1,3 +1,5 @@
+
+
 .hidden_menu{
 	left:-720px;
 }
@@ -628,6 +630,10 @@ ul.cart1_item>li>.cart1_item_new_price>sup{
 	padding-left: 0px;
 	color: #868484;
 	margin-bottom: 30px;
+}
+.error {
+	border:none;
+	border: 1px solid red !important;
 }
 input.cart1_email_input{
 	margin-bottom: 150px;
@@ -1880,3 +1886,7 @@ ul.tabs_list>li.active{
 
 
 	}
+.error {
+	border:none;
+	border: 1px solid red;
+}
