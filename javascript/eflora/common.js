@@ -1136,6 +1136,8 @@ $(document).ready(function () {
         $('.tab2').animate({opacity: 1}, 400);
         $('.order_list_count_wrapper').css('opacity', '1');
         $('html, body').animate({scrollTop: $('.tabs_list').offset().top}, 1000);
+        $('.order_list_count_wrapper').hide();
+
     });
 
     $('.submit_button').click(function () {
@@ -1163,6 +1165,8 @@ $(document).ready(function () {
         $('.order_list_count_wrapper').css('opacity', '1');
         $('html, body').animate({scrollTop: $('.tabs_list').offset().top}, 1000);
         $('.tab1').animate({opacity: 1}, 400);
+        $('.order_list_count_wrapper').show();
+
     });
     $(".add_input_phone").click(function () {
         var tel_input = $(this).parent().find('.cart1_phone_input').eq(0);
