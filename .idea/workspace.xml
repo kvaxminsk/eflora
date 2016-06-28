@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="itemcart fix&#10;">
-      <change type="DELETED" beforePath="C:\OpenServer\domains\eflora\admin\protected\runtime\application.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/catalog_page/catalog.css" afterPath="$PROJECT_DIR$/styles/css/catalog_page/catalog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/main_style.css" afterPath="$PROJECT_DIR$/styles/css/main_style.css" />
+    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="fixxx&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/000/000048/472-gift43big-resize-1500x986.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/000/000003/847-flower6-resize-440x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/update.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/jquery.yiigridview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/jquery.yiilistview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/d75bee0c/pager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/detailview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eflora.iws" />
@@ -32,18 +47,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding>
-                <element signature="e#1832#1834#0#PHP" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/main_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36396396">
-              <caret line="1113" column="24" selection-start-line="1113" selection-start-column="24" selection-end-line="1113" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="469" column="22" selection-start-line="469" selection-start-column="22" selection-end-line="469" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -52,8 +65,8 @@
       <file leaf-file-name="main_page_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/main_page/main_page_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.965517">
-              <caret line="1424" column="30" selection-start-line="1424" selection-start-column="30" selection-end-line="1424" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1230" column="0" selection-start-line="1230" selection-start-column="0" selection-end-line="1230" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,20 +76,8 @@
         <entry file="file://$PROJECT_DIR$/templates/layout.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="350" column="35" selection-start-line="350" selection-start-column="35" selection-end-line="350" selection-end-column="35" />
+              <caret line="362" column="35" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/catalog/category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-              <folding>
-                <element signature="e#1835#1837#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -84,9 +85,33 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.37931">
-              <caret line="874" column="36" selection-start-line="874" selection-start-column="36" selection-end-line="874" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_page.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/css/contact_page/contact_page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2337963">
+              <caret line="765" column="0" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/eflora/shop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="42" />
+              <folding>
+                <marker date="1467027009203" expanded="false" signature="5570:5594" placeholder="..." />
+                <marker date="1467027009203" expanded="true" signature="5733:5797" placeholder="..." />
+                <marker date="1467027009203" expanded="false" signature="6260:6275" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +119,8 @@
       <file leaf-file-name="cart_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/cart_page/cart_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.107143">
-              <caret line="1495" column="5" selection-start-line="1495" selection-start-column="5" selection-end-line="1495" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1470" column="0" selection-start-line="1470" selection-start-column="0" selection-end-line="1470" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,8 +129,8 @@
       <file leaf-file-name="itemcart.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.392857">
-              <caret line="1289" column="16" selection-start-line="1289" selection-start-column="16" selection-end-line="1289" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="730" column="1" selection-start-line="730" selection-start-column="1" selection-end-line="730" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -114,9 +139,11 @@
       <file leaf-file-name="catalog.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/catalog_page/catalog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.037037">
+            <state vertical-scroll-proportion="0.0">
               <caret line="807" column="23" selection-start-line="807" selection-start-column="23" selection-end-line="807" selection-end-column="23" />
-              <folding />
+              <folding>
+                <marker date="1467027009320" expanded="true" signature="10234:10240" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,7 +179,6 @@
         <option value="$PROJECT_DIR$/templates/layout-error.php" />
         <option value="$PROJECT_DIR$/styles/css/404/404.css" />
         <option value="$PROJECT_DIR$/styles/css/cart_page/radio_button_style.css" />
-        <option value="$PROJECT_DIR$/styles/css/contact_page/contact_page.css" />
         <option value="$PROJECT_DIR$/javascript/shop.js" />
         <option value="$PROJECT_DIR$/verstka/js/common.js" />
         <option value="$PROJECT_DIR$/admin/protected/modules/articles/models/ArticleCategory.php" />
@@ -181,12 +207,14 @@
         <option value="$PROJECT_DIR$/templates/catalog/_products.php" />
         <option value="$PROJECT_DIR$/templates/catalog/category.php" />
         <option value="$PROJECT_DIR$/templates/catalog/index.php" />
-        <option value="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" />
         <option value="$PROJECT_DIR$/javascript/eflora/common.js" />
+        <option value="$PROJECT_DIR$/styles/css/catalog_page/catalog.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/styles/css/main_style.css" />
+        <option value="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" />
         <option value="$PROJECT_DIR$/styles/css/cart_page/cart_style.css" />
         <option value="$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css" />
-        <option value="$PROJECT_DIR$/styles/css/catalog_page/catalog.css" />
-        <option value="$PROJECT_DIR$/styles/css/main_style.css" />
+        <option value="$PROJECT_DIR$/styles/css/contact_page/contact_page.css" />
       </list>
     </option>
   </component>
@@ -231,6 +259,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,9 +278,116 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itemcart_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -259,6 +395,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../viborcms" />
     <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -269,7 +406,10 @@
       <recent name="C:\OpenServer\domains\eflora\verstka\js" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.cart.html">
+    <configuration default="false" name="cart.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/eflora/verstka/cart.html">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -296,6 +436,14 @@
       <envs />
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.cart.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.cart.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -369,7 +517,25 @@
       <option name="project" value="LOCAL" />
       <updated>1466954933611</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="itemcart fix&#10;">
+      <created>1467015834084</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1467015834084</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixxx&#10;">
+      <created>1467028130413</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1467028130413</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixxx&#10;">
+      <created>1467090172341</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1467090172341</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -379,13 +545,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13020833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594937" sideWeight="0.50625" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32594937" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33690986" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -395,25 +561,26 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.52896994" sideWeight="0.4780083" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5200422" sideWeight="0.4780083" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594937" sideWeight="0.50625" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33690986" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.256447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19929764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5200422" sideWeight="0.4780083" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -442,7 +609,8 @@
     <MESSAGE value="small fixes" />
     <MESSAGE value="main page and korzina fixed" />
     <MESSAGE value="itemcart fix&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="itemcart fix&#10;" />
+    <MESSAGE value="fixxx&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixxx&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -451,35 +619,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php">
+    <entry file="file://$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="353" column="27" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalog/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding>
-            <element signature="e#1835#1837#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1125" column="73" selection-start-line="1125" selection-start-column="73" selection-end-line="1125" selection-end-column="73" />
+          <caret line="1287" column="16" selection-start-line="1287" selection-start-column="16" selection-end-line="1287" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalog/catalog_internal_tree.php">
+    <entry file="file://$PROJECT_DIR$/styles/css/catalog_page/catalog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="807" column="23" selection-start-line="807" selection-start-column="23" selection-end-line="807" selection-end-column="23" />
+          <folding>
+            <marker date="1467027009320" expanded="true" signature="10234:10240" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/eflora/shop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="94.37931">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/layoutAjax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -734,27 +881,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding>
-            <element signature="e#1835#1837#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="350" column="35" selection-start-line="350" selection-start-column="35" selection-end-line="350" selection-end-column="35" />
+          <caret line="362" column="35" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalog/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#1832#1834#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -765,50 +907,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/main_page/main_page_style.css">
+    <entry file="file://$PROJECT_DIR$/styles/css/catalog_page/catalog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.965517">
-          <caret line="1424" column="30" selection-start-line="1424" selection-start-column="30" selection-end-line="1424" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="807" column="23" selection-start-line="807" selection-start-column="23" selection-end-line="807" selection-end-column="23" />
+          <folding>
+            <marker date="1467027009320" expanded="true" signature="10234:10240" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verstka/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14938489">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/main_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="469" column="22" selection-start-line="469" selection-start-column="22" selection-end-line="469" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/eflora/shop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <marker date="1467027009203" expanded="false" signature="5570:5594" placeholder="..." />
+            <marker date="1467027009203" expanded="true" signature="5733:5797" placeholder="..." />
+            <marker date="1467027009203" expanded="false" signature="6260:6275" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.37931">
-          <caret line="874" column="36" selection-start-line="874" selection-start-column="36" selection-end-line="874" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/main_page/main_page_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1230" column="0" selection-start-line="1230" selection-start-column="0" selection-end-line="1230" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/cart_page/cart_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.107143">
-          <caret line="1495" column="5" selection-start-line="1495" selection-start-column="5" selection-end-line="1495" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1470" column="0" selection-start-line="1470" selection-start-column="0" selection-end-line="1470" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.392857">
-          <caret line="1289" column="16" selection-start-line="1289" selection-start-column="16" selection-end-line="1289" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="730" column="1" selection-start-line="730" selection-start-column="1" selection-end-line="730" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/catalog_page/catalog.css">
+    <entry file="file://$PROJECT_DIR$/styles/css/contact_page/contact_page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.037037">
-          <caret line="807" column="23" selection-start-line="807" selection-start-column="23" selection-end-line="807" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/main_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36396396">
-          <caret line="1113" column="24" selection-start-line="1113" selection-start-column="24" selection-end-line="1113" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.2337963">
+          <caret line="765" column="0" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
           <folding />
         </state>
       </provider>
