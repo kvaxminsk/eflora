@@ -924,7 +924,8 @@ ul.flower_products_catalog li:hover  .discount>p{
 			margin-top: 139px;
 		}
 		#header_backet{
-			top:160px;
+			top:80px;
+			right: 80px;
 		}
 		.column1, .column2{
 			width: 100%;
@@ -960,12 +961,22 @@ ul.flower_products_catalog li:hover  .discount>p{
 
 
 	}
+@media all and (max-width:  700px) {
+	.list_product, .under_slider
+	{
+		width: calc(100% - 1px);
+	}
+
+}
+
+
+
 	@media all and (max-width: 480px){
 		#logo{
 			height: 160px;
 		}
 	}
-
+/*
 	@media all and (max-width:  440px){
 
 		.mobile_filter{
@@ -997,7 +1008,7 @@ ul.flower_products_catalog li:hover  .discount>p{
 
 		}
 		.mobile_list{
-			/* width:calc(100% - 80px); */
+			/!* width:calc(100% - 80px); *!/
 			min-width: 240px;
 			width: calc(100% - 160px);
 		}
@@ -1081,7 +1092,26 @@ ul.flower_products_catalog li:hover  .discount>p{
 		}
 
 
+	}*/
+
+@media all and (max-width:  460px) {
+	.filter_wrapper{
+		top: 80px;
+		left: 0 ;
 	}
+	.mobile_filter{
+		right: auto;
+		left: 50%;
+		margin-left: -100px;
+	}
+	.under_slider{
+		height: 160px;
+	}
+
+
+}
+
+
 	@media all and (max-width:  360px){
 		.mobile_categoria{
 			text-align: left;
