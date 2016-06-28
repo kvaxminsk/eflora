@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.orrange_arrow{
+	 display: none;
+ }
+
 .orrange_arrow .popular{
     position: absolute;
     left: 302px;
@@ -77,9 +81,10 @@
 	width: 15px;
 	height: 15px;
 	position: relative;
-	right: -290px;
-	top:-30px;
+	left:-30px;
+	top:-2px;
 	cursor: pointer;
+	opacity: 0;
 	background-color: transparent;
 }
 

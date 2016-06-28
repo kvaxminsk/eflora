@@ -201,6 +201,7 @@ p.order_list_title>a{
 	transition-duration:0.5s;
 }
 
+
 .order_count_increment{
 	height: 6px;
 	height: 30px;
@@ -1204,7 +1205,10 @@ ul.order_list>li.delete{
 
 }
 
-
+.order_list_price_dollar{
+	font-size: 25px;
+	font-family: 'Roboto Light', arial;
+}
 
 
 @media only screen and (max-width: 1366px){
@@ -1474,6 +1478,7 @@ ul.tabs_list>li.active{
 	ul.cart1_item>li>img{
 		display: block;
 		margin: 0 auto;
+
 
 	}
 	.cart1_item>li>span{
