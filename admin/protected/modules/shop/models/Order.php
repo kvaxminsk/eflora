@@ -56,7 +56,7 @@ class Order extends CActiveRecord
         return array(
             'id' => '№',
             'price' => 'Сумма',
-            'date' => 'Дата',
+            'date' => 'Дата создания заказа',
             'user_id' => 'Пользователь',
             'currency_id' => 'Валюта',
             'status_id' => 'Статус заказа',
@@ -70,6 +70,25 @@ class Order extends CActiveRecord
             'user_city' => 'Город доставки',
             'user_come' => 'Способ доставки',
             'user_time' => 'Предпочитаемое время',
+
+            'name_to' => 'Имя заказчика',
+            'phone_to' => 'Телефон заказчика',
+            'country_to' => 'Страна заказчика',
+            'email_to' => 'Email заказчика',
+            'text_postcard' => 'Сообщение от заказчика',
+
+
+            'name_from' => 'Имя получателя',
+            'phone_from' => 'Телефон получателя',
+            'country_from' => 'Страна получателя',
+            'city_from' => 'Город получателя',
+            'address_from' => 'Адрес получателя',
+
+            'date_delivery' => 'Дата доставки',
+            'currency' => 'Валюта',
+            'total_amount' => 'Итоговая сумма',
+
+
         );
     }
 

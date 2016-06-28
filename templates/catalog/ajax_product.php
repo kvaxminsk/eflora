@@ -42,7 +42,7 @@ $this->widget('SMListView',
         }
         $.ajax({
             type: 'get',
-            data: 'page=' + page + '&category=' + category3+ "&price=" + "<?=$price?>" + "&type="+ "<?=$type?>",
+            data: 'page=' + page + '&category=' + category3+ "&price=" + "<?=$price?>" + "&type="+ "<?=$type?>"+ "&summa="+ "<?=$summa?>",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
