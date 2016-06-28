@@ -868,8 +868,7 @@ li.product:hover{
 	font-family: 'Roboto Light', arial;
 }
 .column3_text {
-	float: left;
-	color: #837c7c;
+		color: #837c7c;
 	text-align: left;
 	margin:-30px 45px;
 	font: 14px/20px arial,sans-serif;

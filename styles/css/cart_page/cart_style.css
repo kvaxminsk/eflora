@@ -1209,7 +1209,15 @@ ul.order_list>li.delete{
 	font-size: 25px;
 	font-family: 'Roboto Light', arial;
 }
-
+.order_list_total_describe>span#unit_valuta{
+	display: inline-block;
+	width: 10px;
+	left: -13px;
+	position: relative;
+	top:27px;
+	font: 19px/19px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+}
 
 @media only screen and (max-width: 1366px){
 	.cart1_left_contact_block
