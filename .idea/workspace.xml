@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="fixxx&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/000/000048/472-gift43big-resize-1500x986.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/000/000003/847-flower6-resize-440x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/update.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/jquery.yiigridview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/jquery.yiilistview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/d75bee0c/pager.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/detailview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/gridview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/b23f4b04/listview/styles.css" />
+    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php" afterPath="$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/modules/shop/models/Order.php" afterPath="$PROJECT_DIR$/admin/protected/modules/shop/models/Order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/modules/shop/views/order/_form_main.php" afterPath="$PROJECT_DIR$/admin/protected/modules/shop/views/order/_form_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/ajax_product.php" afterPath="$PROJECT_DIR$/templates/catalog/ajax_product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/eflora/common.js" afterPath="$PROJECT_DIR$/javascript/eflora/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/material/contacts.php" afterPath="$PROJECT_DIR$/templates/material/contacts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.php" afterPath="$PROJECT_DIR$/templates/layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" afterPath="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog/search.php" afterPath="$PROJECT_DIR$/templates/catalog/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/text_page/text_page.css" afterPath="$PROJECT_DIR$/styles/css/text_page/text_page.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eflora.iws" />
@@ -42,16 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/catalog/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/main_style.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,38 +47,48 @@
       <file leaf-file-name="main_page_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/main_page/main_page_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1230" column="0" selection-start-line="1230" selection-start-column="0" selection-end-line="1230" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.481482">
+              <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/layout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="362" column="35" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.42446044">
+              <caret line="1163" column="26" selection-start-line="1163" selection-start-column="26" selection-end-line="1163" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_page.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact_page.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/contact_page/contact_page.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2337963">
-              <caret line="765" column="0" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.142857">
+              <caret line="199" column="42" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/catalog/search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_page.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/css/text_page/text_page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.160714">
+              <caret line="293" column="17" selection-start-line="293" selection-start-column="17" selection-end-line="293" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -198,7 +190,6 @@
         <option value="$PROJECT_DIR$/templates/layout.php" />
         <option value="$PROJECT_DIR$/verstka/css/main_page/main_page_style.css" />
         <option value="$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/text_page(1).css" />
-        <option value="$PROJECT_DIR$/styles/css/text_page/text_page.css" />
         <option value="$PROJECT_DIR$/javascript/eflora/shop.js" />
         <option value="$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php" />
         <option value="$PROJECT_DIR$/templates/layout-internal.php" />
@@ -207,14 +198,15 @@
         <option value="$PROJECT_DIR$/templates/catalog/_products.php" />
         <option value="$PROJECT_DIR$/templates/catalog/category.php" />
         <option value="$PROJECT_DIR$/templates/catalog/index.php" />
-        <option value="$PROJECT_DIR$/javascript/eflora/common.js" />
         <option value="$PROJECT_DIR$/styles/css/catalog_page/catalog.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/styles/css/main_style.css" />
-        <option value="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" />
         <option value="$PROJECT_DIR$/styles/css/cart_page/cart_style.css" />
         <option value="$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css" />
         <option value="$PROJECT_DIR$/styles/css/contact_page/contact_page.css" />
+        <option value="$PROJECT_DIR$/styles/css/text_page/text_page.css" />
+        <option value="$PROJECT_DIR$/styles/css/main_page/main_page_style.css" />
+        <option value="$PROJECT_DIR$/javascript/eflora/common.js" />
       </list>
     </option>
   </component>
@@ -231,10 +223,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -328,6 +318,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="text_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eflora" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="itemcart_page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -365,24 +399,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eflora" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eflora" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,23 +551,29 @@
       <option name="project" value="LOCAL" />
       <updated>1467090172341</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixxx&#10;">
+      <created>1467090549215</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1467090549215</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1525000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33050847" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594937" sideWeight="0.50625" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33690986" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34227467" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -619,14 +641,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/css/itemcart_page/itemcart.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1287" column="16" selection-start-line="1287" selection-start-column="16" selection-end-line="1287" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/catalog_page/catalog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -802,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/text_page/text_page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.840399">
-          <caret line="313" column="23" selection-start-line="313" selection-start-column="23" selection-end-line="313" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/layoutAjax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -887,7 +894,7 @@
     <entry file="file://$PROJECT_DIR$/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="362" column="35" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
+          <caret line="367" column="35" selection-start-line="367" selection-start-column="35" selection-end-line="367" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -944,22 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/main_page/main_page_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1230" column="0" selection-start-line="1230" selection-start-column="0" selection-end-line="1230" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/cart_page/cart_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -976,10 +967,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/contact_page/contact_page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2337963">
-          <caret line="765" column="0" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.142857">
+          <caret line="199" column="42" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/text_page/text_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.160714">
+          <caret line="293" column="17" selection-start-line="293" selection-start-column="17" selection-end-line="293" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/main_page/main_page_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.481482">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/eflora/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42446044">
+          <caret line="1163" column="26" selection-start-line="1163" selection-start-column="26" selection-end-line="1163" selection-end-column="26" />
           <folding />
         </state>
       </provider>

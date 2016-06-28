@@ -248,8 +248,10 @@
     <div class="main_content page1">
         <div class="mp_left_main_content">
             <div class="search_area">
-                <input type="text" placeholder="Поиск...">
-                <div class="go_find"></div>
+                <form method="get"
+                      action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'search')) ?>">
+                <input type="text" name="query" value="<?= $_GET['query'] ?>" id="search" placeholder="Поиск...">
+                     <button  class="go_find"></button>
             </div>
             <div class="left_sidebar">
                 <div class="square">
@@ -314,9 +316,12 @@
                     Сортировать по:
                     <a class="choice_link" href="#">Популярности</a><img class="orrange_arrow popular" src="">
                     <a class="choice_link" href="#">Цене</a><img class="orrange_arrow  price_link" src="">
-                    <a class="choice_link" href="#">До 50</a>
-                    <a class="choice_link" href="#">До 100</a>
-                    <a class="choice_link" href="#">До 200</a>
+                    <a class="choice_link old_price_1" href="#">До 800 т.</a>
+                    <a class="choice_link old_price_1" href="#">До 1.5млн</a>
+                    <a class="choice_link old_price_1" href="#">До 3млн</a>
+                    <a class="choice_link dollar_price_1" href="#">До 50$</a>
+                    <a class="choice_link dollar_price_1" href="#">До 100$</a>
+                    <a class="choice_link dollar_price_1" href="#">До 200$</a>
                 </p>
             </div>
         </div>

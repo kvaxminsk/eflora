@@ -6,7 +6,7 @@ class FrontCatalogController extends FrontController
     CONST PAGE = 12;
     public $layout = 'webroot.templates.layoutOld';
     public $conditions = array();
-
+    public $stock;
     public function start($meta)
     {
         $criteria = new CDbCriteria;
@@ -66,23 +66,25 @@ class FrontCatalogController extends FrontController
      **/
     public function actionIndex($alias, $meta)
     {
-        $this->layout = 'webroot.templates.layout-internal';
-
-        $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
-
-        parent::meta($model, $meta);
-
-        list($products, $pages) = $this->getProducts();
-
-        $categories = Category::model()->getTreeDataActive();
-
-        $this->render('index', array(
-//	       'model'         => $model,
-            'meta' => $meta,
-            'products' => $products,
-            'pages' => $pages,
-//           'categories'    => $categories
-        ));
+//        $this->layout = 'webroot.templates.layout-internal';
+////        var_dump($meta);
+////        die($meta->id);
+//        $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => 243));
+//
+//        parent::meta($model, $meta);
+//
+//        list($products, $pages) = $this->getProducts();
+//
+//        $categories = Category::model()->getTreeDataActive();
+//
+//        $this->render('index', array(
+////	       'model'         => $model,
+//            'meta' => $meta,
+//            'products' => $products,
+//            'pages' => $pages,
+////           'categories'    => $categories
+//        ));
+        $this->redirect('catalog/stock');
     }
 
 
@@ -132,7 +134,9 @@ class FrontCatalogController extends FrontController
     public function actionCategory($alias, $meta)
     {
         $this->layout = 'webroot.templates.layout-internal';
-
+if($meta->id == 243) {
+    $this->stock = true;
+}
         $model = Category::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
 //        var_dump($model->name);die();
         $brc_category = self::metaCategory($model->id);
@@ -332,7 +336,7 @@ class FrontCatalogController extends FrontController
 
     public function actionSearch($alias, $meta)
     {
-
+        $this->layout = 'webroot.templates.layout-internal';
         $model = Material::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
 
         parent::meta($model, $meta);
@@ -357,7 +361,7 @@ class FrontCatalogController extends FrontController
                 $q = mb_strtolower($q, 'utf-8');
                 $query = mb_strtolower($query, 'utf-8');
 
-                $this->conditions['addCondition'][] = "t.name LIKE '$query' or t.content LIKE '$query' or t.brand_model LIKE '$query'  or t.original LIKE '$query'  or t.manufacturer LIKE '$query'";
+                $this->conditions['addCondition'][] = "t.name LIKE '$query' or t.content LIKE '$query'";
             }
         }
         list($products, $pages) = $this->getProducts();
@@ -374,44 +378,52 @@ class FrontCatalogController extends FrontController
     {
 //        var_dump($this->conditions);die();
         $criteria = new CDbCriteria;
-        if (!empty($this->conditions)) {
-            foreach ($this->conditions as $name => $value) {
+
+
+        if($this->stock) {
+            $criteria->addCondition('t.stock=1');
+        }
+        else {
+            if (!empty($this->conditions)) {
+                foreach ($this->conditions as $name => $value) {
 //                if($value[0][1][0] == 17) {
 //                    $criteria->addCondition('t.stock=1');
 //                }
-                switch ($name) {
-                    case 'addInCondition':
-                        foreach ($value as $i => $param) {
-                            $criteria->addInCondition($param[0], $param[1]);
-                        }
-                        break;
-                    case 'addCondition':
-                        foreach ($value as $i => $param) {
-                            $criteria->addCondition($param);
-                        }
-                        break;
+                    switch ($name) {
+                        case 'addInCondition':
+                            foreach ($value as $i => $param) {
+                                $criteria->addInCondition($param[0], $param[1]);
+                            }
+                            break;
+                        case 'addCondition':
+                            foreach ($value as $i => $param) {
+                                $criteria->addCondition($param);
+                            }
+                            break;
+                    }
                 }
             }
         }
 //        $criteria->addCondition('t.stock=1');
         $criteria->addCondition('t.active=1');
         $criteria->order = "t.order ASC, t.name ASC";
-        $criteria->with = 'metatag';
+//        $criteria->with = 'metatag';
 
-        if ($_GET['brand_id']) $criteria->addCondition('t.brand_id=' . $_GET['brand_id']);
-        if ($_GET['brand_model']) $criteria->addCondition('t.brand_model=\'' . $_GET['brand_model'] . "'");
-        if ($_GET['count']) $criteria->addCondition('t.manufacturer=\'' . $_GET['count'] . "'");
-        if ($_GET['year']) $criteria->addCondition('t.original=\'' . $_GET['year'] . "'");
+//        if ($_GET['brand_id']) $criteria->addCondition('t.brand_id=' . $_GET['brand_id']);
+//        if ($_GET['brand_model']) $criteria->addCondition('t.brand_model=\'' . $_GET['brand_model'] . "'");
+//        if ($_GET['count']) $criteria->addCondition('t.manufacturer=\'' . $_GET['count'] . "'");
+//        if ($_GET['year']) $criteria->addCondition('t.original=\'' . $_GET['year'] . "'");
 
         #сортировка
-        if ($_GET['sort']) $criteria->order = "t." . $_GET['sort'] . " ASC, t.name ASC";
+//        if ($_GET['sort']) $criteria->order = "t." . $_GET['sort'] . " ASC, t.name ASC";
 
 
-        $criteria->with = 'brand';
+//        $criteria->with = 'brand';
 
 
         $count = Product::model()->count($criteria);
-
+//        var_dump($criteria);
+//die($count);
         if ($_GET['page_list']) $page_count = $_GET['page_list'];
         else $page_count = self::PAGE;
 
@@ -438,6 +450,7 @@ class FrontCatalogController extends FrontController
 
     public function actionAjaxProducts()
     {
+        $kurs = 20100;
         if (!empty($_GET)) {
 //            $this->layout = '';
             $this->layout = 'webroot.templates.layoutAjax';
@@ -447,10 +460,29 @@ class FrontCatalogController extends FrontController
             } else {
                 $criteria->addCondition('t.stock=\'1\'');
             }
+
+
+            if($_GET['price'] && $_GET['type'] == 'ASC') {
+                $criteria->order = "t.price ASC";
+//                die($_GET['type']);
+
+            }
+            elseif($_GET['price'] && $_GET['type'] == 'DESC') {
+                $criteria->order = "t.price DESC";
+//                die($_GET['type']);
+            }
+            if ($_GET['summa']) {
+                if (($_GET['summa'] == 8) ||($_GET['summa'] == 15)||($_GET['summa'] == 30)) {
+                    $criteria->addCondition('t.price <=' . round($_GET['summa'] * 100000/$kurs));
+                }
+                if (($_GET['summa'] == 50) ||($_GET['summa'] == 100)||($_GET['summa'] == 200)) {
+                    $criteria->addCondition('t.price <=' . $_GET['summa']);
+                }
+            }
             $count = Product::model()->count($criteria);
 
             $pages = new CPagination($count);
-            $pages->pageSize = 1;
+            $pages->pageSize = 2;
 
 //            die(($_GET));
             if (!empty($_GET['page'])) {
@@ -458,12 +490,19 @@ class FrontCatalogController extends FrontController
             } else {
                 $pageVar = 1;
             }
-            if ($count == 1) {
-                if ($pageVar > $count) {
-                    die();
-                }
-            }
-            if ($pageVar > $count) {
+//            if ($count == 1) {
+//                if (($pageVar) > 2) {
+//                    die();
+//                }
+//            }
+//            if(($pages->pageSize < ($pageVar*$pages->pageSize - $count))  {
+//
+//            }
+//            if (!(($pageVar*$pages->pageSize - $count) >0))
+//            {
+//                die();
+//            }
+            if (($pageVar*$pages->pageSize - $count) > 1) {
                 die();
             }
             $pages->applyLimit($criteria);
@@ -471,15 +510,23 @@ class FrontCatalogController extends FrontController
 
             $products = new CActiveDataProvider('Product', array(
                 'pagination' => array(
-                    'pageSize' => 1,
+                    'pageSize' => 2,
                     'pageVar' => 'page',
                 ),
                 'criteria' => $criteria,
             ));
+//            die($_GET['price']);
+            if(!$_GET['price']) { $_GET['price']=0;}
+            if(!$_GET['type']) { $_GET['type']=0;}
+            if(!$_GET['summa']) { $_GET['summa']=0;}
+
             $this->render('ajax_product', array(
                 'products' => $products,
                 'pages' => $pages,
                 'pagevar' => $pageVar,
+                'price' => $_GET['price'],
+                'type' => $_GET['type'],
+                'summa' => $_GET['summa'],
             ));
         }
 

@@ -58,8 +58,10 @@ function changeCurrency()
     if (currency == 'us') {
         //alert(currency);
         $('.old_price').hide();
+        $('.old_price_1').hide();
         $('.new_price').hide();
         $('.dollar_price').show();
+        $('.dollar_price_1').show();
 
         $('#order_list_price_old').hide();
         $('#order_list_price_new').hide();
@@ -67,6 +69,8 @@ function changeCurrency()
     }
     else if (currency == 'br') {
         $('.dollar_price').hide();
+        $('.dollar_price_1').hide();
+        $('.old_price_1').show();
         $('.old_price').show();
         $('.new_price').show();
 
@@ -586,6 +590,7 @@ $(document).ready(function () {
         $('.rb_discribe ').eq(0).text(describe);
         $('#theme_text').text(data);
 
+        $('#theme_text').attr('data-category',$(this).find('span').attr('data-category'));
 
     })
 
@@ -1118,7 +1123,7 @@ $(document).ready(function () {
     });
 
     $(".button_continue").click(function () {
-        eere
+        //eere
         $('.tabs_list li').eq(0).removeClass('active');
         $('.tabs_list li').eq(1).addClass('active');
         $('.tab1').animate({opacity: 0}, 400, function () {
@@ -1253,10 +1258,12 @@ $(document).ready(function () {
         $('.header_price_icon>.backet_circle>p').text("$");
         $('#points').css('margin-left', '36px');
         $('.dollar_price').show();
+        $('.dollar_price_1').show();
 
         $('#header_price_text_us').show();
         $('#header_price_text_br').hide();
         $('.old_price').hide();
+        $('.old_price_1').hide();
         $('.new_price').hide();
 
         $('#order_list_price_old').hide();
@@ -1271,9 +1278,11 @@ $(document).ready(function () {
         $('.header_price_icon>.backet_circle>p').text("Br");
         $('#points').css('margin-left', '100px');
         $('.dollar_price').hide();
+        $('.dollar_price_1').hide();
         $('#header_price_text_us').hide();
         $('#header_price_text_br').show();
         $('.old_price').show();
+        $('.old_price_1').show();
         $('.new_price').show();
 
         $('#order_list_price_old').show();
@@ -1290,8 +1299,10 @@ $(document).ready(function () {
             $('#points').css('margin-left', '100px');
 
             $('.dollar_price').hide();
+            $('.dollar_price_1').hide();
             $('#header_price_text_us').hide();
             $('#header_price_text_br').show();
+            $('.old_price_1').show();
             $('.old_price').show();
             $('.new_price').show();
 
@@ -1307,9 +1318,11 @@ $(document).ready(function () {
             $('#points').css('margin-left', '36px');
             $('.header_price_icon>.backet_circle>p').text("$");
 
+            $('.dollar_price_1').show();
             $('.dollar_price').show();
             $('#header_price_text_us').show();
             $('#header_price_text_br').hide();
+            $('.old_price_1').hide();
             $('.old_price').hide();
             $('.new_price').hide();
 
@@ -1327,6 +1340,7 @@ $(document).ready(function () {
 
         $(this).parent().find('img').show();
         var atr = $(this).parent().find('.popular').attr('src');
+        $('.price_link').attr('src', '');
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
@@ -1342,18 +1356,143 @@ $(document).ready(function () {
     $('.choice_link').eq(1).click(function(){
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
+        $('.popular').attr('src', '');
+        var category = $('.slick-active span').attr('data-category');
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
             $(this).parent().find('.price_link').attr('src', atr);
+
+            /*****/
+
+            alert($('.slick-active span').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=DESC",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /****/
         }
         else{
             atr='../../images/eflora/select_icon.png';
             $(this).parent().find(".price_link").attr('src', atr);
+
+
+
+            /******/
+
+            alert($('.slick-active span').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=ASC",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /***/
         }
     })
 
-
+    $('.choice_link').eq(2).click(function(){
+        var category = $('.slick-active span').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 +'&category=' + category+"&summa=8",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link').eq(3).click(function(){
+        var category = $('.slick-active span').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 +'&category=' + category+"&summa=15",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link').eq(4).click(function(){
+        var category = $('.slick-active span').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 +'&category=' + category+"&summa=30",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link').eq(5).click(function(){
+        var category = $('.slick-active span').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 +'&category=' + category+"&summa=50",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link').eq(6).click(function(){
+        var category = $('.slick-active span').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 +'&category=' + category+"&summa=100",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link').eq(7).click(function(){
+        var category = $('.slick-active span').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 +'&category=' + category+"&summa=200",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
 
 
 });
@@ -1557,4 +1696,8 @@ function enableKeyPress(el) {
             event.preventDefault();
         }
     }
+}
+function search() {
+    var searchText = $('#search').val();
+    window.location.href = '/search/?query'+searchText;
 }
