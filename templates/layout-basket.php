@@ -222,7 +222,9 @@
                         <br>
 
                     </p>
+                    <span id="unit_valuta">$</span>
                     <p class="order_list_price_dollar" id="order_list_price_dollar" style="display:none">
+
                         <br>
 
                     </p>
