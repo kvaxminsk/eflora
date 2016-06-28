@@ -12,7 +12,7 @@ define('HOME', dirname(dirname(__FILE__)));
 define('DS', DIRECTORY_SEPARATOR);
 
 require_once($yii);
-# ïîäêëş÷åíèÿ ôàéëà ñ áàçîâûì íàáîğîì ôóíêöèé
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 require_once(dirname(__FILE__).'/basic.php');
 
 Yii::createWebApplication($config)->run();

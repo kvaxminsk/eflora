@@ -59,7 +59,7 @@ header .right{
 	}
 
 
-				
+
 /*top menu*/
 #top_menu{
     background: -webkit-linear-gradient(top, #4f4f4f, #020202);
@@ -68,14 +68,14 @@ header .right{
 	height: 50px;
 	width: 100%;
 	}
-    #top_menu_ul{	        
+    #top_menu_ul{
         float:left;
-        height:50px; 	
-        width: 100%;     			
+        height:50px;
+        width: 100%;
         }
         .top_menu_li {
-		    float:left; 
-		    height:50px;   
+		    float:left;
+		    height:50px;
 		    position: relative;
 		   }
 		   .top_menu_li:first-child{
@@ -87,23 +87,23 @@ header .right{
 				}
 				.top_menu_li:hover .top_menu_a{
 					color: #edede1;
-					text-decoration:none; 
+					text-decoration:none;
 					}
 		.active.top_menu_li {
 		  	height:50px;
 		    }
 		.active.top_menu_li .top_menu_a{
-			background: -webkit-linear-gradient(top, #a3c15b, #558430);   
+			background: -webkit-linear-gradient(top, #a3c15b, #558430);
 		  	color: #edede1;
 		    }
 		    .top_menu_a {
-	        	color: #929292; 
-	            display:-moz-inline-stack; 
-	            display:inline-block;           
+	        	color: #929292;
+	            display:-moz-inline-stack;
+	            display:inline-block;
 	            font:normal normal bold 16px/50px Tahoma, Verdana, Arial, sans-serif;
 	            padding:0 10px;
-	            text-decoration:none; 
-	            vertical-align:top;             
+	            text-decoration:none;
+	            vertical-align:top;
 	            }
 /*konec top menu*/
 
@@ -111,12 +111,12 @@ header .right{
 #bread_crumbs{
 	float: left;
 	margin-top: 5px;
-	width: 100%; 
+	width: 100%;
 	}
 	#bread_crumbs ul{
 		float:left;
-        height:20px; 	
-        width: 100%; 
+        height:20px;
+        width: 100%;
 		}
 		#bread_crumbs ul li{
 			background: url('../img/bullet.png') 0px 9px no-repeat;

@@ -146,7 +146,7 @@ input[type="checkbox"]{
 	margin: 0px;
 }
 #flash-success{
-	
+
 	width:50%;
 	font-size: 16px;
 	float:right;
@@ -156,7 +156,7 @@ input[type="checkbox"]{
 	vertical-align: middle;
 }
 #flash-error{
-	
+
 	width:50%;
 	font-size: 16px;
 	float:right;

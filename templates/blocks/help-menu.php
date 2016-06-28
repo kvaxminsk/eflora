@@ -1,13 +1,13 @@
 <? if (!empty($menu)): ?>
     <ul class="help_list">
-    <? foreach ($menu as $item): ?>
-		<? if (!isset($item['children'])): ?>
-			<li>
-				<a href="<?=$item['url']?>"><?=$item['name']?></a>
-			</li>
-		<? endif; ?>
+        <? foreach ($menu as $item): ?>
+            <? if (!isset($item['children'])): ?>
+                <li>
+                    <a href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
+                </li>
+            <? endif; ?>
 
-    <? endforeach; ?>
+        <? endforeach; ?>
     </ul>
 <? endif; ?>
 <!--<ul>-->

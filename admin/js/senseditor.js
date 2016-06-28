@@ -2,16 +2,16 @@ var rows_last = 10,
 	row_height = 16;
 
 
-$('.senstextarea textarea').keypress(function() { 
+$('.senstextarea textarea').keypress(function() {
 	if(rows_last != (this.scrollHeight/row_height)){
 		$(this).attr('rows',(this.scrollHeight/row_height));
 		rows_last = this.scrollHeight/row_height;
 	}
 });
 
-$('.senspanel2 .sensbuttons #showhide').click(function() { 
+$('.senspanel2 .sensbuttons #showhide').click(function() {
 	var sensarea = $(this).parent().parent().prev().children(0);
-	
+
 
 	if(rows_last < (sensarea[0].scrollHeight/row_height)){
 		$(sensarea[0]).attr('rows',(sensarea[0].scrollHeight/row_height));
@@ -24,41 +24,41 @@ $('.senspanel2 .sensbuttons #showhide').click(function() {
 });
 
 
-$('.senspanel select#h').change(function() { 
+$('.senspanel select#h').change(function() {
 	sensEditor.insertTagFromDropBox(this);
 });
 
 
-$('.senspanel .sensbuttons #ol').click(function() { 
+$('.senspanel .sensbuttons #ol').click(function() {
 	sensEditor.insertList(this);
 });
-$('.senspanel .sensbuttons #ul').click(function() { 
+$('.senspanel .sensbuttons #ul').click(function() {
 	sensEditor.insertList(this);
 });
 
 
-$('.senspanel .sensbuttons #b').click(function() { 
+$('.senspanel .sensbuttons #b').click(function() {
 	sensEditor.insertTagWithText(this, 'strong');
 });
 
-$('.senspanel .sensbuttons #i').click(function() { 
+$('.senspanel .sensbuttons #i').click(function() {
 	sensEditor.insertTagWithText(this, 'i');
 });
 
-$('.senspanel .sensbuttons #u').click(function() { 
+$('.senspanel .sensbuttons #u').click(function() {
 	sensEditor.insertTagWithText(this, 'u');
 });
 
-$('.senspanel .sensbuttons #s').click(function() { 
+$('.senspanel .sensbuttons #s').click(function() {
 	sensEditor.insertTagWithText(this, 's');
 });
 
 
-$('.senspanel .sensbuttons #link').click(function() { 
+$('.senspanel .sensbuttons #link').click(function() {
 	sensEditor.insertLink(this);
 });
 
-$('.senspanel .sensbuttons #img').click(function() { 
+$('.senspanel .sensbuttons #img').click(function() {
 	sensEditor.insertImage(this);
 });
 
@@ -131,7 +131,7 @@ sensEditor = {
 			sensEditor.insertTagWithText(link, link.value);
 			link.selectedIndex = 0;
 	},
-	
+
 
 	insertList: function(link){
 
@@ -147,7 +147,7 @@ sensEditor = {
 
 			link.selectedIndex = 0;
 	},
-	
+
 	insertTab: function(e, textarea){
 			if(!e) e = window.event;
 			if (e.keyCode) var keyCode = e.keyCode;

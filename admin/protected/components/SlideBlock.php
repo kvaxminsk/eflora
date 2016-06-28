@@ -1,10 +1,11 @@
 <?php
 
-class SlideBlock extends CWidget {
-    
+class SlideBlock extends CWidget
+{
+
     public $file;
     public $sliderN = 1;
-    
+
     public function run()
     {
         Yii::import('application.modules.slider.models.Slide');
@@ -13,8 +14,8 @@ class SlideBlock extends CWidget {
         $criteria->addCondition('t.slider_n=' . $this->sliderN);
         $criteria->addCondition('t.img <> ""');
         $criteria->order = 't.order';
-        
-        $slides = Slide::model()->findAll($criteria);	
-        $this->render('webroot.templates.blocks.'.$this->file , array('slides' => $slides));	
+
+        $slides = Slide::model()->findAll($criteria);
+        $this->render('webroot.templates.blocks.' . $this->file, array('slides' => $slides));
     }
 }

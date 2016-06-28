@@ -38,7 +38,7 @@
 	.modal_btn.yellow:hover{
 		color: #000;
 		}
-		
+
 /*форма*/
 .modal_form{
 	float: left;
@@ -81,7 +81,7 @@
 				text-align: center;
 				width: 100%;
 				}
-				
+
 /*элементы управления*/
 .modal_form input[type="text"],
 .modal_form input[type="password"],

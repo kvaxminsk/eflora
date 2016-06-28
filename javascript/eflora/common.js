@@ -113,52 +113,31 @@ function renderBlockCart() {
 }
 
 function renderBlockReviews() {
-    var reviewsArr = JSON.parse(localStorage['reviews']);
-    $('.reviews_product').text('');
-    for (var i = 0; i <= reviewsArr.length - 1; i++) {
-        if (i > 3) {
-            break;
-        }
-        $.ajax({
-            type: 'get',
-            data: 'id=' + reviewsArr[i],
-            url: '/ajax-product-reviews',
-            success: function (data) {
-                //document.write();
-
-                $('.reviews_product').append(data);
-                // changeCurrency();
+    if(localStorage['reviews']) {
+        var reviewsArr = JSON.parse(localStorage['reviews']);
+        $('.reviews_product').text('');
+        for (var i = reviewsArr.length - 1; i >= 0; i--) {
+            if (i == (reviewsArr.length -4)) {
+                break;
             }
-        });
-    }
-    var reviewsProductCount = 0;
-    var price_us = 0;
-    var price_br = 0;
-    var id = 0;
+            $.ajax({
+                type: 'get',
+                data: 'id=' + reviewsArr[i],
+                url: '/ajax-product-reviews',
+                success: function (data) {
+                    //document.write();
 
-    // for(var key in reviewsArr) {
-    //     //reviewsProductCount = reviewsProductCount + parseInt(reviewsArr[key]['count']);
-    //     //price_us = price_us + parseInt(reviewsArr[key]['price']) * reviewsProductCount;
-    //     id = parseInt(reviewsArr[key]['id'])
-    //
-    // }
-    //
-    // if (reviewsProductCount == 0) {
-    //     $('.baskettext').text(lang.basketTextNull);
-    //     $('#header_price_text_br').text(price_br);
-    //     $('#header_price_text_us').text(price_us);
-    // }
-    // else
-    // {
-    //     $('.baskettext').text(reviewsProductCount + ' ' + lang.basketText);
-    //     $('#header_price_text_br').text(price_br);
-    //     $('#header_price_text_us').text(price_us);
-    // }
+                    $('.reviews_product').append(data);
+                    // changeCurrency();
+                }
+            });
+        }
+    }
 }
 
 
 $(document).ready(function () {
-    renderBlockReviews();
+
     $('.button_continue').on('click', function() {
         // alert($('input[name=name_to]').val());
         $('#name_to').append ($('input[name=name_to]').val());
@@ -327,7 +306,7 @@ $(document).ready(function () {
                 $('.mobile_list').css('background-color', 'rgba(158, 77,105, 1)');
             }
         }
-        if ($('.left_sidebar').length) {
+        if ($('.left_sidebar').length && ($('.mp_left_main_content').height() < $('.mp_right_main_content').height() )) {
             if (($(window).scrollTop() + $(window).height()) >= (left_sibar_pos + $('.left_sidebar').height() + 30)) {
                 $(".left_sidebar").css('position', 'fixed');
                 $(".left_sidebar").css('bottom', '0px');
@@ -596,6 +575,7 @@ $(document).ready(function () {
     $('.slick-dots').children('li').click(function () {
         var data = $(this).find('span').text();
         $('.left_box p ').eq(0).text(data);
+        $('.mobile_categoria').text(data);
 
         var title = $(this).find('span').attr('data-title');
         $('.right_box_title ').eq(0).text(title);
@@ -604,7 +584,9 @@ $(document).ready(function () {
 
 
         $('.rb_discribe ').eq(0).text(describe);
+        $('#theme_text').text(data);
 
+        $('#theme_text').attr('data-category',$(this).find('span').attr('data-category'));
 
     })
 
@@ -737,11 +719,17 @@ $(document).ready(function () {
 
     $("#dropdown1>li").click(function () {
 
-        //alert($(this).attr('data-category'));
         category = $(this).attr('data-category');
-        //alert(category);
-        //$(this).text('Загрузка');
-        //setTimeout(1000);alert('fff');
+
+        //$('.slick-dots li').each(function() {
+        //    var attr = $(this).find('span').attr('data-category');
+        //   if( category == attr) {
+        //       $(this).click();
+        //   }
+        //});
+
+
+
         $.ajax({
             type: 'get',
             data: 'category=' + category,
@@ -754,6 +742,7 @@ $(document).ready(function () {
                 changeCurrency();
             }
         });
+
     });
 
 
@@ -896,14 +885,15 @@ $(document).ready(function () {
 
 
     });
-/// Это что такое???
-    //$('.dropdown>li').click(function(){
-    //	if (val == "По цене:"){
-    //
-    //		return
-    //	}
-    //	$(this).parent().parent().find('span').text($(this).text());
-    //});
+/// Это что такое???    а это выбор стран!!!!
+    $('.wrapper-dropdown-2>.dropdown>li').click(function(){
+
+ /*   	/!*if (val == "По цене:"){
+      		return
+    	}*!/
+        alert($(this).text());*/
+    	$(this).parent().parent().find('span').text($(this).text());
+    });
 
 
     $(".count_product").children("input").keydown(function (event) {
@@ -1129,7 +1119,7 @@ $(document).ready(function () {
     });
 
     $(".button_continue").click(function () {
-        eere
+        //eere
         $('.tabs_list li').eq(0).removeClass('active');
         $('.tabs_list li').eq(1).addClass('active');
         $('.tab1').animate({opacity: 0}, 400, function () {
@@ -1182,22 +1172,22 @@ $(document).ready(function () {
         var path;
         switch (src) {
             case 'h_facebook':
-                path = 'images/h_facebook.png';
+                path = '/images/eflora/h_facebook.png';
                 break;
             case 'h_twitter':
-                path = 'images/h_twitter.png';
+                path = '/images/eflora/h_twitter.png';
                 break;
             case 'h_vk':
-                path = 'images/h_vk.png';
+                path = '/images/eflora/h_vk.png';
                 break;
             case 'h_inst':
-                path = 'images/h_inst.png';
+                path = '/images/eflora/h_inst.png';
                 break;
             case 'h_gmail':
-                path = 'images/h_gmail.png';
+                path = '/images/eflora/h_gmail.png';
                 break;
             case 'h_ri':
-                path = 'images/h_rist.png';
+                path = '/images/eflora/h_rist.png';
                 break;
 
         }
@@ -1207,22 +1197,22 @@ $(document).ready(function () {
         var path;
         switch (src) {
             case 'h_facebook':
-                path = 'images/map_facebook.png';
+                path = '/images/eflora/map_facebook.png';
                 break;
             case 'h_twitter':
-                path = 'images/contact_twitter.png';
+                path = '/images/eflora/contact_twitter.png';
                 break;
             case 'h_vk':
-                path = 'images/contact_vk.png';
+                path = '/images/eflora/contact_vk.png';
                 break;
             case 'h_inst':
-                path = 'images/contact_inst.png';
+                path = '/images/eflora/contact_inst.png';
                 break;
             case 'h_gmail':
-                path = 'images/contact_gmail.png';
+                path = '/images/eflora/contact_gmail.png';
                 break;
             case 'h_ri':
-                path = 'images/contact_ri.png';
+                path = '/images/eflora/contact_ri.png';
                 break;
 
         }
@@ -1338,6 +1328,7 @@ $(document).ready(function () {
 
         $(this).parent().find('img').show();
         var atr = $(this).parent().find('.popular').attr('src');
+        $('.price_link').attr('src', '');
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
@@ -1353,14 +1344,56 @@ $(document).ready(function () {
     $('.choice_link').eq(1).click(function(){
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
+        $('.popular').attr('src', '');
+        var category = $('.slick-active span').attr('data-category');
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
             $(this).parent().find('.price_link').attr('src', atr);
+
+            /*****/
+
+            alert($('.slick-active span').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=DESC",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /****/
         }
         else{
             atr='../../images/eflora/select_icon.png';
             $(this).parent().find(".price_link").attr('src', atr);
+
+
+
+            /******/
+
+            alert($('.slick-active span').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=ASC",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /***/
         }
     })
 

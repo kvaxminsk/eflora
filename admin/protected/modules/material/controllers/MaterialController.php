@@ -1,9 +1,10 @@
 <?php
 
-class MaterialController extends BackController {
+class MaterialController extends BackController
+{
 
     public $h1 = "Страницы";
-    
+
     public $title = "Страницы";
 
     #указываем модель, по которой должны работать массовые элементы
@@ -11,7 +12,8 @@ class MaterialController extends BackController {
 
     #создание страницы
 
-    public function actionCreate() {
+    public function actionCreate()
+    {
         $materials = array(0 => 'Нет') + Material::model()->getTreeList('..');
         $model = new Material;
         $model->metatag = new MetaTag;
@@ -21,10 +23,10 @@ class MaterialController extends BackController {
         $menu = CHtml::listData($menu, 'id', 'name');
 
         if (isset($_POST['Material'])) {
-            if((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')){
+            if ((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')) {
                 $this->redirect(array('index'));
             }
-            
+
             #передача параметров для основной модели
             $model->attributes = $_POST['Material'];
 
@@ -48,7 +50,7 @@ class MaterialController extends BackController {
             $model->metatag->alias = MetaTag::model()->createAlias($_POST['Material']['name']);
 
             $model->metatag->uri = MetaTag::model()->createUri($model, 'Material');
-            
+
             #данные для связки с меню
             if (!empty($_POST['Material']['menu_id']))
                 $model->menu = $_POST['Material']['menu_id'];
@@ -60,14 +62,14 @@ class MaterialController extends BackController {
                 if (!empty($_FILES['Image'])) {
                     Image::model()->savephoto($_FILES['Image'], $model->id, Material::model()->imagefolder);
                 }
-                if(!empty($_POST['save'])){
-                    switch ($_POST['save']){
+                if (!empty($_POST['save'])) {
+                    switch ($_POST['save']) {
                         case 'save':
                             $this->redirect(array('update', 'id' => $model->id));
                             break;
                         case 'save-exit':
                             $this->redirect(array('index'));
-                            break;                        
+                            break;
                     }
                 }
                 $this->redirect(array('index'));
@@ -87,7 +89,8 @@ class MaterialController extends BackController {
         ));
     }
 
-    public function actionUpdate($id) {
+    public function actionUpdate($id)
+    {
         $materials = array(0 => 'Нет') + Material::model()->getTreeList('..');
 
         $model = $this->loadModel($id);
@@ -100,10 +103,10 @@ class MaterialController extends BackController {
         }
 
         if (isset($_POST['Material'])) {
-            if((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')){
+            if ((!empty($_POST['save'])) && ($_POST['save'] == 'cancel')) {
                 $this->redirect(array('index'));
             }
-            
+
             #передача параметров для основной модели
             $model->attributes = $_POST['Material'];
 
@@ -128,31 +131,31 @@ class MaterialController extends BackController {
             if (empty($model->metatag->alias) || ($model->metatag->alias == '')) {
                 $model->metatag->alias = MetaTag::model()->createAlias($_POST['Material']['name']);
             }
-            
+
             $old_model = $this->loadModel($id);
             $model->metatag->uri = MetaTag::model()->updateUri($old_model, $model, 'Material');
-            
+
             #данные для связки с меню
             if (!empty($_POST['Material']['menu_id']))
                 $model->menu = $_POST['Material']['menu_id'];
             else
                 $model->menu = '#0#';
-    
+
             #сохранение со связующей моделью    
             if ($model->withRelated->save(true, array('metatag'))) {
                 #сохранение фото
-                
+
                 if (!empty($_FILES['Image'])) {
                     Image::model()->savephoto($_FILES['Image'], $model->id, Material::model()->imagefolder);
                 }
-                if(!empty($_POST['save'])){
-                    switch ($_POST['save']){
+                if (!empty($_POST['save'])) {
+                    switch ($_POST['save']) {
                         case 'save':
                             $this->redirect(array('update', 'id' => $model->id));
                             break;
                         case 'save-exit':
                             $this->redirect(array('index'));
-                            break;                        
+                            break;
                     }
                 }
                 $this->redirect(array('index'));
@@ -176,12 +179,13 @@ class MaterialController extends BackController {
     /**
      * Список всех страниц
      */
-    public function actionIndex() {
+    public function actionIndex()
+    {
         $model = new Material('search');
         $model->unsetAttributes();  // clear any default values
-        
+
         $materials = array(0 => 'Нет') + Material::model()->getTreeList('..');
-        
+
         if (isset($_GET['Material']))
             $model->attributes = $_GET['Material'];
 
@@ -191,14 +195,16 @@ class MaterialController extends BackController {
         ));
     }
 
-    public function loadModel($id) {
+    public function loadModel($id)
+    {
         $model = Material::model()->with('metatag', 'menu')->findByPk($id);
         if ($model === null)
             throw new CHttpException(404, 'The requested page does not exist.');
         return $model;
     }
 
-    protected function performAjaxValidation($model) {
+    protected function performAjaxValidation($model)
+    {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'cmaterial-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();

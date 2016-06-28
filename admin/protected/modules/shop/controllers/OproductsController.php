@@ -2,59 +2,62 @@
 
 class OproductsController extends BackController
 {
-	public $title='Заказы';
-    
-    public function accessRules()
-	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions' => array('update', 'delete', 'public', 'all', 'addproduct', 'totalorder'),
-				'users' => array('@'),
-			),
-            array('deny',  // deny all users
-				'users' => array('*'),
-			),
-		);
-	}
-    
-    #выставляем активность объекта
-    public function actionPublic($id){        
-        $model = OrderProducts::model()->findByPk($_GET['id']);
-		if($model->active == 1){
-			$model->active = 0;
-		}else{
-			$model->active = 1;
-		}	
-		$model->save();
+    public $title = 'Заказы';
 
-	}
-    
-    public function actionTotalorder(){
+    public function accessRules()
+    {
+        return array(
+            array('allow',  // allow all users to perform 'index' and 'view' actions
+                'actions' => array('update', 'delete', 'public', 'all', 'addproduct', 'totalorder'),
+                'users' => array('@'),
+            ),
+            array('deny',  // deny all users
+                'users' => array('*'),
+            ),
+        );
+    }
+
+    #выставляем активность объекта
+    public function actionPublic($id)
+    {
+        $model = OrderProducts::model()->findByPk($_GET['id']);
+        if ($model->active == 1) {
+            $model->active = 0;
+        } else {
+            $model->active = 1;
+        }
+        $model->save();
+
+    }
+
+    public function actionTotalorder()
+    {
         $order = Order::model()->findByPk($_GET['orderid']);
-        if(!empty($order->price)){
-            die($order->price);    
-        }else{
+        if (!empty($order->price)) {
+            die($order->price);
+        } else {
             die('0');
         }
     }
-    
-    public function actionAddproduct(){
+
+    public function actionAddproduct()
+    {
         $criteria = new CDbCriteria;
-        if($_POST['id'] != ''){
+        if ($_POST['id'] != '') {
             $criteria->addCondition('t.id=' . $_POST['id']);
-        }elseif($_POST['articul'] != ''){
+        } elseif ($_POST['articul'] != '') {
             $criteria->addCondition('t.articul=' . $_POST['articul']);
-        }else{
+        } else {
             die('0');
         }
-        
+
         $product = Product::model()->find($criteria);
-        if(!empty($product->id)){
+        if (!empty($product->id)) {
             $criteria = new CDbCriteria;
             $criteria->addCondition('t.product_id=' . $product->id);
             $criteria->addCondition('t.order_id=' . $_POST['orderid']);
             $op_temp = OrderProducts::model()->find($criteria);
-            if(!empty($op_temp->id)){
+            if (!empty($op_temp->id)) {
                 die('-1');
             }
             $op = new OrderProducts;
@@ -63,44 +66,46 @@ class OproductsController extends BackController
             $op->active = 1;
             $op->count = 1;
             $op->order_id = $_POST['orderid'];
-            if($op->save()){
+            if ($op->save()) {
                 $order = Order::model()->findByPk($_POST['orderid']);
                 $order->price = $order->price + $product->price;
-                $order->save(); 
+                $order->save();
                 die('1');
-            }else{
+            } else {
                 die('0');
             }
-        }else{
+        } else {
             die('0');
         }
-    
+
     }
-	#удаляем объект
+
+    #удаляем объект
     public function actionDelete($id)
-	{
+    {
         $model = OrderProducts::model()->findByPk($_GET['id']);
-        
+
         $order = Order::model()->findByPk($model->order_id);
         $order->price = $order->price - $model->price * $model->count;
-        $order->save(); 
-	    $model->delete();
-	}
-    
+        $order->save();
+        $model->delete();
+    }
+
     #действие с несколькими объектами
-    function actionAll(){  
- 
-		if(isset($_POST['values']) && isset($_POST['action'])){
-			$values = explode(';', $_POST['values']);
-			switch($_POST['action']){
+    function actionAll()
+    {
+
+        if (isset($_POST['values']) && isset($_POST['action'])) {
+            $values = explode(';', $_POST['values']);
+            switch ($_POST['action']) {
                 case 'save':
                     $inputs = json_decode($_POST['values']);
                     $price = 0;
                     $order_id = 0;
-                    foreach($inputs as $k => $v){
+                    foreach ($inputs as $k => $v) {
                         $model = OrderProducts::model()->findByPk($v->id);
-                        foreach($v as $k1 => $v1){
-                            if($k1 != 'id'){
+                        foreach ($v as $k1 => $v1) {
+                            if ($k1 != 'id') {
                                 $model->$k1 = $v1;
                             }
                         }
@@ -110,37 +115,37 @@ class OproductsController extends BackController
                     }
                     $order = Order::model()->findByPk($order_id);
                     $order->price = $price;
-                    $order->save(); 
-                    
-					break; 
+                    $order->save();
+
+                    break;
                 case 'on':
-                    for($i = 0; $i < count($values); $i++){
-						$model = OrderProducts::model()->findByPk($values[$i]);
-						$model->active = 1;
-						$model->save();
-					}
-					break;
-				case 'off':
-                    for($i = 0; $i < count($values); $i++){
-						$model = OrderProducts::model()->findByPk($values[$i]);
-						$model->active = 0;
-						$model->save();
-					}
-					break;
-				case 'del':
+                    for ($i = 0; $i < count($values); $i++) {
+                        $model = OrderProducts::model()->findByPk($values[$i]);
+                        $model->active = 1;
+                        $model->save();
+                    }
+                    break;
+                case 'off':
+                    for ($i = 0; $i < count($values); $i++) {
+                        $model = OrderProducts::model()->findByPk($values[$i]);
+                        $model->active = 0;
+                        $model->save();
+                    }
+                    break;
+                case 'del':
                     $price = 0;
-                    for($i = 0; $i < count($values); $i++){
-						$model = OrderProducts::model()->findByPk($values[$i]);
+                    for ($i = 0; $i < count($values); $i++) {
+                        $model = OrderProducts::model()->findByPk($values[$i]);
                         $price += $model->count * $model->price;
                         $order_id = $model->order_id;
-						$model->delete();
-					}
+                        $model->delete();
+                    }
                     $order = Order::model()->findByPk($order_id);
                     $order->price = $order->price - $price;
-					break;
-			}
-		}
-        
-	}
+                    break;
+            }
+        }
+
+    }
 
 }

@@ -21,12 +21,12 @@ i{
 strong{
 	font-weight: bold;
 }
-	
+
 #wrapper{
 	background:  #fff;
 	display: block;
 	height: auto !important;
-	min-height: 100%;	
+	min-height: 100%;
 	margin: 0 auto;
 	width: 950px;
 	padding:10px;
@@ -38,25 +38,25 @@ strong{
 		width: 100%;
 		}
 		header:after {
-			content: '.';	
+			content: '.';
 			clear: both;
 			display: block;
 			height: 0;
-			visibility: hidden;	
+			visibility: hidden;
 			}
 	#content {
 		background: #fff;
 		line-height: 1;
-		padding: 0 0 100px;	
-		position: relative;	
+		padding: 0 0 100px;
+		position: relative;
 		width: 100%;
 		}
 		#content:after {
-			content: '.';	
+			content: '.';
 			clear: both;
 			display: block;
 			height: 0;
-			visibility: hidden;	
+			visibility: hidden;
 			}
 			.content_title{
 				height: 40px;
@@ -217,7 +217,7 @@ strong{
 			text-decoration: none;
 
 			}
-		
+
 		.active.left_menu_li a{
 			color: #111;
 			text-decoration: none;
@@ -271,7 +271,7 @@ strong{
 				-ms-transition: left 0.3s ease-in-out;
 			width: 177px;
 			z-index: 10;
-			}			
+			}
 			.fokus.left_menu_li .level2 li{
 				background:#fff;
 				/*border-bottom: 1px solid #EEE;*/
@@ -316,7 +316,7 @@ strong{
 					.open.left_menu_li .level2 .active a{
 						color: #000;
 						text-decoration: none;
-						}	
+						}
 					.open.left_menu_li .level2 li a{
 						background-image: none;
 						padding: 5px 5px 5px 15px;
@@ -326,11 +326,11 @@ strong{
 
 footer {
 	background: #fff;
-	height: 100px;	
+	height: 100px;
 	margin: -100px auto 0;
 	position: relative;
 	text-align: center;
-	width: 960px;	
+	width: 960px;
 	}
 
 	.a_filemaneger{
@@ -344,7 +344,7 @@ footer {
 	.a_filemaneger:hover{
 		background: url('../images/filemanager.png') 10px -50px no-repeat;
 		}
-	
+
 	.a_help{
 		background: url('../images/help.png') 10px 10px no-repeat;
 		display: inline-block;
@@ -357,7 +357,7 @@ footer {
 	.a_help:hover{
 		background: url('../img/help.png') 10px -50px no-repeat;
 		}
-	
+
 	.a_feedback{
 		background: url('../img/feedback.png') 10px 10px no-repeat;
 		display: inline-block;
@@ -376,9 +376,9 @@ footer {
 		margin-top:20px;
 		width: 100%;
 		}
-	
 
-		
+
+
 
 
 
@@ -421,8 +421,8 @@ footer {
 			box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 				-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 				-o-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-				-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);	
-			color: #333;	
+				-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+			color: #333;
 			text-decoration: none;
 			}
 		.str_a:active{
@@ -433,10 +433,10 @@ footer {
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 			-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 			-o-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-			-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);	
+			-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 		color: #fff;
 		text-decoration: none;
-		}	
+		}
 /*конец постраничной навигации*/
 /*модальные окна*/
 .m{
@@ -449,8 +449,8 @@ footer {
 	top: 0;
 	right: 0;
 	overflow: auto;
-	text-align: center;	
-	z-index: 100;		
+	text-align: center;
+	z-index: 100;
 	}
 	.m_m{
 		display: table;
@@ -497,7 +497,7 @@ footer {
 						width: 32px;
 						}
 				.m_m_m_content{
-					
+
 					}
 				.m_m_m_content .top_scroll{
 					background: #fff;
@@ -584,15 +584,15 @@ footer {
 button.green-btn{
 		background-color:#79a044;
 		border:none;
- 
+
 }
 button.green-btn:hover{
-		
+
 		background: #fefefe;
 		color:#32a848;
 		border:1px solid #32a848;
-		
- 
+
+
 }
 
 							

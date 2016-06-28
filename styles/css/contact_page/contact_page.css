@@ -4,7 +4,7 @@
 #sandwich{
 	opacity: 1;
 }
-#menu_selector>img{
+#menu_selector img{
 	opacity: 0;
 	display: none;
 }
@@ -40,13 +40,13 @@
 	overflow-y: scroll;
 }
 
-.catalog_list>ul
+.catalog_list ul
 {
 	margin:0 ;
 	padding: 0;
 
 }
-.catalog_list>ul>li{
+.catalog_list ul li{
 	list-style:none;
 	margin:0;
 	text-align: right;
@@ -54,7 +54,7 @@
 	line-height: 60px;
 	cursor: pointer;
 }
-.catalog_list>ul>li>a{
+.catalog_list ul li a{
 	text-decoration: none;
 	border-bottom: 1px dotted #b54e74;
 	color: #b54e74;
@@ -83,7 +83,7 @@
 	min-width: 500px;
 
 }
-.map_contact_text>h1{
+.map_contact_text h1,h2{
 	color: #242424;
 	margin-top: 55px;
 	margin-left: 90px;
@@ -91,7 +91,7 @@
 	font-family: 'Roboto Light', arial;
 	margin-bottom: 45px;
 }
-.map_contact_text>h2{
+.map_contact_text h2{
 	margin-top: 0px;
 	margin-left: 90px;
 	margin-bottom: 15px;
@@ -99,7 +99,7 @@
 	font: 18px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.map_contact_text> p:nth-child(3){
+.map_contact_text  p:nth-child(3){
 	margin-left: 90px;
 	color: #242424;
 	font: 15px/24px arial,sans-serif;
@@ -110,7 +110,7 @@
 .map_mobile_phone {
 	float: left
 }
-.map_mobile_phone>h2{
+.map_mobile_phone h2{
 	margin-top:0px;
 	margin-left: 90px;
 	color: #242424;
@@ -121,10 +121,10 @@
 h2.map_contact_email {
 	margin-top: 10px;
 }
-.map_mobile_phone> p:nth-child(5){
+.map_mobile_phone  p:nth-child(5){
 	margin-left: 40px;
 }
-.map_mobile_phone>p{
+.map_mobile_phone p{
 	color: #242424;
 	margin-left: 90px;
 	font: 15px/30px arial,sans-serif;
@@ -137,13 +137,13 @@ h2.map_contact_email {
 	margin-left: 105px;
 	float: left;
 }
-.map_fax_phone>h2{
+.map_fax_phone h2{
 	margin-top:0;
 	color: #242424;
 	font: 18px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.map_fax_phone>p{
+.map_fax_phone p{
 	color: #242424;
 	margin-left: 0px;
 	font: 15px/30px arial,sans-serif;
@@ -152,7 +152,7 @@ h2.map_contact_email {
     margin-top: 5px;
 
 }
-#map_mail>a, #map_skype>a{
+#map_mail a, #map_skype a{
 	color: #b54e74;
 }
 h2.map_contact_skype{
@@ -167,22 +167,22 @@ h2.map_contact_skype{
 	position: absolute;
 	right: 0;
 }
-.map_contact_icons> ul{
+.map_contact_icons  ul{
 	margin:0;
 	padding: 0;
 	margin-top:55px;
 }
-.map_contact_icons>ul> li{
+.map_contact_icons ul  li{
 	margin:0;
 	padding: 0;
 	list-style:none;
 	margin-bottom: 40px;
 }
-.map_contact_icons>ul> li>a{
+.map_contact_icons ul  li a{
 	display: block;
 	width: 100%;
 }
-.map_contact_icons>ul> li>a>img{
+.map_contact_icons ul  li a img{
 	display: block;
 	margin: 0 auto;
 }
@@ -197,7 +197,7 @@ h2.map_contact_skype{
 
 }
 .message_icon_wrap{
-	background: url(../../images/eflora/message.png) no-repeat;
+	background: url(../../../images/eflora/message.png) no-repeat;
 	background-position: center;
 	width: 70px;
 	height: 70px;
@@ -213,7 +213,7 @@ h2.map_contact_skype{
 	box-shadow: 0 0 15px  rgba(234,45,63, 0.5) ; /* Параметры тени */
 }
 .map_info_wrap{
-	background: url(../../images/eflora/map_icon.png) no-repeat;
+	background: url(../../../images/eflora/map_icon.png) no-repeat;
 	background-position: center;
 	width: 70px;
 	height: 70px;
@@ -240,7 +240,7 @@ cursor: pointer; */
 }
 
 .message_icon_wrap:hover{
-	 background: url(../../images/eflora/message_icon_hover.png) no-repeat;
+	 background: url(../../../images/eflora/message_icon_hover.png) no-repeat;
 	 background-position: center;
 	 background-color: #fff;
 	 -webkit-transition: background 0.5s;
@@ -258,7 +258,7 @@ cursor: pointer; */
 .map_info_wrap:hover{
 	
  
-	 background: url(../../images/eflora/map_info_icon_hover.png) no-repeat;
+	 background: url(../../../images/eflora/map_info_icon_hover.png) no-repeat;
 	 background-color: #ff6161;
 	 background-position: center;
 	 
@@ -305,7 +305,7 @@ cursor: pointer; */
 	background-color: #f35a69;
 
 }
-.close_feedback_cross>img{
+.close_feedback_cross img{
 	display: block;
 	margin: 0 auto;
 	margin-top: 22px;
@@ -314,7 +314,7 @@ cursor: pointer; */
 	opacity: 0;
 	z-index: 0;
 }
-.feedback>h1{
+.feedback h1,h2{
 	margin-left: 90px;
 	margin-bottom: 40px;
 	color: #fff;
@@ -322,7 +322,7 @@ cursor: pointer; */
 	font: 30px/30px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 }
-.feedback > input, .feedback_message{
+.feedback   input, .feedback_message{
 	margin-bottom:30px;
 	margin-left: 90px;
 	height: 40px;
@@ -335,14 +335,14 @@ cursor: pointer; */
 	font-family: 'Roboto Regular', arial;
 	font-weight: 100;
 }
-.feedback > input::-webkit-input-placeholder
+.feedback   input::-webkit-input-placeholder
 {
 	font-weight: 100;
 	color:#fff;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback > input::-moz-placeholder        
+.feedback   input::-moz-placeholder        
 {
 	color:#fff;
 	font-weight: 100;
@@ -350,25 +350,25 @@ cursor: pointer; */
 	font-family: 'Roboto Regular', arial;
 }
 
-.feedback > input:-moz-placeholder    
+.feedback   input:-moz-placeholder    
 {
 	color:#fff;
 	font-weight: 100;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback > input:-ms-input-placeholder    
+.feedback   input:-ms-input-placeholder    
 {
 	color:#fff;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 	font-weight: 100;
 }
-.feedback > input::selection
+.feedback   input::selection
 {
 	background: #fdf;
 }
-.feedback>p
+.feedback p
 {
 	margin-top:20px;
 	margin-left: 90px;
@@ -384,7 +384,7 @@ cursor: pointer; */
 	font: 15px/20px arial,sans-serif;
 
 }
-.feedback>.order_number_desc
+.feedback .order_number_desc
 {
 	margin-top: -25px;
 	width: calc(95% - 105px)
@@ -395,14 +395,14 @@ textarea {
 }
 
 
-.feedback >  textarea::-webkit-input-placeholder
+.feedback    textarea::-webkit-input-placeholder
 {
 	font-weight: 100;
 	color:#fff;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback > textarea:-moz-placeholder       
+.feedback   textarea:-moz-placeholder       
 {
 	color:#fff;
 	font-weight: 100;
@@ -410,14 +410,14 @@ textarea {
 	font-family: 'Roboto Regular', arial;
 }
 
-.feedback > textarea::-moz-placeholder    
+.feedback   textarea::-moz-placeholder    
 {
 	color:#fff;
 	font-weight: 100;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback > textarea:-ms-input-placeholder    
+.feedback   textarea:-ms-input-placeholder    
 {
 	color:#fff;
 	font: 15px/30px arial,sans-serif;
@@ -448,13 +448,14 @@ textarea {
 
 
 .feedback_submit{
+	border: 1px solid #fff;
 	display: block;
 	margin-top: 10px;
 	margin-left: 90px;
 	height: 50px;
-	width: 180px;
+	width: 180px !important;
 	background-color: transparent;
-	border: 2px solid #fff;
+	border: 1px solid #fff !important;
 	border-radius: 25px;
 	color: #fff;
 	text-transform: uppercase;
@@ -501,14 +502,14 @@ textarea {
 	.message_icon, .map_info_icon{
 		bottom: 80px
 	}
-	.map_fax_phone>h2{
+	.map_fax_phone h2{
 		margin-top:0px;
 	}
-	.map_fax_phone>p{
+	.map_fax_phone p{
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	.map_fax_phone>h2.map_contact_skype{
+	.map_fax_phone h2.map_contact_skype{
 		margin-top:50px ;
 	}
 }
@@ -522,7 +523,7 @@ textarea {
 	.cp_right_main_content{
 		width: calc(100% - 241px)
 	}
-	.catalog_list>ul>li{
+	.catalog_list ul li{
 		padding-right: 30px;
 	}
 	.catalog_list{
@@ -580,23 +581,23 @@ textarea {
 	.feedback{
 		height: 980px;
 	}
-	.feedback > input, .feedback_message
+	.feedback   input, .feedback_message
 	{
 		margin-left: 40px;
 	}
-	.feedback>p{
+	.feedback p{
 		margin-left: 40px;
 	}
 	.feedback_submit{
 		margin-left: 40px;
 	}
-	.map_fax_phone>h2{
+	.map_fax_phone h2{
 		margin-top:10px;
 	}
 	.map_describe{
 		margin-top: 30px;
 	}
-	.map_fax_phone>h2.map_contact_skype {
+	.map_fax_phone h2.map_contact_skype {
 		margin-top: 0px;
 	}
 	#map{
@@ -623,37 +624,37 @@ textarea {
 	.feedback{
 		min-width: 240px;
 	}
-	.feedback>h1{
+	.feedback h1,h2{
 		font-size: 26px;
 	}
 
 }
 @media only screen and (max-width: 640px){
-	.feedback > input, .feedback_message
+	.feedback   input, .feedback_message
 	{
 		margin-left: 40px;
 	}
-	.feedback>p{
+	.feedback p{
 		margin-left: 40px;
 	}
 	.feedback_submit{
 		margin-left: 40px;
 	}
-	.map_contact_text>h1
+	.map_contact_text h1,h2
 	{
 		margin-left: 40px;
 	}
-	.map_contact_text>h2
+	.map_contact_text h2
 	{
 		margin-left: 40px;
 	}
-	.map_contact_text> p:nth-child(3){
+	.map_contact_text  p:nth-child(3){
 		margin-left: 40px;
 	}
-	.map_mobile_phone>h2{
+	.map_mobile_phone h2{
 		margin-left: 40px;
 	}
-	.map_mobile_phone>p{
+	.map_mobile_phone p{
 		margin-left: 40px;
 	}
 	.map_fax_phone{
@@ -718,7 +719,7 @@ textarea {
 		left: -160px;
 		top:80px;
 	}
-	.feedback>h1{
+	.feedback h1,h2{
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
@@ -742,7 +743,7 @@ textarea {
 	.main_content{
 		min-width: 320px;
 	}
-	.feedback>h1{
+	.feedback h1,h2{
 		font-size: 18px;
 		text-align: center;
 		margin-top:70px;

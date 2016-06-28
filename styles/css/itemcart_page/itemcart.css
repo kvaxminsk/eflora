@@ -1127,6 +1127,17 @@ height: 492px !important;
 }
 
 
+@media only screen and (max-width: 840px) {
+
+	#first_description{
+		margin-top: -165px!important;
+	}
+	#logo_text_mobile{
+		margin-top: 10px;
+	}
+}
+
+
 @media only screen and (max-width: 760px){
 	
 	.upper_social_icons>p{
@@ -1141,6 +1152,15 @@ height: 492px !important;
 	}
 	.upper_social_icons{
 		height: 110px;
+	}
+	#first_description{
+		margin-top: -110px!important;
+	}
+	#logo_text_mobile{
+		margin-top: -15px;
+	}
+	.item_flower_title{
+		margin-top:95px;
 	}
 
 }
@@ -1222,7 +1242,6 @@ height: 492px !important;
 	}
 	.item_selector{
 		margin:0;
-		margin
 	}
 }
 
@@ -1256,21 +1275,27 @@ height: 492px !important;
 			left:-160px;
 			width: 100%;
 		}
-	.item_price>.old_price{
-	width: 60%;
-	text-align: right;
+	.item_price>.old_price,.item_price>.new_price {
+	width: 100%;
+	text-align: center;
+		margin-left: 0;
+	}
+	.item_price>.old_price>.line{
+		left: 50%;
+		margin-left: -80px;
+
 	}
 .item_price>.new_price{
-	width: 60%;
+	width: 100%;
 	margin-top:20px;
-	margin-left: 5%;
-	text-align: right;
-	margin-right: 30px;
-	position: relative;
-	right: -5px;
+	text-align: center;
+
 	}
 	.item_flower_describe{
 		margin-left: calc(50% - 120px);
 		width:60%;
+	}
+	.new_price >.um {
+		margin-left: 20px;
 	}
 }

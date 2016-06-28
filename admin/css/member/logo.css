@@ -1,7 +1,7 @@
 #logo{
 	height: 60px;
 	/*width: 350px;*/
-	padding-top: 20px; 
+	padding-top: 20px;
 		/*background-color: #333;*/
 	text-align: center;
 
@@ -26,7 +26,7 @@
 		text-align: center;
 		width: 100%;
 		}
-		
+
 		/*логотип в модальных окнах*/
 		.m #logo{
 			margin-left: 130px;

@@ -36,7 +36,7 @@ button{
 	padding:0 10px 0 0;
 	position: relative;
 	text-align: left;
-	
+
 
 		background: #FDDA5A;
 	}
@@ -100,8 +100,8 @@ button{
 		button span.ico.none, .button span.ico.none{
 			height: 30px;
 			width: 10px;
-			}	
-			
+			}
+
 	.action_btn{
 		/*background: #e3ebed;
 		border: 1px solid rgba(0,0,0,0.1);

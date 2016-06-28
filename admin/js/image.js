@@ -3,18 +3,18 @@ $(window).load(function() {
 	    if(!confirm('Удалить изображение?')){
 	       return false;
 	    }
-        
+
 	    var t = $(this);
         var objectid = t.attr('objectid');
         var model = t.attr('model');
         var attr = t.attr('attr');
-        
-        imgid = attr + '-' + objectid; 
+
+        imgid = attr + '-' + objectid;
 		res   =   {
 		      'objectid': objectid,
 		      'model': model,
               'attr': attr
-        };	
+        };
 		jQuery.ajax({
 			'type':      'POST',
 			'dataType':  'json',
@@ -22,10 +22,10 @@ $(window).load(function() {
 			'url':       'deleteimg',
 			'success':function(data) {
 			    t.remove();
-                $('#'+imgid).remove(); 
+                $('#'+imgid).remove();
 			}
 		});
         return false;
 	});
-    
+
 })

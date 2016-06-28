@@ -12,11 +12,11 @@
 		/*width: 1255px;*/
 		}
 		#header:after {
-			content: '.';	
+			content: '.';
 			clear: both;
 			display: block;
 			height: 0;
-			visibility: hidden;	
+			visibility: hidden;
 			}
 
 #header .left{
@@ -39,7 +39,7 @@
 		text-align: center;
 		width: 100%;
 		}
-	
+
 .citys{
 	float: right;
 	height: 20px;

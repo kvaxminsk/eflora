@@ -1,2 +1,1 @@
-
-<?php echo $this->renderPartial('_form', array('model'=>$model,'act'=>'c')); ?>
+<?php echo $this->renderPartial('_form', array('model' => $model, 'act' => 'c')); ?>

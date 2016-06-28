@@ -551,7 +551,7 @@ ul.cart1_item>li>.cart1_item_new_price>sup{
 }
 .fake_datepicker_title{
 	display: inline-block;
-	width: 125px;
+	width: 120px;
 	height: 40px;
 	border-radius: 25px;
 	background: url(../../../images/eflora/datepicker_icon.png) no-repeat;
@@ -1236,6 +1236,13 @@ ul.order_list>li.delete{
 	}
 
 }
+@media only screen and (max-width: 1280px) {
+	.description{
+		/*margin-top:-30px;*/
+	}
+}
+
+
 @media only screen and (max-width: 1184px){
 	ul.cart1_item{
 		justify-content: space-around;
@@ -1423,8 +1430,8 @@ ul.tabs_list>li.active{
 	line-height: 19px;
 }
 .cart1_note_block > p{
-	margin-left: calc(50% - 150px);
-	padding-right: 20px;
+/*	margin-left: calc(50% - 150px);
+	padding-right: 20px;*/
 }
 .cart1_note_block>input{
 	width: 300px;
@@ -1446,7 +1453,9 @@ ul.tabs_list>li.active{
 	margin-top:40px;
 }
 
-
+	.dollar_price_cart{
+		text-align: center !important;
+	}
 
 }
 @media only screen and (max-width: 860px){
@@ -1473,9 +1482,38 @@ ul.tabs_list>li.active{
 		width: 80%;
 		margin: 0 auto;
 	}
+	.cart1_note_block > p{
+		padding-right: 0;
+	}
 
 
 }
+
+@media only screen and (max-width: 840px){
+	#first_description{
+		margin-top: -125px !important;
+	}
+	#logo_text_mobile{
+		margin-top: 13px;
+	}
+	.description{
+		margin-top:-30px;
+	}
+	#third_description {
+		margin-top:30px !important;
+	}
+}
+@media only screen and (max-width: 760px) {
+	#first_description{
+		margin-top: -60px !important;
+	}
+	#logo_text_mobile{
+		margin-top: -15px;
+	}
+
+
+}
+
 @media only screen and (max-width: 670px){
 	.tomorrow_button{
 		top: 20px;
@@ -1502,7 +1540,7 @@ ul.tabs_list>li.active{
 			height: 160px;
 		}
 		.crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
-			margin:0;
+			/*margin:0;*/
 		}
 		.tomorrow_button{
 			top:20px;
@@ -1598,6 +1636,117 @@ ul.tabs_list>li.active{
 		}
 		.cart1_item>li>span{
 			right: 10px;
+		}.crt_left_main_content{
+			 border:none;
+		 }
+		ul.tabs_list>li{
+			clear: both;
+			width: 100%;
+
+		}
+		.order_list_total_describe>p{
+			text-align: left;
+			margin-left: 55px;
+		}
+		.order_list_total_describe>hr{
+			text-align: left;
+			margin-left: 55px;
+		}
+		ul.tabs_list>li>a{
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.cart1_note_block>p{
+			margin: 0 auto;
+			padding-right: 0;
+			line-height: 20px;
+		}
+		.cart1_note_block>input
+		{
+			margin-left: 30px;
+			width:80%;
+		}
+		.tab2_contact_info_left>p, .tab2_contact_info_right>p{
+			margin-left: 40px;
+		}
+		.tab2_text_note>p{
+			margin-left: 40px;
+			width: 300px
+		}
+		.crt_right_main_content>.tab1>p{
+			font-size: 16px;
+		}
+		.crt_right_main_content>.tab1>p {
+			text-align: left;
+		}
+		.crt_left_main_content{
+			width: 100%;
+		}
+		ul.order_list>li>img{
+			margin: 10px auto;
+			display: block;
+			float: none;
+			width: 200px;
+
+		}
+		.crt_right_main_content{
+			width: 100%;
+		}
+		.tomorrow_button {
+			top: 15px;
+		}
+		.datepicker_wrapp{
+			display: block;
+			margin-top: 0px;
+		}
+		.button_continue{
+			left:30px;
+		}
+		.crt_right_main_content>.tab1>p{
+			margin-right: 10px;
+		}
+		.delete_order{
+			top:70px;
+			height: calc(100% + 10px);
+			background: url(../../../images/eflora/grey_cross.png) no-repeat;
+			background-position: 9px 120px;
+		}
+		.delete_order:hover{
+			height: calc(100% + 10px);
+
+			background: url(../../../images/eflora/white_cross.png) no-repeat;
+			background-position: 9px 120px;
+			background-color: #ff6267;
+		}
+		.now_button{
+			margin: 0px auto;
+			margin-top: 20px;
+
+		}
+		.tomorrow_button{
+			margin: 0px auto;
+			margin-top: 20px;
+			display: block;
+			padding: 0;
+			left: 0;
+		}
+		.datepicker_wrapp{
+			margin: 0 auto;
+		}
+		.crt_right_main_content>.tab1>p{
+			text-align: center;
+			margin: 20px auto;
+			margin-bottom: 20px;
+
+		}
+		.crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+		}
+		.dollar_price_cart{
+			text-align: center !important;
 		}
 	}
 
@@ -1680,9 +1829,7 @@ ul.tabs_list>li.active{
 		.crt_right_main_content>.tab1>p{
 			font-size: 16px;
 		}
-		.crt_right_main_content>.tab1>p {
-			text-align: left;
-		}
+
 		.crt_left_main_content{
 			width: 100%;
 		}
@@ -1706,9 +1853,7 @@ ul.tabs_list>li.active{
 		.button_continue{
 			left:30px;
 		}
-		.crt_right_main_content>.tab1>p{
-			margin-right: 10px;
-		}
+
 		.delete_order{
 			top:70px;
 			height: calc(100% + 10px);

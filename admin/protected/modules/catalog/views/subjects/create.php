@@ -1,9 +1,9 @@
 <?php
-$this->breadcrumbs=array(
-	'Тематика' => array('index'),
-	'Новая тематика'
+$this->breadcrumbs = array(
+    'Тематика' => array('index'),
+    'Новая тематика'
 );
 
 ?>
 
-<?php  echo $this->renderPartial('_form', array('model'=>$model, 'action'=>'create'));  ?>
+<?php echo $this->renderPartial('_form', array('model' => $model, 'action' => 'create')); ?>

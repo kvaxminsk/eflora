@@ -1,7 +1,7 @@
 <div class="wrap">
     <div class="wrap_contacts">
         <div class="content">
-            <h1><?=$this->h1?></h1>
+            <h1><?= $this->h1 ?></h1>
         </div>
     </div>
     <div class="content">
@@ -9,7 +9,7 @@
 
         <div class="left_content">
             <div class="about">
-                <?=$model->content?>
+                <?= $model->content ?>
             </div>
         </div>
 
@@ -20,7 +20,8 @@
 
             <h1>ОТБОР ВЫХЛОПНЫХ СИСТЕМ</h1>
             <div class="selection">
-                <form action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'index')) ?>" method="GET" id="catalogForm">
+                <form action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'index')) ?>"
+                      method="GET" id="catalogForm">
                     <? $this->widget('catalogIndex', array('file' => 'catalog_filter')) ?>
                     <input type="submit" value="ПОИСК >"/>
                 </form>

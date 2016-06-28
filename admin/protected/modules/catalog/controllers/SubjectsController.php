@@ -1,15 +1,17 @@
 <?php
 
-class SubjectsController extends BackController {
+class SubjectsController extends BackController
+{
 
     public $h1 = "Тематика";
-    
+
     public $title = "Тематика";
 
     #указываем модель, по которой должны работать массовые элементы
     public $modulerun = 'Subjects';
 
-    public function actionIndex() {
+    public function actionIndex()
+    {
 
         $model = new subjects('search');
         $model->unsetAttributes();  // clear any default values
@@ -20,7 +22,8 @@ class SubjectsController extends BackController {
         $this->render('index', array('model' => $model));
     }
 
-    public function actionCreate() {
+    public function actionCreate()
+    {
         $model = new Subjects;
 
         $model->metatag = new MetaTag;
@@ -39,9 +42,9 @@ class SubjectsController extends BackController {
             if (empty($model->metatag->alias) || ($model->metatag->alias == '')) {
                 $model->metatag->alias = MetaTag::model()->createAlias($_POST['Subjects']['name']);
             }
-            
+
             $model->metatag->uri = MetaTag::model()->createUri($model, 'Subjects');
-            
+
             #сохранение со связующей моделью    
             if ($model->withRelated->save(true, array('metatag'))) {
                 #сохранение фото
@@ -51,7 +54,7 @@ class SubjectsController extends BackController {
                 $this->redirect(array('index'));
             }
         }
-        
+
         $this->title = 'Новая марка автомобиля';
 
         $this->render('update', array(
@@ -59,7 +62,8 @@ class SubjectsController extends BackController {
         ));
     }
 
-    public function actionUpdate($id) {
+    public function actionUpdate($id)
+    {
         $model = $this->loadModel($id);
 
         if (empty($model->metatag)) {
@@ -81,11 +85,11 @@ class SubjectsController extends BackController {
             if (empty($model->metatag->alias) || ($model->metatag->alias == '')) {
                 $model->metatag->alias = MetaTag::model()->createAlias($_POST['Subjects']['name']);
             }
-            
+
             $old_model = $this->loadModel($id);
-            $model->metatag->uri =  MetaTag::model()->updateUri($old_model, $model, 'Subjects');
-          
-            
+            $model->metatag->uri = MetaTag::model()->updateUri($old_model, $model, 'Subjects');
+
+
             #сохранение со связующей моделью    
             if ($model->withRelated->save(true, array('metatag'))) {
                 #сохранение фото
@@ -103,7 +107,8 @@ class SubjectsController extends BackController {
         ));
     }
 
-    public function loadModel($id) {
+    public function loadModel($id)
+    {
         $model = Subjects::model()->with('metatag', 'images')->findByPk($id);
 
         if ($model === null)
@@ -111,7 +116,8 @@ class SubjectsController extends BackController {
         return $model;
     }
 
-    protected function performAjaxValidation($model) {
+    protected function performAjaxValidation($model)
+    {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'subjects-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();

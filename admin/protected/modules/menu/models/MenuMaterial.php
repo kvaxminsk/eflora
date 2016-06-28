@@ -2,16 +2,15 @@
 
 class MenuMaterial extends CActiveRecord
 {
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
 
-	public function tableName()
-	{
-		return '{{menu_material}}';
-	}
-    
-   
+    public function tableName()
+    {
+        return '{{menu_material}}';
+    }
+
 
 }
