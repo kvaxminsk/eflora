@@ -150,8 +150,9 @@ class FrontCatalogController extends FrontController
 
 
         $this->render('category', array(
-            'products' => $products,
-            'pages' => $pages,
+//            'products' => $products,
+//            'pages' => $pages,
+            'category' => $model->id,
             'contentCategory' => $model->content,
         ));
     }
@@ -458,6 +459,15 @@ class FrontCatalogController extends FrontController
                 $criteria->addCondition('t.stock=\'1\'');
             }
 
+            if($_GET['popular'] && $_GET['type'] == 'ASC') {
+                $criteria->order = "t.views ASC";
+//                die($_GET['type']);
+
+            }
+            elseif($_GET['popular'] && $_GET['type'] == 'DESC') {
+                $criteria->order = "t.views DESC";
+//                die($_GET['type']);
+            }
 
             if($_GET['price'] && $_GET['type'] == 'ASC') {
                 $criteria->order = "t.price ASC";
@@ -468,6 +478,8 @@ class FrontCatalogController extends FrontController
                 $criteria->order = "t.price DESC";
 //                die($_GET['type']);
             }
+
+
             if ($_GET['summa']) {
                 if (($_GET['summa'] == 8) ||($_GET['summa'] == 15)||($_GET['summa'] == 30)) {
                     $criteria->addCondition('t.price <=' . round($_GET['summa'] * 100000/$kurs));
@@ -516,12 +528,14 @@ class FrontCatalogController extends FrontController
             if(!$_GET['price']) { $_GET['price']=0;}
             if(!$_GET['type']) { $_GET['type']=0;}
             if(!$_GET['summa']) { $_GET['summa']=0;}
+            if(!$_GET['popular']) { $_GET['popular']=0;}
 
             $this->render('ajax_product', array(
                 'products' => $products,
                 'pages' => $pages,
                 'pagevar' => $pageVar,
                 'price' => $_GET['price'],
+                'popular' => $_GET['views'],
                 'type' => $_GET['type'],
                 'summa' => $_GET['summa'],
             ));

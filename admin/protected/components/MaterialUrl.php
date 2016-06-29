@@ -25,7 +25,6 @@ class MaterialUrl extends CWidget
                 $criteria2->addCondition("module='$this->module'");
                 $criteria2->addCondition("action='$this->action'");
                 $type = MaterialType::model()->find($criteria2);
-
                 if (!empty($type)) {
                     $type_id = $type->id;
                 } else {

@@ -11,6 +11,7 @@ class GiftBlock extends CWidget
     public function run()
     {
         Yii::import('application.modules.catalog.models.Product');
+        Yii::import('application.modules.variables.models.Variables');
 
         $uri = $_SERVER['REQUEST_URI'];
         $uri = preg_replace('#\?(.*)#si', '', $uri);
@@ -21,8 +22,8 @@ class GiftBlock extends CWidget
         $criteria->addCondition('t.gift=1');
 
         $products = Product::model()->findAll($criteria);
-
-        $this->render('webroot.templates.shop.' . $this->file, array('products' => $products, 'pstart' => $this->pstart, 'pend' => $this->pend));
+        $variables = Variables::getAll();
+        $this->render('webroot.templates.shop.' . $this->file, array('products' => $products, 'kurs' => $variables['kurs']));
     }
 
 

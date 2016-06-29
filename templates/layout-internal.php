@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/css/catalog_page/catalog.css"/>
 
     <!--	/*********************/-->
-    <link rel="stylesheet" type="text/css" href="/styles/css/contact_page/contact_page.css"/>
+<!--    <link rel="stylesheet" type="text/css" href="/styles/css/contact_page/contact_page.css"/>-->
     <script type="text/javascript" src="/javascript/eflora/slick_item/slick.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
