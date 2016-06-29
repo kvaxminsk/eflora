@@ -246,7 +246,7 @@ a {
 	}
 
 	.catalog_list{
-		height: auto;
+		/*height: auto;*/
 	}
 	form input{
 		margin: 0 auto;

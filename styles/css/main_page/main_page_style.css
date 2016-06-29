@@ -1134,14 +1134,15 @@ a:hover{
 	.search_area{
 		width: 240px;
 	}
-	.search_area>input{
+	.search_area input{
 		margin-left: 20px;
 		width: 180px;
 		background: url(../../../images/eflora/search_icon.png) no-repeat 170px;
 	}
 	.go_find {
+		left: 185px;
+		top: -30px;
 
-		right: -190px;
 
 	}
 	ul.flower_products li{
