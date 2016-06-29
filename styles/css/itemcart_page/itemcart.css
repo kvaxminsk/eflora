@@ -321,8 +321,9 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 	width: 15px;
     height: 15px;
     position: relative;
-    right: -290px;
-    top: -50px;
+    right: 32px;
+    top: 0px;
+	opacity: 0;
     cursor: pointer;
     background-color: transparent;
 }
@@ -1003,10 +1004,14 @@ height: 492px !important;
 		width: calc(30% - 35px);
 	}
 	.item_flower_title{
-		width: 100%;
-		margin:0;
-		padding: 0;
-		text-align: center;
+		/*width: 245px;*/
+		/* margin: 0 auto; */
+		/* padding: 0; */
+		/* text-align: center; */
+		left: 50%;
+		display: inline-block;
+		position: relative;
+		margin-left: -122px;
 	}
 	.item_flower_describe{
 		padding: 0;
@@ -1160,7 +1165,7 @@ height: 492px !important;
 		margin-top: -15px;
 	}
 	.item_flower_title{
-		margin-top:95px;
+		margin-top:-20px;
 	}
 
 }
@@ -1292,7 +1297,8 @@ height: 492px !important;
 
 	}
 	.item_flower_describe{
-		margin-left: calc(50% - 120px);
+		margin: 0px auto;
+		margin-top: 30px;
 		width:60%;
 	}
 	.new_price >.um {

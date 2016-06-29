@@ -597,6 +597,8 @@ $(document).ready(function () {
 
     });
 
+    $('.slick-track').css('left', '0px;');
+
 
     $('.slick-dots').children('li').click(function () {
         var data = $(this).find('span').text();
@@ -1406,6 +1408,7 @@ $(document).ready(function () {
         $('#points').css('margin-left', '36px');
         $('.dollar_price').show();
         $('.dollar_price_1').show();
+        $('#unit_valuta').css('display', 'inline-block');
 
         $('#header_price_text_us').show();
         $('#header_price_text_br').hide();
@@ -1426,6 +1429,7 @@ $(document).ready(function () {
         $('#points').css('margin-left', '100px');
         $('.dollar_price').hide();
         $('.dollar_price_1').hide();
+        $('#unit_valuta').css('display', 'none');
         $('#header_price_text_us').hide();
         $('#header_price_text_br').show();
         $('.old_price').show();
@@ -1444,7 +1448,7 @@ $(document).ready(function () {
         if ($('.header_price_icon>.backet_circle>p').text() == "$") {
             $('.header_price_icon>.backet_circle>p').text("Br");
             $('#points').css('margin-left', '100px');
-
+            $('#unit_valuta').css('display', 'none');
             $('.dollar_price').hide();
             $('.dollar_price_1').hide();
             $('#header_price_text_us').hide();
@@ -1464,6 +1468,7 @@ $(document).ready(function () {
         if ($('.header_price_icon>.backet_circle>p').text() == "Br") {
             $('#points').css('margin-left', '36px');
             $('.header_price_icon>.backet_circle>p').text("$");
+            $('#unit_valuta').css('display', 'inline-block');
 
             $('.dollar_price_1').show();
             $('.dollar_price').show();
