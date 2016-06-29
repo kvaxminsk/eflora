@@ -975,7 +975,7 @@ ul.flower_products_catalog li:hover  .discount>p{
 
 	@media all and (max-width:  760px){
 		#container{
-			overflow: hidden;
+			/*overflow: hidden;*/
 		}
 
 		ul.list {
@@ -1014,10 +1014,10 @@ ul.flower_products_catalog li:hover  .discount>p{
 			height: 80%;
 		}
 		#second_column{
-			top: 0px;
+			top: 80px;
 		}
 		#third_column{
-			top:0px;
+			top:80px;
 			position: relative;
 			z-index: 10;
 		}
@@ -1048,7 +1048,7 @@ ul.flower_products_catalog li:hover  .discount>p{
 
 	@media all and (max-width: 480px){
 		#logo{
-			height: 160px;
+			height: 80px;
 		}
 	}
 /*
