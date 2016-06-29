@@ -19,7 +19,7 @@
 
             <div class="cart1_item_old_price old_price">
                 <span> BR </span> <?= (int)($product->price * $kurs / 1000) ?>
-                <sup><?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></sup>
+                <sup><?= (round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000)!=0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) :'000' ?></sup>
                 <hr>
             </div>
 

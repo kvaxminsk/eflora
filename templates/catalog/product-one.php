@@ -19,7 +19,7 @@
 </script>
 <div class="right_main_content">
     <div class="last_view">
-        <p class="view_erlier"><a href="">Вы просматривали</a></p>
+        <p class="view_erlier"><a href="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'reviews')) ?>">Вы просматривали</a></p>
         <div class="view_erlier_cross">
             <a href="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'reviews')) ?>">+</a>
         </div>
@@ -137,13 +137,14 @@
                 <?= (int)($model->price * $kurs / 1000) ?>
                 <div class="line"></div>
                 <span
-                    class="zero_old_price"> <?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></span>
+                    class="zero_old_price"> <?= (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000)!=0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) :'000' ?></span>
             </div>
+
             <div class="new_price">
                 <span class="um">BR </span>
-                <?= (int)($model->price * $kurs / 1000) ?>
+                <?= (int)($model->price * $kurs / 10000) ?>
                 <span
-                    class="zero_old_price"><?= round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 10) ?>
+                    class="zero_old_price"><?= round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
                     коп</span>
             </div>
             <div class="dollar_price">

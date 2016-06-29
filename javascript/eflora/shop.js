@@ -20,7 +20,10 @@ function updatePage() {
 	for(var key in shopArr) {
 		shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
 	}
-	var currency = JSON.parse(localStorage['currency'])
+	var currency = '';
+	if(localStorage['currency']) {
+		currency = JSON.parse(localStorage['currency']);
+	}
 	if(currency != 'us'){
 		currency = 'br';
 		price_br = kurs* price_us;
@@ -76,7 +79,12 @@ function getCountByProductId() {
 	var shopId = getShopId();
 	var shopArr = [];
 	for (var i = 0; i <= shopId.length - 1; i++) {
-		shopArr[i] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		if(localStorage['shop_product_' + shopId[i]]) {
+			shopArr[i] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		}
+		else {
+			continue;
+		}
 	}
 	return shopArr;
 }
@@ -85,7 +93,13 @@ function getBasketInfo() {
 	var shopId = getShopId();
 	var shopArr = [];
 	for (var i = 0; i <= shopId.length - 1; i++) {
-		shopArr[shopId[i]] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		if(localStorage['shop_product_' + shopId[i]]){
+			shopArr[shopId[i]] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		}
+		else {
+			continue;
+		}
+
 	}
 	//console.log(shopArr[3]['count']);
 	return shopArr;

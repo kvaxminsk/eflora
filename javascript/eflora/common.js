@@ -41,7 +41,10 @@ function changeCurrency()
         $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').find('p').text('В КОРЗИНЕ');
         $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').addClass("style_in_cart");
         price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
-        var currency = JSON.parse(localStorage['currency']);
+        var currency = '';
+        if(localStorage['currency']) {
+            currency = JSON.parse(localStorage['currency']);
+        }
         if(currency != 'us'){
             currency = 'br';
             price_br = kurs * price_us;
@@ -56,7 +59,10 @@ function changeCurrency()
     $('#header_price_text_br').text(price_br);
     $('#header_price_text_us').text(price_us);
 
-    var currency = JSON.parse(localStorage['currency'])
+    var currency = '';
+    if(localStorage['currency']) {
+        currency = JSON.parse(localStorage['currency']);
+    }
     if (currency == 'us') {
         //alert(currency);
         $('.old_price').hide();
@@ -1950,8 +1956,7 @@ function addOrder() {
     data['country_from'] = $('span[name=country_from]').text();
     data['city_from'] = $('span[name=city_from]').text();
     data['address_from'] = $('input[name=address_from]').val();
-    data['text_from'] = $('input[name=text_postcard]').val();
-
+    data['text_postcard'] = $('textarea[name=text_postcard]').val();
 
     var methodPay = '';
     switch ($('input[name=radiog_dark]:checked').val()) {
@@ -1986,7 +1991,10 @@ function addOrder() {
 
     data['method_pay'] = methodPay;
     data['products'] = products;
-    data['currency'] = JSON.parse(localStorage['currency']);
+    if(localStorage['currency']) {
+        data['currency'] = JSON.parse(localStorage['currency']);
+    }
+
     data['date_delivery'] = $('.date_delivery').text();
 
     $.ajax({

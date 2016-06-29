@@ -46,6 +46,8 @@ class FrontShopController extends FrontController
         $kurs = $this->kurs;
         $totalAmout =0;
         $date = json_decode($_POST['data']);
+
+//        var_dump($date);die();
 //        var_dump($date->products);
         foreach($date->products as $product) {
 //            var_dump($product->name);
@@ -75,12 +77,13 @@ class FrontShopController extends FrontController
         $order->address_from = $date->address_from;
         $order->text_postcard = $date->text_postcard;
 
-        $order->date = Date('d m Y');
+        $order->date = Date('Y-m-d');
         $order->date_delivery = $date->date_delivery;
         $order->total_amount = $totalAmout;
         $order->text_postcard = $date->text_postcard;
         $order->method_pay = $date->method_pay;
-
+        $order->currency = $date->currency;
+//        var_dump($date->text_postcard);die();
         if ($order->save()) {
             $order_id = $order->id;
             foreach ($date->products as $pr) {
@@ -97,19 +100,19 @@ class FrontShopController extends FrontController
         }
         echo $order->id;
 
-        $email_to = $this->variables['email'];
-        $email = explode(',', $email_to);
-        $email_from = $email[0];
-        if ($email) {
-            $message = $this->createLetter($order, $products, $totalAmout, true);
-            $subject = 'Заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
-            sendEmail($message, $subject, $email_from, $email_to);
-        }
-        if (isEmail($date->email_to)) {
-            $message = $this->createLetter($order, $products, $totalAmout, false);
-            $subject = 'Ваш заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
-            sendEmail($message, $subject, $email_from, array($_POST['data']['order']['user_email']));
-        }
+//        $email_to = $this->variables['email'];
+//        $email = explode(',', $email_to);
+//        $email_from = $email[0];
+//        if ($email) {
+//            $message = $this->createLetter($order, $products, $totalAmout, true);
+//            $subject = 'Заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
+//            sendEmail($message, $subject, $email_from, $email_to);
+//        }
+//        if (isEmail($date->email_to)) {
+//            $message = $this->createLetter($order, $products, $totalAmout, false);
+//            $subject = 'Ваш заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
+//            sendEmail($message, $subject, $email_from, array($_POST['data']['order']['user_email']));
+//        }
 
         die();
     }

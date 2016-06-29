@@ -94,9 +94,9 @@ class FrontMaterialController extends FrontController
             $host = str_replace('www.', '', getEnv('HTTP_HOST'));
             $subject = 'Сообщение через форму обратной связи на сайте www.' . $host;
 
-            $email = $this->variables['email'];
+            $email = $_POST['email'];
             $email = explode(',', $email);
-            $from = $_POST['email'];
+            $from = $this->variables['email'];
             $to = $this->variables['email'];
 
             $message = '<p>Новое сообщение на сайте www.' . $host . '</p>';
