@@ -1,7 +1,7 @@
 <ul class="cart1_item">
 
     <? $i = 0;
-    $kurs = $this->kurs;
+    $kurs = $kurs;
     foreach ($products as $product): ?>
         <!--	--><? // var_dump($item); ?>
         <?
@@ -19,7 +19,7 @@
 
             <div class="cart1_item_old_price old_price">
                 <span> BR </span> <?= (int)($product->price * $kurs / 1000) ?>
-                <sup><?= round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) ?></sup>
+                <sup><?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></sup>
                 <hr>
             </div>
 

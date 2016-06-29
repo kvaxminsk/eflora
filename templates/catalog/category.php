@@ -39,25 +39,57 @@
     </p>
 </div>
 </div>
+<!--<div class="list_product">-->
+<!--    --><?// if (!empty($products->data)): ?>
+<!--        <ul class="flower_products_catalog">-->
+<!--            --><?//
+//            $this->widget('SMListView',
+//                array(
+//                    'dataProvider' => $products,
+//                    'itemView' => '_products',
+//                    'ajaxUpdate' => true,
+//                    'template' => "{items}\n{pager}",
+//                    'enablePagination' => false
+//                )
+//            );
+//            ?>
+<!--        </ul>-->
+<!--    --><?// else: ?>
+<!--        	По вашим параметрам ничего не найдено-->
+<!--    --><?// endif; ?>
+<!--    --><?//=$contentCategory?>
+<!--    	<div class="show_tile">-->
+<!--    		--><?// //
+//    //		$this->widget('SMListView',
+//    //			array(
+//    //				'dataProvider'      => $products,
+//    //				'itemView'          => '_product_list_table',
+//    //				'ajaxUpdate'        => true,
+//    //				'template'          => "{items}\n{pager}",
+//    //				'enablePagination'  => false
+//    //			)
+//    //		);
+//    //		?>
+<!--    	</div>-->
+<!---->
+<!--    <!--	--><?// // $this->widget('SMLinkPager', array('pages' => $pages, 'file' => 'pager')); ?>
+<!--    <br/>-->
+<!--    <br/>-->
+<!--</div>-->
+<!-- ***********************-->
+<script>
+//    alert($('a[data-category='+<?//=$category?>//+ ']').parent());
+
+    $('a[data-category='+<?=$category?>+ ']').eq(0).parent().addClass('slick-active-catalog');
+//    $('a[data-category='+<?//=$category?>//+ ']').parent().addClass('slick-active-catalog');
+//alert($('a[data-category='+<?//=$category?>//+ ']').eq(0).text());
+    var data = $('a[data-category='+<?=$category?>+ ']').eq(0).text();
+    $('#theme_text').text(data);
+
+    $('#theme_text').attr('data-category','<?=$category?>');
+</script>
 <div class="list_product">
-    <? if (!empty($products->data)): ?>
-        <ul class="flower_products_catalog">
-            <?
-            $this->widget('SMListView',
-                array(
-                    'dataProvider' => $products,
-                    'itemView' => '_products',
-                    'ajaxUpdate' => true,
-                    'template' => "{items}\n{pager}",
-                    'enablePagination' => false
-                )
-            );
-            ?>
-        </ul>
-    <? else: ?>
-        <!--		По вашим параметрам ничего не найдено-->
-    <? endif; ?>
-    <?=$contentCategory?>
+    <ul class="flower_products_catalog flower_products">
     <!--	<div class="show_tile">-->
     <!--		--><? //
     //		$this->widget('SMListView',
@@ -75,4 +107,6 @@
     <!--	--><? // $this->widget('SMLinkPager', array('pages' => $pages, 'file' => 'pager')); ?>
     <br/>
     <br/>
+  </ul>
 </div>
+<?=$contentCategory?>

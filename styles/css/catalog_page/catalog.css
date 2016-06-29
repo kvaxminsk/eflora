@@ -555,6 +555,81 @@ ul.flower_products_catalog li:hover  .discount>p{
 	margin-bottom: 0px;
 }
 
+.list_product + p {
+
+	width: calc(100% - 406px);
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-left: 1px solid #f1ecea;
+	margin: 0;
+	margin-top: 2px;
+	padding-bottom: 30px;
+
+}
+.download_more{
+	background-color: #f7f4dd;
+	height: 640px;
+	text-align: center;
+	width: 100%;
+	font: 12px/12px arial,sans-serif;
+	font-family: 'Roboto Regular', arial;
+	color:#c0bfbe;;
+}
+.download_more span{
+	position: relative;
+	top:340px;
+	border-bottom: 1px dotted #d7d5cb;
+	margin-top: 30px;
+}
+.download_icon {
+	position: relative;
+	font: 145px/15px arial,sans-serif;
+	font-family: 'Roboto Thin', arial;
+	top:290px;
+	text-align: center;
+}
+.download_icon:hover {
+	cursor: pointer;
+}
+
+.download_more:hover .download_icon,.download_more:hover>span{
+	transition-duration:1s;
+	color: #ff8b4e;
+}
+.download_more:hover>span{
+	border-bottom: 1px dotted #ff8b4e;
+}
+
+.download_more:not(:hover) .download_icon,.download_more:not(:hover)>span{
+	transition-duration:1s;
+}
+.download_more:hover{
+	background-color: #f7e9dd;
+	transition:0.5s;
+}
+.download_more:not(:hover){
+	transition:0.5s;
+}
+.slick-active-catalog{
+	background-color: #b54e74;
+
+}
+.slick-active-catalog a {
+	display: block;
+	color: #fff !important;
+	border: none !important;
+}
+.catalog_list ul a{
+	display: block;
+	padding-right: 30px;
+}
+.catalog_list ul li {
+	padding-right:0;
+}
+.catalog_list>ul>li>a{
+	border: none !important;
+}
 
 @media all and (max-width:  1646px)  {
 

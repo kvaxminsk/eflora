@@ -31,7 +31,7 @@
 
 }
 .catalog_list_wrapper{
-	width: 358px;
+	width: 366px;
 	overflow-x: hidden;
 }
 .catalog_list{
@@ -100,12 +100,15 @@
 	font-family: 'Roboto Regular', arial;
 }
 .map_contact_text  p:nth-child(3){
-	margin-left: 90px;
 	color: #242424;
 	font: 15px/24px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
-	margin-bottom: 47px;
+	/*margin-bottom: 47px;*/
 
+}
+.map_contact_text>p:nth-child(3){
+	margin-left:  90px;
+	margin-bottom: 50px;
 }
 .map_mobile_phone {
 	float: left
@@ -128,9 +131,9 @@ h2.map_contact_email {
 	color: #242424;
 	margin-left: 90px;
 	font: 15px/30px arial,sans-serif;
-	font-family: 'Roboto Light', arial;    
+	font-family: 'Roboto Light', arial;
 	margin-bottom: 0;
-    margin-top: 5px;
+	margin-top: 5px;
 
 }
 .map_fax_phone{
@@ -148,15 +151,15 @@ h2.map_contact_email {
 	margin-left: 0px;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
-	    margin-bottom: 0;
-    margin-top: 5px;
+	margin-bottom: 0;
+	margin-top: 5px;
 
 }
 #map_mail a, #map_skype a{
 	color: #b54e74;
 }
 h2.map_contact_skype{
-	margin-top: 33px;
+	margin-top: 43px;
 }
 
 .map_contact_icons{
@@ -186,7 +189,7 @@ h2.map_contact_skype{
 	display: block;
 	margin: 0 auto;
 }
-.clearfix{ 
+.clearfix{
 	clear: both;
 }
 .map_describe{
@@ -207,6 +210,7 @@ h2.map_contact_skype{
 	z-index: 1;
 	cursor: pointer;
 	background-color: #ff6161;
+	border: 2px solid #ff6161;
 	border-radius: 50%;
 	-webkit-box-shadow: 0px 0px 15px rgba(234,45,63, 0.7);
 	-moz-box-shadow: 0px 0px 15px rgba(234,45,63, 0.7);
@@ -224,6 +228,7 @@ h2.map_contact_skype{
 	cursor: pointer;
 	background-color: #fff;
 	border-radius: 50%;
+
 	opacity: 0;
 	-webkit-box-shadow: 0px 0px 15px rgba(234,45,63, 0.7);
 	-moz-box-shadow: 0px 0px 15px rgba(234,45,63, 0.7);
@@ -232,47 +237,47 @@ h2.map_contact_skype{
 }
 
 .message_icon, .map_info_icon{
-/* 	position: absolute;
-right: 50px;
-bottom:50px;
-z-index: 1;
-cursor: pointer; */
+	/* 	position: absolute;
+    right: 50px;
+    bottom:50px;
+    z-index: 1;
+    cursor: pointer; */
 }
 
 .message_icon_wrap:hover{
-	 background: url(../../../images/eflora/message_icon_hover.png) no-repeat;
-	 background-position: center;
-	 background-color: #fff;
-	 -webkit-transition: background 0.5s;
-	    -moz-transition: background 0.5s;
-	    -o-transition: background 0.5s;
-	    transition: background 0.5s;
-	    border: 2px solid #ff6161; 
+	background: url(../../../images/eflora/message_icon_red.png) no-repeat;
+	background-position: center;
+	background-color: #fff;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+	border: 2px solid #ff6161;
 }
 .message_icon_wrap:not(:hover){
 	-webkit-transition: background 1.5s;
-	    -moz-transition: background 1.5s;
-	    -o-transition: background 1.5s;
-	    transition: background 1.5s;
+	-moz-transition: background 1.5s;
+	-o-transition: background 1.5s;
+	transition: background 1.5s;
 }
 .map_info_wrap:hover{
-	
- 
-	 background: url(../../../images/eflora/map_info_icon_hover.png) no-repeat;
-	 background-color: #ff6161;
-	 background-position: center;
-	 
-	 -webkit-transition: background 1.5s;
-	    -moz-transition: background 1.5s;
-	    -o-transition: background 1.5s;
-	    transition: background 1.5s;
-	    border: 2px solid #fff; 
+
+
+	background: url(../../../images/eflora/map_info_icon_hover.png) no-repeat;
+	background-color: #ff6161;
+	background-position: center;
+
+	-webkit-transition: background 1.5s;
+	-moz-transition: background 1.5s;
+	-o-transition: background 1.5s;
+	transition: background 1.5s;
+	border: 2px solid #fff;
 }
 .map_info_wrap:not(:hover){
 	-webkit-transition: background 1.5s;
-	    -moz-transition: background 1.5s;
-	    -o-transition: background 1.5s;
-	    transition: background 1.5s;
+	-moz-transition: background 1.5s;
+	-o-transition: background 1.5s;
+	transition: background 1.5s;
 }
 
 
@@ -322,6 +327,12 @@ cursor: pointer; */
 	font: 30px/30px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 }
+.map_contact_text h2 {
+	color: #242424;
+}
+.feedback h2{
+	color:#fff;
+}
 .feedback   input, .feedback_message{
 	margin-bottom:30px;
 	margin-left: 90px;
@@ -334,6 +345,7 @@ cursor: pointer; */
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 	font-weight: 100;
+	border-radius: 0;
 }
 .feedback   input::-webkit-input-placeholder
 {
@@ -342,7 +354,7 @@ cursor: pointer; */
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback   input::-moz-placeholder        
+.feedback   input::-moz-placeholder
 {
 	color:#fff;
 	font-weight: 100;
@@ -350,14 +362,14 @@ cursor: pointer; */
 	font-family: 'Roboto Regular', arial;
 }
 
-.feedback   input:-moz-placeholder    
+.feedback   input:-moz-placeholder
 {
 	color:#fff;
 	font-weight: 100;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback   input:-ms-input-placeholder    
+.feedback   input:-ms-input-placeholder
 {
 	color:#fff;
 	font: 15px/30px arial,sans-serif;
@@ -402,7 +414,7 @@ textarea {
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback   textarea:-moz-placeholder       
+.feedback   textarea:-moz-placeholder
 {
 	color:#fff;
 	font-weight: 100;
@@ -410,14 +422,14 @@ textarea {
 	font-family: 'Roboto Regular', arial;
 }
 
-.feedback   textarea::-moz-placeholder    
+.feedback   textarea::-moz-placeholder
 {
 	color:#fff;
 	font-weight: 100;
 	font: 15px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
-.feedback   textarea:-ms-input-placeholder    
+.feedback   textarea:-ms-input-placeholder
 {
 	color:#fff;
 	font: 15px/30px arial,sans-serif;
@@ -477,6 +489,10 @@ textarea {
 	margin-left:  0;
 }
 
+.h2fix.skype{
+	margin-top:45px;
+}
+
 
 @media only screen and (max-width: 1600px){
 	.message_icon, .map_info_icon{
@@ -496,7 +512,7 @@ textarea {
 	#map{
 		position: relative;
 		margin-top:700px;
-		
+
 	}
 	.map_contact{
 		position: absolute;
@@ -515,7 +531,7 @@ textarea {
 		margin-bottom: 0;
 	}
 	.map_fax_phone h2.map_contact_skype{
-		margin-top:33px ;
+		margin-top:50px ;
 	}
 }
 @media only screen and (max-width: 1000px){
@@ -561,7 +577,7 @@ textarea {
 	}
 	.map_contact{
 		height: auto;
-	
+
 	}
 	.map_contact_text{
 		height: 940px;
@@ -573,7 +589,7 @@ textarea {
 	.map_fax_phone{
 		clear: both;
 		margin-left: 90px;
-	} 
+	}
 	.map_contact_skype{
 		margin-top: 20px;
 	}
@@ -608,10 +624,13 @@ textarea {
 	#map{
 		position: relative;
 		margin-top:940px;
-		
+
 	}
 	#container{
 		overflow: visible;
+	}
+	#first_description{
+		margin-top: -110px;
 	}
 
 }
@@ -658,7 +677,7 @@ textarea {
 		margin-top: 30px;
 	}
 	.map_contact_text  p:nth-child(3){
-		margin-left: 40px;
+		/*margin-left: 40px;*/
 	}
 	.map_mobile_phone h2{
 		margin-left: 40px;
@@ -674,6 +693,12 @@ textarea {
 	}
 	.map_fax_phone h2{
 		margin-left: 0;
+	}
+	#first_description{
+		margin-top: -105px;
+	}
+	.map_contact_text>p:nth-child(3){
+		margin-left: 30px;
 	}
 }
 
@@ -715,7 +740,7 @@ textarea {
 	.column_list{
 		float: right;
 	}
-	
+
 	.header{
 		min-width: 320px;
 	}
@@ -738,20 +763,37 @@ textarea {
 		margin-right: 0;
 		text-align: center;
 	}
-	.map_mobile_phone h2{
-		margin-left: 25px;
-		
+
+	h2 {
+		text-align: left;
+	}
+	.map_contact_text h2, .map_contact_text>p:nth-child(3){
+		margin-left: 40px;
+	}
+	.h2fix{
+		margin-left:0;
+	}
+	/*.map_mobile_phone h2{
+		margin-left: 15px;
+
 	}
 	h2.map_contact_email{
-		margin-left: -15px ;
+		margin-left: -30px ;
 	}
 	h2.map_contact_skype{
 		margin-left: -35px !important;
 		margin-top: -30px !important;
 	}
+	.map_contact_text h2{
+		margin-left:0;
+		text-align: left;
+		margin-left: 30px;
+	}
+	.map_contact_text h1, h2{
+		margin-left:40px;
+	}
 
-
-
+*/
 }
 @media only screen and (max-width: 440px) {
 	#first_description{

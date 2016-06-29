@@ -8,7 +8,7 @@ $imageUrl = image($imageMain['path'], 'resize', '440', false);
     <div class="order_list_describe">
         <p class="order_list_title"><a href=""><?= $product->name ?></a></p>
         <p class="order_list_price_old old_price"><sub> BR </sub> <?= (int)($product->price * $kurs / 1000) ?>
-            <sup><?= round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) ?></sup>
+            <sup><?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></sup>
         </p>
         <hr>
         <p class="order_list_price_new new_price"><sub> BR </sub> <?= (int)($product->price * $kurs / 10000) ?>

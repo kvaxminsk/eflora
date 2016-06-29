@@ -21,7 +21,7 @@
     <div class="last_view">
         <p class="view_erlier"><a href="">Вы просматривали</a></p>
         <div class="view_erlier_cross">
-            <a href="">+</a>
+            <a href="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'reviews')) ?>">+</a>
         </div>
         <div class="clearfix" style="clear:both"></div>
     </div>
@@ -30,8 +30,11 @@
     </ul>
 
     <div class="search_area">
-        <input type="text" placeholder="Поиск...">
-        <div class="go_find"></div>
+        <form method="get"
+              action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'search')) ?>">
+            <input type="text" name="query" value="<?= $_GET['query'] ?>" id="search" placeholder="Поиск...">
+            <button  class="go_find"></button>
+        </form>
     </div>
     <div class="twitter_comment">
         <p> Твиты от <a href="">@eFlora.by</a></p>
@@ -134,7 +137,7 @@
                 <?= (int)($model->price * $kurs / 1000) ?>
                 <div class="line"></div>
                 <span
-                    class="zero_old_price"> <?= round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) ?></span>
+                    class="zero_old_price"> <?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></span>
             </div>
             <div class="new_price">
                 <span class="um">BR </span>

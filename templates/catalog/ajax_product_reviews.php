@@ -22,7 +22,7 @@ $imageUrl = image($imageMain['path'], 'resize', '440', false);
                     <?= (int)($product->price * $kurs / 1000) ?>
                     <div class="line"></div>
                     <span
-                        class="zero_old_price"><?= round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) ?></span>
+                        class="zero_old_price"><?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></span>
                 </div>
                 <div class="new_price">
                     <span class="um">BR </span>

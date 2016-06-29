@@ -253,6 +253,7 @@
                       action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'search')) ?>">
                 <input type="text" name="query" value="<?= $_GET['query'] ?>" id="search" placeholder="Поиск...">
                      <button  class="go_find"></button>
+                    </form>
             </div>
             <div class="left_sidebar">
                 <div class="square">

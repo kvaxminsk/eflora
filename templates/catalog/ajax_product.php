@@ -27,7 +27,13 @@ $this->widget('SMListView',
 
     $("#show_more_item").click(function () {
         var page = <?= ($pagevar + 1) ?>;
-        var category1 = $('.slick-active span').attr('data-category');
+        if ($('.slick-active span').attr('data-category')) {
+            var category1 = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category1 = $('.slick-active-catalog a').attr('data-category');
+        }
+
         var category2 = $('#theme_text').attr('data-category');
 
         var category3 = 17;
@@ -42,7 +48,7 @@ $this->widget('SMListView',
         }
         $.ajax({
             type: 'get',
-            data: 'page=' + page + '&category=' + category3+ "&price=" + "<?=$price?>" + "&type="+ "<?=$type?>"+ "&summa="+ "<?=$summa?>",
+            data: 'page=' + page + '&category=' + category3+ "&popular=" + "<?=$popular?>"+ "&price=" + "<?=$price?>" + "&type="+ "<?=$type?>"+ "&summa="+ "<?=$summa?>",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();

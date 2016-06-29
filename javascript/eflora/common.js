@@ -143,7 +143,10 @@ function renderBlockReviews() {
 
 
 $(document).ready(function () {
-
+    ////******удаляем лишний элемент на главной странице в меню**/
+    var lastElement = $('.slick-dots li').last();
+        lastElement.remove();
+    ///******/
     $('.button_continue').on('click', function() {
         // alert($('input[name=name_to]').val());
         $('#name_to').append ($('input[name=name_to]').val());
@@ -723,33 +726,68 @@ $(document).ready(function () {
     $(".up_button").click(function () {
         $('body,html').animate({scrollTop: 0}, 800);
     })
-    var category = $('.slick-active span').attr('data-category');
+    //var category = $('.slick-active span').attr('data-category');
+    if ($('.slick-active span').attr('data-category')) {
+        var category = $('.slick-active span').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'category=' + category,
+            url: '/ajax-products',
+            success: function (data) {;
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+
+
+                changeCurrency();
+
+            }
+        });
+    }
+    else {
+        var category = $('.slick-active-catalog a').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'category=' + category,
+            url: '/ajax-products',
+            success: function (data) {;
+                //document.write();
+                $('.flower_products').text('');
+                //alert(data);
+                $('.flower_products').append(data);
+                changeCurrency();
+
+            }
+        });
+    }
     //$("div").first()
-    $.ajax({
-        type: 'get',
-        data: 'category=' + category,
-        url: '/ajax-products',
-        success: function (data) {
-            //document.write();
-            $('.flower_products').text('');
-            $('.flower_products').append(data);
 
-
-            changeCurrency();
-
-        }
-    });
 
     $("#dropdown1>li").click(function () {
 
-        category = $(this).attr('data-category');
+        var category = $(this).attr('data-category');
 
-        //$('.slick-dots li').each(function() {
-        //    var attr = $(this).find('span').attr('data-category');
-        //   if( category == attr) {
-        //       $(this).click();
-        //   }
-        //});
+
+        $('.catalog_list ul  li').each(function() {
+            var attr = $(this).find('a').attr('data-category');
+            $(this).removeClass('slick-active-catalog');
+            if( category == attr) {
+                $(this).addClass('slick-active-catalog');
+
+            }
+        });
+
+
+        $('.slick-dots li').each(function() {
+            var attr = $(this).find('span').attr('data-category');
+           if( category == attr) {
+               $(this).click();
+
+           }
+        });
+        $('#theme_filter').click();
+
+
 
 
 
@@ -1444,31 +1482,77 @@ $(document).ready(function () {
             return;
         }
     });
+    function changeColorChoiceLink(choiceLink) {
+        $('.choice_link').each(function() {
+            $(this).css('color','#898787');
+            $(this).css('border-bottom','1px dotted #898787');
+        });
+        $(choiceLink).css('color','#ff8b4e');
+        $(choiceLink).css('border-bottom','1px dotted #ff8b4e');
 
+    }
     $('.choice_link').eq(0).click(function(){
+
+        changeColorChoiceLink(this);
 
         $(this).parent().find('.popular').show();
         $(this).parent().find('.price_link').hide();
         var atr = $(this).parent().find('.popular').attr('src');
         $('.price_link').attr('src', '');
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
             $(this).parent().find('.popular').attr('src', atr);
+
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&popular=1&type=DESC"+"&price=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
         }
         else{
             atr='../../images/eflora/select_icon.png';
             $(this).parent().find('.popular').attr('src', atr);
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 +'&category=' + category+"&popular=1&type=ASC"+"&price=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
         }
 
 
     })
     $('.choice_link').eq(1).click(function(){
+        changeColorChoiceLink(this);
+
         $(this).parent().find('.popular').hide();
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
         $('.popular').attr('src', '');
-        var category = $('.slick-active span').attr('data-category');
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
 
         if (atr == '../../images/eflora/select_icon.png'){
             atr='../../images/eflora/select_icon1.png';
@@ -1476,11 +1560,11 @@ $(document).ready(function () {
 
             /*****/
 
-            alert($('.slick-active span').attr('data-category'));
+            //alert($('.slick-active span').attr('data-category'));
             //$("div").first()
             $.ajax({
                 type: 'get',
-                data: 'page=' + 1 +'&category=' + category+"&price=1&type=DESC",
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=DESC"+"&popular=0",
                 url: '/ajax-products',
                 success: function (data) {
                     //document.write();
@@ -1501,11 +1585,11 @@ $(document).ready(function () {
 
             /******/
 
-            alert($('.slick-active span').attr('data-category'));
+            //alert($('.slick-active span').attr('data-category'));
             //$("div").first()
             $.ajax({
                 type: 'get',
-                data: 'page=' + 1 +'&category=' + category+"&price=1&type=ASC",
+                data: 'page=' + 1 +'&category=' + category+"&price=1&type=ASC"+"&popular=0",
                 url: '/ajax-products',
                 success: function (data) {
                     //document.write();
@@ -1521,7 +1605,14 @@ $(document).ready(function () {
     })
 
     $('.choice_link').eq(2).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
             data: 'page=' + 1 +'&category=' + category+"&summa=8",
@@ -1535,7 +1626,14 @@ $(document).ready(function () {
         });
     });
     $('.choice_link').eq(3).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
             data: 'page=' + 1 +'&category=' + category+"&summa=15",
@@ -1549,7 +1647,14 @@ $(document).ready(function () {
         });
     });
     $('.choice_link').eq(4).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
             data: 'page=' + 1 +'&category=' + category+"&summa=30",
@@ -1563,7 +1668,14 @@ $(document).ready(function () {
         });
     });
     $('.choice_link').eq(5).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
             data: 'page=' + 1 +'&category=' + category+"&summa=50",
@@ -1577,7 +1689,14 @@ $(document).ready(function () {
         });
     });
     $('.choice_link').eq(6).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
             data: 'page=' + 1 +'&category=' + category+"&summa=100",
@@ -1591,7 +1710,14 @@ $(document).ready(function () {
         });
     });
     $('.choice_link').eq(7).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active span').attr('data-category')) {
+            var category = $('.slick-active span').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
             data: 'page=' + 1 +'&category=' + category+"&summa=200",

@@ -95,7 +95,7 @@
 	margin-top: 0px;
 	margin-left: 90px;
 	margin-bottom: 15px;
-	color: #242424;
+	color: #242424 !important;
 	font: 18px/30px arial,sans-serif;
 	font-family: 'Roboto Regular', arial;
 }
@@ -322,6 +322,7 @@ cursor: pointer; */
 	font: 30px/30px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 }
+
 .feedback > input, .feedback_message{
 	margin-bottom:30px;
 	margin-left: 90px;
