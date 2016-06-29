@@ -8,8 +8,8 @@ foreach ($categories as $item): ?>
         $image = ($item['img']['path']) ? $item['img']['path'] : '/images/no-photo.gif';
         $image = image($image, 'resize', '1500', '986');
         ?>
-        <p style="background: url(<?= $image; ?>) 0 0 no-repeat; "></p>
-    </div>
+        <p style="background: url(<?= $image; ?>) 0 0 no-repeat; background-size:cover"></p>
+   </div>
 
 <? endforeach; ?>
 
