@@ -22,7 +22,8 @@
 }
 .upper_block_text a {
 	text-decoration: none;
-	color: #fff6bf;
+	color: #DCD18C;
+	border-bottom: 1px solid #fff;
 }
 
 .dollar_price {
