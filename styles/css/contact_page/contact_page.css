@@ -490,7 +490,7 @@ textarea {
 }
 
 .h2fix.skype{
-	margin-top:45px;
+	margin-top:50px;
 }
 
 
@@ -570,6 +570,16 @@ textarea {
 
 
 }
+@media only screen and (max-width: 840px){
+	#first_description{
+		margin-top: -175px;
+	}
+	#logo_text_mobile{
+		margin-top:10px;
+	}
+}
+
+
 @media only screen and (max-width: 760px){
 	.cp_right_main_content{
 		margin-top: -80px;
@@ -673,7 +683,7 @@ textarea {
 	}
 	.map_contact_text h2
 	{
-		margin-left: 30px;
+		margin-left: 40px;
 		margin-top: 30px;
 	}
 	.map_contact_text  p:nth-child(3){
@@ -698,7 +708,7 @@ textarea {
 		margin-top: -105px;
 	}
 	.map_contact_text>p:nth-child(3){
-		margin-left: 30px;
+		margin-left: 40px;
 	}
 }
 
@@ -768,7 +778,10 @@ textarea {
 		text-align: left;
 	}
 	.map_contact_text h2, .map_contact_text>p:nth-child(3){
-		margin-left: 40px;
+		/*margin-left: 40px;*/
+	}
+	.map_contact_text h2{
+		margin-top:0;
 	}
 	.h2fix{
 		margin-left:0;
@@ -797,11 +810,12 @@ textarea {
 }
 @media only screen and (max-width: 440px) {
 	#first_description{
-		margin-top:-100px;
+		margin-top:-105px;
 	}
 	#logo_text_mobile {
-		margin-top: -22px;
+		margin-top: -15px;
 	}
+
 
 
 }
@@ -821,9 +835,21 @@ textarea {
 	.main_content{
 		min-width: 320px;
 	}
+	.h2fix{
+		margin-left:0 !important;
+	}
+	.map_contact_text h2{
+	/*	margin-top:0;*/
+	}
+
+
+
+	.skype {
+		margin-top: 10px !important;
+	}
 	.feedback h1,h2{
 		font-size: 18px;
-		text-align: center;
+		text-align: left;
 		margin-top:70px;
 
 	}

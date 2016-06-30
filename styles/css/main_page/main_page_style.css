@@ -636,6 +636,14 @@ ul.flower_products li:hover  .discount>p{
 {
 	margin-left: 10px;
 }
+.old_price >.um:before
+{
+	content:'';
+	position: absolute;
+	width: 80px;
+	border-bottom:2px solid #ffb7c5;
+	top:50px;
+}
 
 .line {
 	border-top:2px solid #ffb7c5;
@@ -643,6 +651,7 @@ ul.flower_products li:hover  .discount>p{
 	float: left;
 	position: absolute;
 	left: calc(50% - 83px);
+	display: none;
 
 }
 .new_price {

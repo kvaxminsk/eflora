@@ -416,7 +416,10 @@ $(document).ready(function () {
     }
 
 
-    $('#sandwich').click(function showToogle() {
+    $('#menu_selector').click(function (){
+
+
+        console.log("errror");
 
         if ($('#question_icon').attr('class') == 'active_menu') {
 
@@ -1411,6 +1414,7 @@ $(document).ready(function () {
     })
     $('#dollar').click(function () {
         $('.header_price_icon>.backet_circle>p').text("$");
+        $('.order_list_describe hr').css('opacity', '0');
         $('#points').css('margin-left', '36px');
         $('.dollar_price').show();
         $('.dollar_price_1').show();
@@ -1432,6 +1436,7 @@ $(document).ready(function () {
 
     $('#unit').click(function () {
         $('.header_price_icon>.backet_circle>p').text("Br");
+        $('.order_list_describe hr').css('opacity', '1');
         $('#points').css('margin-left', '100px');
         $('.dollar_price').hide();
         $('.dollar_price_1').hide();
@@ -1449,12 +1454,22 @@ $(document).ready(function () {
         localStorage['currency'] = JSON.stringify(currency);
     });
 
+    if ($('.header_price_icon>.backet_circle>p').text() == "$")
+    {
+        $('.order_list_describe hr').css('opacity', '1');
+    }
+    else{
+        $('.order_list_describe hr').css('opacity', '1');
+    }
+
+
     $('.header_price_icon').click(function () {
 
         if ($('.header_price_icon>.backet_circle>p').text() == "$") {
             $('.header_price_icon>.backet_circle>p').text("Br");
             $('#points').css('margin-left', '100px');
             $('#unit_valuta').css('display', 'none');
+            $('.order_list_describe hr').css('opacity', '0');
             $('.dollar_price').hide();
             $('.dollar_price_1').hide();
             $('#header_price_text_us').hide();
@@ -1475,6 +1490,7 @@ $(document).ready(function () {
             $('#points').css('margin-left', '36px');
             $('.header_price_icon>.backet_circle>p').text("$");
             $('#unit_valuta').css('display', 'inline-block');
+            $('.order_list_describe hr').css('opacity', '1');
 
             $('.dollar_price_1').show();
             $('.dollar_price').show();

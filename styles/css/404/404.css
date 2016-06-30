@@ -145,7 +145,7 @@
 .search_area{
 	position: relative;
 }
-.search_area>input{
+form>input{
 
 	display: block;
 	margin:0 auto;
@@ -169,13 +169,14 @@
 	top: 15px;
 	margin-left: 95px;
 	cursor: pointer;
+	opacity: 0;
 
 }
-.search_area input:focus,.select_theme:focus {
+form input:focus,.select_theme:focus {
 	border: 1px solid #dcdbdb;
 	outline: none;
 }
-.search_area input:focus{
+form input:focus{
 	border:1px solid #ff8b4e;
 	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);

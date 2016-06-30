@@ -1,8 +1,16 @@
 
 
 
-
-
+.list_product h1{
+	margin: 0;
+	font-size: 30px;
+	font-family: Roboto Light;
+	color: #242424;
+	font-weight: 200;
+	margin-bottom: 0px;
+	margin-top:30px;
+	margin-left:70px;
+}
 
 
 .under_slider{
@@ -483,13 +491,23 @@ ul.flower_products_catalog li:hover  .discount>p{
 }
 
 .line {
-	border-top:2px solid #ffb7c5;
+	border-top: 2px solid #ffb7c5;
 	width: 78px;
 	float: left;
 	position: absolute;
 	left: calc(50% - 83px);
-
+	display: none;
 }
+.old_price >.um:before
+{
+	content:'';
+	position: absolute;
+	width: 80px;
+	border-bottom:2px solid #ffb7c5;
+	top:50px;
+}
+
+
 .new_price {
 	position: relative;
 	margin-top: 10px;
@@ -644,6 +662,13 @@ ul.flower_products_catalog li:hover  .discount>p{
 	.choice {
 		margin-right: 10px;
 	}
+	.theme{
+		margin-left: 30px;
+	}
+	.select_theme_wrapp{
+		left:110px;
+	}
+
 }
 	@media all and (max-width:  1280px) {
 
@@ -995,6 +1020,9 @@ ul.flower_products_catalog li:hover  .discount>p{
 			top:80px;
 			z-index: 99;
 		}
+		ul.list{
+			height: 80px;
+		}
 		.phone_number{
 			margin-top: 139px;
 		}
@@ -1014,10 +1042,10 @@ ul.flower_products_catalog li:hover  .discount>p{
 			height: 80%;
 		}
 		#second_column{
-			top: 80px;
+			top:0px;
 		}
 		#third_column{
-			top:80px;
+			top:0px;
 			position: relative;
 			z-index: 10;
 		}
@@ -1049,6 +1077,16 @@ ul.flower_products_catalog li:hover  .discount>p{
 	@media all and (max-width: 480px){
 		#logo{
 			height: 80px;
+		}
+		#second_column{
+			top:80px;
+		}
+		#third_column{
+			top:0px;
+		}
+
+		ul.flower_products_catalog li{
+			width: 100%;
 		}
 	}
 /*

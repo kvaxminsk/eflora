@@ -31,8 +31,9 @@
 
 }
 .catalog_list_wrapper{
-	width: 366px;
+	width: 365px;
 	overflow-x: hidden;
+	border-right: 1px solid #f1ecea;
 }
 .catalog_list{
 	height: 700px;
@@ -210,7 +211,7 @@ form input:focus{
 	width: 15px;
 	height: 15px;
 	position: absolute;
-	left: 825px;
+	left: 890px;
 	bottom:13px;
 	opacity:0;
 	cursor: pointer;
@@ -252,13 +253,14 @@ a {
 		margin: 0 auto;
 	}
 	form input{
-		margin-left: 10px;
+		margin-left: 70px;
 		margin-right: 0;
-		width: 80%;
+		width: 400px;
 		margin-top:20px;
 	}
 	.go_find{
-		right: 103px;
+	/*	right: 103px;*/
+		left: 814px;
 	}
 
 
@@ -396,6 +398,10 @@ a {
 	}
 	.main_content{
 		min-width: 320px;
+	}
+
+	form input{
+		margin-left:20px;
 	}
 
 
