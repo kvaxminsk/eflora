@@ -1425,7 +1425,6 @@ $(document).ready(function () {
         $('.dollar_price').show();
         $('.dollar_price_1').show();
         $('#unit_valuta').css('display', 'inline-block');
-        $('.order_list_total_describe sub').hide();
 
         $('#header_price_text_us').show();
         $('#header_price_text_br').hide();
