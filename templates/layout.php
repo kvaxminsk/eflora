@@ -61,6 +61,12 @@
 </head>
 <body>
 <div id="container">
+    <div class="upper_block">
+        <p class="upper_block_text">
+            Тут Володя будет выводить текст иненавидеть меня все больше и больше <a href="">Во как !</a>
+
+        </p>
+    </div>
     <div id="header">
         <div id="logo">
             <a href="/" target="_blank"><img src="/images/eflora/main_logo.png"

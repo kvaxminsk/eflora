@@ -430,7 +430,7 @@ ul.cart1_item>li>.cart1_item_old_price>span:before{
 	position:absolute;
 	border:1px solid #ffb7c5;
 	width: 78px;
-	margin-top:50px;
+	top:30px;
 
 }
 
@@ -1505,6 +1505,7 @@ sub.br2
 	.order_list_price_new{
 		text-align: center;
 		margin-bottom: 20px;
+		margin-top:3px;
 	}
 	.order_list_count_wrapper{
 		width: 70px;
