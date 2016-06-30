@@ -35,7 +35,7 @@
 
         ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
-                    center: [53.866202, 27.670114],
+                    center: [53.9403468, 27.6105249],
                     zoom: 14,
                     controls: ["zoomControl"]
 
@@ -44,7 +44,7 @@
                 }),
 
                 myPlacemark = new ymaps.Placemark(
-                    [53.87093016878826, 27.64616492821899], {
+                    [53.9403468, 27.58435249], {
                         hintContent: false,
                         balloonContent: false
                     }, {
@@ -101,7 +101,7 @@
 <div id="container">
     <div id="header">
         <div id="logo">
-            <a href="http://www.eflora.by" target="_blank"><img src="/images/eflora/main_logo.png"
+            <a href="/" target="_blank"><img src="/images/eflora/main_logo.png"
                                                                 alt="Тут должен быть логотип" class="logo_pic"></a>
 
             <p id="logo_text">

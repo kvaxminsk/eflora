@@ -66,7 +66,7 @@ function updatePage() {
 
 
 		$('#order_list_price_new').html( "<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
-			Math.round(((price_us * kurs / 1000) -  (parseInt(price_us * kurs / 1000)))*100) +"коп</sup>" );
+			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +"коп</sup>" );
 
 		$('#order_list_price_dollar').html(price_us );
 

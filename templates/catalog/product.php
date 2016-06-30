@@ -33,7 +33,7 @@
         </div>
         <div class="count_product_selector">
             <div class="decrement">-</div>
-            <div class="count_product"><input type="text" value="0" maxlength="4"></div>
+            <div class="count_product"><input type="text" value="1" maxlength="4"></div>
             <div class="increment">+</div>
         </div>
         <div class="in_cart_wrap">
