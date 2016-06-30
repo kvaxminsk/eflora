@@ -74,6 +74,9 @@ function changeCurrency()
         $('#order_list_price_old').hide();
         $('#order_list_price_new').hide();
         $('#order_list_price_dollar').show();
+        $('#unit_valuta').show();
+        $('.br1').hide();
+        $('.br2').hide();
     }
     else if (currency == 'br') {
         $('.dollar_price').hide();
@@ -85,6 +88,8 @@ function changeCurrency()
         $('#order_list_price_old').show();
         $('#order_list_price_new').show();
         $('#order_list_price_dollar').hide();
+        $('.br1').show();
+        $('.br2').show();
     }
 }
 function renderBlockCart() {
@@ -1414,11 +1419,13 @@ $(document).ready(function () {
     })
     $('#dollar').click(function () {
         $('.header_price_icon>.backet_circle>p').text("$");
+
         $('.order_list_describe hr').css('opacity', '0');
         $('#points').css('margin-left', '36px');
         $('.dollar_price').show();
         $('.dollar_price_1').show();
         $('#unit_valuta').css('display', 'inline-block');
+        $('.order_list_total_describe sub').hide();
 
         $('#header_price_text_us').show();
         $('#header_price_text_br').hide();
@@ -1429,6 +1436,9 @@ $(document).ready(function () {
         $('#order_list_price_old').hide();
         $('#order_list_price_new').hide();
         $('#order_list_price_dollar').show();
+        $('#unit_valuta').show();
+        $('.br1').hide();
+        $('.br2').hide();
 
         var currency = 'us';
         localStorage['currency'] = JSON.stringify(currency);
@@ -1450,6 +1460,8 @@ $(document).ready(function () {
         $('#order_list_price_old').show();
         $('#order_list_price_new').show();
         $('#order_list_price_dollar').hide();
+        $('.br1').show();
+        $('.br2').show();
         var currency = 'br';
         localStorage['currency'] = JSON.stringify(currency);
     });
@@ -1481,7 +1493,8 @@ $(document).ready(function () {
             $('#order_list_price_old').show();
             $('#order_list_price_new').show();
             $('#order_list_price_dollar').hide();
-
+            $('.br1').show();
+            $('.br2').show();
             var currency = 'br';
             localStorage['currency'] = JSON.stringify(currency);
             return;
@@ -1500,9 +1513,13 @@ $(document).ready(function () {
             $('.old_price').hide();
             $('.new_price').hide();
 
+
             $('#order_list_price_old').hide();
             $('#order_list_price_new').hide();
             $('#order_list_price_dollar').show();
+            $('#unit_valuta').show();
+            $('.br1').hide();
+            $('.br2').hide();
 
             var currency = 'us';
             localStorage['currency'] = JSON.stringify(currency);
