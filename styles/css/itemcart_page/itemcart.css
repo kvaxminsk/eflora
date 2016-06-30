@@ -1,9 +1,45 @@
+.discount_upper_price_dollar {
+	position: absolute;
+	font-size:20px;
+	margin: 0 auto;
+	margin-top: 30px;
+	left: 50%;
+	margin-top: 25px;
+	left: 70%;
+}
+
+.discount_upper_price_dollar .price_wrapp {
+		font-size:28px;
+	color: #a9a9a9;
+}
+.discount_upper_price_dollar  .um_discount {
+	font-size:18px;
+}
+.discount_upper_price_dollar .kop {
+	font-size:18px;
+	position: relative;
+	top:-8px;
+}
+.discount_upper_price_dollar .price_wrapp:before {
+	content: '';
+	width:100%;
+	position:absolute;
+	border-top:2px solid #ffb7c5;
+	top:15px;
+}
+
+
+
+
+
+
+
 
 .product_wrap{
 	height: 100%;
 }
 .dollar_price{
-		text-align: center;
+		text-align: left;
 		margin: 0 auto;
 	margin-top:80px;
 	letter-spacing: 2px;
@@ -14,6 +50,9 @@
     padding-top: 10px;
     color: #ff7794;
     margin-bottom: 35px; 
+}
+.product_wrap>.dollar_price {
+	text-align:center;
 }
 .dollar_price >.um{
 	font:  19px/19px arial,sans-serif;

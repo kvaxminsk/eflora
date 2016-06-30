@@ -10,6 +10,7 @@
 	background-color: #b54e74;
 }
 .upper_block_text{
+
 	font: 20px/20px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	width:100%;
@@ -1686,7 +1687,7 @@ sup{
 		position: fixed;
 		width: 240px;
 		left: -400px;
-		top: 0px;
+		top: 60px;
 		height: 820px;
 		z-index: 9997;
 	}
@@ -1736,7 +1737,7 @@ sup{
 		position: fixed;
 		width:240px;
 		left:-400px;
-		top:0px;
+		top:60px;
 		height: 820px;
 		background-color: #fd904f;
 		z-index: 9996;
@@ -1839,6 +1840,9 @@ sup{
 }
 
 @media all  and (max-width: 840px){
+	.upper_block{
+		display: none;
+	}
 	.mobile_categoria{
 		display: block;
 		font: italic  27px/27px arial,sans-serif;

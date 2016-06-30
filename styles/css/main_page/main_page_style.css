@@ -36,7 +36,7 @@
 }
 .main_content{
 	position: relative;
-	margin-top:-509px;
+	margin-top:-517px;
 }
 .mp_left_main_content
 {
@@ -563,7 +563,7 @@ ul.flower_products li:hover  .discount>p{
 }
 .flower_pic
 {
-	margin-top: 50px;
+	margin-top: 80px;
 
 }
 
@@ -1026,6 +1026,13 @@ a:hover{
 	.choice {
 		margin-right: 10px;
 	}
+	.theme{
+		margin-left: 30px;
+	}
+	.select_theme_wrapp{
+		left: 110px;
+	}
+
 }
 @media all and (max-width:  1280px) {
 	
@@ -1317,6 +1324,10 @@ ul.flower_products li:hover .product_wrap{
 		}
 		.question_panel{
 			z-index: 9998;
+			top:0;
+		}
+		.hidden_menu{
+			top:0px;
 		}
 		.theme{
 			display: none;

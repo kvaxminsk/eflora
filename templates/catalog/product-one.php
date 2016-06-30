@@ -130,6 +130,19 @@
                     $
                     25
                 </div> -->
+
+        <div class="discount_upper_price_dollar">
+             <div class="old_discount_price">
+                <div class="price_wrapp">
+                    <span class="um_discount">$</span>
+                    12344
+                    <span class="kop">70 коп </span>
+                </div>
+
+            </div>
+        </div>
+
+
         <div class="item_price">
 
             <div class="old_price">
