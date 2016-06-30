@@ -263,6 +263,13 @@ a {
 		left: 814px;
 	}
 
+	.text_wrapper>p img{
+		float: none;
+		display: block;
+		margin : 0 auto;
+		/*width:70%;*/
+	}
+
 
 }
 @media only screen and (max-width: 1000px){
