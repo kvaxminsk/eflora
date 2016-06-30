@@ -422,22 +422,22 @@ class FrontCatalogController extends FrontController
         $count = Product::model()->count($criteria);
 //        var_dump($criteria);
 //die($count);
-        if ($_GET['page_list']) $page_count = $_GET['page_list'];
-        else $page_count = self::PAGE;
-
-        if (!empty($_GET['count'])) {
-            $page_count = $_GET['count'];
-        }
+//        if ($_GET['page_list']) $page_count = $_GET['page_list'];
+//        else $page_count = self::PAGE;
+//
+//        if (!empty($_GET['count'])) {
+//            $page_count = $_GET['count'];
+//        }
 
         $pages = new CPagination($count);
-        $pages->pageSize = $page_count;
+        $pages->pageSize = self::PAGE;
         $pages->applyLimit($criteria);
         $pages->route = $_SERVER['REDIRECT_URL'];
 
 
         $products = new CActiveDataProvider('Product', array(
             'pagination' => array(
-                'pageSize' => $page_count,
+                'pageSize' => $pages->pageSize,
                 'pageVar' => 'page',
             ),
             'criteria' => $criteria,
@@ -481,7 +481,7 @@ class FrontCatalogController extends FrontController
 
 
             if ($_GET['summa']) {
-                if (($_GET['summa'] == 8) ||($_GET['summa'] == 15)||($_GET['summa'] == 30)) {
+                if (($_GET['summa'] == 9) ||($_GET['summa'] == 15)||($_GET['summa'] == 30)) {
                     $criteria->addCondition('t.price <=' . round($_GET['summa'] * 100000/$kurs));
                 }
                 if (($_GET['summa'] == 50) ||($_GET['summa'] == 100)||($_GET['summa'] == 200)) {
@@ -491,7 +491,8 @@ class FrontCatalogController extends FrontController
             $count = Product::model()->count($criteria);
 
             $pages = new CPagination($count);
-            $pages->pageSize = 2;
+
+            $pages->pageSize = self::PAGE;
 
 //            die(($_GET));
             if (!empty($_GET['page'])) {
@@ -512,14 +513,17 @@ class FrontCatalogController extends FrontController
 //                die();
 //            }
             if (($pageVar*$pages->pageSize - $count) > 1) {
-                die();
+                if($pageVar !=1) {
+                    die();
+                }
+//                die();
             }
             $pages->applyLimit($criteria);
             $pages->route = $_SERVER['REDIRECT_URL'];
-
+//            var_dump($pages->pageSize);
             $products = new CActiveDataProvider('Product', array(
                 'pagination' => array(
-                    'pageSize' => 2,
+                    'pageSize' => $pages->pageSize,
                     'pageVar' => 'page',
                 ),
                 'criteria' => $criteria,
