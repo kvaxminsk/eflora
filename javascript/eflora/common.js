@@ -1419,7 +1419,8 @@ $(document).ready(function () {
         $('.dollar_price').show();
         $('.dollar_price_1').show();
         $('#unit_valuta').css('display', 'inline-block');
-
+        $('.br2').hide();
+        $('.br1').hide();
         $('#header_price_text_us').show();
         $('#header_price_text_br').hide();
         $('.old_price').hide();
@@ -1446,7 +1447,8 @@ $(document).ready(function () {
         $('.old_price').show();
         $('.old_price_1').show();
         $('.new_price').show();
-
+        $('.br2').show();
+        $('.br1').show();
         $('#order_list_price_old').show();
         $('#order_list_price_new').show();
         $('#order_list_price_dollar').hide();
@@ -1467,6 +1469,8 @@ $(document).ready(function () {
 
         if ($('.header_price_icon>.backet_circle>p').text() == "$") {
             $('.header_price_icon>.backet_circle>p').text("Br");
+            $('.br2').show();
+            $('.br1').show();
             $('#points').css('margin-left', '100px');
             $('#unit_valuta').css('display', 'none');
             $('.order_list_describe hr').css('opacity', '0');
@@ -1491,7 +1495,8 @@ $(document).ready(function () {
             $('.header_price_icon>.backet_circle>p').text("$");
             $('#unit_valuta').css('display', 'inline-block');
             $('.order_list_describe hr').css('opacity', '1');
-
+            $('.br2').hide();
+            $('.br1').hide();
             $('.dollar_price_1').show();
             $('.dollar_price').show();
             $('#header_price_text_us').show();
