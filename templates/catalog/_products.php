@@ -4,6 +4,25 @@
         <div class="flower">
 
             <? if ($data->discount > 0) { ?>
+                <!--<div class="discount_upper_price">
+                    <div class="new_price_1">
+                        <span class="um">BR </span>
+                        <?/*= (int)($data->price * $kurs / 10000) */?>
+                        <div class="line"></div>
+                        <span   class="zero_new_price_1"> <?/*= round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100) */?>
+                            коп</span>
+                    </div>
+                </div>-->
+                <div class="discount_upper_price">
+                    <div class="new_price_1">
+                        <span class="um">$ </span>
+                        <?= (int)($data->price * $kurs / 10000) ?>
+                    </div>
+                </div>
+
+
+
+
                 <div class="discount">
                     <p>-<?= $data->discount ?>%</p>
                 </div>
@@ -16,7 +35,7 @@
             <?= (int)($data->price * $kurs / 1000) ?>
             <div class="line"></div>
             <span
-                class="zero_old_price"> <?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></span>
+                class="zero_old_price"> <?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000' ?></span>
         </div>
         <div class="new_price">
             <span class="um">BR </span>

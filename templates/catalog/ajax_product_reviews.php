@@ -10,6 +10,15 @@ $imageUrl = image($imageMain['path'], 'resize', '440', false);
             <div class="product_wrap">
                 <div class="flower">
                     <? if ((((int)$product->discount) != 0)) { ?>
+                        <div class="discount_upper_price">
+                            <div class="new_price_1">
+                                <span class="um">BR </span>
+                                <?= (int)($product->price * $kurs / 10000) ?>
+
+                        <span   class="zero_new_price_1"> <?= round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100) ?>
+                            коп</span>
+                            </div>
+                        </div>
                         <div class="discount">
                             <p>-<?= $product->discount ?>%</p>
                         </div>

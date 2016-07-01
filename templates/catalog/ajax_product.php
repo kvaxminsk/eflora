@@ -27,8 +27,8 @@ $this->widget('SMListView',
 
     $("#show_more_item").click(function () {
         var page = <?= ($pagevar + 1) ?>;
-        if ($('.slick-active span').attr('data-category')) {
-            var category1 = $('.slick-active span').attr('data-category');
+        if ($('.slick-active a').attr('data-category')) {
+            var category1 = $('.slick-active a').attr('data-category');
         }
         else {
             var category1 = $('.slick-active-catalog a').attr('data-category');

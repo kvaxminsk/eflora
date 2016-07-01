@@ -50,9 +50,6 @@
     <div class="flower_slider">
         <div id="reason_list">
             <? if ($model->discount > 0) { ?>
-                <!--                <div class="discount">-->
-                <!--                    <p>---><? //= $model->discount ?><!--%</p>-->
-                <!--                </div>-->
                 <div class="discount_wrapp">
                     <div class="discount_symbol">
                         <img src="/images/eflora/discount_symbol.png" alt="">
@@ -63,6 +60,7 @@
                         -<?= $model->discount ?>%
                     </div>
                 </div>
+
             <? } ?>
 
 
@@ -131,20 +129,30 @@
                     25
                 </div> -->
 
-        <div class="discount_upper_price_dollar">
-             <div class="old_discount_price">
-                <div class="price_wrapp">
-                    <span class="um_discount">$</span>
-                    12344
-                    <span class="kop">70 коп </span>
-                </div>
-
-            </div>
-        </div>
+<!--        <div class="discount_upper_price_dollar">-->
+<!--             <div class="old_discount_price">-->
+<!--                <div class="price_wrapp">-->
+<!--                    <span class="um_discount">$</span>-->
+<!--                    12344-->
+<!--                    <span class="kop">70 коп </span>-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
 
 
         <div class="item_price">
+            <? if ($model->discount > 0) { ?>
+                <div class="discount_upper_price_2">
+                    <div class="new_price_1">
+                        <span class="um">BR </span>
+                        <?= (int)($model->price * $kurs / 10000) ?>
 
+                        <span   class="zero_new_price_1"> <?= round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
+                            коп</span>
+                    </div>
+                </div>
+            <? } ?>
             <div class="old_price">
                 <span class="um">BR </span>
                 <?= (int)($model->price * $kurs / 1000) ?>

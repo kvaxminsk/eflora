@@ -21,6 +21,7 @@ $this->widget('application.components.formElems',
             array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'country_to'),
             array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'email_to'),
             array('type' => FormElems::ELEM_TYPE_TEXTAREA, 'attribute' => 'text_postcard'),
+            array('type' => FormElems::ELEM_TYPE_TEXTAREA, 'attribute' => 'user_comment'),
 
             array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'name_from'),
             array('type' => FormElems::ELEM_TYPE_TEXT, 'attribute' => 'phone_from'),

@@ -157,6 +157,7 @@ ul.slick-dots
 .slick-dots>li>span{
     cursor: pointer;
 
+
 }
 
 .fade, .slick-initialized, .slick-slider{
@@ -179,13 +180,20 @@ ul.slick-dots
     background-color: #b54e74;
       transition-duration:0.4s;
 } */
-
+.slick-dots li a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 60px;
+}
  .reason_link{
 
-    width: 100%;
-    line-height: 60px;
+
     border-bottom: 1px dotted #b54e74 ;
     margin-right: 60px;
+     position: absolute;
+     right:0;
+     margin-top:20px;
 
 } 
 .reason_link:hover{

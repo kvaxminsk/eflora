@@ -55,7 +55,6 @@ class FrontShopController extends FrontController
 
             $totalAmout += $productOrder->price*$product[1];
 
-//            var_dump($product->name);
         }
         if($date->currency == 'us') {
             $totalAmout = $totalAmout;
@@ -76,11 +75,12 @@ class FrontShopController extends FrontController
         $order->city_from = $date->city_from;
         $order->address_from = $date->address_from;
         $order->text_postcard = $date->text_postcard;
+        $order->user_comment = $date->comment_postcard;
 
         $order->date = Date('Y-m-d');
         $order->date_delivery = $date->date_delivery;
         $order->total_amount = $totalAmout;
-        $order->text_postcard = $date->text_postcard;
+
         $order->method_pay = $date->method_pay;
         $order->currency = $date->currency;
 //        var_dump($date->text_postcard);die();

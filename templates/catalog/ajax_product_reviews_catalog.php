@@ -10,9 +10,19 @@
         <div class="flower">
 
             <? if ($product->discount > 0) { ?>
+                <div class="discount_upper_price">
+                    <div class="new_price_1">
+                        <span class="um">BR </span>
+                        <?= (int)($product->price * $kurs / 10000) ?>
+                        <div class="line"></div>
+                        <span   class="zero_new_price_1"> <?= round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100) ?>
+                            коп</span>
+                    </div>
+                </div>
                 <div class="discount">
                     <p>-<?= $product->discount ?>%</p>
                 </div>
+
             <? } ?>
             <a href="<?= $product->url ?>"><img class="flower_pic" src="<?= $product->img['medium'] ?>"
                                                 alt="<?= $product->name ?>"/></a>
@@ -22,7 +32,7 @@
             <?= (int)($product->price * $kurs / 1000) ?>
             <div class="line"></div>
             <span
-                class="zero_old_price"> <?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></span>
+                class="zero_old_price"> <?= (round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000)!=0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) :'000' ?></span>
         </div>
         <div class="new_price">
             <span class="um">BR </span>

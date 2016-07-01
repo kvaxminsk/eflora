@@ -1249,3 +1249,37 @@ ul.flower_products_catalog li:hover  .discount>p{
 .in_cart p{
 	margin-left: 30px;
 }
+
+
+.discount_upper_price {
+	margin-top:30px;
+	position : absolute;
+	text-align: center;
+	width: calc(100% - 80px);
+	display: flex;
+	justify-content: center;
+
+	color: #a9a9a9;
+}
+.new_price_1{
+	font-size:22px;
+	position: relative;
+}
+.new_price_1 .um {
+	font-size: 14px;
+
+}
+.new_price_1:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top:14px;
+	-webkit-transform: rotate(-9deg); /* Chrome y Safari */
+	-moz-transform: rotate(-9deg); /* Firefox */
+	border-top: 2px solid #ff7794;
+}
+.zero_new_price_1{
+	font-size: 14px;
+	position: relative;
+	top: -6px;
+}
