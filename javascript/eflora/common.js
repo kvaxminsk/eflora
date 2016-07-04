@@ -1907,7 +1907,7 @@ $(document).ready(function () {
     });
     $('.choice_link_1').eq(3).click(function () {
         changeColorChoiceLink(this);
-        alert('fsafs');
+        //alert('fsafs');
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }

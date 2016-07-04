@@ -115,12 +115,14 @@ class FrontCatalogController extends FrontController
             );
         }
 
+        $metaCategory = $this->metaCategory($model->category_id);
 
         parent::meta($model, $meta);
 
         $this->render('product-one', array(
             'model' => $model,
             'meta' => $meta,
+            'urlCategory' => $metaCategory[0][url],
         ));
     }
 

@@ -3,7 +3,29 @@
 $imageMain = (isset($product->img['path'])) ? $product->img : '/images/no-photo.gif';
 $imageUrl = image($imageMain['path'], 'resize', '440', false);
 ?>
+<?
+if ($data->discount > 0) {
+    $price_old_us = (int)($data->price);
+    $price_old_br = (int)($data->price * $kurs / 10000);
+    $price_old_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
+    $data->price = round($data->price - $data->price*$data->discount/100);
 
+    $price_new_discount_br_big = (int)($data->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
+    $price_old_discount_br_big = (int)($data->price * $kurs / 1000);
+    $price_old_discount_br_kop =  (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $data->price;
+}
+else {
+    $price_old_us = (int)($data->price);
+    $price_old_br = (int)($data->price * $kurs / 10000);
+    $price_new_discount_br_big = (int)($data->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
+    $price_old_discount_br_big = (int)($data->price * $kurs / 1000);
+    $price_old_discount_br_kop =  (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $data->price;
+}
+?>
 <li>
     <? if ((((int)$product->discount) != 0)) { ?>
         <div class="discount">
@@ -14,17 +36,17 @@ $imageUrl = image($imageMain['path'], 'resize', '440', false);
     <div class="order_list_describe">
 
         <p class="order_list_title"><a href=""><?= $product->name ?></a></p>
-        <p class="order_list_price_old old_price"><sub class="price"> BR </sub> <?= (int)($product->price * $kurs / 1000) ?>
-            <sup><?= (round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000)!=0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) :'000' ?></sup>
+        <p class="order_list_price_old old_price"><sub class="price"> BR </sub> <?= $price_old_discount_br_big ?>
+            <sup><?= $price_old_discount_br_kop ?></sup>
         </p>
         <hr>
-        <p class="order_list_price_new new_price"><sub> BR </sub> <?= (int)($product->price * $kurs / 10000) ?>
-            <sup><?= round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100) ?>
+        <p class="order_list_price_new new_price"><sub> BR </sub> <?= $price_old_discount_br_big ?>
+            <sup><?= $price_old_discount_br_kop ?>
                 коп.</sup>
         </p>
         <div class="dollar_price_cart dollar_price">
             <span class="um">$ </span>
-            <?= (int)($product->price) ?>
+            <?= $price_discount_us ?>
             <div class="line"></div>
         </div>
     </div>

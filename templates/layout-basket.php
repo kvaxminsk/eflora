@@ -375,8 +375,8 @@
                     <input type="text" name="text_postcard" class="text_postcard">  -->
 
                     <textarea class="text_postcard" name="text_postcard" id="text_postcard" cols="30" rows="3"
-                              placeholder="Текст открытки и ваш комментарий к заказу"></textarea>
-                    <p class="interval">интервал времени для доставки, пожелания и т. д.</p>
+                              placeholder="Текст открытки к заказу"></textarea>
+                    <p class="interval">пожелания и т. д.</p>
                 </div>
                 <div class="cart1_comments">
                     <h1>Текст комментария</h1>
@@ -385,7 +385,7 @@
                     <input type="text" name="text_postcard" class="text_postcard">  -->
 
                     <textarea class="text_postcard" name="comment_postcard" id="comment_postcard" cols="30" rows="3" placeholder="Текст комментария"></textarea>
-                    <p class="interval">коментраии, пожелания и т. д.</p>
+                    <p class="interval">коментраии,интервал времени для доставки и т. д.</p>
                 </div>
                 <p> Способы оплаты </p>
                 <div class="way_pay_wrapp">
