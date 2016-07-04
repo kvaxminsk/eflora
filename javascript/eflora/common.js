@@ -64,9 +64,11 @@ function changeCurrency() {
         //alert(currency);
         $('.old_price').hide();
         $('.old_price_1').hide();
+        $('.new_price_2').hide();
         $('.new_price').hide();
         $('.dollar_price').show();
         $('.dollar_price_1').show();
+        $('.dollar_price_2').show();
 
         $('#order_list_price_old').hide();
         $('#order_list_price_new').hide();
@@ -78,7 +80,9 @@ function changeCurrency() {
     else if (currency == 'br') {
         $('.dollar_price').hide();
         $('.dollar_price_1').hide();
+        $('.dollar_price_2').hide();
         $('.old_price_1').show();
+        $('.new_price_2').show();
         $('.old_price').show();
         $('.new_price').show();
 
@@ -1412,12 +1416,14 @@ $(document).ready(function () {
         $('#points').css('margin-left', '36px');
         $('.dollar_price').show();
         $('.dollar_price_1').show();
+        $('.dollar_price_2').show();
         $('#unit_valuta').css('display', 'inline-block');
 
         $('#header_price_text_us').show();
         $('#header_price_text_br').hide();
         $('.old_price').hide();
         $('.old_price_1').hide();
+        $('.new_price_2').hide();
         $('.new_price').hide();
 
         $('#order_list_price_old').hide();
@@ -1437,11 +1443,13 @@ $(document).ready(function () {
         $('#points').css('margin-left', '100px');
         $('.dollar_price').hide();
         $('.dollar_price_1').hide();
+        $('.dollar_price_2').hide();
         $('#unit_valuta').css('display', 'none');
         $('#header_price_text_us').hide();
         $('#header_price_text_br').show();
         $('.old_price').show();
         $('.old_price_1').show();
+        $('.new_price_2').show();
         $('.new_price').show();
 
         $('#order_list_price_old').show();
@@ -1470,9 +1478,11 @@ $(document).ready(function () {
             $('.order_list_describe hr').css('opacity', '0');
             $('.dollar_price').hide();
             $('.dollar_price_1').hide();
+            $('.dollar_price_2').hide();
             $('#header_price_text_us').hide();
             $('#header_price_text_br').show();
             $('.old_price_1').show();
+            $('.new_price_2').show();
             $('.old_price').show();
             $('.new_price').show();
 
@@ -1492,10 +1502,12 @@ $(document).ready(function () {
             $('.order_list_describe hr').css('opacity', '1');
 
             $('.dollar_price_1').show();
+            $('.dollar_price_2').show();
             $('.dollar_price').show();
             $('#header_price_text_us').show();
             $('#header_price_text_br').hide();
             $('.old_price_1').hide();
+            $('.new_price_2').hide();
             $('.old_price').hide();
             $('.new_price').hide();
 

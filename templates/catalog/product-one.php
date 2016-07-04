@@ -17,6 +17,29 @@
     }
 
 </script>
+<?
+if ($model->discount > 0) {
+    $model->price;
+    $price_old_us = (int)($model->price);
+    $price_old_br = (int)($model->price * $kurs / 10000);
+    $price_old_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
+    $model->price = round($model->price - $model->price * $model->discount / 100);
+
+    $price_new_discount_br_big = (int)($model->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
+    $price_old_discount_br_big = (int)($model->price * $kurs / 1000);
+    $price_old_discount_br_kop = (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) != 0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $model->price;
+} else {
+    $price_old_us = (int)($model->price );
+    $price_old_br = (int)($model->price * $kurs / 10000);
+    $price_new_discount_br_big = (int)($model->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
+    $price__old_discount_br_big = (int)($model->price * $kurs / 1000);
+    $price_old_discount_br_kop = (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) != 0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $model->price;
+}
+?>
 <div class="right_main_content">
     <div class="last_view">
         <p class="view_erlier"><a href="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'reviews')) ?>">Вы просматривали</a></p>
@@ -143,34 +166,40 @@
 
         <div class="item_price">
             <? if ($model->discount > 0) { ?>
-                <div class="discount_upper_price_2">
+                <div class="discount_upper_price_2 new_price_2">
                     <div class="new_price_1">
                         <span class="um">BR </span>
-                        <?= (int)($model->price * $kurs / 10000) ?>
+                        <?= $price_old_br ?>
 
-                        <span   class="zero_new_price_1"> <?= round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
+                        <span   class="zero_new_price_1"> <?=$price_old_br_kop// round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
                             коп</span>
+                    </div>
+                </div>
+                <div class="discount_upper_price dollar_price_2">
+                    <div class="new_price_1">
+                        <span class="um">$ </span>
+                        <?= $price_old_us; ?>
                     </div>
                 </div>
             <? } ?>
             <div class="old_price">
                 <span class="um">BR </span>
-                <?= (int)($model->price * $kurs / 1000) ?>
+                <?= $price_old_discount_br_big ?>
                 <div class="line"></div>
                 <span
-                    class="zero_old_price"> <?= (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000)!=0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) :'000' ?></span>
+                    class="zero_old_price"> <?=$price_old_discount_br_kop// (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000)!=0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) :'000' ?></span>
             </div>
 
             <div class="new_price">
                 <span class="um">BR </span>
-                <?= (int)($model->price * $kurs / 10000) ?>
+                <?= $price_new_discount_br_big ?>
                 <span
-                    class="zero_old_price"><?= round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
+                    class="zero_old_price"><?=$price_old_discount_br_kop// round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
                     коп</span>
             </div>
             <div class="dollar_price">
                 <span class="um"> </span>
-                $<?= $model->price ?>
+                $<?= $price_discount_us ?>
             </div>
             <div class="clearfix" style="clear:both"></div>
         </div>
