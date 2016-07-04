@@ -162,9 +162,9 @@ if ($model->discount > 0) {
             <div class="clearfix" style="clear:both"></div>
         </div>
         <p class="item_flower_title"><?= $model->name; ?></p>
-        <p class="item_flower_describe">
+        <div class="item_flower_describe">
             <?= $model->content; ?>
-        </p>
+        </div>
         <!-- <div class="dollar_price_second">
                 <span class="um"> </span>
                     $

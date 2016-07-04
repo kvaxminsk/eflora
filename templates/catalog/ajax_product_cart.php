@@ -4,26 +4,26 @@ $imageMain = (isset($product->img['path'])) ? $product->img : '/images/no-photo.
 $imageUrl = image($imageMain['path'], 'resize', '440', false);
 ?>
 <?
-if ($data->discount > 0) {
-    $price_old_us = (int)($data->price);
-    $price_old_br = (int)($data->price * $kurs / 10000);
-    $price_old_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
-    $data->price = round($data->price - $data->price*$data->discount/100);
+if ($product->discount > 0) {
+    $price_old_us = (int)($product->price);
+    $price_old_br = (int)($product->price * $kurs / 10000);
+    $price_old_br_kop = round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100);
+    $product->price = round($product->price - $product->price*$product->discount/100);
 
-    $price_new_discount_br_big = (int)($data->price * $kurs / 10000);
-    $price_new_discount_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
-    $price_old_discount_br_big = (int)($data->price * $kurs / 1000);
-    $price_old_discount_br_kop =  (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000';
-    $price_discount_us = $data->price;
+    $price_new_discount_br_big = (int)($product->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100);
+    $price_old_discount_br_big = (int)($product->price * $kurs / 1000);
+    $price_old_discount_br_kop =  (round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) != 0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $product->price;
 }
 else {
-    $price_old_us = (int)($data->price);
-    $price_old_br = (int)($data->price * $kurs / 10000);
-    $price_new_discount_br_big = (int)($data->price * $kurs / 10000);
-    $price_new_discount_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
-    $price_old_discount_br_big = (int)($data->price * $kurs / 1000);
-    $price_old_discount_br_kop =  (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000';
-    $price_discount_us = $data->price;
+    $price_old_us = (int)($product->price);
+    $price_old_br = (int)($product->price * $kurs / 10000);
+    $price_new_discount_br_big = (int)($product->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100);
+    $price_old_discount_br_big = (int)($product->price * $kurs / 1000);
+    $price_old_discount_br_kop =  (round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) != 0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $product->price;
 }
 ?>
 <li>
@@ -40,8 +40,8 @@ else {
             <sup><?= $price_old_discount_br_kop ?></sup>
         </p>
         <hr>
-        <p class="order_list_price_new new_price"><sub> BR </sub> <?= $price_old_discount_br_big ?>
-            <sup><?= $price_old_discount_br_kop ?>
+        <p class="order_list_price_new new_price"><sub> BR </sub> <?= $price_new_discount_br_big ?>
+            <sup><?= $price_new_discount_br_kop ?>
                 коп.</sup>
         </p>
         <div class="dollar_price_cart dollar_price">
@@ -53,11 +53,11 @@ else {
     <div class="order_list_count_wrapper">
         <div class="order_list_count_symbols">
             <div class="order_count_increment addtobasket" data-productid="<?= $product->id ?>"
-                 data-productprice="<?= $product->price ?>"></div>
+                 data-productprice="<?= $price_discount_us ?>"></div>
             <input id="count-<?= $product->id ?>" type="text" class="order_count" name="order_count" maxlength="3"
                    value="4">
             <div class="order_count_decrement addtobasket" data-productid="<?= $product->id ?>"
-                 data-productprice="<?= $product->price ?>"></div>
+                 data-productprice="<?= $price_discount_us ?>"></div>
         </div>
         <div class="delete_order" data-productid="<?= $product->id ?>"></div>
     </div>

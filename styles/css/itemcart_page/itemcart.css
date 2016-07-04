@@ -593,7 +593,7 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 	font-family: 'Roboto Regular', arial;
 	margin-bottom: 20px;
 }
-.item_flower_describe{
+.item_flower_describe p{
 	font: 14px/20px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	margin-left: 90px;

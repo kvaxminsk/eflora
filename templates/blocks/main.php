@@ -4,7 +4,7 @@
             <? if (!empty($item['children'])): ?>
             <? else: ?>
                 <li>
-                    <a href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
+                    <a data-menu="<?=$item[id];?>" href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
                 </li>
             <? endif; ?>
         <? endforeach; ?>
