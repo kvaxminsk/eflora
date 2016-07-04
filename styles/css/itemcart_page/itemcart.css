@@ -1,3 +1,56 @@
+
+.discount_upper_price {
+	margin-top:30px;
+	position : absolute;
+	text-align: center;
+	width: calc(100% - 80px);
+	display: flex;
+	justify-content: center;
+
+	color: #a9a9a9;
+}
+.new_price_1{
+	font-size:22px;
+	position: relative;
+}
+.new_price_1 .um {
+	font-size: 14px;
+
+}
+.new_price_1:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top:14px;
+	-webkit-transform: rotate(-9deg); /* Chrome y Safari */
+	-moz-transform: rotate(-9deg); /* Firefox */
+	border-top: 2px solid #ff7794;
+}
+.zero_new_price_1{
+	font-size: 14px;
+	position: relative;
+	top: -6px;
+}
+
+
+
+.discount_upper_price_2 {
+	margin-top: 40px;
+	position: absolute;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #a9a9a9;
+}
+
+
+
+
+
+
+
+
+
 .discount_upper_price_dollar {
 	position: absolute;
 	font-size:20px;
@@ -978,6 +1031,17 @@ height: 492px !important;
 
 
 @media only screen and (max-width: 1280px){
+
+	.discount_upper_price_2 {
+
+		margin-top:-35px;
+		text-align: center;
+		display: flex;
+		left: 60%;
+		justify-content: center;
+		color: #a9a9a9;
+	}
+
 	.right_slider{
 		width: 100%;
 	}
@@ -1317,7 +1381,7 @@ height: 492px !important;
 	.item_price>.old_price,.item_price>.new_price {
 	width: 100%;
 	text-align: center;
-		margin-left: 0;
+	margin-left: 0;
 	}
 	.item_price>.old_price>.line{
 		left: 50%;
@@ -1339,3 +1403,4 @@ height: 492px !important;
 		margin-left: 20px;
 	}
 }
+

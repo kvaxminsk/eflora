@@ -39,7 +39,7 @@ foreach ($categories as $item): ?>
                     break;
             <? endforeach; ?>
             }
-            return '<span data-category="' + idCategory + '"class="reason_link"     data-title="' + rb_title + '  "  data-description  = "' + rb_description + '"  >' + title + '</span>';
+            return '<a class="reason_link_a" href="#" data-category="' + idCategory + '" data-title="' + rb_title + '  " data-description  = "' + rb_description + '"><span  class="reason_link"         >' + title + '</span></a>';
 
         }
     });

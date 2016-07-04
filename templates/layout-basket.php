@@ -369,7 +369,7 @@
 
                 </div>
                 <div class="cart1_note_block">
-                    <h1>Текст записки</h1>
+                    <h1>Текст открытки</h1>
                     <hr>
                     <!-- <p> Текст открытки и ваш комментарий к заказу</p>
                     <input type="text" name="text_postcard" class="text_postcard">  -->
@@ -377,6 +377,15 @@
                     <textarea class="text_postcard" name="text_postcard" id="text_postcard" cols="30" rows="3"
                               placeholder="Текст открытки и ваш комментарий к заказу"></textarea>
                     <p class="interval">интервал времени для доставки, пожелания и т. д.</p>
+                </div>
+                <div class="cart1_comments">
+                    <h1>Текст комментария</h1>
+                    <hr>
+                    <!-- <p> Текст открытки и ваш комментарий к заказу</p>
+                    <input type="text" name="text_postcard" class="text_postcard">  -->
+
+                    <textarea class="text_postcard" name="comment_postcard" id="comment_postcard" cols="30" rows="3" placeholder="Текст комментария"></textarea>
+                    <p class="interval">коментраии, пожелания и т. д.</p>
                 </div>
                 <p> Способы оплаты </p>
                 <div class="way_pay_wrapp">
@@ -432,9 +441,15 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="tab2_text_note">
-                    <h1>Текст записки</h1>
+                    <h1>Текст открытки</h1>
                     <hr>
-                    <p id="text_from">
+                    <p id="text_postcard">
+                    </p>
+                </div>
+                <div class="tab2_text_note">
+                    <h1>Текст комметария</h1>
+                    <hr>
+                    <p id="comment_postcard">
                     </p>
                 </div>
                 <div class="tab2_way_pay">
