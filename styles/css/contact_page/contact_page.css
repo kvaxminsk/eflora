@@ -72,7 +72,7 @@
 	position: absolute;
 	right: 0;
 	top:0px;
-	overflow: hidden;
+
 	min-width: 580px;
 }
 .map_contact_text{
@@ -296,6 +296,7 @@ h2.map_contact_skype{
 	top:0;
 	background-color:rgba(255,106,105,0.98);
 	min-width: 500px;
+	display: none;
 
 }
 .close_feedback_cross{
@@ -532,6 +533,9 @@ textarea {
 	}
 	.map_fax_phone h2.map_contact_skype{
 		margin-top:50px ;
+	}
+	.map_contact_icons{
+		height:  1400px;
 	}
 }
 @media only screen and (max-width: 1000px){

@@ -778,6 +778,7 @@ input.cart1_address_input{
 	border-bottom: 1px solid #a7a5a5;
 	color:#868484;
 }
+
 .cart1_comments > p{
 	margin-bottom: 20px;
 	font:15px/30px arial,sans-serif ;
@@ -786,10 +787,6 @@ input.cart1_address_input{
 	width: calc(65% - 20px);
 	margin: 0 auto;
 }
-
-
-
-
 
 
 
