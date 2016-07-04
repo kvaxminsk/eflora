@@ -11,9 +11,7 @@
     </ul>
 <? endif; ?>
 <script>
-    $(document).ready(function{
-
-    });
+//text_pagwte
 </script>
 <!--<ul>-->
 <!--	<li><a href="#">Способы оплаты</a></li>-->
