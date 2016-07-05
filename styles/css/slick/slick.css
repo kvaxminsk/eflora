@@ -125,7 +125,7 @@
 {
     list-style: none;
     text-align: right;
-    width: 365px;
+    width: 100%;
     margin:0;
     padding:0;
     height: 60px;
@@ -240,7 +240,7 @@ ul.slick-dots
     width: 240px;
     position: absolute;
     top:0px;
-    left:-365px;
+    left:-240px;
     padding-top:0;
    }
 /*    .reason_link:hover{
@@ -266,10 +266,10 @@ ul.slick-dots
          font: 16px/60px arial,sans-serif;
          font-family: 'Roboto Regular', arial;
    }
-   .slick-active>span{
+   .slick-active span{
     color: #9e4d69;
    }
-   .slick-dots>li{
+   .slick-dots li{
     text-align: left;
     padding-left: 20px;
     border-top: 1px solid #a65f78;
@@ -296,7 +296,10 @@ ul.slick-dots
  color:#fff;
  border-bottom: none;
 
-} 
+}
+   .reason_link{
+       margin-top:0;
+   }
 
  .slick-active>.reason_link:hover {
  

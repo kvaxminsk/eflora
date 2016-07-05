@@ -1687,7 +1687,7 @@ sup{
 		position: fixed;
 		width: 240px;
 		left: -400px;
-		top: 60px;
+		top: 0px;
 		height: 820px;
 		z-index: 9997;
 	}
@@ -1737,7 +1737,7 @@ sup{
 		position: fixed;
 		width:240px;
 		left:-400px;
-		top:60px;
+		top:0px;
 		height: 820px;
 		background-color: #fd904f;
 		z-index: 9996;

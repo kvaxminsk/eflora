@@ -599,6 +599,7 @@ $(document).ready(function () {
         cssEase: 'ease',
         asNavFor: '.slider-nav'
     });
+
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -612,7 +613,7 @@ $(document).ready(function () {
 
     });
 
-    $('.slick-track').css('left', '0px;');
+   /* $('.slick-track').css('left', '0px;');*/
 
 
     $('.slick-dots').children('li').click(function () {

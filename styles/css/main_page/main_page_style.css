@@ -628,7 +628,8 @@ ul.flower_products li:hover  .discount>p{
 
 }
 .um{
-	font: bold 19px/19px arial,sans-serif;
+	font-size: 19px;
+	line-height: 19px;
 	font-family: 'Roboto Light', arial;
 	margin-bottom: 2px;
 }
@@ -735,7 +736,8 @@ ul.flower_products li:hover  .discount>p{
 }
 .download_icon {
 	position: relative;
-	font: 145px/15px arial,sans-serif;
+	font-size: 140px;
+	line-height: 15px;
 	font-family: 'Roboto Thin', arial;
 	top:290px;
 	text-align: center;
