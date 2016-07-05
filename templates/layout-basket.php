@@ -309,7 +309,7 @@
                     <button class="now_button" name="now_button"><span>Сегодня</span></button>
                     <button class="tomorrow_button" name="now_button"><span>Завтра</span></button>
                     <div class="datepicker_wrapp">
-                        <input type="submit" id="datepicker" value="Выбрать дату">
+                        <input type="text" id="datepicker" value="Выбрать дату">
                         <p class="fake_datepicker_title">Выбрать дату</p>
                     </div>
                 </div>
