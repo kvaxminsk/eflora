@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="/javascript/eflora/jquery-ui-1.11.4/jquery-ui.css"/>
 
     <script> var kurs = <?=$this->kurs?></script>
-    <!--	<script type="text/javascript" src="/javascript/eflora/modernizr.custom.79639.js"></script>-->
+
     <script src="/javascript/eflora/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
     <script src="/javascript/eflora/jquery-ui-1.11.4/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/eflora/slick/slick.min.js"></script>
@@ -59,11 +59,9 @@
     <script>
 
         $(function () {
-
             $("#datepicker").datepicker({
                 onSelect: function (date) {
                     var date = $(this).val();
-
                     $('.date_delivery').text(date);
                 },
                 showWeek: false,
