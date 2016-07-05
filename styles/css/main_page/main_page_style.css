@@ -941,7 +941,7 @@ a:hover{
 }
 .dollar_price {
 	text-align: center;
-	margin-top:100px;
+	margin-top:60px;
 	letter-spacing: 2px;
     font: bold 42px/42px arial,sans-serif;
     font-family: 'Roboto Light', arial;
@@ -949,13 +949,24 @@ a:hover{
     vertical-align: middle;
     padding-top: 10px;
     color: #ff7794;
-    margin-bottom: 57px; 
+    margin-bottom: 30px;
 }
 .dollar_price >.um{
 	font:  19px/19px arial,sans-serif;
     font-family: 'Roboto Light', arial;
     margin-bottom: 2px;
+	position: relative;
 }
+.dollar_price >.um:before{
+	content: '';
+	width:50px;
+	position:absolute;
+	bottom:0px;
+	border-top: 2px solid #ffb7c5;
+
+}
+
+
 .dollar_price >.line{
 	    border-top: 2px solid #ffb7c5;
     width: 43px;

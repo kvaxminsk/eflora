@@ -3,13 +3,16 @@
         <? foreach ($menu as $item): ?>
             <? if (!isset($item['children'])): ?>
                 <li>
-                    <a href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
+                    <a data-menu="<?=$item[id];?>" href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
                 </li>
             <? endif; ?>
 
         <? endforeach; ?>
     </ul>
 <? endif; ?>
+<script>
+//text_pagwte
+</script>
 <!--<ul>-->
 <!--	<li><a href="#">Способы оплаты</a></li>-->
 <!--	<li><a href="#">Оформление свадьбы</a></li>-->

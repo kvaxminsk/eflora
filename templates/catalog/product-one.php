@@ -19,7 +19,6 @@
 </script>
 <?
 if ($model->discount > 0) {
-    $model->price;
     $price_old_us = (int)($model->price);
     $price_old_br = (int)($model->price * $kurs / 10000);
     $price_old_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
@@ -35,7 +34,7 @@ if ($model->discount > 0) {
     $price_old_br = (int)($model->price * $kurs / 10000);
     $price_new_discount_br_big = (int)($model->price * $kurs / 10000);
     $price_new_discount_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
-    $price__old_discount_br_big = (int)($model->price * $kurs / 1000);
+    $price_old_discount_br_big = (int)($model->price * $kurs / 1000);
     $price_old_discount_br_kop = (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) != 0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) : '000';
     $price_discount_us = $model->price;
 }
@@ -69,7 +68,7 @@ if ($model->discount > 0) {
 
 </div>
 <div class="left_main_content">
-    <p class="return_to_catalog"><a href="/catalog"> Вернуться в каталог</a></p>
+    <p class="return_to_catalog"><a href="<?=$urlCategory?>"> Вернуться в каталог</a></p>
     <div class="flower_slider">
         <div id="reason_list">
             <? if ($model->discount > 0) { ?>
@@ -134,18 +133,38 @@ if ($model->discount > 0) {
     </div>
     <div class="right_slider">
         <div class="upper_social_icons_wrapp">
+
             <div class="upper_social_icons">
-                <p class="facebook"><a href="">Я рекомендую</a></p>
-                <p class="twitter"><a href="">Twitter</a></p>
-                <p class="vk"><a href="">Сохранить</a></p>
+                <p class="facebook"><a href="">Я рекомендую</a>
+
+
+                </p>
+                <!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>-->
+                <p class="twitter"><a href="https://twitter.com/share"">Twitter</a> <!--<a href="https://twitter.com/share" class="twitter-share-button" data-via="eFloraby" data-related="eFloraby">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>--></p>
+                <p class="vk"><!-- Put this script tag to the <head> of your page -->
+                    <script type="text/javascript" src="http://vk.com/js/api/share.js?93" charset="windows-1251"></script>
+
+                    <!-- Put this script tag to the place, where the Share button will be -->
+                    <script type="text/javascript"><!--
+                        document.write(VK.Share.button(false,{type: "custom", text: "Сохранить"}));
+                        --></script></p>
+                <!-- Put this script tag to the <head> of your page -->
+
                 <div class="clearfix" style="clear:both"></div>
             </div>
             <div class="clearfix" style="clear:both"></div>
         </div>
         <p class="item_flower_title"><?= $model->name; ?></p>
-        <p class="item_flower_describe">
+        <div class="item_flower_describe">
             <?= $model->content; ?>
-        </p>
+        </div>
         <!-- <div class="dollar_price_second">
                 <span class="um"> </span>
                     $
@@ -194,7 +213,7 @@ if ($model->discount > 0) {
                 <span class="um">BR </span>
                 <?= $price_new_discount_br_big ?>
                 <span
-                    class="zero_old_price"><?=$price_old_discount_br_kop// round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
+                    class="zero_old_price"><?=$price_new_discount_br_kop// round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
                     коп</span>
             </div>
             <div class="dollar_price">

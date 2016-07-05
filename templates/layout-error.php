@@ -124,10 +124,11 @@
             </div>
             <div class="reactive_logo">
                 <div class="reactive_logo_wrap">
+                    <a href="http://reactive.by" nofollow>
                     <p>Дизайн и разработка-</p>
                     <div class="logo_picture">
                     </div>
-
+    </a>
                 </div>
 
             </div>

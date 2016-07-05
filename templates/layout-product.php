@@ -6,7 +6,9 @@
     <title><?= $this->title; ?></title>
     <meta name="description" content="<?= $this->description; ?>"/>
     <meta name="keywords" content="<?= $this->keywords; ?>"/>
-
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
+<!--    <script src="/javascript/eflora/social-likes.min.js"></script>-->
+<!--    <link rel="stylesheet" href="/styles/css/social-likes_birman.css">-->
     <script> var kurs = <?=$this->kurs?></script>
     <script type="text/javascript" src="/javascript/eflora/jquery-1.12.3.js"></script>
 
@@ -235,10 +237,11 @@
         </div>
         <div class="reactive_logo">
             <div class="reactive_logo_wrap">
+                <a href="http://reactive.by" nofollow>
                 <p>Дизайн и разработка-</p>
                 <div class="logo_picture">
                 </div>
-
+</a>
             </div>
 
         </div>

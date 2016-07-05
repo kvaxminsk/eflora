@@ -2,7 +2,6 @@
 
 <?
 if ($data->discount > 0) {
-    $data->price;
     $price_old_us = (int)($data->price);
     $price_old_br = (int)($data->price * $kurs / 10000);
     $price_old_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
