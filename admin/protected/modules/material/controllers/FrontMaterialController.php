@@ -86,7 +86,7 @@ class FrontMaterialController extends FrontController
     #тип контакты
     public function actionContacts($alias, $meta)
     {
-        $this->layout = 'webroot.templates.layout-internal';
+        $this->layout = 'webroot.templates.layout-contacts';
         $redirect = str_replace('?result=yes', '', getEnv('HTTP_REFERER'));
         $redirect = str_replace('?result=no', '', $redirect);
 
@@ -94,9 +94,9 @@ class FrontMaterialController extends FrontController
             $host = str_replace('www.', '', getEnv('HTTP_HOST'));
             $subject = 'Сообщение через форму обратной связи на сайте www.' . $host;
 
-            $email = $this->variables['email'];
+            $email = $_POST['email'];
             $email = explode(',', $email);
-            $from = $_POST['email'];
+            $from = $this->variables['email'];
             $to = $this->variables['email'];
 
             $message = '<p>Новое сообщение на сайте www.' . $host . '</p>';

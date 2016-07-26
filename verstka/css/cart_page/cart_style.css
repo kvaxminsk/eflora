@@ -689,9 +689,9 @@ input.cart1_address_input{
 }
 
 .cart1_note_block{
-	background-color: #f6f5f5;
-	padding-bottom: 65px;
-}
+	 background-color: #f6f5f5;
+	 padding-bottom: 65px;
+ }
 
 .cart1_note_block>h1
 {	
@@ -731,6 +731,65 @@ input.cart1_address_input{
 	font-family: 'Roboto Regular', arial ;
 	color:#868484;
 }
+
+
+
+
+
+
+
+
+
+
+.cart1_comments{
+	background-color: #fdf5d5;
+	padding-bottom: 65px;
+}
+
+.cart1_comments>h1
+{
+	margin:0;
+	text-align: center;
+	font: 24px/54px arial,sans-serif ;
+	font-family: 'Roboto Regular', arial ;
+	color: #b54e74 ;
+	padding-top: 30px;
+	text-transform: uppercase;
+}
+.cart1_comments>hr
+{
+	width: 30px;
+	margin:0 auto;
+	border: 1px solid #b54e74;
+	margin-bottom: 30px;
+}
+.cart1_comments>p{
+	margin-left: 135px;
+}
+.cart1_comments>input{
+	margin-left: 135px;
+	margin-bottom: 20px;
+	width: calc(100% - 260px);
+	font:15px/30px arial,sans-serif ;
+	font-family: 'Roboto Regular', arial ;
+	background-color: transparent;
+	border: none;
+	display: block;
+	border-bottom: 1px solid #a7a5a5;
+	color:#868484;
+}
+
+.cart1_comments > p{
+	margin-bottom: 20px;
+	font:15px/30px arial,sans-serif ;
+	font-family: 'Roboto Regular', arial ;
+	color:#868484;
+	width: calc(65% - 20px);
+	margin: 0 auto;
+}
+
+
+
 p.interval{
 	font-family: 'Roboto Light', arial ;
 }

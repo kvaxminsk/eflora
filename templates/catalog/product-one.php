@@ -1,5 +1,5 @@
 <? // var_dump($model->content);die();?>
-<? $kurs = 20100; ?>
+<? $kurs = $this->kurs; ?>
 <script>
     renderBlockReviews();
     if (localStorage['reviews']) {
@@ -17,11 +17,33 @@
     }
 
 </script>
+<?
+if ($model->discount > 0) {
+    $price_old_us = (int)($model->price);
+    $price_old_br = (int)($model->price * $kurs / 10000);
+    $price_old_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
+    $model->price = round($model->price - $model->price * $model->discount / 100);
+
+    $price_new_discount_br_big = (int)($model->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
+    $price_old_discount_br_big = (int)($model->price * $kurs / 1000);
+    $price_old_discount_br_kop = (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) != 0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $model->price;
+} else {
+    $price_old_us = (int)($model->price );
+    $price_old_br = (int)($model->price * $kurs / 10000);
+    $price_new_discount_br_big = (int)($model->price * $kurs / 10000);
+    $price_new_discount_br_kop = round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100);
+    $price_old_discount_br_big = (int)($model->price * $kurs / 1000);
+    $price_old_discount_br_kop = (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) != 0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) : '000';
+    $price_discount_us = $model->price;
+}
+?>
 <div class="right_main_content">
     <div class="last_view">
-        <p class="view_erlier"><a href="">Вы просматривали</a></p>
+        <p class="view_erlier"><a href="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'reviews')) ?>">Вы просматривали</a></p>
         <div class="view_erlier_cross">
-            <a href="">+</a>
+            <a href="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'reviews')) ?>">+</a>
         </div>
         <div class="clearfix" style="clear:both"></div>
     </div>
@@ -30,25 +52,26 @@
     </ul>
 
     <div class="search_area">
-        <input type="text" placeholder="Поиск...">
-        <div class="go_find"></div>
+        <form method="get"
+              action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'search')) ?>">
+            <input type="text" name="query" value="<?= $_GET['query'] ?>" id="search" placeholder="Поиск...">
+            <button  class="go_find"></button>
+        </form>
     </div>
     <div class="twitter_comment">
         <p> Твиты от <a href="">@eFlora.by</a></p>
         <div class="twitter_comment_block">
-            here a twitter block
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 350px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="275273175225483264" title="Twitter Timeline"></iframe>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
     </div>
 
 </div>
 <div class="left_main_content">
-    <p class="return_to_catalog"><a href="/catalog"> Вернуться в каталог</a></p>
+    <p class="return_to_catalog"><a href="<?=$urlCategory?>"> Вернуться в каталог</a></p>
     <div class="flower_slider">
         <div id="reason_list">
             <? if ($model->discount > 0) { ?>
-                <!--                <div class="discount">-->
-                <!--                    <p>---><? //= $model->discount ?><!--%</p>-->
-                <!--                </div>-->
                 <div class="discount_wrapp">
                     <div class="discount_symbol">
                         <img src="/images/eflora/discount_symbol.png" alt="">
@@ -59,6 +82,7 @@
                         -<?= $model->discount ?>%
                     </div>
                 </div>
+
             <? } ?>
 
 
@@ -109,49 +133,99 @@
     </div>
     <div class="right_slider">
         <div class="upper_social_icons_wrapp">
+
             <div class="upper_social_icons">
-                <p class="facebook"><a href="">Я рекомендую</a></p>
-                <p class="twitter"><a href="">Twitter</a></p>
-                <p class="vk"><a href="">Сохранить</a></p>
+                <p class="facebook"><a href="">Я рекомендую</a>
+
+
+                </p>
+                <!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>-->
+                <p class="twitter"><a href="https://twitter.com/share"">Twitter</a> <!--<a href="https://twitter.com/share" class="twitter-share-button" data-via="eFloraby" data-related="eFloraby">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>--></p>
+                <p class="vk"><!-- Put this script tag to the <head> of your page -->
+                    <script type="text/javascript" src="http://vk.com/js/api/share.js?93" charset="windows-1251"></script>
+
+                    <!-- Put this script tag to the place, where the Share button will be -->
+                    <script type="text/javascript"><!--
+                        document.write(VK.Share.button(false,{type: "custom", text: "Сохранить"}));
+                        --></script></p>
+                <!-- Put this script tag to the <head> of your page -->
+
                 <div class="clearfix" style="clear:both"></div>
             </div>
             <div class="clearfix" style="clear:both"></div>
         </div>
         <p class="item_flower_title"><?= $model->name; ?></p>
-        <p class="item_flower_describe">
+        <div class="item_flower_describe">
             <?= $model->content; ?>
-        </p>
+        </div>
         <!-- <div class="dollar_price_second">
                 <span class="um"> </span>
                     $
                     25
                 </div> -->
-        <div class="item_price">
 
+<!--        <div class="discount_upper_price_dollar">-->
+<!--             <div class="old_discount_price">-->
+<!--                <div class="price_wrapp">-->
+<!--                    <span class="um_discount">$</span>-->
+<!--                    12344-->
+<!--                    <span class="kop">70 коп </span>-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+
+
+        <div class="item_price">
+            <? if ($model->discount > 0) { ?>
+                <div class="discount_upper_price_2 new_price_2">
+                    <div class="new_price_1">
+                        <span class="um">BR </span>
+                        <?= $price_old_br ?>
+
+                        <span   class="zero_new_price_1"> <?=$price_old_br_kop// round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
+                            коп</span>
+                    </div>
+                </div>
+                <div class="discount_upper_price dollar_price_2">
+                    <div class="new_price_1">
+                        <span class="um">$ </span>
+                        <?= $price_old_us; ?>
+                    </div>
+                </div>
+            <? } ?>
             <div class="old_price">
                 <span class="um">BR </span>
-                <?= (int)($model->price * $kurs / 1000) ?>
+                <?= $price_old_discount_br_big ?>
                 <div class="line"></div>
                 <span
-                    class="zero_old_price"> <?= round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) ?></span>
+                    class="zero_old_price"> <?=$price_old_discount_br_kop// (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000)!=0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) :'000' ?></span>
             </div>
+
             <div class="new_price">
                 <span class="um">BR </span>
-                <?= (int)($model->price * $kurs / 1000) ?>
+                <?= $price_new_discount_br_big ?>
                 <span
-                    class="zero_old_price"><?= round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 10) ?>
+                    class="zero_old_price"><?=$price_new_discount_br_kop// round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100) ?>
                     коп</span>
             </div>
             <div class="dollar_price">
                 <span class="um"> </span>
-                $<?= $model->price ?>
+                $<?= $price_discount_us ?>
             </div>
             <div class="clearfix" style="clear:both"></div>
         </div>
         <div class="item_selector">
             <div class="count_product_selector">
                 <div class="decrement">-</div>
-                <div class="count_product"><input id="count-<?= $model->id ?>" type="text" value="0" maxlength="4">
+                <div class="count_product"><input id="count-<?= $model->id ?>" type="text" value="1" maxlength="4">
                 </div>
                 <div class="increment">+</div>
             </div>

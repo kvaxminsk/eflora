@@ -10,6 +10,9 @@
         <? endforeach; ?>
     </ul>
 <? endif; ?>
+<script>
+//text_pagwte
+</script>
 <!--<ul>-->
 <!--	<li><a href="#">Способы оплаты</a></li>-->
 <!--	<li><a href="#">Оформление свадьбы</a></li>-->

@@ -1,4 +1,4 @@
-<? $kurs = 20100; ?>
+<? $kurs = $this->kurs; ?>
 <li class="product">
     <div class="product_wrap">
         <div class="flower">
@@ -15,7 +15,7 @@
             <?= (int)($data->price * $kurs / 1000) ?>
             <div class="line"></div>
             <span
-                class="zero_old_price"> <?= round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) ?></span>
+                class="zero_old_price"> <?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></span>
         </div>
         <div class="new_price">
             <span class="um">BR </span>
@@ -33,7 +33,7 @@
         </div>
         <div class="count_product_selector">
             <div class="decrement">-</div>
-            <div class="count_product"><input type="text" value="0" maxlength="4"></div>
+            <div class="count_product"><input type="text" value="1" maxlength="4"></div>
             <div class="increment">+</div>
         </div>
         <div class="in_cart_wrap">

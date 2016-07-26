@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.orrange_arrow{
+	 display: none;
+ }
+
 .orrange_arrow .popular{
     position: absolute;
     left: 302px;
@@ -32,7 +36,7 @@
 }
 .main_content{
 	position: relative;
-	margin-top:-509px;
+	margin-top:-517px;
 }
 .mp_left_main_content
 {
@@ -77,9 +81,10 @@
 	width: 15px;
 	height: 15px;
 	position: relative;
-	right: -290px;
-	top:-30px;
+	left:-30px;
+	top:-2px;
 	cursor: pointer;
+	opacity: 0;
 	background-color: transparent;
 }
 
@@ -558,7 +563,7 @@ ul.flower_products li:hover  .discount>p{
 }
 .flower_pic
 {
-	margin-top: 50px;
+	margin-top: 80px;
 
 }
 
@@ -623,13 +628,22 @@ ul.flower_products li:hover  .discount>p{
 
 }
 .um{
-	font: bold 19px/19px arial,sans-serif;
+	font-size: 19px;
+	line-height: 19px;
 	font-family: 'Roboto Light', arial;
 	margin-bottom: 2px;
 }
 .new_price >.um
 {
 	margin-left: 10px;
+}
+.old_price >.um:before
+{
+	content:'';
+	position: absolute;
+	width: 80px;
+	border-bottom:2px solid #ffb7c5;
+	top:50px;
 }
 
 .line {
@@ -638,6 +652,7 @@ ul.flower_products li:hover  .discount>p{
 	float: left;
 	position: absolute;
 	left: calc(50% - 83px);
+	display: none;
 
 }
 .new_price {
@@ -721,7 +736,8 @@ ul.flower_products li:hover  .discount>p{
 }
 .download_icon {
 	position: relative;
-	font: 145px/15px arial,sans-serif;
+	font-size: 140px;
+	line-height: 15px;
 	font-family: 'Roboto Thin', arial;
 	top:290px;
 	text-align: center;
@@ -863,8 +879,7 @@ li.product:hover{
 	font-family: 'Roboto Light', arial;
 }
 .column3_text {
-	float: left;
-	color: #837c7c;
+		color: #837c7c;
 	text-align: left;
 	margin:-30px 45px;
 	font: 14px/20px arial,sans-serif;
@@ -928,7 +943,7 @@ a:hover{
 }
 .dollar_price {
 	text-align: center;
-	margin-top:100px;
+	margin-top:60px;
 	letter-spacing: 2px;
     font: bold 42px/42px arial,sans-serif;
     font-family: 'Roboto Light', arial;
@@ -936,13 +951,24 @@ a:hover{
     vertical-align: middle;
     padding-top: 10px;
     color: #ff7794;
-    margin-bottom: 57px; 
+    margin-bottom: 30px;
 }
 .dollar_price >.um{
 	font:  19px/19px arial,sans-serif;
     font-family: 'Roboto Light', arial;
     margin-bottom: 2px;
+	position: relative;
 }
+.dollar_price >.um:before{
+	content: '';
+	width:50px;
+	position:absolute;
+	bottom:0px;
+	border-top: 2px solid #ffb7c5;
+
+}
+
+
 .dollar_price >.line{
 	    border-top: 2px solid #ffb7c5;
     width: 43px;
@@ -1013,6 +1039,13 @@ a:hover{
 	.choice {
 		margin-right: 10px;
 	}
+	.theme{
+		margin-left: 30px;
+	}
+	.select_theme_wrapp{
+		left: 110px;
+	}
+
 }
 @media all and (max-width:  1280px) {
 	
@@ -1130,14 +1163,15 @@ a:hover{
 	.search_area{
 		width: 240px;
 	}
-	.search_area>input{
+	.search_area input{
 		margin-left: 20px;
 		width: 180px;
 		background: url(../../../images/eflora/search_icon.png) no-repeat 170px;
 	}
 	.go_find {
+		left: 185px;
+		top: -30px;
 
-		right: -190px;
 
 	}
 	ul.flower_products li{
@@ -1303,6 +1337,10 @@ ul.flower_products li:hover .product_wrap{
 		}
 		.question_panel{
 			z-index: 9998;
+			top:0;
+		}
+		.hidden_menu{
+			top:0px;
 		}
 		.theme{
 			display: none;
@@ -1545,3 +1583,39 @@ ul.flower_products li:hover .product_wrap{
 			margin-left: 20px;
 		}
 	}
+
+
+.discount_upper_price {
+	margin-top:30px;
+	position : absolute;
+	text-align: center;
+	width: calc(100% - 80px);
+	display: flex;
+	justify-content: center;
+	color: #a9a9a9;
+}
+.new_price_1{
+	font-size:22px;
+	position: relative;
+}
+.new_price_1 .um {
+	font-size: 14px;
+
+}
+.new_price_1:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top:14px;
+	-webkit-transform: rotate(-9deg); /* Chrome y Safari */
+	-moz-transform: rotate(-9deg); /* Firefox */
+	border-top: 2px solid #ff7794;
+}
+.zero_new_price_1{
+	font-size: 14px;
+	position: relative;
+	top: -6px;
+}
+
+
+

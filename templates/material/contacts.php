@@ -17,12 +17,12 @@
                 <p id="map_mail"><a href="mailto:info.eflora@gmail.com"><?= $this->variables['email_company'] ?></a></p>
             </div>
             <div class="map_fax_phone">
-                <h2>Гор.тел/факс</h2>
+                <h2  class="h2fix" " >Гор.тел/факс</h2>
                 <p> <?= strip_tags($this->variables['phone']) ?>,</p>
                 <p> <?= strip_tags($this->variables['phone_fax']) ?></p>
                 <br>
                 <br>
-                <h2 class="map_contact_skype">Skype</h2>
+                <h2 class="h2fix skype" " class="map_contact_skype">Skype</h2>
                 <p id="map_skype"><a href="skype:<?= $this->variables['skype_company'] ?>?call"><?= $this->variables['skype_company'] ?></a></p>
 
             </div>

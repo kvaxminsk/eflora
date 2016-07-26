@@ -54,7 +54,7 @@
 {
     position: relative;
     top: 0;
-    left: 0;
+    left: 0 !important;
 
     display: block;
 }
@@ -190,7 +190,7 @@ width: 270px;
 
 .slider-nav>.slick-list{
     padding: 0 !important;
-    width: 267px;
+    width: 260px;
     padding-left:50%;
     padding-right:50%;
     position: relative;
@@ -224,7 +224,7 @@ width: 270px;
 } */
 
 .slider-nav{}
-/* 
+/*
 .slick-active, .active {
     background-color: #b54e74;
     color: #fff;

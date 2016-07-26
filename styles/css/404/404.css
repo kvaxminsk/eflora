@@ -75,7 +75,7 @@
 .main_foto{
 	overflow: hidden;
 	height: 886px;
-	background: url(../../images/eflora/404.png) no-repeat;
+	background: url(../../../images/eflora/404.png) no-repeat;
 	background-size: 1920px 900px;
 	background-position: center;
 
@@ -145,7 +145,7 @@
 .search_area{
 	position: relative;
 }
-.search_area>input{
+form>input{
 
 	display: block;
 	margin:0 auto;
@@ -153,7 +153,7 @@
 	border: 1px solid #dcdbdb;
 	border-radius: 20px;
 	width: 220px;
-	background: url(../../images/eflora/search_icon.png) no-repeat 220px;
+	background: url(../../../images/eflora/search_icon.png) no-repeat 220px;
 	padding-left: 20px;
 	height: 42px;
 	background-color: #fff;
@@ -169,13 +169,14 @@
 	top: 15px;
 	margin-left: 95px;
 	cursor: pointer;
+	opacity: 0;
 
 }
-.search_area input:focus,.select_theme:focus {
+form input:focus,.select_theme:focus {
 	border: 1px solid #dcdbdb;
 	outline: none;
 }
-.search_area input:focus{
+form input:focus{
 	border:1px solid #ff8b4e;
 	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
@@ -199,7 +200,7 @@
 	.main_foto{
 		overflow: hidden;
 		height: 886px;
-		background: url(../../images/eflora/404.png) no-repeat;
+		background: url(../../../images/eflora/404.png) no-repeat;
 		background-size: 1630px ;
 		background-position: top center;
 
@@ -255,7 +256,7 @@
 	.main_foto{
 		overflow: hidden;
 		height: 886px;
-		background: url(../../images/eflora/404.png) no-repeat;
+		background: url(../../../images/eflora/404.png) no-repeat;
 		background-size: 1200px 610px;
 		background-position: center top;
 
@@ -327,7 +328,7 @@
 	.main_foto{
 		overflow: hidden;
 		height: 886px;
-		background: url(../../images/eflora/404.png) no-repeat;
+		background: url(../../../images/eflora/404.png) no-repeat;
 		background-size: 1000px 520px;
 		background-position: center top;
 

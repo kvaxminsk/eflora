@@ -11,7 +11,8 @@ class FrontController extends CController
      * массив из модуля переменные
      */
     public $variables = array();
-    
+
+    public $kurs;
     /**
      * Описание сайта, меняется в админке
      */
@@ -49,8 +50,8 @@ class FrontController extends CController
 	{
 		$variables = Variables::getAll();
         $this->variables = $variables;
-        
-        
+        $this->kurs = $this->variables['kurs'];
+
 	}
     
     public function start($meta){

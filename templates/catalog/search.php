@@ -6,7 +6,7 @@
 <div class="list_product">
     <? if ($_GET['query']): ?>
         <h1>Вы искали <span>«<?= $_GET['query'] ?>»</span></h1>
-        <ul>
+        <ul class="flower_products_catalog">
             <?
             $this->widget('SMListView',
                 array(

@@ -10,12 +10,12 @@
 
     <link rel="stylesheet" type="text/css" href="/styles/css/main_style.css"/>
     <link rel="stylesheet" type="text/css" href="/styles/css/404/404.css"/>
-
+    <script> var kurs = <?=$this->kurs?></script>
     <script type="text/javascript" src="/javascript/eflora/jquery-1.12.3.js"></script>
     <!--	<script type="text/javascript" src="/javascript/eflora/slick_item/slick.min.js"></script>-->
     <script type="text/javascript" src="/javascript/eflora/slick/slick.min.js"></script>
 
-
+    <script type="text/javascript" src="javascript/eflora/shop.js"></script>
     <script src="/javascript/eflora/common.js"></script>
 
     <link rel="stylesheet" type="text/css" href="/styles/css/slick/slick.css"/>
@@ -35,8 +35,11 @@
         </div>
         <button class="to_main" onclick="window.location.href = '/'">На главную</button>
         <div class="search_area">
-            <input type="text" placeholder="Поиск...">
-            <div class="go_find"></div>
+            <form method="get"
+                  action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'search')) ?>">
+                <input type="text" name="query" value="<?= $_GET['query'] ?>" id="search" placeholder="Поиск...">
+                <button  class="go_find"></button>
+            </form>
         </div>
 
 
@@ -121,10 +124,11 @@
             </div>
             <div class="reactive_logo">
                 <div class="reactive_logo_wrap">
+                    <a href="http://reactive.by" nofollow>
                     <p>Дизайн и разработка-</p>
                     <div class="logo_picture">
                     </div>
-
+    </a>
                 </div>
 
             </div>

@@ -5,24 +5,32 @@ var lang = {
 	basketText : "",
 }
 var shopProductCount = 0;
-var kurs = 20100;
+
 function updatePage() {
 	var shopArr = getBasketInfo();
 	var shopProductCount = 0;
 	var price_us = 0;
 	var price_br = 0;
 	for(var key in shopArr) {
+		shopProductCount = 0;
 		shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
 		price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
 	}
-	var currency = JSON.parse(localStorage['currency'])
+	shopProductCount = 0;
+	for(var key in shopArr) {
+		shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
+	}
+	var currency = '';
+	if(localStorage['currency']) {
+		currency = JSON.parse(localStorage['currency']);
+	}
 	if(currency != 'us'){
 		currency = 'br';
-		price_br = 20100* price_us;
+		price_br = kurs* price_us;
 		price_br = number_format(price_br, 0, ',', ' ');
 	}
 	else {
-		price_br = 20100* price_us;
+		price_br = kurs* price_us;
 		price_br = number_format(price_br, 0, ',', ' ');
 	}
 
@@ -58,20 +66,25 @@ function updatePage() {
 
 
 		$('#order_list_price_new').html( "<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
-			Math.round(((price_us * kurs / 1000) -  (parseInt(price_us * kurs / 1000)))*100) +"коп</sup>" );
+			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +"коп</sup>" );
 
 		$('#order_list_price_dollar').html(price_us );
 
 		$('#header_price_text_br').text(price_br);
 		$('#header_price_text_us').text(price_us);
 	}
-
+	//console.log('price_us'+price_us);
 }
 function getCountByProductId() {
 	var shopId = getShopId();
 	var shopArr = [];
 	for (var i = 0; i <= shopId.length - 1; i++) {
-		shopArr[i] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		if(localStorage['shop_product_' + shopId[i]]) {
+			shopArr[i] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		}
+		else {
+			continue;
+		}
 	}
 	return shopArr;
 }
@@ -80,7 +93,13 @@ function getBasketInfo() {
 	var shopId = getShopId();
 	var shopArr = [];
 	for (var i = 0; i <= shopId.length - 1; i++) {
-		shopArr[shopId[i]] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		if(localStorage['shop_product_' + shopId[i]]){
+			shopArr[shopId[i]] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		}
+		else {
+			continue;
+		}
+
 	}
 	//console.log(shopArr[3]['count']);
 	return shopArr;

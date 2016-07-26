@@ -13,9 +13,11 @@ $image = image($image, 'resize', '260', false);
         </a>
     </div>
     <div class="text_action">
-        <h1><a href="<?= $data->url ?>"><?= $data->name ?></a></h1>
+        <h2><a href="<?= $data->url ?>"><?= $data->name ?></a></h2>
         <p><?= $data->summary ?></p>
+
     </div>
+
 </div>
 			
 			

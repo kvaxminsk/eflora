@@ -29,7 +29,12 @@ function getBasketInfo() {
 	var shopId = getShopId();
 	var shopArr = [];
 	for (var i = 0; i <= shopId.length - 1; i++) {
-		shopArr[shopId[i]] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		if(localStorage['shop_product_' + shopId[i]]) {
+			shopArr[shopId[i]] = JSON.parse(localStorage['shop_product_' + shopId[i]]);
+		}
+		else {
+			continue;
+		}
 	}
 	return shopArr;
 }

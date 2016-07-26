@@ -5,8 +5,27 @@
 @import url(http://allfont.ru/allfont.css?fonts=exo-20-light);
 @import url(http://allfont.ru/allfont.css?fonts=roboto-condensed);
 
+.upper_block{
+	height: 60px;
+	background-color: #b54e74;
+}
+.upper_block_text{
 
-
+	font: 20px/20px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	width:100%;
+	max-width: 1280px;
+	line-height: 60px;
+	color: #fff;
+	margin: 0 auto;
+	height: 60px;
+	text-align: center;
+}
+.upper_block_text a {
+	text-decoration: none;
+	color: #DCD18C;
+	border-bottom: 1px solid #fff;
+}
 
 .dollar_price {
 	text-align: center;
@@ -1353,7 +1372,7 @@ sup{
 		text-align: left;
 		margin-left: 30px;
 		width: 100%;
-		height: 80px;
+		height: 40px;
 		font: 20px/20px arial,sans-serif;
 		font-family: 'Roboto Regular', arial;
 		color:#fff;
@@ -1468,7 +1487,7 @@ sup{
 	ul.help_list a{
 		margin: 0 auto !important;
 		text-decoration: none;
-		margin-top: 10px !important;
+		margin-top: 0px !important;
 		margin-left:30px !important;
 	}
 
@@ -1821,6 +1840,9 @@ sup{
 }
 
 @media all  and (max-width: 840px){
+	.upper_block{
+		display: none;
+	}
 	.mobile_categoria{
 		display: block;
 		font: italic  27px/27px arial,sans-serif;

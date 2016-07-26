@@ -98,11 +98,7 @@ class FrontCatalogController extends FrontController
         $criteria->addCondition('t.meta_id=' . $meta->id);
 
         $model = Product::model()->find($criteria);
-////        var_dump($model->img);die();
-//        $model->img = $model->img;
-//        $model->views +=1;
-//        $model->update(['views','img']);
-//        $model = Product::model()->find($criteria);
+        Product::model()->updateByPk($model->id,array('views'=> $model->views+=1));
         if ($model->category_id > 0) {
             $brc_category = self::metaCategory($model->category_id);
             $brc_category = array_reverse($brc_category);
@@ -119,12 +115,14 @@ class FrontCatalogController extends FrontController
             );
         }
 
+        $metaCategory = $this->metaCategory($model->category_id);
 
         parent::meta($model, $meta);
 
         $this->render('product-one', array(
             'model' => $model,
             'meta' => $meta,
+            'urlCategory' => $metaCategory[0][url],
         ));
     }
 
@@ -134,9 +132,9 @@ class FrontCatalogController extends FrontController
     public function actionCategory($alias, $meta)
     {
         $this->layout = 'webroot.templates.layout-internal';
-if($meta->id == 243) {
-    $this->stock = true;
-}
+        if($meta->id == 243) {
+            $this->stock = true;
+        }
         $model = Category::model()->find('meta_id=:meta_id', array('meta_id' => $meta->id));
 //        var_dump($model->name);die();
         $brc_category = self::metaCategory($model->id);
@@ -154,8 +152,10 @@ if($meta->id == 243) {
 
 
         $this->render('category', array(
-            'products' => $products,
-            'pages' => $pages,
+//            'products' => $products,
+//            'pages' => $pages,
+            'category' => $model->id,
+            'contentCategory' => $model->content,
         ));
     }
 
@@ -424,22 +424,22 @@ if($meta->id == 243) {
         $count = Product::model()->count($criteria);
 //        var_dump($criteria);
 //die($count);
-        if ($_GET['page_list']) $page_count = $_GET['page_list'];
-        else $page_count = self::PAGE;
-
-        if (!empty($_GET['count'])) {
-            $page_count = $_GET['count'];
-        }
+//        if ($_GET['page_list']) $page_count = $_GET['page_list'];
+//        else $page_count = self::PAGE;
+//
+//        if (!empty($_GET['count'])) {
+//            $page_count = $_GET['count'];
+//        }
 
         $pages = new CPagination($count);
-        $pages->pageSize = $page_count;
+        $pages->pageSize = self::PAGE;
         $pages->applyLimit($criteria);
         $pages->route = $_SERVER['REDIRECT_URL'];
 
 
         $products = new CActiveDataProvider('Product', array(
             'pagination' => array(
-                'pageSize' => $page_count,
+                'pageSize' => $pages->pageSize,
                 'pageVar' => 'page',
             ),
             'criteria' => $criteria,
@@ -450,7 +450,7 @@ if($meta->id == 243) {
 
     public function actionAjaxProducts()
     {
-        $kurs = 20100;
+        $kurs = $this->kurs;
         if (!empty($_GET)) {
 //            $this->layout = '';
             $this->layout = 'webroot.templates.layoutAjax';
@@ -461,6 +461,15 @@ if($meta->id == 243) {
                 $criteria->addCondition('t.stock=\'1\'');
             }
 
+            if($_GET['popular'] && $_GET['type'] == 'ASC') {
+                $criteria->order = "t.views ASC";
+//                die($_GET['type']);
+
+            }
+            elseif($_GET['popular'] && $_GET['type'] == 'DESC') {
+                $criteria->order = "t.views DESC";
+//                die($_GET['type']);
+            }
 
             if($_GET['price'] && $_GET['type'] == 'ASC') {
                 $criteria->order = "t.price ASC";
@@ -471,8 +480,10 @@ if($meta->id == 243) {
                 $criteria->order = "t.price DESC";
 //                die($_GET['type']);
             }
+
+
             if ($_GET['summa']) {
-                if (($_GET['summa'] == 8) ||($_GET['summa'] == 15)||($_GET['summa'] == 30)) {
+                if (($_GET['summa'] == 9) ||($_GET['summa'] == 15)||($_GET['summa'] == 30)) {
                     $criteria->addCondition('t.price <=' . round($_GET['summa'] * 100000/$kurs));
                 }
                 if (($_GET['summa'] == 50) ||($_GET['summa'] == 100)||($_GET['summa'] == 200)) {
@@ -482,7 +493,8 @@ if($meta->id == 243) {
             $count = Product::model()->count($criteria);
 
             $pages = new CPagination($count);
-            $pages->pageSize = 2;
+
+            $pages->pageSize = self::PAGE;
 
 //            die(($_GET));
             if (!empty($_GET['page'])) {
@@ -503,14 +515,17 @@ if($meta->id == 243) {
 //                die();
 //            }
             if (($pageVar*$pages->pageSize - $count) > 1) {
-                die();
+                if($pageVar !=1) {
+                    die();
+                }
+//                die();
             }
             $pages->applyLimit($criteria);
             $pages->route = $_SERVER['REDIRECT_URL'];
-
+//            var_dump($pages->pageSize);
             $products = new CActiveDataProvider('Product', array(
                 'pagination' => array(
-                    'pageSize' => 2,
+                    'pageSize' => $pages->pageSize,
                     'pageVar' => 'page',
                 ),
                 'criteria' => $criteria,
@@ -519,12 +534,14 @@ if($meta->id == 243) {
             if(!$_GET['price']) { $_GET['price']=0;}
             if(!$_GET['type']) { $_GET['type']=0;}
             if(!$_GET['summa']) { $_GET['summa']=0;}
+            if(!$_GET['popular']) { $_GET['popular']=0;}
 
             $this->render('ajax_product', array(
                 'products' => $products,
                 'pages' => $pages,
                 'pagevar' => $pageVar,
                 'price' => $_GET['price'],
+                'popular' => $_GET['views'],
                 'type' => $_GET['type'],
                 'summa' => $_GET['summa'],
             ));

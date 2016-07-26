@@ -5,7 +5,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
         sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
         dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
         s = '',
-        toFixedFix = function(n, prec) {
+        toFixedFix = function (n, prec) {
             var k = Math.pow(10, prec);
             return '' + (Math.round(n * k) / k)
                     .toFixed(prec);
@@ -25,13 +25,12 @@ function number_format(number, decimals, dec_point, thousands_sep) {
     return s.join(dec);
 }
 
-function changeCurrency()
-{
+function changeCurrency() {
     var shopArr = getBasketInfo();
     var shopProductCount = 0;
     var price_us = 0;
     var price_br = 0;
-    for(var key in shopArr) {
+    for (var key in shopArr) {
         shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
         //$().first().text('<p>В корзине</p>');
         //alert(shopArr[key]['id']);
@@ -39,14 +38,17 @@ function changeCurrency()
         $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').find('p').text('В КОРЗИНЕ');
         $('.in_cart[data-productid=' + shopArr[key]['id'] + ']').addClass("style_in_cart");
         price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
-        var currency = JSON.parse(localStorage['currency'])
-        if(currency != 'us'){
+        var currency = '';
+        if (localStorage['currency']) {
+            currency = JSON.parse(localStorage['currency']);
+        }
+        if (currency != 'us') {
             currency = 'br';
-            price_br = 20100* price_us;
+            price_br = kurs * price_us;
             price_br = number_format(price_br, 0, ',', ' ');
         }
         else {
-            price_br = 20100* price_us;
+            price_br = kurs * price_us;
             price_br = number_format(price_br, 0, ',', ' ');
         }
     }
@@ -54,29 +56,41 @@ function changeCurrency()
     $('#header_price_text_br').text(price_br);
     $('#header_price_text_us').text(price_us);
 
-    var currency = JSON.parse(localStorage['currency'])
+    var currency = '';
+    if (localStorage['currency']) {
+        currency = JSON.parse(localStorage['currency']);
+    }
     if (currency == 'us') {
         //alert(currency);
         $('.old_price').hide();
         $('.old_price_1').hide();
+        $('.new_price_2').hide();
         $('.new_price').hide();
         $('.dollar_price').show();
         $('.dollar_price_1').show();
+        $('.dollar_price_2').show();
 
         $('#order_list_price_old').hide();
         $('#order_list_price_new').hide();
         $('#order_list_price_dollar').show();
+        $('#unit_valuta').show();
+        $('.br1').hide();
+        $('.br2').hide();
     }
     else if (currency == 'br') {
         $('.dollar_price').hide();
         $('.dollar_price_1').hide();
+        $('.dollar_price_2').hide();
         $('.old_price_1').show();
+        $('.new_price_2').show();
         $('.old_price').show();
         $('.new_price').show();
 
         $('#order_list_price_old').show();
         $('#order_list_price_new').show();
         $('#order_list_price_dollar').hide();
+        $('.br1').show();
+        $('.br2').show();
     }
 }
 function renderBlockCart() {
@@ -86,7 +100,7 @@ function renderBlockCart() {
     var price_br = 0;
     var id = 0;
     $('.order_list').text('');
-    for(var key in shopArr) {
+    for (var key in shopArr) {
         //shopProductCount = shopProductCount + parseInt(shopArr[key]['count']);
         //price_us = price_us + parseInt(shopArr[key]['price']) * shopProductCount;
         id = parseInt(shopArr[key]['id'])
@@ -108,8 +122,7 @@ function renderBlockCart() {
         $('#header_price_text_br').text(price_br);
         $('#header_price_text_us').text(price_us);
     }
-    else
-    {
+    else {
         $('.baskettext').text(shopProductCount + ' ' + lang.basketText);
         $('#header_price_text_br').text(price_br);
         $('#header_price_text_us').text(price_us);
@@ -117,11 +130,11 @@ function renderBlockCart() {
 }
 
 function renderBlockReviews() {
-    if(localStorage['reviews']) {
+    if (localStorage['reviews']) {
         var reviewsArr = JSON.parse(localStorage['reviews']);
         $('.reviews_product').text('');
         for (var i = reviewsArr.length - 1; i >= 0; i--) {
-            if (i == (reviewsArr.length -4)) {
+            if (i == (reviewsArr.length - 4)) {
                 break;
             }
             $.ajax({
@@ -141,30 +154,59 @@ function renderBlockReviews() {
 
 
 $(document).ready(function () {
-
-    $('.button_continue').on('click', function() {
+    ////******удаляем лишний элемент на главной странице в меню**/
+    var lastElement = $('.slick-dots li').last();
+    lastElement.remove();
+    ///******/
+    $('.button_continue').on('click', function () {
         // alert($('input[name=name_to]').val());
-        $('#name_to').append ($('input[name=name_to]').val());
+        $('#name_to').append($('input[name=name_to]').val());
         // alert($('span #name_to').text);
 
         $('#phone_to').text($('input[name=phone_to]').val());
-        $('#country_to').text($('input[name=country_to]').val());
+        $('#country_to').text($('span[name=country_to]').text());
         $('#email_to').text($('input[name=email_to]').val());
 
         $('#name_from').text($('input[name=name_from]').val());
         $('#phone_from').text($('input[name=phone_from]').val());
-        $('#country_from').text($('input[name=country_from]').val());
-        $('#city_from').text($('input[name=city_from]').val());
+        $('#country_from').text($('span[name=country_from]').text());
+        $('#city_from').text($('span[name=city_from]').text());
         $('#address_from').text($('input[name=address_from]').val());
-        $('#text_from').text($('input[name=text_postcard]').val());
-        $('#method_pay').text($('input[name=radiog_dark]').val());
-        
+        $('#text_postcard').text($('textarea[name=text_postcard]').val());
+        $('#comment_postcard').text($('textarea[name=comment_postcard]').val());
+
+        var methodPay = '';
+        switch ($('input[name=radiog_dark]:checked').val()) {
+            case '1':
+                methodPay = 'Наличные деньги курьеру';
+                break;
+            case '2':
+                methodPay = 'VISA/MasterCard/Белкарт';
+                break;
+            case '3':
+                methodPay = 'Оплата наличными в одном из наших салонов';
+                break;
+            case '4':
+                methodPay = 'WebMoney';
+                break;
+            case '5':
+                methodPay = 'ЕРИП Расчёт';
+                break;
+            case '6':
+                methodPay = 'Оплата по безналичному расчету на наш расчетный счет для юридических лиц';
+                break;
+            case '7':
+                methodPay = 'Яндекс Деньги';
+                break;
+        }
+        ;
+        $('#method_pay').text(methodPay);
     });
     renderBlockCart();
     /// main js
-    if(localStorage['currency']) {
+    if (localStorage['currency']) {
         var currency = JSON.parse(localStorage['currency'])
-        if(currency == 'us'){
+        if (currency == 'us') {
             $('.header_price_icon>.backet_circle>p').text("$");
             $('#points').css('margin-left', '36px');
             $('#header_price_text_us').show();
@@ -186,9 +228,6 @@ $(document).ready(function () {
         $('#header_price_text_us').hide();
         $('#header_price_text_br').show();
     }
-
-
-
 
 
     var window_width = $(window).width() + 17;
@@ -277,9 +316,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
 
         if (window_type == 'tablet' || window_type == "desctop") {
-            if ($(document).scrollTop() >= 80 && $('#question_icon').hasClass('active_menu')) {
+            if ($(document).scrollTop() >= 140 && $('#question_icon').hasClass('active_menu')) {
                 $('#question_icon').css('position', 'fixed');
                 $('#question_icon').css('left', '445px');
+                /*           $('#question_icon').css('top', '-80px');*/
                 $('#question_icon').css('top', '-80px');
             }
             else {
@@ -300,6 +340,7 @@ $(document).ready(function () {
             if (instheightQuestion && $('#question_icon').hasClass('active_menu')) {
                 $(".question_panel").css('position', 'fixed');
                 $(".question_panel").css('z-index', '9999');
+                $(".question_panel").css('top', '0');
             }
             if ($('.mob_list_wrapp').hasClass('show')) {
 
@@ -329,51 +370,44 @@ $(document).ready(function () {
 
             }
         }
-        /*var rolheight = initiallHeightContent();
-         var right_content= $('.right_main_content').width();
-
-         if (!rolheight && window_type== "desctop"){
-         if (($(window).scrollTop()+$(window).height()) >=
-         ($('#header').offset().top + $('#header').height()+ $('.left_main_content').height())){
-         $('.left_main_content').css('position' , 'fixed');
-         $('.left_main_content').css('bottom' , '0');
-         $('.left_main_content').css('left' , right_content);
-
-         if ($(window).scrollTop()+$(window).height()  >= $(".footer").offset().top ){
-         $(".left_main_content").css('position' , 'absolute');
-         $('.left_main_content').css('top' , 'auto');
-         $('.left_main_content').css('bottom' , '0');
 
 
-         }
-         }
-         else{
-         if ($('.left_main_content').offset().top <= $('#header').offset().top + $('#header').height()){
-         $(".left_main_content").css('position' , 'relative');
-         $('.left_main_content').css('left' , '0');
-         }
-         }
+        if (window_type == 'tablet' || window_type == "desctop") {
+            if ($(document).scrollTop() >= 60 && $('#sandwich').hasClass('active_menu')) {
+                $('#menu_selector').css('position', 'fixed');
+                $('#menu_selector').css('left', '365px');
+                /*           $('#question_icon').css('top', '-80px');*/
+                $('#menu_selector').css('top', '0px');
+            }
+            else {
+                $('#menu_selector').css('position', 'absolute');
+                $('#menu_selector').css('left', '0px');
+                $('#menu_selector').css('top', '0px');
+            }
+        }
+
+        if (window_type == 'tablet' || window_type == "mobile") {
+            if (instheightMenu && $('#sandwich').hasClass('active_menu')) {
+                $(".hidden_menu").css('position', 'fixed');
+                $(".hidden_menu").css('z-index', '9999');
+                return;
+            }
 
 
-         }
-         else{
-         ///// here a code left content ( besouce right its a left damn )
-         }*/
+            if (instheightQuestion && $('#question_icon').hasClass('active_menu')) {
+                $(".question_panel").css('position', 'fixed');
+                $(".question_panel").css('z-index', '9999');
+                $(".question_panel").css('top', '0');
+            }
+            if ($('.mob_list_wrapp').hasClass('show')) {
 
-        /*if ($(window).width()+17>480 && $('.tabs_list').find('li').eq(2).attr('class') == 'active' && stop_animate ){
-         if ( ($(window).scrollTop()+$(window).height() ) >( $('.crt_right_main_content' ).offset().top + 55 + $('.tab3').height()+130 ) ) {
-         console.log('wind',$(window).scrollTop()+$(window).height());
-         console.log('hhh', $('.crt_right_main_content' ).offset().top + 55 + $('.tab3').height() );
-         $('.tab3').css('position', 'fixed');
-         $('.tab3').css('width', 'calc(100% - 241px');
-         $('.tab3').css('bottom', '0');
-         if ( $('.tab3').offset().top + $('.tab3').height()+130 >= $('.footer').offset().top ){
-         console.log('44');
-         $('.tab3').css('position', 'relative');
-         $('.tab3').css('bottom', '0');
-         }
-         }
-         }  */
+                $(".slick-dots").css('position', 'fixed');
+                $(".slick-dots").css('z-index', '9999');
+                $(".slick-dots").css('top', '239px');
+                $('.slick-dots').css('padding-top', '0');
+                $('.mobile_list').css('background-color', 'rgba(158, 77,105, 1)');
+            }
+        }
 
 
     });
@@ -388,7 +422,10 @@ $(document).ready(function () {
     }
 
 
-    $('#sandwich').click(function showToogle() {
+    $('#menu_selector').click(function () {
+
+
+        console.log("errror");
 
         if ($('#question_icon').attr('class') == 'active_menu') {
 
@@ -562,6 +599,7 @@ $(document).ready(function () {
         cssEase: 'ease',
         asNavFor: '.slider-nav'
     });
+
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -574,6 +612,8 @@ $(document).ready(function () {
         focusOnSelect: true
 
     });
+
+   /* $('.slick-track').css('left', '0px;');*/
 
 
     $('.slick-dots').children('li').click(function () {
@@ -590,7 +630,7 @@ $(document).ready(function () {
         $('.rb_discribe ').eq(0).text(describe);
         $('#theme_text').text(data);
 
-        $('#theme_text').attr('data-category',$(this).find('span').attr('data-category'));
+        $('#theme_text').attr('data-category', $(this).find('span').attr('data-category'));
 
     })
 
@@ -704,34 +744,68 @@ $(document).ready(function () {
     $(".up_button").click(function () {
         $('body,html').animate({scrollTop: 0}, 800);
     })
-    var category = $('.slick-active span').attr('data-category');
+    //var category = $('.slick-active a').attr('data-category');
+    if ($('.slick-active a').attr('data-category')) {
+        var category = $('.slick-active a').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'category=' + category,
+            url: '/ajax-products',
+            success: function (data) {
+                ;
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+
+
+                changeCurrency();
+
+            }
+        });
+    }
+    else {
+        var category = $('.slick-active-catalog a').attr('data-category');
+        $.ajax({
+            type: 'get',
+            data: 'category=' + category,
+            url: '/ajax-products',
+            success: function (data) {
+                ;
+                //document.write();
+                $('.flower_products').text('');
+                //alert(data);
+                $('.flower_products').append(data);
+                changeCurrency();
+
+            }
+        });
+    }
     //$("div").first()
-    $.ajax({
-        type: 'get',
-        data: 'category=' + category,
-        url: '/ajax-products',
-        success: function (data) {
-            //document.write();
-            $('.flower_products').text('');
-            $('.flower_products').append(data);
 
-
-            changeCurrency();
-
-        }
-    });
 
     $("#dropdown1>li").click(function () {
 
-        category = $(this).attr('data-category');
+        var category = $(this).attr('data-category');
 
-        //$('.slick-dots li').each(function() {
-        //    var attr = $(this).find('span').attr('data-category');
-        //   if( category == attr) {
-        //       $(this).click();
-        //   }
-        //});
 
+        $('.catalog_list ul  li').each(function () {
+            var attr = $(this).find('a').attr('data-category');
+            $(this).removeClass('slick-active-catalog');
+            if (category == attr) {
+                $(this).addClass('slick-active-catalog');
+
+            }
+        });
+
+
+        $('.slick-dots li').each(function () {
+            var attr = $(this).find('span').attr('data-category');
+            if (category == attr) {
+                $(this).click();
+
+            }
+        });
+        $('#theme_filter').click();
 
 
         $.ajax({
@@ -750,7 +824,7 @@ $(document).ready(function () {
     });
 
 
-    $(document).on('click',".in_cart",function (e) {
+    $(document).on('click', ".in_cart", function (e) {
         if ($(this).parent().parent().find('count_product').children('input').val() != '0') {
             $(this).find('p').text('В КОРЗИНЕ');
             $(this).addClass("style_in_cart");
@@ -781,9 +855,10 @@ $(document).ready(function () {
     //	});
     //});
 
-    $(".reason_link").click(function () {
+    $(".reason_link_a").click(function () {
         //alert($(this).attr('data-category'));
         var category = $(this).attr('data-category');
+
         //$(this).text('Загрузка');
         //setTimeout(1000);alert('fff');
         $.ajax({
@@ -830,7 +905,7 @@ $(document).ready(function () {
         showCirclePicture($(this))
     });
 
-    $(document).on('click', '.delete_order' ,function () {
+    $(document).on('click', '.delete_order', function () {
         $(this).parent().parent().addClass('delete');
         $(this).parent().parent().animate({height: '0'}, 300);
         deleteShopId($(this).attr('data-productid'));
@@ -890,13 +965,13 @@ $(document).ready(function () {
 
     });
 /// Это что такое???    а это выбор стран!!!!
-    $('.wrapper-dropdown-2>.dropdown>li').click(function(){
+    $('.wrapper-dropdown-2>.dropdown>li').click(function () {
 
- /*   	/!*if (val == "По цене:"){
-      		return
-    	}*!/
-        alert($(this).text());*/
-    	$(this).parent().parent().find('span').text($(this).text());
+        /*   	/!*if (val == "По цене:"){
+         return
+         }*!/
+         alert($(this).text());*/
+        $(this).parent().parent().find('span').text($(this).text());
     });
 
 
@@ -1109,12 +1184,12 @@ $(document).ready(function () {
         $(".tomorrow_button").removeClass("tomorrow_button_active");
     })
 
-    $(document).on('click',".order_count_increment", function () {
+    $(document).on('click', ".order_count_increment", function () {
 
         var element = $(this).parent().children("input");
         element.val(parseInt(element.val()) + 1);
     });
-    $(document).on('click',".order_count_decrement", function () {
+    $(document).on('click', ".order_count_decrement", function () {
 
         var element = $(this).parent().children("input");
         if (parseInt(element.val()) > 0) {
@@ -1122,8 +1197,77 @@ $(document).ready(function () {
         }
     });
 
+    function IsEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+
     $(".button_continue").click(function () {
         //eere
+        var error = false;
+
+        if ($('input[name = name_to ]').val() == "") {
+
+            $('input[name = name_to ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = email_to ]').val() == "") {
+            if (!IsEmail($('input[name = email_to ]'))) {
+                $('input[name = email_to ]').addClass('error');
+
+                error = true;
+            }
+
+            error = true;
+
+        }
+        if ($('input[name = phone_to ]').val() == "") {
+
+            $('input[name = phone_to ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = phone_from ]').val() == "") {
+
+            $('input[name = phone_from ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = name_from ]').val() == "") {
+
+            $('input[name = name_from ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = address_from ]').val() == "") {
+
+            $('input[name = address_from ]').addClass('error');
+
+            error = true;
+
+        }
+        if ($('input[name = email_from ]').val() == "") {
+            if (!IsEmail($('input[name = email_from ]'))) {
+                $('input[name = email_from ]').addClass('error');
+
+                error = true;
+            }
+
+            error = true;
+
+        }
+        if (error) {
+            $('html, body').animate({scrollTop: $('.cart1_left_contact_block').offset().top + 30}, 1000);
+            return false;
+        }
+
+
         $('.tabs_list li').eq(0).removeClass('active');
         $('.tabs_list li').eq(1).addClass('active');
         $('.tab1').animate({opacity: 0}, 400, function () {
@@ -1136,6 +1280,13 @@ $(document).ready(function () {
         $('.tab2').animate({opacity: 1}, 400);
         $('.order_list_count_wrapper').css('opacity', '1');
         $('html, body').animate({scrollTop: $('.tabs_list').offset().top}, 1000);
+
+        $('.delete_order').hide();
+        $('.order_count_increment').hide();
+        $('.order_count_decrement').hide();
+
+        $('.order_count').attr('readonly', true);
+
     });
 
     $('.submit_button').click(function () {
@@ -1150,7 +1301,7 @@ $(document).ready(function () {
             stop_animate = true;
         });
         $('.tab3').animate({opacity: 1}, 400);
-        $('.order_list_count_wrapper').css('opacity', '0');
+        /* $('.order_list_count_wrapper').css('opacity', '0');*/
     });
 
     $('.return_button').click(function () {
@@ -1163,6 +1314,11 @@ $(document).ready(function () {
         $('.order_list_count_wrapper').css('opacity', '1');
         $('html, body').animate({scrollTop: $('.tabs_list').offset().top}, 1000);
         $('.tab1').animate({opacity: 1}, 400);
+        $('.delete_order').show();
+        $('.order_count_increment').show();
+        $('.order_count_decrement').show();
+        $('.order_count').attr('readonly', false);
+
     });
     $(".add_input_phone").click(function () {
         var tel_input = $(this).parent().find('.cart1_phone_input').eq(0);
@@ -1256,19 +1412,27 @@ $(document).ready(function () {
     })
     $('#dollar').click(function () {
         $('.header_price_icon>.backet_circle>p').text("$");
+
+        $('.order_list_describe hr').css('opacity', '0');
         $('#points').css('margin-left', '36px');
         $('.dollar_price').show();
         $('.dollar_price_1').show();
+        $('.dollar_price_2').show();
+        $('#unit_valuta').css('display', 'inline-block');
 
         $('#header_price_text_us').show();
         $('#header_price_text_br').hide();
         $('.old_price').hide();
         $('.old_price_1').hide();
+        $('.new_price_2').hide();
         $('.new_price').hide();
 
         $('#order_list_price_old').hide();
         $('#order_list_price_new').hide();
         $('#order_list_price_dollar').show();
+        $('#unit_valuta').show();
+        $('.br1').hide();
+        $('.br2').hide();
 
         var currency = 'us';
         localStorage['currency'] = JSON.stringify(currency);
@@ -1276,40 +1440,58 @@ $(document).ready(function () {
 
     $('#unit').click(function () {
         $('.header_price_icon>.backet_circle>p').text("Br");
+        $('.order_list_describe hr').css('opacity', '1');
         $('#points').css('margin-left', '100px');
         $('.dollar_price').hide();
         $('.dollar_price_1').hide();
+        $('.dollar_price_2').hide();
+        $('#unit_valuta').css('display', 'none');
         $('#header_price_text_us').hide();
         $('#header_price_text_br').show();
         $('.old_price').show();
         $('.old_price_1').show();
+        $('.new_price_2').show();
         $('.new_price').show();
 
         $('#order_list_price_old').show();
         $('#order_list_price_new').show();
         $('#order_list_price_dollar').hide();
+        $('.br1').show();
+        $('.br2').show();
         var currency = 'br';
         localStorage['currency'] = JSON.stringify(currency);
     });
+
+    if ($('.header_price_icon>.backet_circle>p').text() == "$") {
+        $('.order_list_describe hr').css('opacity', '1');
+    }
+    else {
+        $('.order_list_describe hr').css('opacity', '1');
+    }
+
 
     $('.header_price_icon').click(function () {
 
         if ($('.header_price_icon>.backet_circle>p').text() == "$") {
             $('.header_price_icon>.backet_circle>p').text("Br");
             $('#points').css('margin-left', '100px');
-
+            $('#unit_valuta').css('display', 'none');
+            $('.order_list_describe hr').css('opacity', '0');
             $('.dollar_price').hide();
             $('.dollar_price_1').hide();
+            $('.dollar_price_2').hide();
             $('#header_price_text_us').hide();
             $('#header_price_text_br').show();
             $('.old_price_1').show();
+            $('.new_price_2').show();
             $('.old_price').show();
             $('.new_price').show();
 
             $('#order_list_price_old').show();
             $('#order_list_price_new').show();
             $('#order_list_price_dollar').hide();
-
+            $('.br1').show();
+            $('.br2').show();
             var currency = 'br';
             localStorage['currency'] = JSON.stringify(currency);
             return;
@@ -1317,59 +1499,116 @@ $(document).ready(function () {
         if ($('.header_price_icon>.backet_circle>p').text() == "Br") {
             $('#points').css('margin-left', '36px');
             $('.header_price_icon>.backet_circle>p').text("$");
+            $('#unit_valuta').css('display', 'inline-block');
+            $('.order_list_describe hr').css('opacity', '1');
 
             $('.dollar_price_1').show();
+            $('.dollar_price_2').show();
             $('.dollar_price').show();
             $('#header_price_text_us').show();
             $('#header_price_text_br').hide();
             $('.old_price_1').hide();
+            $('.new_price_2').hide();
             $('.old_price').hide();
             $('.new_price').hide();
+
 
             $('#order_list_price_old').hide();
             $('#order_list_price_new').hide();
             $('#order_list_price_dollar').show();
+            $('#unit_valuta').show();
+            $('.br1').hide();
+            $('.br2').hide();
 
             var currency = 'us';
             localStorage['currency'] = JSON.stringify(currency);
             return;
         }
     });
+    function changeColorChoiceLink(choiceLink) {
+        $('.choice_link').each(function () {
+            $(this).css('color', '#898787');
+            $(this).css('border-bottom', '1px dotted #898787');
+        });
+        $(choiceLink).css('color', '#ff8b4e');
+        $(choiceLink).css('border-bottom', '1px dotted #ff8b4e');
 
-    $('.choice_link').eq(0).click(function(){
+    }
 
-        $(this).parent().find('img').show();
+    $('.choice_link').eq(0).click(function () {
+
+        changeColorChoiceLink(this);
+
+        $(this).parent().find('.popular').show();
+        $(this).parent().find('.price_link').hide();
         var atr = $(this).parent().find('.popular').attr('src');
         $('.price_link').attr('src', '');
-
-        if (atr == '../../images/eflora/select_icon.png'){
-            atr='../../images/eflora/select_icon1.png';
-            $(this).parent().find('.popular').attr('src', atr);
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
         }
-        else{
-            atr='../../images/eflora/select_icon.png';
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+
+        if (atr == '../../images/eflora/select_icon.png') {
+            atr = '../../images/eflora/select_icon1.png';
             $(this).parent().find('.popular').attr('src', atr);
+
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 + '&category=' + category + "&popular=1&type=DESC" + "&price=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+        }
+        else {
+            atr = '../../images/eflora/select_icon.png';
+            $(this).parent().find('.popular').attr('src', atr);
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 + '&category=' + category + "&popular=1&type=ASC" + "&price=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
         }
 
 
     })
-    $('.choice_link').eq(1).click(function(){
+    $('.choice_link').eq(1).click(function () {
+        changeColorChoiceLink(this);
+
+        $(this).parent().find('.popular').hide();
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
         $('.popular').attr('src', '');
-        var category = $('.slick-active span').attr('data-category');
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
 
-        if (atr == '../../images/eflora/select_icon.png'){
-            atr='../../images/eflora/select_icon1.png';
+        if (atr == '../../images/eflora/select_icon.png') {
+            atr = '../../images/eflora/select_icon1.png';
             $(this).parent().find('.price_link').attr('src', atr);
 
             /*****/
 
-            alert($('.slick-active span').attr('data-category'));
+            //alert($('.slick-active a').attr('data-category'));
             //$("div").first()
             $.ajax({
                 type: 'get',
-                data: 'page=' + 1 +'&category=' + category+"&price=1&type=DESC",
+                data: 'page=' + 1 + '&category=' + category + "&price=1&type=DESC" + "&popular=0",
                 url: '/ajax-products',
                 success: function (data) {
                     //document.write();
@@ -1382,19 +1621,18 @@ $(document).ready(function () {
 
             /****/
         }
-        else{
-            atr='../../images/eflora/select_icon.png';
+        else {
+            atr = '../../images/eflora/select_icon.png';
             $(this).parent().find(".price_link").attr('src', atr);
-
 
 
             /******/
 
-            alert($('.slick-active span').attr('data-category'));
+            //alert($('.slick-active a').attr('data-category'));
             //$("div").first()
             $.ajax({
                 type: 'get',
-                data: 'page=' + 1 +'&category=' + category+"&price=1&type=ASC",
+                data: 'page=' + 1 + '&category=' + category + "&price=1&type=ASC" + "&popular=0",
                 url: '/ajax-products',
                 success: function (data) {
                     //document.write();
@@ -1409,11 +1647,18 @@ $(document).ready(function () {
         }
     })
 
-    $('.choice_link').eq(2).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+    $('.choice_link').eq(2).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
-            data: 'page=' + 1 +'&category=' + category+"&summa=8",
+            data: 'page=' + 1 + '&category=' + category + "&summa=9",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
@@ -1423,11 +1668,18 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(3).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+    $('.choice_link').eq(3).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
-            data: 'page=' + 1 +'&category=' + category+"&summa=15",
+            data: 'page=' + 1 + '&category=' + category + "&summa=15",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
@@ -1437,11 +1689,18 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(4).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+    $('.choice_link').eq(4).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
-            data: 'page=' + 1 +'&category=' + category+"&summa=30",
+            data: 'page=' + 1 + '&category=' + category + "&summa=30",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
@@ -1451,11 +1710,18 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(5).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+    $('.choice_link').eq(5).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
-            data: 'page=' + 1 +'&category=' + category+"&summa=50",
+            data: 'page=' + 1 + '&category=' + category + "&summa=50",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
@@ -1465,11 +1731,18 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(6).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+    $('.choice_link').eq(6).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
-            data: 'page=' + 1 +'&category=' + category+"&summa=100",
+            data: 'page=' + 1 + '&category=' + category + "&summa=100",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
@@ -1479,11 +1752,256 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(7).click(function(){
-        var category = $('.slick-active span').attr('data-category');
+    $('.choice_link').eq(7).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
         $.ajax({
             type: 'get',
-            data: 'page=' + 1 +'&category=' + category+"&summa=200",
+            data: 'page=' + 1 + '&category=' + category + "&summa=200",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link_1').eq(0).click(function () {
+
+        changeColorChoiceLink(this);
+
+        $(this).parent().find('.popular').show();
+        $(this).parent().find('.price_link').hide();
+        var atr = $(this).parent().find('.popular').attr('src');
+        $('.price_link').attr('src', '');
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+
+        if (atr == '../../images/eflora/select_icon.png') {
+            atr = '../../images/eflora/select_icon1.png';
+            $(this).parent().find('.popular').attr('src', atr);
+
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 + '&category=' + category + "&popular=1&type=DESC" + "&price=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+        }
+        else {
+            atr = '../../images/eflora/select_icon.png';
+            $(this).parent().find('.popular').attr('src', atr);
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 + '&category=' + category + "&popular=1&type=ASC" + "&price=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+        }
+
+
+    })
+    $('.choice_link_1').eq(1).click(function () {
+        changeColorChoiceLink(this);
+
+        $(this).parent().find('.popular').hide();
+        $(this).parent().find('.price_link').show();
+        var atr = $(this).parent().find('.price_link').attr('src');
+        $('.popular').attr('src', '');
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+
+        if (atr == '../../images/eflora/select_icon.png') {
+            atr = '../../images/eflora/select_icon1.png';
+            $(this).parent().find('.price_link').attr('src', atr);
+
+            /*****/
+
+            //alert($('.slick-active a').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 + '&category=' + category + "&price=1&type=DESC" + "&popular=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /****/
+        }
+        else {
+            atr = '../../images/eflora/select_icon.png';
+            $(this).parent().find(".price_link").attr('src', atr);
+
+
+            /******/
+
+            //alert($('.slick-active a').attr('data-category'));
+            //$("div").first()
+            $.ajax({
+                type: 'get',
+                data: 'page=' + 1 + '&category=' + category + "&price=1&type=ASC" + "&popular=0",
+                url: '/ajax-products',
+                success: function (data) {
+                    //document.write();
+                    $('.flower_products').text('');
+                    $('.flower_products').append(data);
+                    changeCurrency();
+                }
+            });
+
+
+            /***/
+        }
+    })
+
+    $('.choice_link_1').eq(2).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 + '&category=' + category + "&summa=9",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link_1').eq(3).click(function () {
+        changeColorChoiceLink(this);
+        //alert('fsafs');
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 + '&category=' + category + "&summa=15",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link_1').eq(4).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 + '&category=' + category + "&summa=30",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link_1').eq(5).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 + '&category=' + category + "&summa=50",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link_1').eq(6).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 + '&category=' + category + "&summa=100",
+            url: '/ajax-products',
+            success: function (data) {
+                //document.write();
+                $('.flower_products').text('');
+                $('.flower_products').append(data);
+                changeCurrency();
+            }
+        });
+    });
+    $('.choice_link_1').eq(7).click(function () {
+        changeColorChoiceLink(this);
+
+        if ($('.slick-active a').attr('data-category')) {
+            var category = $('.slick-active a').attr('data-category');
+        }
+        else {
+            var category = $('.slick-active-catalog a').attr('data-category');
+        }
+        $.ajax({
+            type: 'get',
+            data: 'page=' + 1 + '&category=' + category + "&summa=200",
             url: '/ajax-products',
             success: function (data) {
                 //document.write();
@@ -1531,9 +2049,8 @@ function helpmenuShow(left) {
         if ($(window).width() + 17 > 1000) {
             $('#menu_selector').css('position', 'absolute');
             $('#menu_selector').css('left', '0');
+            $('#menu_selector').css('top', '0px');
         }
-
-
     }
     else {
         $('#sandwich').addClass('active_menu');
@@ -1544,8 +2061,9 @@ function helpmenuShow(left) {
         $('.hidden_menu').stop().animate({left: left}, 1000);
 
         if ($(window).width() + 17 > 1000) {
-            $('#menu_selector').css('position', 'fixed');
-            $('#menu_selector').css('left', '365px');
+            /// $('#menu_selector').css('position', 'fixed');
+            //  $('#menu_selector').css('left', '365px');
+            //   $('#menu_selector').css('top', '60px');
         }
 
     }
@@ -1699,5 +2217,78 @@ function enableKeyPress(el) {
 }
 function search() {
     var searchText = $('#search').val();
-    window.location.href = '/search/?query'+searchText;
+    window.location.href = '/search/?query' + searchText;
+}
+function addOrder() {
+    var data = {};
+    data['name_to'] = $('input[name=name_to]').val();
+    data['phone_to'] = $('input[name=phone_to]').val();
+    data['country_to'] = $('span[name=country_to]').text();
+    data['email_to'] = $('input[name=email_to]').val();
+
+    data['name_from'] = $('input[name=name_from]').val();
+    data['phone_from'] = $('input[name=phone_from]').val();
+    data['country_from'] = $('span[name=country_from]').text();
+    data['city_from'] = $('span[name=city_from]').text();
+    data['address_from'] = $('input[name=address_from]').val();
+    data['text_postcard'] = $('textarea[name=text_postcard]').val();
+    data['comment_postcard'] = $('textarea[name=comment_postcard]').val();
+
+    var methodPay = '';
+    switch ($('input[name=radiog_dark]:checked').val()) {
+        case '1':
+            methodPay = 'Наличные деньги курьеру';
+            break;
+        case '2':
+            methodPay = 'VISA/MasterCard/Белкарт';
+            break;
+        case '3':
+            methodPay = 'Оплата наличными в одном из наших салонов';
+            break;
+        case '4':
+            methodPay = 'WebMoney';
+            break;
+        case '5':
+            methodPay = 'ЕРИП Расчёт';
+            break;
+        case '6':
+            methodPay = 'Оплата по безналичному расчету на наш расчетный счет для юридических лиц';
+            break;
+        case '7':
+            methodPay = 'Яндекс Деньги';
+            break;
+    }
+    ;
+
+    var shopArr = getBasketInfo();
+    var shopProductCount = 0;
+    var price_us = 0;
+    var price_br = 0;
+    var products = {};
+    var i = 0;
+    for (var key in shopArr) {
+        products[i] = [shopArr[key]['id'], shopArr[key]['count']];
+        i++;
+    }
+
+    $('#method_pay').text(methodPay);
+
+    data['method_pay'] = methodPay;
+    data['products'] = products;
+    if (localStorage['currency']) {
+        data['currency'] = JSON.parse(localStorage['currency']);
+    }
+
+    data['date_delivery'] = $('.date_delivery').text();
+
+    $.ajax({
+        type: 'post',
+        data: 'data=' + JSON.stringify(data),
+        url: '/ajax-create-order',
+        success: function (data) {
+            alert(data);
+            $('#order_id').text(data);
+            localStorage.clear();
+        }
+    });
 }
