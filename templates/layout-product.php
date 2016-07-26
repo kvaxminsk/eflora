@@ -31,7 +31,7 @@
 <div id="container">
     <div id="header">
         <div id="logo">
-            <a href="/" target="_blank"><img src="/images/eflora/main_logo.png"
+            <a href="http://www.eflora.by"><img src="/images/eflora/main_logo.png"
                                                                 alt="Тут должен быть логотип" class="logo_pic"></a>
 
             <p id="logo_text">
@@ -237,11 +237,10 @@
         </div>
         <div class="reactive_logo">
             <div class="reactive_logo_wrap">
-                <a href="http://reactive.by" nofollow>
                 <p>Дизайн и разработка-</p>
                 <div class="logo_picture">
                 </div>
-</a>
+
             </div>
 
         </div>

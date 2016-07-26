@@ -2,8 +2,8 @@
     <ul class="help_list">
         <? foreach ($menu as $item): ?>
             <? if (!isset($item['children'])): ?>
-                <li>
-                    <a data-menu="<?=$item[id];?>" href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
+                <li class="<?=($_SERVER['REQUEST_URI'] == $item['url']) ? 'active_help_menu':'';?>">
+                    <a href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
                 </li>
             <? endif; ?>
 

@@ -72,7 +72,7 @@
     <?}?>
     <div id="header">
         <div id="logo">
-            <a href="/" target="_blank"><img src="/images/eflora/main_logo.png"
+            <a href="http://www.eflora.by"><img src="/images/eflora/main_logo.png"
                                                                 alt="Тут должен быть логотип" class="logo_pic"></a>
 
             <p id="logo_text">
@@ -262,7 +262,6 @@
                       action="<? $this->widget('MaterialUrl', array('module' => 'catalog', 'action' => 'search')) ?>">
                 <input type="text" name="query" value="<?= $_GET['query'] ?>" id="search" placeholder="Поиск...">
                      <button  class="go_find"></button>
-                    </form>
             </div>
             <div class="left_sidebar">
                 <div class="square">
@@ -300,16 +299,10 @@
 									<span id='criterion_filter_text'>
 									Фильтр</span>
                             <ul class="dropdown " id="dropdown2">
-                                <li class="choice_link_1"><a href=""><i class="icon-user"></i>По популярности</a></li>
-                                <li class="choice_link_1"><a href=""><i class="icon-cog"></i>По цене:</a></li>
-<!--                                <li><a href=""><i class="icon-remove"></i>До 100</a></li>-->
-<!--                                <li><a href=""><i class="icon-remove"></i> До 200</a></li>-->
-                                <li class="choice_link_1 old_price_1"> <a  href="#">До 900 т.</a></li>
-                                <li class="choice_link_1 old_price_1"><a  href="#">До 1.5млн</a></li>
-                                <li class="choice_link_1 old_price_1"><a  href="#">До 3млн</a></li>
-                                <li class="choice_link_1 dollar_price_1"><a  href="#">До 50$</a></li>
-                                <li class="choice_link_1 dollar_price_1"><a  href="#">До 100$</a></li>
-                                <li class="choice_link_1 dollar_price_1"><a  href="#">До 200$</a></li>
+                                <li><a href=""><i class="icon-user"></i>По популярности</a></li>
+                                <li><a href=""><i class="icon-cog"></i>По цене:</a></li>
+                                <li><a href=""><i class="icon-remove"></i>До 100</a></li>
+                                <li><a href=""><i class="icon-remove"></i> До 200</a></li>
                             </ul>
                         </div>
                     </div>
@@ -333,7 +326,7 @@
                     Сортировать по:
                     <a class="choice_link" href="#">Популярности</a><img class="orrange_arrow popular" src="">
                     <a class="choice_link" href="#">Цене</a><img class="orrange_arrow  price_link" src="">
-                    <a class="choice_link old_price_1" href="#">До 900 т.</a>
+                    <a class="choice_link old_price_1" href="#">До 800 т.</a>
                     <a class="choice_link old_price_1" href="#">До 1.5млн</a>
                     <a class="choice_link old_price_1" href="#">До 3млн</a>
                     <a class="choice_link dollar_price_1" href="#">До 50$</a>
@@ -490,11 +483,10 @@
         </div>
         <div class="reactive_logo">
             <div class="reactive_logo_wrap">
-                <a href="http://reactive.by" nofollow>
                 <p>Дизайн и разработка-</p>
                 <div class="logo_picture">
                 </div>
-</a>
+
             </div>
 
         </div>
