@@ -3,7 +3,7 @@
         <? foreach ($menu as $item): ?>
             <? if (!empty($item['children'])): ?>
             <? else: ?>
-                <li>
+                <li class="<?=($_SERVER['REQUEST_URI'] == $item['url']) ? 'active_hidden_menu':'';?>">
                     <a href="<?= $item['url'] ?>"><?= $item['name'] ?></a>
                 </li>
             <? endif; ?>

@@ -101,7 +101,7 @@
 <div id="container">
     <div id="header">
         <div id="logo">
-            <a href="http://www.eflora.by" target="_blank"><img src="/images/eflora/main_logo.png"
+            <a href="http://www.eflora.by"><img src="/images/eflora/main_logo.png"
                                                                 alt="Тут должен быть логотип" class="logo_pic"></a>
 
             <p id="logo_text">
