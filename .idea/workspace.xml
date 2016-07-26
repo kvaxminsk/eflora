@@ -1,8 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="commit&#10;">
+    <list default="true" id="b5d3254f-30ab-4bbc-a01c-de8244992d87" name="Default" comment="commit 2&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/update.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/listview/down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/listview/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/listview/up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/autocomplete/indicator.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/rating/delete.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/rating/star.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/folder-closed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/minus.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/plus.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-black-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-black.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-default-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-default.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-famfamfam-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-famfamfam.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-gray-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-gray.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-red-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/images/treeview-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002838/282-flower2-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002838/282-flower2-medium-223x223.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002838/282-flower2-resize-440x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002838/282-flower2-small-100x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002838/282-flower2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002838/643-cart1-pic1-crop-200x200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002839/173-cart1-pic4-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002839/173-cart1-pic4-medium-223x223.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002839/173-cart1-pic4-resize-1500x986.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002839/173-cart1-pic4-resize-440x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002839/173-cart1-pic4-small-100x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002839/173-cart1-pic4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002840/362-cart1-pic2-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002840/362-cart1-pic2-medium-223x223.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002840/362-cart1-pic2-resize-1500x986.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002840/362-cart1-pic2-resize-440x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002840/362-cart1-pic2-small-100x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002840/362-cart1-pic2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002841/879-cart1-pic3-big-500x500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002841/879-cart1-pic3-medium-223x223.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002841/879-cart1-pic3-resize-1500x986.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002841/879-cart1-pic3-resize-440x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002841/879-cart1-pic3-small-100x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product/002/002841/879-cart1-pic3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/detailview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/jquery.yiigridview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/gridview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/listview/jquery.yiilistview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/97db1002/listview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/autocomplete/jquery.autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.ajaxqueue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.ba-bbq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.ba-bbq.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.bgiframe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.maskedinput.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.maskedinput.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.metadata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.multifile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.rating.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.treeview.async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.treeview.edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.treeview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.yii.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.yiiactiveform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jquery.yiitab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.resizable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.selectable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/css/base/jquery.ui.tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/js/jquery-ui-i18n.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/jui/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/punycode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/punycode.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/rating/jquery.rating.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/treeview/jquery.treeview.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/bd20790d/yiitab/jquery.yiitab.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/c357af97/pager.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout-basket.php" afterPath="$PROJECT_DIR$/templates/layout-basket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout-internal.php" afterPath="$PROJECT_DIR$/templates/layout-internal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.php" afterPath="$PROJECT_DIR$/templates/layout.php" />
     </list>
     <ignored path="eflora.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +142,11 @@
     <favorites_list name="eflora" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MenuBlock.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/protected/components/MenuBlock.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-212">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -37,8 +156,28 @@
       <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="122" column="98" selection-start-line="122" selection-start-column="98" selection-end-line="122" selection-end-column="108" />
+            <state relative-caret-position="259">
+              <caret line="71" column="9" selection-start-line="64" selection-start-column="4" selection-end-line="71" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout-basket.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/layout-basket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout-contacts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/layout-contacts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1581">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,17 +187,33 @@
         <entry file="file://$PROJECT_DIR$/templates/blocks/help-menu.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="99" />
-              <folding />
+              <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
+              <folding>
+                <marker date="1469505211687" expanded="true" signature="22:143" placeholder="..." />
+                <marker date="1469505211687" expanded="true" signature="139:143" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blocks/main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="88" selection-start-line="5" selection-start-column="88" selection-end-line="5" selection-end-column="88" />
+              <caret line="5" column="102" selection-start-line="5" selection-start-column="102" selection-end-line="5" selection-end-column="102" />
+              <folding>
+                <marker date="1469505285552" expanded="true" signature="22:438" placeholder="..." />
+                <marker date="1469505285552" expanded="true" signature="146:389" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GiftBlock.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/protected/components/GiftBlock.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -80,7 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/protected/modules/catalog/models/Product.php" />
         <option value="$PROJECT_DIR$/verstka/itemcart.html" />
         <option value="$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/common.js" />
         <option value="$PROJECT_DIR$/admin/protected/framework/gii/controllers/DefaultController.php" />
@@ -124,13 +278,14 @@
         <option value="$PROJECT_DIR$/templates/catalog/search.php" />
         <option value="$PROJECT_DIR$/templates/catalog/_products.php" />
         <option value="$PROJECT_DIR$/admin/protected/modules/catalog/controllers/FrontCatalogController.php" />
-        <option value="$PROJECT_DIR$/templates/layout-basket.php" />
         <option value="$PROJECT_DIR$/templates/layout-basket2.php" />
         <option value="$PROJECT_DIR$/templates/layout-internal.php" />
         <option value="$PROJECT_DIR$/templates/layout-product.php" />
         <option value="$PROJECT_DIR$/templates/layout.php" />
         <option value="$PROJECT_DIR$/templates/blocks/help-menu.php" />
         <option value="$PROJECT_DIR$/templates/blocks/main.php" />
+        <option value="$PROJECT_DIR$/admin/protected/components/GiftBlock.php" />
+        <option value="$PROJECT_DIR$/templates/layout-basket.php" />
       </list>
     </option>
   </component>
@@ -174,7 +329,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -409,11 +563,28 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testoop" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="836" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="160" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="162" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="836" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -484,6 +655,7 @@
       <workItem from="1468435953427" duration="23000" />
       <workItem from="1469123602235" duration="1085000" />
       <workItem from="1469503532945" duration="1068000" />
+      <workItem from="1469504852922" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="js common&#10;">
       <created>1466498430708</created>
@@ -573,7 +745,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14496000" />
+    <option name="totallyTimeSpent" value="15093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
@@ -581,15 +753,15 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2966226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32700422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32594937" sideWeight="0.50625" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36" sideWeight="0.4780083" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36" sideWeight="0.4780083" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3248" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32700422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -644,7 +816,8 @@
     <MESSAGE value="itemcart fix&#10;" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit&#10;" />
+    <MESSAGE value="commit 2&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 2&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -653,20 +826,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/css/slick_item/slick-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verstka/slick_item/slick.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="210" column="20" selection-start-line="210" selection-start-column="20" selection-end-line="210" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/slick_item/slick.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -945,14 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout-basket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout-basket2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -979,16 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/protected/components/MenuBlock.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="122" column="98" selection-start-line="122" selection-start-column="98" selection-end-line="122" selection-end-column="108" />
           <folding />
         </state>
       </provider>
@@ -996,15 +1139,53 @@
     <entry file="file://$PROJECT_DIR$/templates/blocks/help-menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="99" />
-          <folding />
+          <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
+          <folding>
+            <marker date="1469505211687" expanded="true" signature="22:143" placeholder="..." />
+            <marker date="1469505211687" expanded="true" signature="139:143" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/blocks/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="88" selection-start-line="5" selection-start-column="88" selection-end-line="5" selection-end-column="88" />
+          <caret line="5" column="102" selection-start-line="5" selection-start-column="102" selection-end-line="5" selection-end-column="102" />
+          <folding>
+            <marker date="1469505285552" expanded="true" signature="22:438" placeholder="..." />
+            <marker date="1469505285552" expanded="true" signature="146:389" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/components/GiftBlock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="71" column="9" selection-start-line="64" selection-start-column="4" selection-end-line="71" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout-contacts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1581">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout-basket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -60,7 +60,16 @@
 
 </head>
 <body>
+
 <div id="container">
+    <? if($this->variables['news_flash']) {?>
+    <div class="upper_block">
+        <p class="upper_block_text">
+            <?=$this->variables['news_flash']?>
+
+        </p>
+    </div>
+    <?}?>
     <div id="header">
         <div id="logo">
             <a href="http://www.eflora.by"><img src="/images/eflora/main_logo.png"
