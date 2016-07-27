@@ -1,4 +1,4 @@
-<ul class="cart1_item">
+<ul class="cart1_item" >
 
     <? $i = 0;
     $kurs = $kurs;
@@ -8,7 +8,7 @@
         $image = ($product['img']['path']) ? $product['img']['path'] : '/images/no-photo.gif';
         $image = image($image, 'resize', '1500', '986');
         ?>
-        <li>
+        <li data-productid="<?= $product->id ?>">
             <img src="<?= $image ?>" alt="">
 		<span class="niceCheck" data-productid="<?= $product->id ?>" data-productprice="<?= $product->price ?>">
 			<input type="checkbox" name="cart1_checkbox" class="cart1_checkbox" value="<?= $product->id ?>"/>

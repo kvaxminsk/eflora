@@ -60,7 +60,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
                 'header' => 'Псевдоним',
                 'filter' => '',
                 'value' => function ($data) {
-                    return '<a href="' . $data['url'] . '" target="_blank">' . $data->metatag->alias . '</a>';
+                    return '<a href="' . $data['url'] . '">' . $data->metatag->alias . '</a>';
                 },
                 'htmlOptions' => array('class' => 'textcolumn'),
                 'headerHtmlOptions' => array('class' => 'textcolumn', 'style' => 'width:100px;')

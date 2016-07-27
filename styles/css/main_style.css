@@ -240,7 +240,20 @@ html ,body{
 	.active_help_menu>a{
 		color:#fd904f !important;
 	}
+.visit_hidden_menu{
+		 background-color: #fff;
 
+	 }
+.visit_hidden_menu>a{
+	color:#e9646d !important;
+}
+.visit_help_menu
+{
+	background-color: #fff;
+}
+.visit_help_menu>a{
+	color:#fd904f !important;
+}
 
 
 .hidden_menu_list li>a
@@ -750,7 +763,7 @@ sup{
 	border-top:1px solid #f1ecea;
 	height: 252px;
 	float: left;
-	overflow: hidden;
+
 
 }
 .footer_logo{
@@ -1553,7 +1566,20 @@ sup{
 	.active_help_menu>a{
 		color:#fd904f !important;
 	}
+	.visit_hidden_menu{
+		 background-color: #fff;
 
+	 }
+	.visit_hidden_menu>a{
+		color:#e9646d !important;
+	}
+	.visit_help_menu
+	{
+		background-color: #fff;
+	}
+	.visit_help_menu>a{
+		color:#fd904f !important;
+	}
 	.phone_number{
 		height: 80px;
 	}
@@ -2243,4 +2269,15 @@ sup{
 	#header_backet {
     z-index: 0;
 }
+}
+.footer_img_address {
+	width: 100%;
+	background: url("../../images/eflora/address.png") no-repeat;
+	background-position: center;
+	height: 30px;
+}
+@media  all and (max-width: 1024px){
+	.footer_img_address{
+		display: none;
+	}
 }

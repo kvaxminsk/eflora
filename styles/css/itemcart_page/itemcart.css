@@ -812,9 +812,31 @@ transition: background-color 400ms linear;
 		left: 0;
 		top:0;
 		min-width: 659px;
-		width: 100%;
+		/*width: 100%;*/
 
 	}
+  .under_slider_left_box >.fre {
+		background: url("../../../images/eflora/item-us-pic1.jpg") no-repeat 100% 100%;
+		background-size: cover;
+		background-position: center;
+	  height: 100%;
+	  opacity: 0;
+	  position: absolute;
+	  left: 0;
+	  top:0;
+	 width: 100%;
+  }
+.under_slider_right_box >.fre {
+	background: url("../../../images/eflora/item_us_pic2.png") no-repeat 100% 100%;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+}
 
 }
 .item_left_text_line{
@@ -1403,4 +1425,8 @@ height: 492px !important;
 		margin-left: 20px;
 	}
 }
-
+.pluso-001100100101-04
+{
+	position: absolute !important;
+	display:none !important;
+}

@@ -127,6 +127,7 @@ if($admin[1] == 'admin') {
     $params['components']['urlManager']['rules'] = array(
         '/' => array('admin/index'),
         '/login' => array('admin/login', 'urlSuffix'=>''),
+        '/login-test' => array('admin/logintest',),
         '/logout' => array('admin/logout'),
         '/password' => array('admin/password'),
     );

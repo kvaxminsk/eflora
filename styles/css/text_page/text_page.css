@@ -253,6 +253,13 @@ form {
 	position:relative;
 	float:right;
 }
+form.contact_form{
+	display: block;
+	position: relative;
+	width: 100%;
+
+
+}
 
 .action{
 	margin-top:45px;

@@ -47,7 +47,7 @@
                 <!--					<input type="submit" name="submitMessage" value="отправить">-->
 
                 <h2>ОБРАТНАЯ СВЯЗЬ</h2>
-                <form method="post" enctype="multipart/form-data">
+                <form  class="contact_form" method="post" enctype="multipart/form-data">
                     <input class="name" name="name" type="text" placeholder="Имя и Фамилия" required>
                     <input class="email" name="email" type="email" placeholder="Ваш email" required>
                     <input class="order_number" name="order_number" type="text" placeholder="Номер заказа">

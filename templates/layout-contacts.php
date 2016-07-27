@@ -8,7 +8,7 @@
     <meta name="keywords" content="<?= $this->keywords; ?>"/>
     <script> var kurs = <?=$this->kurs?></script>
     <link rel="stylesheet" type="text/css" href="/styles/css/main_style.css"/>
-    <link rel="stylesheet" type="text/css" href="/styles/css/text_page/text_page.css"/>
+
 
     <script type="text/javascript" src="/javascript/eflora/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="/javascript/eflora/slick/slick.min.js"></script>
@@ -101,7 +101,7 @@
 <div id="container">
     <div id="header">
         <div id="logo">
-            <a href="/" target="_blank"><img src="/images/eflora/main_logo.png"
+            <a href="/"><img src="/images/eflora/main_logo.png"
                                                                 alt="Тут должен быть логотип" class="logo_pic"></a>
 
             <p id="logo_text">
@@ -319,7 +319,9 @@
             <img class="" src="/images/eflora/up_button.png" alt="menu"/>
         </div>
     </div>
+    <div class="footer_img_address"></div>
 </div>
 </div>
+
 </body>
 </html>

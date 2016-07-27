@@ -26,7 +26,7 @@ else {
     $price_discount_us = $product->price;
 }
 ?>
-<li>
+<li data-productid="<?= $product->id ?>">
     <? if ((((int)$product->discount) != 0)) { ?>
         <div class="discount">
             <p>-<?= $product->discount ?>%</p>
@@ -34,8 +34,7 @@ else {
     <? } ?>
     <img src="<?= $imageUrl ?>" alt="">
     <div class="order_list_describe">
-
-        <p class="order_list_title"><a href=""><?= $product->name ?></a></p>
+        <p class="order_list_title"><a href="<?= $product->url ?>"><?= $product->name ?></a></p>
         <p class="order_list_price_old old_price"><sub class="price"> BR </sub> <?= $price_old_discount_br_big ?>
             <sup><?= $price_old_discount_br_kop ?></sup>
         </p>

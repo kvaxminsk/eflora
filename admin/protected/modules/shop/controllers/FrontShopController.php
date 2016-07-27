@@ -52,15 +52,25 @@ class FrontShopController extends FrontController
         foreach($date->products as $product) {
 //            var_dump($product->name);
             $productOrder = Order::model()->loadProduct($product[0]);
+//            Product::model()->getPrimaryKey($product[0]);
+//            var_dump($productOrder);
+//            var_dump(Product::model()->getPrimaryKey($product[0]));
+//            die();
+//            $totalAmout += round($productOrder->price*$product[1]);
+            if($productOrder->discount != 0 ) {
+                $totalAmout += round($productOrder->price*$product[1]- $productOrder->price*$product[1]*$productOrder->discount/100);
+            }
+            else {
+                $totalAmout += round($productOrder->price*$product[1]);
+            }
 
-            $totalAmout += $productOrder->price*$product[1];
-
+//
         }
         if($date->currency == 'us') {
             $totalAmout = $totalAmout;
         }
         elseif ($date->currency == 'br') {
-            $totalAmout = $kurs * $totalAmout;
+            $totalAmout = round($kurs * $totalAmout,2);
         }
 
         $order = new Order();
@@ -92,7 +102,7 @@ class FrontShopController extends FrontController
                 $op = new OrderProducts();
                 $op->order_id = $order_id;
                 $op->product_id = $productOrder->id;
-                $op->price = $productOrder->price;
+                $op->price = $productOrder->price*$product[1]- $productOrder->price*$product[1]*$productOrder->discount/100;
                 $op->count = $product[1];
                 $op->active = 1;
                 $op->save();
@@ -100,21 +110,21 @@ class FrontShopController extends FrontController
         }
         echo $order->id;
 
-//        $email_to = $this->variables['email'];
-//        $email = explode(',', $email_to);
-//        $email_from = $email[0];
-//        if ($email) {
-//            $message = $this->createLetter($order, $products, $totalAmout, true);
-//            $subject = 'Заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
-//            sendEmail($message, $subject, $email_from, $email_to);
-//        }
-//        if (isEmail($date->email_to)) {
-//            $message = $this->createLetter($order, $products, $totalAmout, false);
-//            $subject = 'Ваш заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
-//            sendEmail($message, $subject, $email_from, array($_POST['data']['order']['user_email']));
-//        }
-
-        die();
+        $email_to = $order->email_to;
+        $email = explode(',', $email_to);
+        $email_from = $this->variables['email'] ;
+        if ($email) {
+            $message = $this->createLetter($order, $date->products, $totalAmout, true);
+            $subject = 'Заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
+            sendEmail($message, $subject, $email_from, $email_to);
+        }
+        if (isEmail($date->email_to)) {
+            $message = $this->createLetter($order, $date->products, $totalAmout, false);
+            $subject = 'Ваш заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
+            sendEmail($message, $subject, $email_from, array($_POST['data']['order']['user_email']));
+        }
+//
+//        die();
     }
     public function actionIndex($alias, $meta)
     {
@@ -133,6 +143,7 @@ class FrontShopController extends FrontController
 //            $ids = array_map('trim', $ids);
 //            $ids = array_filter($ids);
 //
+
 //            $products = Order::model()->loadProducts($ids);
 //
 //
@@ -235,17 +246,32 @@ class FrontShopController extends FrontController
 
     public function createLetter($order, $products, $total, $adminflag = true)
     {
+
         $host = str_replace('www.', '', getEnv('HTTP_HOST'));
         $host = 'http://' . $host;
         $text = '';
         $text .= '<p>Заказ № ' . $order->id . 'от ' . date('d.m.Y, H:i', strtotime($order->date)) . '</p>';
         if ($adminflag) {
+            $text .= '<h2>Отправитель:</h2> ' . $order->name_to . '<br>';
             $text .= '<p>';
-            $text .= '<b>Заказчик:</b> ' . $order->user_name . '<br>';
-            $text .= '<b>Телефон:</b> ' . (($order->user_phone != '') ? $order->user_phone : 'Не указано') . '<br>';
-            $text .= '<b>E-mail:</b> ' . (($order->user_email != '') ? $order->user_email : 'Не указано') . '<br>';
+            $text .= '<b>Телефон:</b> ' . (($order->phone_to != '') ? $order->phone_to : 'Не указано') . '<br>';
+            $text .= '<b>Страна:</b> ' . (($order->country_to != '') ? $order->country_to : 'Не указано') . '<br>';
+            $text .= '<b>E-mail:</b> ' . (($order->email_to != '') ? $order->email_to : 'Не указано') . '<br>';
             $text .= '<b>Адрес доставки:</b> ' . (($order->user_address != '') ? $order->user_address : 'Не указано') . '<br>';
+            $text .= '</p>' . '<br>';
+            $text .= '<h2>Получатель:</h2> ' . $order->name_from;
+            $text .= '<p>';
+            $text .= '<b>Телефон:</b> ' . (($order->phone_from != '') ? $order->phone_from : 'Не указано') . '<br>';
+            $text .= '<b>Страна:</b> ' . (($order->country_to != '') ? $order->country_to : 'Не указано') . '<br>';
+            $text .= '<b>Город:</b> ' . (($order->city_from != '') ? $order->city_from : 'Не указано') . '<br>';
+            $text .= '<b>Адрес:</b> ' . (($order->address_from != '') ? $order->address_from : 'Не указано') . '<br>';
+            $text .= '<b>E-mail:</b> ' . (($order->email_to != '') ? $order->email_to : 'Не указано') . '<br>';
+            $text .= '<b>Адрес доставки:</b> ' . (($order->user_address != '') ? $order->user_address : 'Не указано') . '<br>';
+            $text .= '<b>Способ оплаты:</b> ' . (($order->method_pay != '') ? $order->method_pay : 'Не указано') . '<br>';
+            $text .= '<b>Дата доставки:</b> ' . (($order->date_delivery != '') ? $order->date_delivery : 'Не указано') . '<br>';
+
             $text .= '</p>';
+            $text .= (($order->text_postcard != '') ? 'Текст открытки:<hr>' . $order->text_postcard . '<hr>' : '');
             $text .= (($order->user_comment != '') ? 'Комментарий:<hr>' . $order->user_comment . '<hr>' : '');
         }
 
@@ -254,7 +280,6 @@ class FrontShopController extends FrontController
                 <table border="1" cellpadding="5" cellspacing="1">
                     <tr>
                     	<td><b>#</b></td>
-                    	<td><b>Фото</b></td>
                     	<td><b>Наименование</b></td>
                     	<td><b>Цена</b></td>
                     	<td><b>Количество</b></td>
@@ -262,17 +287,19 @@ class FrontShopController extends FrontController
                     </tr>';
         if (!empty($products)) {
             foreach ($products as $i => $pr) {
+
+                $productOrder = Order::model()->loadProduct($pr[0]);
                 $text .= '<tr>';
+
                 $text .= '<td>' . ($i + 1) . '</td>';
-                $text .= '<td>' . (($pr['img']['name']) ? '<img src="' . $host . $pr['img']['big'] . '" alt="" width="100"/>' : '') . '</td>';
-                $text .= '<td>' . $pr['name'] . '</td>';
-                $text .= '<td>' . $pr['shop_price'] . '</td>';
-                $text .= '<td>' . $pr['shop_count'] . '</td>';
-                $text .= '<td>' . $pr['total_price'] . '</td>';
+                $text .= '<td>' . $productOrder->name . '</td>';
+                $text .= '<td>' . round($productOrder->price- $productOrder->price*$productOrder->discount/100) . '</td>';
+                $text .= '<td>' . $pr[1] . '</td>';
+                $text .= '<td>' . round($productOrder->price*$pr[1]- $productOrder->price*$pr[1]*$productOrder->discount/100 ). '</td>';
                 $text .= '</tr>';
             }
             $text .= '<tr>';
-            $text .= '<td colspan="4"></td>';
+            $text .= '<td colspan="3"></td>';
             $text .= '<td>Итого:</td>';
             $text .= '<td>' . $total . '</td>';
             $text .= '</tr>';

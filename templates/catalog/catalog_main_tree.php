@@ -35,11 +35,12 @@ foreach ($categories as $item): ?>
                     rb_title = '<?= trim($item['title_main'] ? $item['title_main'] : $item['name']) ?>';
                     rb_description = '<?= str_replace('\n', '', trim($item['description_main'] ? $item['description_main'] : $item['name'])); ?>';
                     idCategory = "<?=$item['id']?>";
+                    urlCategory = "<?=$item['url']?>";
 
                     break;
             <? endforeach; ?>
             }
-            return '<a class="reason_link_a" href="#" data-category="' + idCategory + '" data-title="' + rb_title + '  " data-description  = "' + rb_description + '"><span  class="reason_link"         >' + title + '</span></a>';
+            return '<a class="reason_link_a" href="#" data-url="' + urlCategory + '" data-category="' + idCategory + '" data-title="' + rb_title + '  " data-description  = "' + rb_description + '"><span  class="reason_link"         >' + title + '</span></a>';
 
         }
     });

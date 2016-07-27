@@ -64,12 +64,18 @@
             $("#datepicker").datepicker({
                 onSelect: function (date) {
                     var date = $(this).val();
-
                     $('.date_delivery').text(date);
+                    $('.now_button').addClass('now_button_disabled');
+                    $('.tomorrow_button').removeClass('tomorrow_button_active');
+
+
+
+
+
                 },
                 showWeek: false,
                 showAnim: "fadeIn",
-                minDate: "0",
+                minDate: "2",
                 dateFormat: "d M yy"
 
             });
@@ -86,7 +92,7 @@
 
     <div id="header">
         <div id="logo">
-            <a href="http://www.eflora.by" target="_blank"><img src="/images/eflora/main_logo.png"
+            <a href="/"><img src="/images/eflora/main_logo.png"
                                                                 alt="Тут должен быть логотип" class="logo_pic"></a>
 
             <p id="logo_text">
@@ -216,14 +222,18 @@
             <div class="total_cost_c1">
                 <p> ИТОГО</p>
                 <div class="order_list_total_describe">
+                   <sub class="br1">BR</sub>
                     <p class="order_list_price_old" id="order_list_price_old">
                     </p>
                     <hr>
+                    <sub class="br2">BR</sub>
                     <p class="order_list_price_new" id="order_list_price_new">
                         <br>
 
                     </p>
+                    <span id="unit_valuta">$</span>
                     <p class="order_list_price_dollar" id="order_list_price_dollar" style="display:none">
+
                         <br>
 
                     </p>
@@ -319,14 +329,14 @@
                         <input type="text" name="phone_to" class="cart1_phone_input"
                                placeholder="Телефон (вместе с кодом)">
                         <!-- <input type="text" name="country" class="cart1_country_input" placeholder= "Страна"> -->
-                        <div id="dropDown" class="wrapper-dropdown-2" tabindex="1"><span name="country_to">Страна</span>
+                        <div id="dropDown" class="wrapper-dropdown-2" tabindex="1"><span name="country_to">Беларусь</span>
                             <ul class="dropdown">
                                 <li>Германия</li>
-                                <li> Франция</li>
-                                <li> Беларусь</li>
+                                <li>Франция</li>
+                                <li>Беларусь</li>
                             </ul>
                         </div>
-                        <input type="email" name="email_to" class="cart1_email_input" placeholder="Электронная почта">
+                        <input type="email" name="email_to" class="cart1_email_input" placeholder="Электронная почта" required>
                         <!--						<div class="add_input_phone">-->
                         <!--							+-->
                         <!--						</div>-->
@@ -342,18 +352,18 @@
                         <input type="text" name="phone_from" class="cart1_phone_input"
                                placeholder="Телефон (вместе с кодом)">
                         <div id="dropDown1" class="wrapper-dropdown-2" tabindex="1"><span
-                                name="country_from">Страна	</span>
+                                name="country_from">Беларусь	</span>
                             <ul class="dropdown">
                                 <li>Германия</li>
                                 <li>Франция</li>
                                 <li>Беларусь</li>
                             </ul>
                         </div>
-                        <div id="dropDown2" class="wrapper-dropdown-2" tabindex="1"><span name="city_from">Город</span>
+                        <div id="dropDown2" class="wrapper-dropdown-2" tabindex="1"><span name="city_from">Минск</span>
                             <ul class="dropdown">
                                 <li>Вилейка</li>
-                                <li>Минск</li>
                                 <li>Молодечно</li>
+                                <li>Минск</li>
                             </ul>
                         </div>
                         <input type="text" name="address_from" class="cart1_address_input" placeholder="Адрес">
@@ -366,14 +376,23 @@
 
                 </div>
                 <div class="cart1_note_block">
-                    <h1>Текст записки</h1>
+                    <h1>Текст открытки</h1>
                     <hr>
                     <!-- <p> Текст открытки и ваш комментарий к заказу</p>
                     <input type="text" name="text_postcard" class="text_postcard">  -->
 
                     <textarea class="text_postcard" name="text_postcard" id="text_postcard" cols="30" rows="3"
                               placeholder="Текст открытки и ваш комментарий к заказу"></textarea>
-                    <p class="interval">интервал времени для доставки, пожелания и т. д.</p>
+                    <p class="interval">пожелания и т. д.</p>
+                </div>
+                <div class="cart1_comments">
+                    <h1>Текст комментария</h1>
+                    <hr>
+                    <!-- <p> Текст открытки и ваш комментарий к заказу</p>
+                    <input type="text" name="text_postcard" class="text_postcard">  -->
+
+                    <textarea class="text_postcard" name="comment_postcard" id="comment_postcard" cols="30" rows="3" placeholder="Текст комментария"></textarea>
+                    <p class="interval">интервал времени для доставки, коментарии, пожелания и т. д.</p>
                 </div>
                 <p> Способы оплаты </p>
                 <div class="way_pay_wrapp">
@@ -383,7 +402,7 @@
                     <input type="radio" name="radiog_dark" id="radio2" value="2" class="css-checkbox"
                            checked="checked"/>
                     <label for="radio2" class="css-label radGroup2">VISA/MasterCard/Белкарт</label><br>
-                    <input type="radio" name="radiog_dark" id="radio3 value=" 3" class="css-checkbox" />
+                    <input type="radio" name="radiog_dark" id="radio3" value=" 3" class="css-checkbox" />
                     <label for="radio3" class="css-label radGroup2">Оплата наличными в одном из наших
                         салонов</label><br>
                     <input type="radio" name="radiog_dark" id="radio4" value="4" class="css-checkbox"/>
@@ -429,9 +448,15 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="tab2_text_note">
-                    <h1>Текст записки</h1>
+                    <h1>Текст открытки</h1>
                     <hr>
-                    <p id="text_from">
+                    <p id="text_postcard_confirm">
+                    </p>
+                </div>
+                <div class="tab2_text_note">
+                    <h1>Текст комментария</h1>
+                    <hr>
+                    <p id="comment_postcard_confirm">
                     </p>
                 </div>
                 <div class="tab2_way_pay">
@@ -443,12 +468,14 @@
                     <button class="return_button">ИЗМЕНИТЬ</button>
                     <button class="submit_button">ПОДТВЕРДИТЬ</button>
                 </div>
+                <script>
 
+                </script>
             </div>
             <div class="tab3">
                 <div class="thanks_for_order">
                     <p> Спасибо что выбрали нашу службу.<br>
-                        Ваш заказ <span>#4444</span> получен </p>
+                        Ваш заказ #<span id="order_id"></span> получен </p>
                 </div>
             </div>
         </div>
@@ -458,7 +485,7 @@
     <div class="footer">
         <div class="footer_logo">
             <div class="footer_logo_describe">
-                <p>Белорусская служба доставки цветов</p>
+                <p><?= $this->variables['header_slogan_rus'] ?></p>
             </div>
         </div>
         <div class="footer_contact_info">
@@ -468,13 +495,13 @@
                     </div>
                     <div class="phones">
                         <p class="fotter_phone">
-                            <span class="code">375 29</span> 335-43-43
+                            <a href="tel:<?= strip_tags($this->variables['phone']) ?>">     <?= $this->variables['phone'] ?> </a>
                         </p>
                         <p class="fotter_phone">
-                            <span class="code">375 29</span> 335-43-43
+                            <a href="tel:<?= strip_tags($this->variables['phone_mts']) ?>">     <?= $this->variables['phone_mts'] ?> </a>
                         </p>
                         <p class="fotter_phone">
-                            <span class="code">375 29</span> 335-43-43
+                            <a href="tel:<?= strip_tags($this->variables['phone_velcom']) ?>">     <?= $this->variables['phone_velcom'] ?> </a>
                         </p>
                     </div>
                 </div>
@@ -486,7 +513,7 @@
                     <div class="adress_info">
                         <p id="our_adress">Наш адрес:</p>
                         <p>
-                            ул. Мележа, 4 к. 5 г. Минск, Беларусь Время работы: 9:00-19:00 без выходных
+                            <?= $this->variables['address'] ?> <?= $this->variables['time_work'] ?>
                         </p>
                     </div>
                 </div>
@@ -495,14 +522,14 @@
                 <div class="col3_wrapp">
                     <div class="shop_icon">
                     </div>
-                    <p><a href="/shops">Наши магазины</a></p>
+                    <p><a href="/shops">Наши магазины </a></p>
                 </div>
 
             </div>
         </div>
         <div class="footer_down_part">
             <div class="text_author">
-                <p>&#169;2006-2016</p>
+                <p>&#169;2006-<?= Date('Y'); ?></p>
                 <p> eFlora.by</p>
                 <p id="t_author_3"> flowers delivery service</p>
             </div>
@@ -529,18 +556,21 @@
             </div>
             <div class="reactive_logo">
                 <div class="reactive_logo_wrap">
+                    <a href="http://reactive.by" nofollow>
                     <p>Дизайн и разработка-</p>
                     <div class="logo_picture">
                     </div>
-
+                        </a>
                 </div>
-
             </div>
             <div class="up_button">
                 <img class="" src="/images/eflora/up_button.png" alt="menu"/>
             </div>
         </div>
+        <div class="footer_img_address"></div>
     </div>
+
 </div>
+
 </body>
 </html>

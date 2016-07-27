@@ -14,6 +14,7 @@
 	outline: none;
 
 }
+input[type="text"]:focus { outline: none; }
 .main_content{
 	max-width: 1920px;
 }

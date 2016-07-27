@@ -196,6 +196,7 @@ $(document).ready(function () {
 	// 	alert($(this).first().val());
 	// });
 	$(".niceCheck").on('click',function () {
+
 		var newProductId = $(this).attr('data-productid');
 		var newProduct = {
 			"id" : newProductId,
@@ -210,9 +211,20 @@ $(document).ready(function () {
 			localStorage['shop_product_' + newProductId] = JSON.stringify(newProduct);
 			addShopId(newProductId);
 			updatePage();
+			renderBlockCart();
 		}
 		else {
+
 			deleteShopId(newProductId);
+			renderBlockCart();
+			var input = $(this).find('input').eq(0);
+			if ($(this).hasClass('active')) {
+			}
+			else {
+				$(this).addClass("active");
+				input.attr("checked", true);
+			}
+
 		}
 	});
 	$('.basket').click(function () {

