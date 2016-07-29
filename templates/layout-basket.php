@@ -222,12 +222,12 @@
             <div class="total_cost_c1">
                 <p> ИТОГО</p>
                 <div class="order_list_total_describe">
-                   <sub class="br1">BR</sub>
-                    <p class="order_list_price_old" id="order_list_price_old">
-                    </p>
-                    <hr>
-                    <sub class="br2">BR</sub>
-                    <p class="order_list_price_new" id="order_list_price_new">
+<!--                   <sub class="br1">BYN</sub>-->
+<!--                    <p class="order_list_price_old" id="order_list_price_old">-->
+<!--                    </p>-->
+<!--                    <hr>-->
+                    <sub class="br2">BYN</sub>
+                    <p class="order_list_price_new total_price-1" id="order_list_price_new">
                         <br>
 
                     </p>

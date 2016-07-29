@@ -59,7 +59,7 @@
 	position: absolute;
 	right: 0;
 	top:0;
-	width:580px;
+	width:600px;
 	height: 90px;
 }
 .choice{
@@ -409,7 +409,7 @@ ul.flower_products_catalog li:hover  .discount>p{
 
 
 .flower {
-	height:250px;
+
 	text-align: center;
 	position: relative;
 
@@ -519,7 +519,15 @@ ul.flower_products_catalog li:hover  .discount>p{
 	font-weight: 200;
 	vertical-align: middle;
 	padding-top: 10px;
-	color:#a9a9a9;
+	color:#ff7794;
+}
+.new_price .um:before{
+	content: '';
+	border:1px solid #ff7794;
+	position:absolute;
+	bottom:0px;
+	width:70px;
+
 }
 
 .flower_discribe p {
@@ -1282,4 +1290,27 @@ ul.flower_products_catalog li:hover  .discount>p{
 	font-size: 14px;
 	position: relative;
 	top: -6px;
+}
+
+.upper_text{
+	width: calc(100% - 366px);
+	float: left;
+}
+.upper_text h1{
+
+	margin: 0;
+	margin-left: 60px;
+	font-family: 'Roboto Regular', arial;
+	font: 34px/34px arial,sans-serif;
+	color: #3f3e3e;
+	padding-top: 20px;
+
+}
+.upper_text div.text{
+	margin-left: 60px;
+	color: #686666;
+	font: 14px/20px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	margin-bottom:40px;
+	margin-top:40px;
 }

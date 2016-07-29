@@ -10,15 +10,15 @@
             <? } ?>
             <img class="flower_pic" src="<?= $data->img['medium'] ?>" alt="<?= $data->name ?>"/>
         </div>
-        <div class="old_price">
-            <span class="um">BR </span>
-            <?= (int)($data->price * $kurs / 1000) ?>
-            <div class="line"></div>
-            <span
-                class="zero_old_price"> <?= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?></span>
-        </div>
+<!--        <div class="old_price">-->
+<!--            <span class="um">BYN </span>-->
+<!--            --><?//= (int)($data->price * $kurs / 1000) ?>
+<!--            <div class="line"></div>-->
+<!--            <span-->
+<!--                class="zero_old_price"> --><?//= (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000)!=0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) :'000' ?><!--</span>-->
+<!--        </div>-->
         <div class="new_price">
-            <span class="um">BR </span>
+            <span class="um">BYN </span>
             <?= (int)($data->price * $kurs / 1000) ?>
             <span
                 class="zero_old_price"><?= round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 10) ?>

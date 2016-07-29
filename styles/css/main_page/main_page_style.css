@@ -355,7 +355,7 @@
 	position: absolute;
 	right: 0;
 	top:0;
-	width:580px;
+	width:610px;
 	height: 90px;
 }
 .choice{
@@ -556,7 +556,7 @@ ul.flower_products li:hover  .discount>p{
 
 
 .flower {
-	height:250px;
+	/*height:250px;*/
 	text-align: center;
 	position: relative;
 
@@ -666,7 +666,17 @@ ul.flower_products li:hover  .discount>p{
 	font-weight: 200;
 	vertical-align: middle;
 	padding-top: 10px;
-	color:#a9a9a9;
+	color:#ff7794;
+}
+.new_price .um:before{
+	content: '';
+	border:1px solid #ff7794;
+	position:absolute;
+	bottom:0px;
+	font-weight: 300;
+	width:70px;
+	font-family: 'Roboto Light', arial;
+
 }
 
 .flower_discribe p {

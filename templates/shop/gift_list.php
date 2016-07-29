@@ -17,14 +17,14 @@
             <!--		--><? //var_dump((int)($product->price * $kurs / 1000));die();?>
 
 
-            <div class="cart1_item_old_price old_price">
-                <span> BR </span> <?= (int)($product->price * $kurs / 1000) ?>
-                <sup><?= (round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000)!=0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) :'000' ?></sup>
-                <hr>
-            </div>
+<!--            <div class="cart1_item_old_price old_price">-->
+<!--                <span> BYN </span> --><?//= (int)($product->price * $kurs / 1000) ?>
+<!--                <sup>--><?//= (round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000)!=0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) :'000' ?><!--</sup>-->
+<!--                <hr>-->
+<!--            </div>-->
 
             <div class="cart1_item_new_price new_price">
-                <span> BR </span> <?= (int)($product->price * $kurs / 10000) ?>
+                <span class="um"> BYN </span> <?= (int)($product->price * $kurs / 10000) ?>
                 <sup><?= round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100) ?>
                     коп</sup>
             </div>
@@ -35,7 +35,7 @@
                 </div>-->
             <!---->
             <div class="dollar_price_cart2 dollar_price">
-                <span class="um"> $</span>
+                <span class="um">$ </span>
                 <?= $product->price ?>
                 <div class="line"></div>
             </div>

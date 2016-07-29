@@ -360,7 +360,14 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 	font-weight: 200;
 	vertical-align: middle;
 	padding-top: 10px;
-	color:#a9a9a9;
+	color:#ff7794;
+}
+.new_price .um:before{
+	content: '';
+	border:1px solid #ff7794;
+	position:absolute;
+	bottom:0px;
+	width:70px;
 }
 
 .flower_discribe p {
@@ -629,7 +636,7 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 	width: 50%;
 	float: left;
 	margin-top: 72px;
-	padding-left: 20px;
+
 }
 .item_selector{ 
 	height: 82px;
@@ -838,7 +845,7 @@ transition: background-color 400ms linear;
 	width: 100%;
 }
 
-}
+
 .item_left_text_line{
 
 	top:50%;

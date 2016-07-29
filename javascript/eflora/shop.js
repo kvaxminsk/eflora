@@ -27,11 +27,11 @@ function updatePage() {
 	if(currency != 'us'){
 		currency = 'br';
 		price_br = kurs* price_us;
-		price_br = number_format(price_br, 0, ',', ' ');
+		//price_br = number_format(price_br, 0, ',', ' ');
 	}
 	else {
 		price_br = kurs* price_us;
-		price_br = number_format(price_br, 0, ',', ' ');
+		//price_br = number_format(price_br, 0, ',', ' ');
 	}
 
 
@@ -48,7 +48,8 @@ function updatePage() {
 
 	if (shopProductCount == 0) {
 		$('.baskettext').text(lang.basketTextNull);
-		$('#header_price_text_br').text(price_br);
+		$('#header_price_text_br').html("<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
+			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +" коп</sup>" );
 		$('#header_price_text_us').text(price_us);
 
 
@@ -66,11 +67,12 @@ function updatePage() {
 
 
 		$('#order_list_price_new').html( "<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
-			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +"коп</sup>" );
+			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +" коп</sup>" );
 
 		$('#order_list_price_dollar').html(price_us );
 
-		$('#header_price_text_br').text(price_br);
+		$('#header_price_text_br').html("<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
+			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +" коп</sup>" );
 		$('#header_price_text_us').text(price_us);
 	}
 	//console.log('price_us'+price_us);

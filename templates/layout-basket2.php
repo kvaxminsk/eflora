@@ -228,10 +228,10 @@
                     <img src="/images/eflora/flower2.png" alt="">
                     <div class="order_list_describe">
                         <p class="order_list_title"><a href="">«25 тюльпанов жел.»</a></p>
-                        <p class="order_list_price_old"><sub> BR </sub> 116 <sup>000</sup>
+                        <p class="order_list_price_old"><sub> BYN </sub> 116 <sup>000</sup>
                         </p>
                         <hr>
-                        <p class="order_list_price_new"><sub> BR </sub> 11 <sup>16 коп.</sup>
+                        <p class="order_list_price_new"><sub> BYN </sub> 11 <sup>16 коп.</sup>
                         </p>
 
                     </div>
@@ -251,10 +251,10 @@
                     <img src="/images/eflora/flower1.png" alt="">
                     <div class="order_list_describe">
                         <p class="order_list_title"><a href="">«25 тюльпанов жел.»</a></p>
-                        <!-- <p class="order_list_price_old"> <sub> BR </sub> 116 <sup>000</sup>
+                        <!-- <p class="order_list_price_old"> <sub> BYN </sub> 116 <sup>000</sup>
                         </p>
                         <hr>
-                        <p class="order_list_price_new"> <sub> BR </sub> 11 <sup>16 коп.</sup>
+                        <p class="order_list_price_new"> <sub> BYN </sub> 11 <sup>16 коп.</sup>
                         </p> -->
                         <div class="dollar_price_cart">
                             <span class="um">$ </span>
@@ -279,10 +279,10 @@
                     <img src="/images/eflora/flower6.png" alt="">
                     <div class="order_list_describe">
                         <p class="order_list_title"><a href="">«25 тюльпанов жел.»</a></p>
-                        <p class="order_list_price_old"><sub> BR </sub> 116 <sup>000</sup>
+                        <p class="order_list_price_old"><sub> BYN </sub> 116 <sup>000</sup>
                         </p>
                         <hr>
-                        <p class="order_list_price_new"><sub> BR </sub> 11 <sup>16 коп.</sup>
+                        <p class="order_list_price_new"><sub> BYN </sub> 11 <sup>16 коп.</sup>
                         </p>
 
                     </div>
@@ -302,10 +302,10 @@
             <div class="total_cost_c1">
                 <p> ИТОГО</p>
                 <div class="order_list_total_describe">
-                    <p class="order_list_price_old"><sub> BR </sub> 1 256 <sup>000</sup>
+                    <p class="order_list_price_old"><sub> BYN </sub> 1 256 <sup>000</sup>
                     </p>
                     <hr>
-                    <p class="order_list_price_new"><sub> BR </sub> 11 <sup>16 коп.</sup>
+                    <p class="order_list_price_new"><sub> BYN </sub> 11 <sup>16 коп.</sup>
                         <br>
 
                     </p>
@@ -349,11 +349,11 @@
 										</span>
                         <p> Конфеты Rafaello </p>
                         <p class="cart1_item_old_price">
-                            <sub> BR </sub> 116 <sup>000</sup>
+                            <sub> BYN </sub> 116 <sup>000</sup>
                         </p>
                         <hr>
                         <p class="cart1_item_new_price">
-                            <sub> BR </sub> 11 <sup>16 коп</sup>
+                            <sub> BYN </sub> 11 <sup>16 коп</sup>
                         </p>
 
                     </li>
@@ -362,11 +362,11 @@
                                                        class="cart1_checkbox"/></span>
                         <p> Международная доставка </p>
                         <p class="cart1_item_old_price">
-                            <sub> BR </sub> 116 <sup>000</sup>
+                            <sub> BYN </sub> 116 <sup>000</sup>
                         </p>
                         <hr>
                         <p class="cart1_item_new_price">
-                            <sub> BR </sub> 11 <sup>16 коп</sup>
+                            <sub> BYN </sub> 11 <sup>16 коп</sup>
                         </p>
 
                     </li>
@@ -375,11 +375,11 @@
                                                        class="cart1_checkbox"/></span>
                         <p> Медвежонок Бэтти </p>
                         <!-- <p class="cart1_item_old_price">
-                            <sub> BR </sub> 116 <sup>000</sup>
+                            <sub> BYN </sub> 116 <sup>000</sup>
                         </p>
                         <hr>
                         <p class="cart1_item_new_price">
-                            <sub> BR </sub> 11 <sup>16 коп</sup>
+                            <sub> BYN </sub> 11 <sup>16 коп</sup>
                         </p> -->
                         <div class="dollar_price_cart2">
                             <span class="um"> $</span>
@@ -396,11 +396,11 @@
                                                        class="cart1_checkbox"/></span>
                         <p> 7 шаров (в Минске) </p>
                         <p class="cart1_item_old_price">
-                            <sub> BR </sub> 116 <sup>000</sup>
+                            <sub> BYN </sub> 116 <sup>000</sup>
                         </p>
                         <hr>
                         <p class="cart1_item_new_price">
-                            <sub> BR </sub> 11 <sup>16 коп</sup>
+                            <sub> BYN </sub> 11 <sup>16 коп</sup>
                         </p>
                     </li>
                 </ul>

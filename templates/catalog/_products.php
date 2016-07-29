@@ -30,7 +30,7 @@ else {
             <? if ($data->discount > 0) { ?>
                 <div class="discount_upper_price new_price_2">
                     <div class="new_price_1">
-                        <span class="um">BR </span>
+                        <span class="um">BYN </span>
                         <?=$price_old_br?>
                         <div class="line"></div>
                         <span   class="zero_new_price_1"> <?=$price_old_br_kop?>
@@ -50,22 +50,22 @@ else {
             <a href="<?= $data->url ?>"><img class="flower_pic" src="<?= $data->img['medium'] ?>"
                                              alt="<?= $data->name ?>"/></a>
         </div>
-        <div class="old_price">
-            <span class="um">BR </span>
-            <?=$price_old_discount_br_big  ?>
-            <div class="line"></div>
-            <span
-                class="zero_old_price"> <?= $price_old_discount_br_kop;//(round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000' ?></span>
-        </div>
+<!--        <div class="old_price">-->
+<!--            <span class="um">BYN </span>-->
+<!--            --><?//=$price_old_discount_br_big  ?>
+<!--            <div class="line"></div>-->
+<!--            <span-->
+<!--                class="zero_old_price"> --><?//= $price_old_discount_br_kop;//(round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000' ?><!--</span>-->
+<!--        </div>-->
         <div class="new_price">
-            <span class="um">BR </span>
+            <span class="um">BYN </span>
             <?= $price_new_discount_br_big ?>
             <span
                 class="zero_old_price"><?= $price_new_discount_br_kop//round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100) ?>
                 коп</span>
         </div>
         <div class="dollar_price">
-            <span class="um"> $</span>
+            <span class="um">$ </span>
             <?= $price_discount_us ?>
             <div class="line"></div>
         </div>

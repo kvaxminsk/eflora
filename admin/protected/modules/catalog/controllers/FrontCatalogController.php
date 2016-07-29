@@ -155,6 +155,7 @@ class FrontCatalogController extends FrontController
 //            'products' => $products,
 //            'pages' => $pages,
             'category' => $model->id,
+            'categoryModel' => $model,
             'contentCategory' => $model->content,
         ));
     }

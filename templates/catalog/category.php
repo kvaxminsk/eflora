@@ -1,3 +1,12 @@
+<? if(!empty($categoryModel->title_main)) {?>
+<div class="upper_text">
+           <h1><?=$categoryModel->title_main;?></h1>
+    <div class="text">
+        <?=$categoryModel->description_main;?>
+    </div>
+
+</div>
+<?}?>
 <div class="under_slider">
     <div class="mobile_categoria">
         Акции
@@ -12,9 +21,9 @@
                     <li class="choice_link_1"><a href=""><i class="icon-cog"></i>По цене:</a></li>
                     <!--                                <li><a href=""><i class="icon-remove"></i>До 100</a></li>-->
                     <!--                                <li><a href=""><i class="icon-remove"></i> До 200</a></li>-->
-                    <li class="choice_link_1 old_price_1"> <a  href="#">До 900 т.</a></li>
-                    <li class="choice_link_1 old_price_1"><a  href="#">До 1.5млн</a></li>
-                    <li class="choice_link_1 old_price_1"><a  href="#">До 3млн</a></li>
+                    <li class="choice_link_1 old_price_1"> <a  href="#">До 80 руб.</a></li>
+                    <li class="choice_link_1 old_price_1"><a  href="#">До 150 руб</a></li>
+                    <li class="choice_link_1 old_price_1"><a  href="#">До 300 руб</a></li>
                     <li class="choice_link_1 dollar_price_1"><a  href="#">До 50$</a></li>
                     <li class="choice_link_1 dollar_price_1"><a  href="#">До 100$</a></li>
                     <li class="choice_link_1 dollar_price_1"><a  href="#">До 200$</a></li>
@@ -34,9 +43,9 @@
         Сортировать по:
         <a class="choice_link" href="#">Популярности</a><img class="orrange_arrow popular" src="">
         <a class="choice_link" href="#">Цене</a><img class="orrange_arrow  price_link" src="">
-        <a class="choice_link old_price_1" href="#">До 800 т.</a>
-        <a class="choice_link old_price_1" href="#">До 1.5млн</a>
-        <a class="choice_link old_price_1" href="#">До 3млн</a>
+        <a class="choice_link old_price_1" href="#">До 80 руб</a>
+        <a class="choice_link old_price_1" href="#">До 150 руб</a>
+        <a class="choice_link old_price_1" href="#">До 300 руб</a>
         <a class="choice_link dollar_price_1" href="#">До 50$</a>
         <a class="choice_link dollar_price_1" href="#">До 100$</a>
         <a class="choice_link dollar_price_1" href="#">До 200$</a>

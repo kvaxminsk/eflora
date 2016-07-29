@@ -34,7 +34,7 @@ if ($product->discount > 0) {
                     <? if ((((int)$product->discount) != 0)) { ?>
                         <div class="discount_upper_price new_price_2">
                             <div class="new_price_1">
-                                <span class="um">BR </span>
+                                <span class="um">BYN </span>
                                 <?= $price_old_br ?>
 
                         <span   class="zero_new_price_1"> <?=$price_old_br_kop ?>
@@ -54,15 +54,15 @@ if ($product->discount > 0) {
 
                     <img class="flower_pic" src="<?= $imageUrl ?>" alt="<?= $product->name ?>"/>
                 </div>
-                <div class="old_price">
-                    <span class="um">BR </span>
-                    <?= $price_old_discount_br_big ?>
-                    <div class="line"></div>
-                    <span
-                        class="zero_old_price"><?= $price_old_discount_br_kop//(round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000)!=0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) :'000' ?></span>
-                </div>
+<!--                <div class="old_price">-->
+<!--                    <span class="um">BYN </span>-->
+<!--                    --><?//= $price_old_discount_br_big ?>
+<!--                    <div class="line"></div>-->
+<!--                    <span-->
+<!--                        class="zero_old_price">--><?//= $price_old_discount_br_kop//(round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000)!=0) ? round(($product->price * $kurs / 1000 - ((int)($product->price * $kurs / 1000))) * 1000) :'000' ?><!--</span>-->
+<!--                </div>-->
                 <div class="new_price">
-                    <span class="um">BR </span>
+                    <span class="um">BYN </span>
                     <?= $price_new_discount_br_big ?>
                     <span
                         class="zero_old_price"><?= $price_new_discount_br_kop//round(($product->price * $kurs / 10000 - ((int)($product->price * $kurs / 10000))) * 100) ?>

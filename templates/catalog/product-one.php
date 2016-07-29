@@ -205,7 +205,7 @@ if ($model->discount > 0) {
             <? if ($model->discount > 0) { ?>
                 <div class="discount_upper_price_2 new_price_2">
                     <div class="new_price_1">
-                        <span class="um">BR </span>
+                        <span class="um">BYN </span>
                         <?= $price_old_br ?>
 
                         <span
@@ -220,16 +220,16 @@ if ($model->discount > 0) {
                     </div>
                 </div>
             <? } ?>
-            <div class="old_price">
-                <span class="um">BR </span>
-                <?= $price_old_discount_br_big ?>
-                <div class="line"></div>
-                <span
-                    class="zero_old_price"> <?= $price_old_discount_br_kop// (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000)!=0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) :'000'  ?></span>
-            </div>
+<!--            <div class="old_price">-->
+<!--                <span class="um">BYN </span>-->
+<!--                --><?//= $price_old_discount_br_big ?>
+<!--                <div class="line"></div>-->
+<!--                <span-->
+<!--                    class="zero_old_price"> --><?//= $price_old_discount_br_kop// (round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000)!=0) ? round(($model->price * $kurs / 1000 - ((int)($model->price * $kurs / 1000))) * 1000) :'000'  ?><!--</span>-->
+<!--            </div>-->
 
             <div class="new_price">
-                <span class="um">BR </span>
+                <span class="um">BYN </span>
                 <?= $price_new_discount_br_big ?>
                 <span
                     class="zero_old_price"><?= $price_new_discount_br_kop// round(($model->price * $kurs / 10000 - ((int)($model->price * $kurs / 10000))) * 100)  ?>
@@ -237,7 +237,7 @@ if ($model->discount > 0) {
             </div>
             <div class="dollar_price">
                 <span class="um"> </span>
-                $<?= $price_discount_us ?>
+                $ <?= $price_discount_us ?>
             </div>
             <div class="clearfix" style="clear:both"></div>
         </div>

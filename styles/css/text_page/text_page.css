@@ -9,6 +9,8 @@ ul.pagination a li{
 	color: #686666;
 	font-family: Roboto Light;
 	font-size: 14px;
+	margin-left:4px;
+	margin-right: 4px;
 }
 ul.pagination > li{
 	list-style: none;

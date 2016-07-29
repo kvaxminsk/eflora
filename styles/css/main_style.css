@@ -1181,7 +1181,7 @@ sup{
 .header_price_text{
 	font-size: 22px;
 	text-align: center;
-	margin-top:25px;
+	margin-top:20px;
 }
 #dollar, #delimeter, #unit{
 	font-size: 22px;
@@ -2280,4 +2280,13 @@ sup{
 	.footer_img_address{
 		display: none;
 	}
+}
+#header_price_text_br sup{
+	color: #ff6267;
+	top: 6px;
+	left: 9px;
+	font-size: 16px;
+}
+#header_price_text_br sub{
+	font-size: 25px;
 }

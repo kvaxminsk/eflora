@@ -245,9 +245,13 @@ class Order extends CActiveRecord
     {
         $criteria = new CDbCriteria;
         $criteria->addCondition('t.active=1');
-        $criteria->addCondition('t.date=' . date('Y-m-d'));
+        $criteria->addCondition('t.date LIKE :test','AND');
+        $criteria->params=array(
+            ':test'=>'%' .  date('Y-m-d') . '%',
+        );
 //		var_dump(Order::model()->findAll($criteria));die();
         $count = Order::model()->count($criteria);
+//        var_dump(date('Y-m-d'));
         return $count;
     }
 
@@ -255,8 +259,17 @@ class Order extends CActiveRecord
     {
         $criteria = new CDbCriteria;
         $criteria->addCondition('t.active=1');
-        $criteria->addCondition('t.date=' . date("Y-m-d", time() - (60 * 60 * 24)));
+//        $criteria->addCondition('t.date LIKE `%' .  . '%`');
+//        $criteria->addCondition('t.date=' . date("Y-m-d", time() - (60 * 60 * 24)));
+        $criteria->addCondition('t.date LIKE :test','AND');
+        $criteria->params=array(
+            ':test'=>'%' . date("Y-m-d", time() - (60 * 60 * 24)) . '%',
+        );
         $count = Order::model()->count($criteria);
+//        var_dump($count);
+//        var_dump(date("Y-m-d", time()));
+//        var_dump(date("Y-m-d", time() - (60 * 60 * 24)));
+//        die();
         return $count;
     }
 

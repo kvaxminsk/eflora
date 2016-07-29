@@ -8,7 +8,7 @@ Yii::setPathOfAlias('frontend', $frontend);
 $admin = explode('/', $_SERVER['REQUEST_URI']);
 $params = array(
     'basePath' => __DIR__ . DS . '..',
-    
+
     'name' => 'Reactive',
     
     'preload' => array('log'),
@@ -94,18 +94,33 @@ $params = array(
 			'password' => '',
 			'charset' => 'utf8',
 			'tablePrefix' => 'sm_',
+			// включает отображение sql запросов.
+			'enableProfiling'=>true,
+			'enableParamLogging' => true,
 		),  
 
 		'errorHandler' => array(
 			'errorAction' => 'admin/error',
 		),
+//		'log'=>array(
+//			'class' => 'CLogRouter',
+//			'routes' => array(
+//				array(
+//					'class'=>'CFileLogRoute',
+//					'levels'=>'error, warning',
+//				),
+//			),
+//		),
 		'log'=>array(
-			'class' => 'CLogRouter',
-			'routes' => array(
-				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
-				),		
+			'class'=>'CLogRouter',
+			'routes'=>array(
+        array(
+			// направляем результаты профайлинга в ProfileLogRoute (отображается
+			// внизу страницы)
+			'class'=>'CProfileLogRoute',
+			'levels'=>'profile',
+			'enabled'=>true,
+				),
 			),
 		),
 		'ih' => array(

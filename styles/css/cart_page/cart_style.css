@@ -154,11 +154,13 @@ p.order_list_title>a{
 
 
 .order_list_price_new{
-	color: #b7b6b6;
-	margin-top: -5px;
+	color:#ff7794;
+	margin-top: 10px;
 	font:  25px/25px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 }
+
+
 .order_list_price_new>sub{
 	font-size: 14px;
 	position: relative;
@@ -168,9 +170,24 @@ p.order_list_title>a{
 .order_list_price_new>sup{
 	font-size: 14px;
 	font-family: 'Roboto Regular', arial;
-	color: #b7b6b6;
+	left:6px;
+	color:#ff7794;
 
 }
+.order_list_price_new > sub:before{
+	content: '';
+	border:1px solid #ff7794;
+	position:absolute;
+	bottom:0px;
+	width:40px;
+
+}
+.total_price-1 sub:before{
+	border:none;
+}
+
+
+
 .order_list_count_wrapper
 {
 	width: calc(100% - 285px);
@@ -451,23 +468,32 @@ ul.cart1_item>li>hr{
 ul.cart1_item>li>.cart1_item_new_price{
 	text-align: center;
 	margin-top:0px;
-	color: #a8a8a8;
+	color:#ff7794;
 	font:  42px/42px arial,sans-serif ;
 	font-family: 'Roboto Light', arial;
 	margin-left: 7px;
 	margin-bottom: 40px;
 }
+.new_price .um:before{
+	content: '';
+	border:1px solid #ff7794;
+	position:absolute;
+	bottom:0px;
+	width:70px;
+
+}
+
 ul.cart1_item>li>.cart1_item_new_price>span{
 	font-size: 24px;
 	position: relative;
-	top:-9px;
+	top:0px;
 }
 ul.cart1_item>li>.cart1_item_new_price>sup{
 	font-size: 24px;
-	color: #a8a8a8;
 	font-family: 'Roboto Regular', arial;
 	position: relative;
 	left:5px;
+	color:#ff7794;
 }
 
 .crt_right_main_content>.tab1>.date_delivery_wrapp>p.date_delivery{
@@ -1366,9 +1392,18 @@ sub.br2
 	font-size: 14px;
 	margin-top: 12px;
 	position: absolute;
-	left: -18px;
-	color:#b7b6b6;
+	left: -25px;
+	color:#ff7794;
 }
+sub.br2:before{
+	content: '';
+	border:1px solid #ff7794;
+	position:absolute;
+	bottom:0px;
+	width:40px;
+
+}
+
 .order_list_total_describe> p > sub{
 	margin-top: 10px;
 	font: 25px/25px arial,sans-serif;

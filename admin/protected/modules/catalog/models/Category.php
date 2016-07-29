@@ -22,7 +22,7 @@ class Category extends Back
             array('name', 'required'), //
             array('parent_id, active, order, is_main', 'numerical', 'integerOnly' => true),
 
-            array('id, summary,title_main,description_main,content, img', 'safe'),
+            array('id, summary,title_main,description_main,title_catalog,description_catalog,content, img', 'safe'),
         );
     }
 
@@ -89,6 +89,8 @@ class Category extends Back
             'active' => 'Отображать на сайте',
             'title_main' => 'название для главной страницы',
             'description_main' => 'Описание для главной страницы',
+            'title_catalog' => 'название для страницы каталога',
+            'description_catalog' => 'Описание для страницы каталога',
             'content' => 'Seo текст для страницы каталог',
             'is_main' => 'Отображать на главной',
             'summary' => 'Описание',

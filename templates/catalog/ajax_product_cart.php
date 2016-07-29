@@ -35,11 +35,11 @@ else {
     <img src="<?= $imageUrl ?>" alt="">
     <div class="order_list_describe">
         <p class="order_list_title"><a href="<?= $product->url ?>"><?= $product->name ?></a></p>
-        <p class="order_list_price_old old_price"><sub class="price"> BR </sub> <?= $price_old_discount_br_big ?>
-            <sup><?= $price_old_discount_br_kop ?></sup>
-        </p>
+<!--        <p class="order_list_price_old old_price"><sub class="price"> BYN </sub> --><?//= $price_old_discount_br_big ?>
+<!--            <sup>--><?//= $price_old_discount_br_kop ?><!--</sup>-->
+<!--        </p>-->
         <hr>
-        <p class="order_list_price_new new_price"><sub> BR </sub> <?= $price_new_discount_br_big ?>
+        <p class="order_list_price_new new_price"><sub> BYN </sub> <?= $price_new_discount_br_big ?>
             <sup><?= $price_new_discount_br_kop ?>
                 коп.</sup>
         </p>
