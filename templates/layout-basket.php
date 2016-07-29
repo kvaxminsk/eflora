@@ -473,9 +473,8 @@
                 </script>
             </div>
             <div class="tab3">
-                <div class="thanks_for_order">
-                    <p> Спасибо что выбрали нашу службу.<br>
-                        Ваш заказ #<span id="order_id"></span> получен </p>
+                <div class="thanks_for_order" id="thanks_for_order">
+
                 </div>
             </div>
         </div>

@@ -1295,67 +1295,67 @@ $(document).ready(function () {
 
     $(".button_continue").click(function () {
         //eere
-        var error = false;
-
-        if ($('input[name = name_to ]').val() == "") {
-
-            $('input[name = name_to ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = email_to ]').val() == "") {
-            if (!IsEmail($('input[name = email_to ]'))) {
-                $('input[name = email_to ]').addClass('error');
-
-                error = true;
-            }
-
-            error = true;
-
-        }
-        if ($('input[name = phone_to ]').val() == "") {
-
-            $('input[name = phone_to ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = phone_from ]').val() == "") {
-
-            $('input[name = phone_from ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = name_from ]').val() == "") {
-
-            $('input[name = name_from ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = address_from ]').val() == "") {
-
-            $('input[name = address_from ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = email_from ]').val() == "") {
-            if (!IsEmail($('input[name = email_from ]'))) {
-                $('input[name = email_from ]').addClass('error');
-
-                error = true;
-            }
-
-            error = true;
-
-        }
-        if (error) {
-            $('html, body').animate({scrollTop: $('.cart1_left_contact_block').offset().top + 30}, 1000);
-            return false;
-        }
+        //var error = false;
+        //
+        //if ($('input[name = name_to ]').val() == "") {
+        //
+        //    $('input[name = name_to ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = email_to ]').val() == "") {
+        //    if (!IsEmail($('input[name = email_to ]'))) {
+        //        $('input[name = email_to ]').addClass('error');
+        //
+        //        error = true;
+        //    }
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = phone_to ]').val() == "") {
+        //
+        //    $('input[name = phone_to ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = phone_from ]').val() == "") {
+        //
+        //    $('input[name = phone_from ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = name_from ]').val() == "") {
+        //
+        //    $('input[name = name_from ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = address_from ]').val() == "") {
+        //
+        //    $('input[name = address_from ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = email_from ]').val() == "") {
+        //    if (!IsEmail($('input[name = email_from ]'))) {
+        //        $('input[name = email_from ]').addClass('error');
+        //
+        //        error = true;
+        //    }
+        //
+        //    error = true;
+        //
+        //}
+        //if (error) {
+        //    $('html, body').animate({scrollTop: $('.cart1_left_contact_block').offset().top + 30}, 1000);
+        //    return false;
+        //}
 
 
         $('.tabs_list li').eq(0).removeClass('active');
@@ -2378,7 +2378,7 @@ function addOrder() {
         url: '/ajax-create-order',
         success: function (data) {
             //alert(data);
-            $('#order_id').text(data);
+            $('#thanks_for_order').html(data);
             localStorage.clear();
         }
     });
