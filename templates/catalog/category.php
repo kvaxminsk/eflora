@@ -25,11 +25,11 @@ $image = image($image, 'resize', '1500', '986');
 
             </div>
         </div>
-        <div class="right_box"><p class="right_box_title"><?=$categoryModel->title_main?></p>
+        <div class="right_box"><p class="right_box_title"><?= str_replace('\n', '', trim($categoryModel['title_main'] ? $categoryModel['title_main'] : $categoryModel['name'])); ?></p>
             <hr>
             </hr>
             <p class="rb_discribe">
-              <?=$categoryModel->description_main?>
+                <?= str_replace('\n', '', trim($categoryModel['description_main'] ? $categoryModel['description_main'] : $categoryModel['name'])); ?>
             </p>
         </div>
         <div style="clear:both;"></div>
