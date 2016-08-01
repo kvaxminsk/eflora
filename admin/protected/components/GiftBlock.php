@@ -23,7 +23,7 @@ class GiftBlock extends CWidget
 
         $products = Product::model()->findAll($criteria);
         $variables = Variables::getAll();
-        $this->render('webroot.templates.shop.' . $this->file, array('products' => $products, 'kurs' => $variables['kurs']));
+        $this->render('webroot.templates.shop.' . $this->file, array('products' => $products, 'kurs' => $variables['kurs']*10000));
     }
 
 

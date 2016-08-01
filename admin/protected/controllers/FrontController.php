@@ -13,6 +13,8 @@ class FrontController extends CController
     public $variables = array();
 
     public $kurs;
+    public $kurs_rus_byn;
+    public $kurs_rus_dollar;
     /**
      * Описание сайта, меняется в админке
      */
@@ -50,7 +52,9 @@ class FrontController extends CController
 	{
 		$variables = Variables::getAll();
         $this->variables = $variables;
-        $this->kurs = $this->variables['kurs'];
+        $this->kurs = $this->variables['kurs']*10000;
+        $this->kurs_rus_byn = $this->variables['kurs_rus_byn']*100;
+        $this->kurs_rus_dollar = $this->variables['kurs_rus_dollar'];
 
 	}
     

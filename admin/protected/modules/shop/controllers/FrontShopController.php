@@ -44,6 +44,8 @@ class FrontShopController extends FrontController
     }
     public function actionAjaxCreateOrder() {
         $kurs = $this->kurs;
+        $kurs_rus_byn = $this->kurs_rus_byn;
+        $kurs_rus_dollar = $this->kurs_rus_dollar;
         $totalAmout =0;
         $date = json_decode($_POST['data']);
 
@@ -66,11 +68,26 @@ class FrontShopController extends FrontController
 
 //
         }
+
         if($date->currency == 'us') {
-            $totalAmout = $totalAmout;
+            $currencyType = 'US';
+            $moneyTotal = round($totalAmout,2);
+            $moneyTotalString = 'US ' . number_format($moneyTotal/10000, 0, '', ' ');
+            $moneyTotalRus = $totalAmout / $kurs_rus_dollar;
+            $rus_money = 'RU '  . number_format($moneyTotalRus - fmod($moneyTotalRus,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotalRus,1),2) * 100 .  ' коп ';
         }
         elseif ($date->currency == 'br') {
             $totalAmout = round($kurs * $totalAmout,2);
+            $currencyType = 'BYN';
+            $moneyTotal = round($totalAmout/10000,2);
+
+            $moneyTotalString = 'BYN ' . number_format($moneyTotal - fmod($moneyTotal,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotal,1),2) * 100 .  ' коп ';
+//            var_dump($moneyTotal);
+//            var_dump($moneyTotalString);
+//            die();
+            $moneyTotalRus = $totalAmout / $kurs_rus_byn;
+            $moneyTotalRus = round($moneyTotalRus,2);
+            $rus_money = 'RU '  . number_format($moneyTotalRus - fmod($moneyTotalRus,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotalRus,1),2) * 100 .  ' коп ';
         }
 
         $order = new Order();
@@ -108,6 +125,9 @@ class FrontShopController extends FrontController
                 $op->save();
             }
         }
+
+
+//        $money = 'BYN ' . number_format($totalAmout/10000, 0, '', ' ') . ' руб '  . (fmod($totalAmout, 10000) /100) .  ' коп ';
         switch($order->method_pay) {
             case 'Наличные деньги курьеру':
                 $methodPay = 'Наличные деньги курьеру';
@@ -116,6 +136,35 @@ class FrontShopController extends FrontController
                 break;
             case 'VISA/MasterCard/Белкарт':
                 $methodPay = 'VISA/MasterCard/Белкарт';
+                echo '<p>  Спасибо что выбрали нашу службу.<br>
+                        Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен</br>';
+                echo '</br>Заказ не оплачен.</br>';
+                echo 'Для оплаты нажмите:.</br>';
+                echo '<form action="https://pay111.paysec.by/pay/order.cfm" method="post" style="clear: left">
+                        <input type="hidden" name="Merchant_ID" value="464011">
+
+                        <!--input type="hidden" name="TestMode" value="0"-->
+
+                        <input type="hidden" name="Delay" value="0">
+                        <input type="hidden" name="Language" value="RU">
+                        <input type="hidden" name="OrderCurrency" value="'. $currencyType . '">
+                        <input type="hidden" name="AssistIDPayment" value="0">
+
+                        <!--input type="hidden" name="CardPayment" value="1">
+                        <input type="hidden" name="YMPayment" value="1">
+                        <input type="hidden" name="WMPayment" value="1">
+                        <input type="hidden" name="QIWIPayment" value="1"-->
+
+
+                        <input type="hidden" name="ordernumber" value="'  . $order->id . '">
+                        <input type="hidden" name="orderamount" value="' . $moneyTotal . '">
+                        <input type="hidden" name="ordercomment" value="№'  . $order->id . '">
+                        <input type="submit" name="submit" value="Оплатить">
+                    </form>';
+                echo " <img src=\"/images/eflora/pay-assist.png\">";
+                echo "<img src=\"/images/eflora/3dsecure.jpg\" height=\"33px\">
+                        <img src=\"/images/eflora/assist_logo.gif\" height=\"25px\" style=\"margin-left: 5px;\">";
+                echo " </p>";
                 break;
             case 'Оплата наличными в одном из наших салонов':
                 $methodPay = 'Оплата наличными в одном из наших салонов';
@@ -124,13 +173,26 @@ class FrontShopController extends FrontController
                 break;
             case 'WebMoney':
                 $methodPay = 'WebMoney';
+                echo '<p>  Спасибо что выбрали нашу службу.<br>
+                        Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен</br>';
+                echo '</br>Заказ не оплачен.</br>';
+                echo 'Для оплаты нажмите:.</br>';
+                echo '<form method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" style="clear: left;">
+                        <input type="hidden" name="LMI_PAYMENT_NO" value="10044">
+                        <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="' . $moneyTotal . '">
+                        <input type="hidden" name="LMI_PAYMENT_DESC" value="Oplata zakaza '  . $order->id . ' sluzhbyi dostavki eFlora.by">
+                        <input type="hidden" name="LMI_PAYEE_PURSE" value="B308187414389">
+                        <input type="submit" name="submit" value="Оплатить">
+                    </form>';
+                echo " <img src=\"/images/eflora/webmoney.png\">";
+                echo " </p>";
                 break;
             case 'ЕРИП Расчёт':
                 $methodPay = 'ЕРИП Расчёт';
                 echo '<p> Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен ';
                 echo '<br>Заказ не оплачен.<br>
-                Для оплаты нужно перевести сумму заказа (' . number_format($totalAmout/10000, 0, '', ' ') . ' руб '  . (fmod($totalAmout, 10000) /100) .  ' коп ) через систему ЕРИП ("Расчёт")
+                Для оплаты нужно перевести сумму заказа (' .  $moneyTotalString . ') через систему ЕРИП ("Расчёт")
                  (инфокиоск, интернет-банк, через оператора в банке или на почте).<br/>
                  <b>Интернет-магазины/сервисы (РБ) -> E -> Eflora.by - цветы</b><br/>
                  ВНИМАНИЕ! Необходимо указать в примечании платежа номер заказа и выслать,
@@ -142,12 +204,14 @@ class FrontShopController extends FrontController
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен </p>';
                 break;
             case 'Яндекс Деньги':
+                $totalAmout = $totalAmout * 310;
+
                 $methodPay = 'Яндекс Деньги';
                 echo '<p> Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен ';
-                echo '<b>Заказ не оплачен.</b><br/>
+                echo '<br/><b>Заказ не оплачен.</b><br/>
  Оплата производится в российских рублях по курсу НБ РБ на день оплаты.</br>
- Сумма к оплате: (BYN ' . number_format($totalAmout/10000, 0, '', ' ') . ' руб '  . (fmod($totalAmout, 10000) /100) .  ' коп )<br/>
+ Сумма к оплате: (' . $rus_money . ')<br/>
   Для оплаты нужно перевести сумму заказа в системе Яндекс.
   Деньги на кошелёк <b>410013357501696</b>.<br/>
   <b>ВНИМАНИЕ!</b> Необходимо указать в примечании платежа номер заказа и выслать, нам скрин-шот квитанции об оплате на электронную почту <b>info.eflora@gmail.com</b></p>';
