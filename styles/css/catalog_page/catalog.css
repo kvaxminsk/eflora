@@ -1,4 +1,115 @@
+.catalog_main_picture{
+	height: 595px;
+	width:calc(100% - 365px);
+    float:right;
+	background-color:yellow;
+	position: relative;
+}
+.slide_box{
+	width: 50%;
+	height:80%;
+	position: absolute;
+	z-index: 1;
+	background-color: #fdd;
+	right: 0;
+	bottom: 0px;
+	background-color: transparent;
+	overflow: hidden !important;
+}
+.left_box{
+	position: absolute;
+	width: calc(50% + 1px);
+	height: 100%;
+	left: 0%;
+	top: 0px;
+	z-index:3 ;
+	float: left;
+	text-align: center;
+	font:  italic  48px/48px sans-serif;
+	font-family: 'pt-serif';
+	color: #fff;
+	padding-top: 0;
+	background-color: #b54e74;
+	background-color: rgba(181, 78, 116, 0.88);
+	overflow: hidden;
+	display: table;
+}
+.left_box>p{
+	text-align: center;
+	font:  italic  48px/48px sans-serif;
+	font-family: 'pt-serif';
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 4%;
+	padding-right: 4%;
+	max-width: 300px;
+	margin:0 auto;
+}
+.left_box>p:hover{
+	cursor:pointer;
+}
 
+.left_box >.title_line
+{
+	width: 10%;
+	margin: 20px 45% 0 45%;
+	color: #fff;
+	border: 1px solid #fff;
+	position: absolute;
+	left: 0;
+	top: 60%;
+
+}
+.right_box hr
+{
+	width: 10%;
+	margin: 5px 45% 0 45%;
+	color: #b54e74;
+	background-color:#b54e74;
+	border:0px none;
+	height: 2px;
+}
+.right_box{
+	float: left;
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background-color: #fff;
+	left: 50%;
+	z-index: 2;
+
+	display: block;
+}
+
+
+.right_box_title
+{
+	margin-top:60px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Roboto Condensed', arial !important;
+	font:  24px/54px sans-serif;
+	color: #b54e74;
+}
+.rb_discribe
+{
+	margin: 20px ;
+	font:   16px/24px arial,sans-serif;
+	font-family: 'Roboto Light', arial;
+	color: #826b70;
+	position: relative;
+	text-align: center;
+}
+
+.white_circle {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 50%;
+	right: -20px;
+	top: calc(50% - 15px);
+}
 
 
 .list_product h1{
@@ -1313,4 +1424,37 @@ ul.flower_products_catalog li:hover  .discount>p{
 	font-family: 'Roboto Light', arial;
 	margin-bottom:40px;
 	margin-top:40px;
+}
+@media all and (max-width:  1646px)  {
+
+
+	.slide_box{
+		width:620px;
+	}
+}
+@media all and (max-width:  1420px)  {
+
+	.slide_box{
+		height:70% ;
+	}
+}
+@media all and (max-width:  1177px) {
+
+	.slide_box{
+		width: 100% ;
+	}
+}
+
+@media all and (max-width:  1000px){
+	.catalog_main_picture{
+		width:calc(100% - 240px);
+
+	}
+}
+@media all and (max-width:  700px){
+	.catalog_main_picture{
+		width:100%;
+		display: none;
+
+	}
 }

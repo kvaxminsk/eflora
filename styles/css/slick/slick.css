@@ -196,7 +196,8 @@ ul.slick-dots
      margin-top:20px;
 
 } 
-.reason_link:hover{
+
+.reason_link_a:hover .reason_link{
     color:#ff8b4e;
     border-bottom: 1px dotted #ff8b4e ;
     transition-duration:0.3s;
@@ -206,7 +207,8 @@ ul.slick-dots
     border:none;
     color: #fff;
 
-} 
+}
+
 
 .
 /* .active {

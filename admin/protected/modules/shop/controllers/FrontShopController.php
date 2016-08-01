@@ -139,7 +139,7 @@ class FrontShopController extends FrontController
                 echo '<p>  Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен</br>';
                 echo '</br>Заказ не оплачен.</br>';
-                echo 'Для оплаты нажмите:.</br>';
+                echo 'Для оплаты нажмите:</br>';
                 echo '<form action="https://pay111.paysec.by/pay/order.cfm" method="post" style="clear: left">
                         <input type="hidden" name="Merchant_ID" value="464011">
 
@@ -159,11 +159,13 @@ class FrontShopController extends FrontController
                         <input type="hidden" name="ordernumber" value="'  . $order->id . '">
                         <input type="hidden" name="orderamount" value="' . $moneyTotal . '">
                         <input type="hidden" name="ordercomment" value="№'  . $order->id . '">
-                        <input type="submit" name="submit" value="Оплатить">
+                        <input type="submit" name="submit" value="Оплатить" style = "display: block;
+                        margin: 0 auto;margin-bottom: 10px;">
                     </form>';
-                echo " <img src=\"/images/eflora/pay-assist.png\">";
-                echo "<img src=\"/images/eflora/3dsecure.jpg\" height=\"33px\">
-                        <img src=\"/images/eflora/assist_logo.gif\" height=\"25px\" style=\"margin-left: 5px;\">";
+                echo " <img src=\"/images/eflora/pay-assist.png\" style =\"display: block;
+    margin: 0 auto;\">";
+                echo "<div style =\"display:flex; justify-content:center\" ><img src=\"/images/eflora/3dsecure.jpg\" height=\"33px\">
+                        <img src=\"/images/eflora/assist_logo.gif\" height=\"25px\" style=\"margin-left: 5px;margin-bottom: 10px;\"></div>";
                 echo " </p>";
                 break;
             case 'Оплата наличными в одном из наших салонов':
@@ -176,15 +178,15 @@ class FrontShopController extends FrontController
                 echo '<p>  Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен</br>';
                 echo '</br>Заказ не оплачен.</br>';
-                echo 'Для оплаты нажмите:.</br>';
+                echo 'Для оплаты нажмите:</br>';
                 echo '<form method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" style="clear: left;">
                         <input type="hidden" name="LMI_PAYMENT_NO" value="10044">
                         <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="' . $moneyTotal . '">
                         <input type="hidden" name="LMI_PAYMENT_DESC" value="Oplata zakaza '  . $order->id . ' sluzhbyi dostavki eFlora.by">
                         <input type="hidden" name="LMI_PAYEE_PURSE" value="B308187414389">
-                        <input type="submit" name="submit" value="Оплатить">
+                        <input type="submit" name="submit" value="Оплатить" style ="display: block; margin: 0 auto;margin-bottom: 10px;">
                     </form>';
-                echo " <img src=\"/images/eflora/webmoney.png\">";
+                echo " <img src=\"/images/eflora/webmoney.png\" style = \"display: block; margin : 0 auto;  \">";
                 echo " </p>";
                 break;
             case 'ЕРИП Расчёт':

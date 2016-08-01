@@ -1,12 +1,41 @@
-<? if(!empty($categoryModel->title_main)) {?>
-<div class="upper_text">
-           <h1><?=$categoryModel->title_main;?></h1>
-    <div class="text">
-        <?=$categoryModel->description_main;?>
+
+<?// if(!empty($categoryModel->title_main)) {?>
+<!--<div class="upper_text">-->
+<!--           <h1>--><?//=$categoryModel->title_main;?><!--</h1>-->
+<!--    <div class="text">-->
+<!--        --><?//=$categoryModel->description_main;?>
+<!--    </div>-->
+<!---->
+<!--</div>-->
+<?//}?>
+<?
+$image = ($categoryModel->img['path']) ? $categoryModel->img['path'] : '/images/no-photo.gif';
+$image = image($image, 'resize', '1500', '986');
+?>
+<div class="catalog_main_picture">
+    <div class="photo" style="background: url('<?= $image; ?>') no-repeat 100% 100%;
+    background-position:center; background-size:cover; width:100%; height:100%;"></div>
+    <div class="slide_box">
+        <div class="left_box show">
+            <p><?=$categoryModel->name?>
+            <div class="title_line"></div>
+            </p>
+
+            <div class="white_circle">
+
+            </div>
+        </div>
+        <div class="right_box"><p class="right_box_title"><?=$categoryModel->title_main?></p>
+            <hr>
+            </hr>
+            <p class="rb_discribe">
+              <?=$categoryModel->description_main?>
+            </p>
+        </div>
+        <div style="clear:both;"></div>
     </div>
 
 </div>
-<?}?>
 <div class="under_slider">
     <div class="mobile_categoria">
         Акции

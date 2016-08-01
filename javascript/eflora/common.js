@@ -202,6 +202,13 @@ function renderBlockReviews() {
 
 
 $(document).ready(function () {
+    //$('.reason_link_a').on('click',function(){
+    //    alert('http://'+window.location.hostname+$(this).attr('data-url'));
+    //    window.location.href = 'http://'+window.location.hostname+$(this).attr('data-url');
+    //    console.log('http://'+window.location.hostname+$(this).attr('data-url'));
+    //    window.stop();
+    //
+    //});
     ////******удаляем лишний элемент на главной странице в меню**/
     var lastElement = $('.slick-dots li').last();
     lastElement.remove();
@@ -667,6 +674,7 @@ $(document).ready(function () {
 
 
     $('.slick-dots').children('li').click(function () {
+        window.stop();
         var data = $(this).find('span').text();
         $('.left_box p ').eq(0).text(data);
         $('.mobile_categoria').text(data);
@@ -868,17 +876,23 @@ $(document).ready(function () {
     //});
     var globalCategory;
     $(".reason_link_a").click(function () {
+        //alert('http://'+window.location.hostname+$(this).attr('data-url'));
+        document.location.href = 'http://'+window.location.hostname+$(this).attr('data-url');
+
+        setTimeout("document.location.href='"+ 'http://'+window.location.hostname+$(this).attr('data-url') +"'", 1);
+        //window.stop();
         //alert($(this).attr('data-category'));
         var category = $(this).attr('data-category');
         //alert(globalCategory);
         //alert($(this).attr('data-url'));
-        if(globalCategory == category) {
-            //alert($(this).attr('data-url'));
-            window.location.href = $(this).attr('data-url');
-        }
-        else {
-            globalCategory = category;
-        }
+        //if(globalCategory == category) {
+        //    //alert($(this).attr('data-url'));
+        //    window.location.href = $(this).attr('data-url');
+        //}
+        //else {
+        //    //window.location.href = $(this).attr('data-url');
+        //    globalCategory = category;
+        //}
 
         //$(this).text('Загрузка');
         //setTimeout(1000);alert('fff');
@@ -996,7 +1010,7 @@ $(document).ready(function () {
             $(this).removeClass('slick-active-catalog');
             if (category == attr) {
                 $(this).addClass('slick-active-catalog');
-
+                window.location.href = $(this).attr('data-url');
             }
         });
         /*$('.catalog_list ul  li').each(function () {
@@ -1018,19 +1032,19 @@ $(document).ready(function () {
 
 
 
-        $.ajax({
-            type: 'get',
-            data: 'category=' + category,
-            url: '/ajax-products',
-            success: function (data) {
-                //document.write();
-                $('.flower_products').text('');
-                $('.flower_products').append(data);
-                //$("#show_more_item").before(data);
-                changeCurrency();
-                $('#theme_filter').removeClass('active');
-            }
-        });
+        //$.ajax({
+        //    type: 'get',
+        //    data: 'category=' + category,
+        //    url: '/ajax-products',
+        //    success: function (data) {
+        //        //document.write();
+        //        $('.flower_products').text('');
+        //        $('.flower_products').append(data);
+        //        //$("#show_more_item").before(data);
+        //        changeCurrency();
+        //        $('#theme_filter').removeClass('active');
+        //    }
+        //});
 
 
     });
@@ -1295,69 +1309,69 @@ $(document).ready(function () {
 
     $(".button_continue").click(function () {
         //eere
-        var error = false;
-
-        if ($('input[name = name_to ]').val() == "") {
-
-            $('input[name = name_to ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = email_to ]').val() == "") {
-            if (!IsEmail($('input[name = email_to ]'))) {
-                $('input[name = email_to ]').addClass('error');
-
-                error = true;
-            }
-
-            error = true;
-
-        }
-        if ($('input[name = phone_to ]').val() == "") {
-
-            $('input[name = phone_to ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = phone_from ]').val() == "") {
-
-            $('input[name = phone_from ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = name_from ]').val() == "") {
-
-            $('input[name = name_from ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = address_from ]').val() == "") {
-
-            $('input[name = address_from ]').addClass('error');
-
-            error = true;
-
-        }
-        if ($('input[name = email_from ]').val() == "") {
-            if (!IsEmail($('input[name = email_from ]'))) {
-                $('input[name = email_from ]').addClass('error');
-
-                error = true;
-            }
-
-            error = true;
-
-        }
-        if (error) {
-            $('html, body').animate({scrollTop: $('.cart1_left_contact_block').offset().top + 30}, 1000);
-            return false;
-        }
-
-
+        //var error = false;
+        //
+        //if ($('input[name = name_to ]').val() == "") {
+        //
+        //    $('input[name = name_to ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = email_to ]').val() == "") {
+        //    if (!IsEmail($('input[name = email_to ]'))) {
+        //        $('input[name = email_to ]').addClass('error');
+        //
+        //        error = true;
+        //    }
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = phone_to ]').val() == "") {
+        //
+        //    $('input[name = phone_to ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = phone_from ]').val() == "") {
+        //
+        //    $('input[name = phone_from ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = name_from ]').val() == "") {
+        //
+        //    $('input[name = name_from ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = address_from ]').val() == "") {
+        //
+        //    $('input[name = address_from ]').addClass('error');
+        //
+        //    error = true;
+        //
+        //}
+        //if ($('input[name = email_from ]').val() == "") {
+        //    if (!IsEmail($('input[name = email_from ]'))) {
+        //        $('input[name = email_from ]').addClass('error');
+        //
+        //        error = true;
+        //    }
+        //
+        //    error = true;
+        //
+        //}
+        //if (error) {
+        //    $('html, body').animate({scrollTop: $('.cart1_left_contact_block').offset().top + 30}, 1000);
+        //    return false;
+        //}
+        //
+        //
         $('.tabs_list li').eq(0).removeClass('active');
         $('.tabs_list li').eq(1).addClass('active');
         $('.tab1').animate({opacity: 0}, 400, function () {
