@@ -53,7 +53,7 @@ class FrontController extends CController
 		$variables = Variables::getAll();
         $this->variables = $variables;
         $this->kurs = $this->variables['kurs']*10000;
-        $this->kurs_rus_byn = $this->variables['kurs_rus_byn']*100;
+        $this->kurs_rus_byn = $this->variables['kurs_rus_byn']*10000;
         $this->kurs_rus_dollar = $this->variables['kurs_rus_dollar'];
 
 	}

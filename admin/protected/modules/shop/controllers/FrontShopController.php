@@ -82,9 +82,7 @@ class FrontShopController extends FrontController
             $moneyTotal = round($totalAmout/10000,2);
 
             $moneyTotalString = 'BYN ' . number_format($moneyTotal - fmod($moneyTotal,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotal,1),2) * 100 .  ' коп ';
-//            var_dump($moneyTotal);
-//            var_dump($moneyTotalString);
-//            die();
+
             $moneyTotalRus = $totalAmout / $kurs_rus_byn;
             $moneyTotalRus = round($moneyTotalRus,2);
             $rus_money = 'RU '  . number_format($moneyTotalRus - fmod($moneyTotalRus,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotalRus,1),2) * 100 .  ' коп ';
@@ -138,7 +136,7 @@ class FrontShopController extends FrontController
                 $methodPay = 'VISA/MasterCard/Белкарт';
                 echo '<p>  Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен</br>';
-                echo '</br>Заказ не оплачен.</br>';
+                echo '</br><span id="order_id">Заказ не оплачен.</span></br>';
                 echo 'Для оплаты нажмите:</br>';
                 echo '<form action="https://pay111.paysec.by/pay/order.cfm" method="post" style="clear: left">
                         <input type="hidden" name="Merchant_ID" value="464011">
@@ -177,7 +175,7 @@ class FrontShopController extends FrontController
                 $methodPay = 'WebMoney';
                 echo '<p>  Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен</br>';
-                echo '</br>Заказ не оплачен.</br>';
+                echo '</br><span id="order_id">Заказ не оплачен.</span></br>';
                 echo 'Для оплаты нажмите:</br>';
                 echo '<form method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" style="clear: left;">
                         <input type="hidden" name="LMI_PAYMENT_NO" value="10044">
@@ -193,7 +191,7 @@ class FrontShopController extends FrontController
                 $methodPay = 'ЕРИП Расчёт';
                 echo '<p> Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен ';
-                echo '<br>Заказ не оплачен.<br>
+                echo '<br><span id="order_id">Заказ не оплачен.</span><br>
                 Для оплаты нужно перевести сумму заказа (' .  $moneyTotalString . ') через систему ЕРИП ("Расчёт")
                  (инфокиоск, интернет-банк, через оператора в банке или на почте).<br/>
                  <b>Интернет-магазины/сервисы (РБ) -> E -> Eflora.by - цветы</b><br/>
@@ -211,7 +209,7 @@ class FrontShopController extends FrontController
                 $methodPay = 'Яндекс Деньги';
                 echo '<p> Спасибо что выбрали нашу службу.<br>
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен ';
-                echo '<br/><b>Заказ не оплачен.</b><br/>
+                echo '<br/><b><span id="order_id">Заказ не оплачен.</span></b><br/>
  Оплата производится в российских рублях по курсу НБ РБ на день оплаты.</br>
  Сумма к оплате: (' . $rus_money . ')<br/>
   Для оплаты нужно перевести сумму заказа в системе Яндекс.
