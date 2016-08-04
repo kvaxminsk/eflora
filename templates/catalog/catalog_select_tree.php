@@ -13,7 +13,7 @@ $i++; ?>
     <ul class="dropdown" id="dropdown1">
         <? foreach ($categories as $item): ?>
 
-            <li data-category="<?= $item['id'] ?>"><a data-category="<?= $item['id'] ?>"
-                                                      href="#"><i><?= $item['name'] ?></i></a></li>
+            <li data-category="<?= $item['id'] ?>"><a href="<?= $item['url'] ?>" data-category="<?= $item['id'] ?>"
+                                                      ><i><?= $item['name'] ?></i></a></li>
         <? endforeach; ?>
     </ul>

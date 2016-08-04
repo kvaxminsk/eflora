@@ -1001,7 +1001,7 @@ $(document).ready(function () {
         var val = $(this).text();
         $('#theme_text').text(val);
         $('#theme_text').attr('data-category', $(this).parent().attr('data-category'));
-
+        setTimeout("document.location.href='"+ 'http://'+window.location.hostname+$(this).attr('href') +"'", 1);
 
         $('#theme_filter').removeClass('active');
         var category = $(this).parent().attr('data-category');
