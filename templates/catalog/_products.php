@@ -9,6 +9,7 @@ if ($data->discount > 0) {
 
     $price_new_discount_br_big = (int)($data->price * $kurs / 10000);
     $price_new_discount_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
+    $price_new_discount_br_kop = ($price_new_discount_br_kop != 0) ? $price_new_discount_br_kop : '00';
     $price_old_discount_br_big = (int)($data->price * $kurs / 1000);
     $price_old_discount_br_kop =  (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000';
     $price_discount_us = $data->price;
@@ -18,6 +19,7 @@ else {
     $price_old_br = (int)($data->price * $kurs / 10000);
     $price_new_discount_br_big = (int)($data->price * $kurs / 10000);
     $price_new_discount_br_kop = round(($data->price * $kurs / 10000 - ((int)($data->price * $kurs / 10000))) * 100);
+    $price_new_discount_br_kop = ($price_new_discount_br_kop != 0) ? $price_new_discount_br_kop : '00';
     $price_old_discount_br_big = (int)($data->price * $kurs / 1000);
     $price_old_discount_br_kop =  (round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) != 0) ? round(($data->price * $kurs / 1000 - ((int)($data->price * $kurs / 1000))) * 1000) : '000';
     $price_discount_us = $data->price;

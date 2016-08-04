@@ -45,18 +45,19 @@ function updatePage() {
 			$(this).removeClass('inBasket');
 		}
 	});
+	$roundNumber = (Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) !=0) ? Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) : '00';
 
 	if (shopProductCount == 0) {
 		$('.baskettext').text(lang.basketTextNull);
 		$('#header_price_text_br').html("<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
-			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +" коп</sup>" );
+			$roundNumber +" коп</sup>" );
 		$('#header_price_text_us').text(price_us);
 
 
 		$('#order_list_price_old').html(0);
-		$('#order_list_price_new').html(0);
-
-		$('#header_price_text_us').text(price_us);
+		$('#order_list_price_new').html("<sub>0</sub><sup>00 коп</sup>");
+		$('#order_list_price_dollar').html('0' );
+		$('#header_price_text_us').text("0");
 	}
 	else
 	{
@@ -65,14 +66,14 @@ function updatePage() {
 		$('#order_list_price_old').html( "<sub> " + parseInt(price_us * kurs / 1000)  + "</sub>" + "<sup>" +
 			Math.round(((price_us * kurs / 1000) -  (parseInt(price_us * kurs / 1000)))*1000) +"</sup>" );
 
-
+		//$roundNumber = (Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) !=0) ? Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) : '00';
 		$('#order_list_price_new').html( "<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
-			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +" коп</sup>" );
+			($roundNumber)  +" коп</sup>" );
 
 		$('#order_list_price_dollar').html(price_us );
 
 		$('#header_price_text_br').html("<sub> " + parseInt(price_us * kurs / 10000)  + "</sub>" + "<sup>" +
-			Math.round(((price_us * kurs / 10000) -  (parseInt(price_us * kurs / 10000)))*100) +" коп</sup>" );
+			$roundNumber +" коп</sup>" );
 		$('#header_price_text_us').text(price_us);
 	}
 	//console.log('price_us'+price_us);
