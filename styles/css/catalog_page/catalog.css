@@ -1,3 +1,6 @@
+.orrange_arrow{
+	display:none;
+}
 .catalog_main_picture{
 	height: 595px;
 	width:calc(100% - 365px);
@@ -139,7 +142,7 @@
 {
 	width: 100px;
 	margin-top:35px;
-	margin-left: 60px;
+	margin-left: 30px;
 	font:  15px/15px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	color: #898787;
@@ -147,7 +150,7 @@
 .select_theme_wrapp{
 	position: relative;
 	width:160px;
-	left: 150px;
+	left: 120px;
 	top:  -46px;
 }
 
@@ -170,7 +173,7 @@
 	position: absolute;
 	right: 0;
 	top:0;
-	width:600px;
+	width:602px;
 	height: 90px;
 }
 .choice{
@@ -782,10 +785,10 @@ ul.flower_products_catalog li:hover  .discount>p{
 		margin-right: 10px;
 	}
 	.theme{
-		margin-left: 30px;
+		margin-left: 5px;
 	}
 	.select_theme_wrapp{
-		left:110px;
+		left:80px;
 	}
 
 }

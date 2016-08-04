@@ -633,7 +633,6 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 }
 .item_price>.new_price{
 	text-align: left;
-	width: 50%;
 	float: left;
 	margin-top: 72px;
 
@@ -655,10 +654,10 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 .item_selector>.count_product_selector>.increment{
 
 	float:left;
-	width:30px;
+	width:31px;
 	background-color: #dfdfdf;
-	height: 30px;
-	line-height:30px;
+	height: 31px;
+	line-height:31px;
 	border-radius: 50%;
 	cursor:pointer;
 	text-align: center;
@@ -706,10 +705,10 @@ transition: background-color 400ms linear;
 
 .item_selector>.count_product_selector>.decrement{
 	float:left;
-	width:30px;
+	width:31px;
 	background-color: #dfdfdf;
-	height: 30px;
-	line-height:30px;
+	height: 31px;
+	line-height:31px;
 	border-radius: 50%;
 	cursor:pointer;
 	text-align: center;
@@ -1164,8 +1163,9 @@ height: 492px !important;
 	}
 	.item_price>.new_price{
 		width: 50%;
+		margin: 0 auto;
 		margin-top:40px;
-		margin-left:50px;
+
 	}
 	.item_price>.old_price>.line{
 		left:auto;

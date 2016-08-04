@@ -220,16 +220,17 @@ class FrontShopController extends FrontController
 
         $email_to = $order->email_to;
         $email = explode(',', $email_to);
-        $email_from = $this->variables['email'] ;
+        $email_admin = $this->variables['email'] ;
+
         if ($email) {
             $message = $this->createLetter($order, $date->products, $totalAmout, true);
-            $subject = 'Заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
-            sendEmail($message, $subject, $email_from, $email_to);
+            $subject = 'Заказ №' . $order->id . '  от ' . date('d.m.Y, H:i', strtotime($order->date));
+            sendEmail($message, $subject, $email_admin, $email_to);
         }
         if (isEmail($date->email_to)) {
             $message = $this->createLetter($order, $date->products, $totalAmout, false);
-            $subject = 'Ваш заказ №' . $order->id . ' от ' . date('d.m.Y, H:i', strtotime($order->date));
-            sendEmail($message, $subject, $email_from, array($_POST['data']['order']['user_email']));
+            $subject = 'Ваш заказ №' . $order->id . '  от ' . date('d.m.Y, H:i', strtotime($order->date));
+            sendEmail($message, $subject,  $email_to,$email_admin);
         }
 //
 //        die();

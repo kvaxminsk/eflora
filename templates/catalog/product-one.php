@@ -250,6 +250,7 @@ if ($model->discount > 0) {
                 </div>
                 <div class="increment">+</div>
             </div>
+            <div class="clearfix"></div>
             <div class="in_cart_wrap">
                 <a href="" class="in_cart addtobasket addtocart" data-productid="<?= $model->id ?>"
                    data-productprice="<?= $model->price ?>">
