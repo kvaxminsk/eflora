@@ -70,6 +70,7 @@ class FrontShopController extends FrontController
         }
 
         if($date->currency == 'us') {
+            $this->currency ='us';
             $currencyType = 'US';
             $moneyTotal = round($totalAmout,2);
             $moneyTotalString = 'US ' . number_format($moneyTotal/10000, 0, '', ' ');
@@ -79,6 +80,7 @@ class FrontShopController extends FrontController
         elseif ($date->currency == 'br') {
             $totalAmout = round($kurs * $totalAmout,2);
             $currencyType = 'BYN';
+            $this->currency ='br';
             $moneyTotal = round($totalAmout/10000,2);
 
             $moneyTotalString = 'BYN ' . number_format($moneyTotal - fmod($moneyTotal,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotal,1),2) * 100 .  ' коп ';
@@ -225,12 +227,12 @@ class FrontShopController extends FrontController
         if ($email) {
             $message = $this->createLetter($order, $date->products, $totalAmout, true);
             $subject = 'Заказ №' . $order->id . '  от ' . date('d.m.Y, H:i', strtotime($order->date));
-            sendEmail($message, $subject, $email_admin, $email_to);
+            sendEmail($message, $subject, $email_to,$email_admin );
         }
         if (isEmail($date->email_to)) {
             $message = $this->createLetter($order, $date->products, $totalAmout, false);
             $subject = 'Ваш заказ №' . $order->id . '  от ' . date('d.m.Y, H:i', strtotime($order->date));
-            sendEmail($message, $subject,  $email_to,$email_admin);
+            sendEmail($message, $subject, $email_admin, $email_to);
         }
 //
 //        die();
