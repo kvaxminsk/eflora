@@ -50,12 +50,12 @@ $image = image($image, 'resize', '1500', '986');
                     <li class="choice_link_1"><a href=""><i class="icon-cog"></i>По цене:</a></li>
                     <!--                                <li><a href=""><i class="icon-remove"></i>До 100</a></li>-->
                     <!--                                <li><a href=""><i class="icon-remove"></i> До 200</a></li>-->
-                    <li class="choice_link_1 old_price_1"> <a  href="#">До 80 руб.</a></li>
-                    <li class="choice_link_1 old_price_1"><a  href="#">До 150 руб</a></li>
-                    <li class="choice_link_1 old_price_1"><a  href="#">До 300 руб</a></li>
-                    <li class="choice_link_1 dollar_price_1"><a  href="#">До 50$</a></li>
-                    <li class="choice_link_1 dollar_price_1"><a  href="#">До 100$</a></li>
-                    <li class="choice_link_1 dollar_price_1"><a  href="#">До 200$</a></li>
+                    <li class="choice_link_1 old_price_1"> <a  href="">До 80 руб.</a></li>
+                    <li class="choice_link_1 old_price_1"><a  href="">До 150 руб</a></li>
+                    <li class="choice_link_1 old_price_1"><a  href="">До 300 руб</a></li>
+                    <li class="choice_link_1 dollar_price_1"><a  href="">До 50$</a></li>
+                    <li class="choice_link_1 dollar_price_1"><a  href="">До 100$</a></li>
+                    <li class="choice_link_1 dollar_price_1"><a  href="">До 200$</a></li>
                 </ul>
             </div>
         </div>
@@ -70,14 +70,14 @@ $image = image($image, 'resize', '1500', '986');
 <div class="sort_criterion">
     <p class="choice">
         Сортировать по:
-        <a class="choice_link" href="#">Популярности</a><img class="orrange_arrow popular" src="">
-        <a class="choice_link" href="#">Цене</a><img class="orrange_arrow  price_link" src="">
-        <a class="choice_link old_price_1" href="#">До 80 руб</a>
-        <a class="choice_link old_price_1" href="#">До 150 руб</a>
-        <a class="choice_link old_price_1" href="#">До 300 руб</a>
-        <a class="choice_link dollar_price_1" href="#">До 50$</a>
-        <a class="choice_link dollar_price_1" href="#">До 100$</a>
-        <a class="choice_link dollar_price_1" href="#">До 200$</a>
+        <a class="choice_link" href="">Популярности</a><img class="orrange_arrow popular" src="">
+        <a class="choice_link" href="">Цене</a><img class="orrange_arrow  price_link" src="">
+        <a class="choice_link old_price_1" href="">До 80 руб</a>
+        <a class="choice_link old_price_1" href="">До 150 руб</a>
+        <a class="choice_link old_price_1" href="">До 300 руб</a>
+        <a class="choice_link dollar_price_1" href="">До 50$</a>
+        <a class="choice_link dollar_price_1" href="">До 100$</a>
+        <a class="choice_link dollar_price_1" href="">До 200$</a>
     </p>
 </div>
 </div>

@@ -474,11 +474,11 @@ ul.flower_products li:hover  .discount>p{
 .increment{
 
 	float:left;
-	width:30px;
+	width:31px;
 
 	background-color: #dfdfdf;
-	height: 30px;
-	line-height:30px;
+	height: 31px;
+	line-height:31px;
 	border-radius: 50%;
 	cursor:pointer;
 	text-align: center;
@@ -494,8 +494,8 @@ ul.flower_products li:hover  .discount>p{
 .count_product{
 	float:left;
 	width:44px;
-	line-height:30px;
-	height: 30px;
+	line-height:31px;
+	height: 31px;
 	border-radius: 50%;
 	text-align: center;
 
@@ -514,10 +514,10 @@ ul.flower_products li:hover  .discount>p{
 
 .decrement{
 	float:left;
-	width:30px;
+	width:31px;
 	background-color: #dfdfdf;
-	height: 30px;
-	line-height:30px;
+	height: 31px;
+	line-height:31px;
 	border-radius: 50%;
 	cursor:pointer;
 	text-align: center;

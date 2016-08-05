@@ -1648,8 +1648,8 @@ $(document).ready(function () {
 
     }
 
-    $('.choice_link').eq(0).click(function () {
-
+    $('.choice_link').eq(0).click(function (e) {
+        e.preventDefault();
         changeColorChoiceLink(this);
 
         $(this).parent().find('.popular').show();
@@ -1663,8 +1663,8 @@ $(document).ready(function () {
             var category = $('.slick-active-catalog a').attr('data-category');
         }
 
-        if (atr == '../../images/eflora/select_icon.png') {
-            atr = '../../images/eflora/select_icon1.png';
+        if (atr == '../../images/eflora/select_icon1.png') {
+            atr = '../../images/eflora/select_icon.png';
             $(this).parent().find('.popular').attr('src', atr);
 
             $.ajax({
@@ -1680,7 +1680,7 @@ $(document).ready(function () {
             });
         }
         else {
-            atr = '../../images/eflora/select_icon.png';
+            atr = '../../images/eflora/select_icon1.png';
             $(this).parent().find('.popular').attr('src', atr);
             $.ajax({
                 type: 'get',
@@ -1697,9 +1697,9 @@ $(document).ready(function () {
 
 
     })
-    $('.choice_link').eq(1).click(function () {
+    $('.choice_link').eq(1).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         $(this).parent().find('.popular').hide();
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
@@ -1711,8 +1711,8 @@ $(document).ready(function () {
             var category = $('.slick-active-catalog a').attr('data-category');
         }
 
-        if (atr == '../../images/eflora/select_icon.png') {
-            atr = '../../images/eflora/select_icon1.png';
+        if (atr == '../../images/eflora/select_icon1.png') {
+            atr = '../../images/eflora/select_icon.png';
             $(this).parent().find('.price_link').attr('src', atr);
 
             /*****/
@@ -1735,7 +1735,7 @@ $(document).ready(function () {
             /****/
         }
         else {
-            atr = '../../images/eflora/select_icon.png';
+            atr = '../../images/eflora/select_icon1.png';
             $(this).parent().find(".price_link").attr('src', atr);
 
 
@@ -1760,9 +1760,9 @@ $(document).ready(function () {
         }
     })
 
-    $('.choice_link').eq(2).click(function () {
+    $('.choice_link').eq(2).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -1781,9 +1781,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(3).click(function () {
+    $('.choice_link').eq(3).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -1802,9 +1802,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(4).click(function () {
+    $('.choice_link').eq(4).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -1823,9 +1823,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(5).click(function () {
+    $('.choice_link').eq(5).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -1844,9 +1844,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(6).click(function () {
+    $('.choice_link').eq(6).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -1865,9 +1865,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link').eq(7).click(function () {
+    $('.choice_link').eq(7).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -1886,10 +1886,10 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link_1').eq(0).click(function () {
+    $('.choice_link_1').eq(0).click(function (e) {
 
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         $(this).parent().find('.popular').show();
         $(this).parent().find('.price_link').hide();
         var atr = $(this).parent().find('.popular').attr('src');
@@ -1901,8 +1901,8 @@ $(document).ready(function () {
             var category = $('.slick-active-catalog a').attr('data-category');
         }
 
-        if (atr == '../../images/eflora/select_icon.png') {
-            atr = '../../images/eflora/select_icon1.png';
+        if (atr == '../../images/eflora/select_icon1.png') {
+            atr = '../../images/eflora/select_icon.png';
             $(this).parent().find('.popular').attr('src', atr);
 
             $.ajax({
@@ -1918,7 +1918,7 @@ $(document).ready(function () {
             });
         }
         else {
-            atr = '../../images/eflora/select_icon.png';
+            atr = '../../images/eflora/select_icon1.png';
             $(this).parent().find('.popular').attr('src', atr);
             $.ajax({
                 type: 'get',
@@ -1935,9 +1935,9 @@ $(document).ready(function () {
 
 
     })
-    $('.choice_link_1').eq(1).click(function () {
+    $('.choice_link_1').eq(1).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         $(this).parent().find('.popular').hide();
         $(this).parent().find('.price_link').show();
         var atr = $(this).parent().find('.price_link').attr('src');
@@ -1949,8 +1949,8 @@ $(document).ready(function () {
             var category = $('.slick-active-catalog a').attr('data-category');
         }
 
-        if (atr == '../../images/eflora/select_icon.png') {
-            atr = '../../images/eflora/select_icon1.png';
+        if (atr == '../../images/eflora/select_icon1.png') {
+            atr = '../../images/eflora/select_icon.png';
             $(this).parent().find('.price_link').attr('src', atr);
 
             /*****/
@@ -1973,7 +1973,7 @@ $(document).ready(function () {
             /****/
         }
         else {
-            atr = '../../images/eflora/select_icon.png';
+            atr = '../../images/eflora/select_icon1.png';
             $(this).parent().find(".price_link").attr('src', atr);
 
 
@@ -1998,9 +1998,9 @@ $(document).ready(function () {
         }
     })
 
-    $('.choice_link_1').eq(2).click(function () {
+    $('.choice_link_1').eq(2).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -2019,9 +2019,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link_1').eq(3).click(function () {
+    $('.choice_link_1').eq(3).click(function (e) {
         changeColorChoiceLink(this);
-        //alert('fsafs');
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -2040,9 +2040,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link_1').eq(4).click(function () {
+    $('.choice_link_1').eq(4).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -2061,9 +2061,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link_1').eq(5).click(function () {
+    $('.choice_link_1').eq(5).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -2082,9 +2082,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link_1').eq(6).click(function () {
+    $('.choice_link_1').eq(6).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }
@@ -2103,9 +2103,9 @@ $(document).ready(function () {
             }
         });
     });
-    $('.choice_link_1').eq(7).click(function () {
+    $('.choice_link_1').eq(7).click(function (e) {
         changeColorChoiceLink(this);
-
+        e.preventDefault();
         if ($('.slick-active a').attr('data-category')) {
             var category = $('.slick-active a').attr('data-category');
         }

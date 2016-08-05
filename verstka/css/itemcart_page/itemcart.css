@@ -560,10 +560,10 @@ ul.flower_view>li>.product_wrap>.flower>.flower_pic
 .item_selector>.count_product_selector>.increment{
 
 	float:left;
-	width:30px;
+	width:31px;
 	background-color: #dfdfdf;
-	height: 30px;
-	line-height:30px;
+	height: 31px;
+	line-height:31px;
 	border-radius: 50%;
 	cursor:pointer;
 	text-align: center;
@@ -590,7 +590,7 @@ transition: background-color 400ms linear;
 	float:left;
 	width:40px;
 	line-height:30px;
-	height: 30px;
+	height: 31px;
 	border-radius: 50%;
 	text-align: center;
 	font:  18px/17px arial,sans-serif;
@@ -611,10 +611,10 @@ transition: background-color 400ms linear;
 
 .item_selector>.count_product_selector>.decrement{
 	float:left;
-	width:30px;
+	width:31px;
 	background-color: #dfdfdf;
-	height: 30px;
-	line-height:30px;
+	height: 31px;
+	line-height:31px;
 	border-radius: 50%;
 	cursor:pointer;
 	text-align: center;

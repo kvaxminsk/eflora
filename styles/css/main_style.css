@@ -2290,3 +2290,17 @@ sup{
 #header_price_text_br sub{
 	font-size: 25px;
 }
+strong  {
+	color:#b54e74;
+}
+strong a {
+	color:#b54e74;
+}
+strong a:hover{
+	color:#ff8b4e;
+	transition: 0.5s;
+}
+a strong:hover{
+	color:#ff8b4e;
+	transition: 0.5s;
+}
