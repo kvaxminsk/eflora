@@ -1,3 +1,7 @@
+.bottomBlockCatalog{
+	float: right;
+	width: calc(100% - 365px);
+}
 .orrange_arrow{
 	display:none;
 }
@@ -795,7 +799,7 @@ ul.flower_products_catalog li:hover  .discount>p{
 	@media all and (max-width:  1280px) {
 
 		.main_content {
-
+			overflow: hidden;
 			/*margin-top: -460px;*/
 		}
 		/* 	.slide_box {
@@ -858,6 +862,10 @@ ul.flower_products_catalog li:hover  .discount>p{
 
 
 	@media all and (max-width:  1000px){
+		.bottomBlockCatalog{
+			float: right;
+			width: calc(100% - 240px);
+		}
 		.mp_left_main_content {
 			width: 240px;
 		}
