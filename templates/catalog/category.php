@@ -151,4 +151,4 @@ $image = image($image, 'resize', '1500', '986');
     <br/>
   </ul>
 </div>
-<?=$contentCategory?>
+<div><?=$contentCategory?></div>
