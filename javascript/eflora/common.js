@@ -210,6 +210,11 @@ function renderBlockReviews() {
 
 
 $(document).ready(function () {
+    var ua = navigator.userAgent;
+    if (ua.search(/OPR/) != -1) alert('В старых версиях браузера Opera возможно некоректное отоброжение сайта');
+
+
+
     //$('.reason_link_a').on('click',function(){
     //    alert('http://'+window.location.hostname+$(this).attr('data-url'));
     //    window.location.href = 'http://'+window.location.hostname+$(this).attr('data-url');
