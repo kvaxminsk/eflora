@@ -40,9 +40,11 @@
 	margin-bottom: 57px;
 }
 .dollar_price >.um{
-	font:  19px/19px arial,sans-serif;
+	font:  22px/19px arial,sans-serif;
 	font-family: 'Roboto Light', arial;
 	margin-bottom: 2px;
+	top:-2px;
+	position: relative;
 }
 .dollar_price >.line{
 	border-top: 2px solid #ffb7c5;
