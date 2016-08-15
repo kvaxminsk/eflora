@@ -2,6 +2,8 @@
 
 class FrontShopController extends FrontController
 {
+    public $currency;
+    public $methodPay;
 
     public function __construct()
     {
@@ -49,16 +51,8 @@ class FrontShopController extends FrontController
         $totalAmout =0;
         $date = json_decode($_POST['data']);
 
-//        var_dump($date);die();
-//        var_dump($date->products);
         foreach($date->products as $product) {
-//            var_dump($product->name);
             $productOrder = Order::model()->loadProduct($product[0]);
-//            Product::model()->getPrimaryKey($product[0]);
-//            var_dump($productOrder);
-//            var_dump(Product::model()->getPrimaryKey($product[0]));
-//            die();
-//            $totalAmout += round($productOrder->price*$product[1]);
             if($productOrder->discount != 0 ) {
                 $totalAmout += round($productOrder->price*$product[1]- $productOrder->price*$product[1]*$productOrder->discount/100);
             }
@@ -69,23 +63,24 @@ class FrontShopController extends FrontController
 //
         }
 
-        if($date->currency == 'us') {
-            $this->currency ='us';
-            $currencyType = 'US';
-            $moneyTotal = round($totalAmout,2);
-            $moneyTotalString = 'US ' . number_format($moneyTotal/10000, 0, '', ' ');
-            $moneyTotalRus = $totalAmout / $kurs_rus_dollar;
-            $rus_money = 'RU '  . number_format($moneyTotalRus - fmod($moneyTotalRus,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotalRus,1),2) * 100 .  ' коп ';
-        }
-        elseif ($date->currency == 'br') {
+//        if($date->currency == 'us') {
+//            $this->currency ='us';
+//            $currencyType = 'US';
+//            $moneyTotal = round($totalAmout,2);
+//            $moneyTotalString = 'US ' . number_format($moneyTotal/10000, 0, '', ' ');
+//            $moneyTotalRus = $totalAmout / $kurs_rus_dollar;
+//            $rus_money = 'RU '  . number_format($moneyTotalRus - fmod($moneyTotalRus,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotalRus,1),2) * 100 .  ' коп ';
+//        }
+        if (($date->currency == 'br') || ($date->currency == 'us')) {
+            $this->currency = $date->currency;
             $totalAmout = round($kurs * $totalAmout,2);
             $currencyType = 'BYN';
-            $this->currency ='br';
             $moneyTotal = round($totalAmout/10000,2);
 
             $moneyTotalString = 'BYN ' . number_format($moneyTotal - fmod($moneyTotal,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotal,1),2) * 100 .  ' коп ';
 
             $moneyTotalRus = $totalAmout / $kurs_rus_byn;
+
             $moneyTotalRus = round($moneyTotalRus,2);
             $rus_money = 'RU '  . number_format($moneyTotalRus - fmod($moneyTotalRus,1), 0, '', ' ') . ' руб '  . round(fmod($moneyTotalRus,1),2) * 100 .  ' коп ';
         }
@@ -125,9 +120,6 @@ class FrontShopController extends FrontController
                 $op->save();
             }
         }
-
-
-//        $money = 'BYN ' . number_format($totalAmout/10000, 0, '', ' ') . ' руб '  . (fmod($totalAmout, 10000) /100) .  ' коп ';
         switch($order->method_pay) {
             case 'Наличные деньги курьеру':
                 $methodPay = 'Наличные деньги курьеру';
@@ -206,7 +198,7 @@ class FrontShopController extends FrontController
                         Ваш заказ #<span id="order_id">'  . $order->id . '</span> получен </p>';
                 break;
             case 'Яндекс Деньги':
-                $totalAmout = $totalAmout * 310;
+               // $totalAmout = $totalAmout * $kurs_rus_byn;
 
                 $methodPay = 'Яндекс Деньги';
                 echo '<p> Спасибо что выбрали нашу службу.<br>
@@ -226,12 +218,12 @@ class FrontShopController extends FrontController
 
         if ($email) {
             $message = $this->createLetter($order, $date->products, $totalAmout, true);
-            $subject = 'Заказ №' . $order->id . '  от ' . date('d.m.Y, H:i', strtotime($order->date));
+            $subject = 'Заказ №' . $order->id . '  от ' . date('d.m.Y', strtotime($order->date));
             sendEmail($message, $subject, $email_to,$email_admin );
         }
         if (isEmail($date->email_to)) {
             $message = $this->createLetter($order, $date->products, $totalAmout, false);
-            $subject = 'Ваш заказ №' . $order->id . '  от ' . date('d.m.Y, H:i', strtotime($order->date));
+            $subject = 'Ваш заказ №' . $order->id . '  от ' . date('d.m.Y', strtotime($order->date));
             sendEmail($message, $subject, $email_admin, $email_to);
         }
 //
@@ -361,14 +353,14 @@ class FrontShopController extends FrontController
         $host = str_replace('www.', '', getEnv('HTTP_HOST'));
         $host = 'http://' . $host;
         $text = '';
-        $text .= '<p>Заказ № ' . $order->id . 'от ' . date('d.m.Y, H:i', strtotime($order->date)) . '</p>';
+        $text .= '<p>Заказ № ' . $order->id . 'от ' . date('d.m.Y', strtotime($order->date)) . '</p>';
         if ($adminflag) {
             $text .= '<h2>Отправитель:</h2> ' . $order->name_to . '<br>';
             $text .= '<p>';
             $text .= '<b>Телефон:</b> ' . (($order->phone_to != '') ? $order->phone_to : 'Не указано') . '<br>';
             $text .= '<b>Страна:</b> ' . (($order->country_to != '') ? $order->country_to : 'Не указано') . '<br>';
             $text .= '<b>E-mail:</b> ' . (($order->email_to != '') ? $order->email_to : 'Не указано') . '<br>';
-            $text .= '<b>Адрес доставки:</b> ' . (($order->user_address != '') ? $order->user_address : 'Не указано') . '<br>';
+//            $text .= '<b>Адрес доставки:</b> ' . (($order->user_address != '') ? $order->user_address : 'Не указано') . '<br>';
             $text .= '</p>' . '<br>';
             $text .= '<h2>Получатель:</h2> ' . $order->name_from;
             $text .= '<p>';
@@ -377,8 +369,9 @@ class FrontShopController extends FrontController
             $text .= '<b>Город:</b> ' . (($order->city_from != '') ? $order->city_from : 'Не указано') . '<br>';
             $text .= '<b>Адрес:</b> ' . (($order->address_from != '') ? $order->address_from : 'Не указано') . '<br>';
             $text .= '<b>E-mail:</b> ' . (($order->email_to != '') ? $order->email_to : 'Не указано') . '<br>';
-            $text .= '<b>Адрес доставки:</b> ' . (($order->user_address != '') ? $order->user_address : 'Не указано') . '<br>';
+//            $text .= '<b>Адрес доставки:</b> ' . (($order->user_address != '') ? $order->user_address : 'Не указано') . '<br>';
             $text .= '<b>Способ оплаты:</b> ' . (($order->method_pay != '') ? $order->method_pay : 'Не указано') . '<br>';
+            $text .= '<b>Тип Валюты:</b> ' . $this->currency . '<br>';
             $text .= '<b>Дата доставки:</b> ' . (($order->date_delivery != '') ? $order->date_delivery : 'Не указано') . '<br>';
 
             $text .= '</p>';
@@ -392,9 +385,9 @@ class FrontShopController extends FrontController
                     <tr>
                     	<td><b>#</b></td>
                     	<td><b>Наименование</b></td>
-                    	<td><b>Цена</b></td>
+                    	<td><b>Цена, BYN</b></td>
                     	<td><b>Количество</b></td>
-                    	<td><b>Стоимость</b></td>
+                    	<td><b>Стоимость, BYN</b></td>
                     </tr>';
         if (!empty($products)) {
             foreach ($products as $i => $pr) {
@@ -404,15 +397,15 @@ class FrontShopController extends FrontController
 
                 $text .= '<td>' . ($i + 1) . '</td>';
                 $text .= '<td>' . $productOrder->name . '</td>';
-                $text .= '<td>' . round($productOrder->price- $productOrder->price*$productOrder->discount/100) . '</td>';
+                $text .= '<td>' . round($productOrder->price - $productOrder->price*$productOrder->discount/100) * $this->kurs / 10000 . '</td>';
                 $text .= '<td>' . $pr[1] . '</td>';
-                $text .= '<td>' . round($productOrder->price*$pr[1]- $productOrder->price*$pr[1]*$productOrder->discount/100 ). '</td>';
+                $text .= '<td>' . round($productOrder->price*$pr[1]- $productOrder->price*$pr[1]*$productOrder->discount/100 ) * $this->kurs / 10000 . '</td>';
                 $text .= '</tr>';
             }
             $text .= '<tr>';
             $text .= '<td colspan="3"></td>';
             $text .= '<td>Итого:</td>';
-            $text .= '<td>' . $total . '</td>';
+            $text .= '<td>' . $total / 10000  . '</td>';
             $text .= '</tr>';
         }
         $text .= '</table>';

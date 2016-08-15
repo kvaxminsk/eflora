@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" type="text/css" href="/javascript/eflora/jquery-ui-1.11.4/jquery-ui.css"/>
 
-    <script> var kurs = <?=$this->kurs?></script>
+    <script> var kurs = <?= $this->kurs ?></script>
 
     <!--	<script type="text/javascript" src="/javascript/eflora/modernizr.custom.79639.js"></script>-->
     <script src="/javascript/eflora/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
@@ -69,9 +69,6 @@
                     $('.tomorrow_button').removeClass('tomorrow_button_active');
 
 
-
-
-
                 },
                 showWeek: false,
                 showAnim: "fadeIn",
@@ -93,7 +90,7 @@
     <div id="header">
         <div id="logo">
             <a href="/"><img src="/images/eflora/main_logo.png"
-                                                                alt="Тут должен быть логотип" class="logo_pic"></a>
+                             alt="Тут должен быть логотип" class="logo_pic"></a>
 
             <p id="logo_text">
                 Belarus flowers delivery service
@@ -222,10 +219,10 @@
             <div class="total_cost_c1">
                 <p> ИТОГО</p>
                 <div class="order_list_total_describe">
-<!--                   <sub class="br1">BYN</sub>-->
-<!--                    <p class="order_list_price_old" id="order_list_price_old">-->
-<!--                    </p>-->
-<!--                    <hr>-->
+                    <!--                   <sub class="br1">BYN</sub>-->
+                    <!--                    <p class="order_list_price_old" id="order_list_price_old">-->
+                    <!--                    </p>-->
+                    <!--                    <hr>-->
                     <sub class="br2">BYN</sub>
                     <p class="order_list_price_new total_price-1" id="order_list_price_new">
                         <br>
@@ -329,14 +326,42 @@
                         <input type="text" name="phone_to" class="cart1_phone_input"
                                placeholder="Телефон (вместе с кодом)">
                         <!-- <input type="text" name="country" class="cart1_country_input" placeholder= "Страна"> -->
-                        <div id="dropDown" class="wrapper-dropdown-2" tabindex="1"><span name="country_to">Беларусь</span>
+                        <div id="dropDown" class="wrapper-dropdown-2" tabindex="1"><span
+                                name="country_to">Беларусь</span>
                             <ul class="dropdown">
-                                <li>Германия</li>
-                                <li>Франция</li>
-                                <li>Беларусь</li>
+                                <li value="3">Беларусь</li>
+                                <li value="64">США</li>
+                                <li value="65">Германия</li>
+                                <li value="66">Египет</li>
+                                <li value="72">Великобритания</li>
+                                <li value="71">Дания</li>
+                                <li value="69">Россия</li>
+                                <li value="73">Канада</li>
+                                <li value="74">Украина</li>
+                                <li value="75">Латвия</li>
+                                <li value="76">Польша</li>
+                                <li value="77">Казахстан</li>
+                                <li value="78">Франция</li>
+                                <li value="81">ОАЭ</li>
+                                <li value="82">Азербайджан</li>
+                                <li value="83">Болгария</li>
+                                <li value="84">Турция</li>
+                                <li value="85">Молдова</li>
+                                <li value="86">Китай</li>
+                                <li value="87">Нидерланды</li>
+                                <li value="91">Испания</li>
+                                <li value="90">Бельгия</li>
+                                <li value="92">Норвегия</li>
+                                <li value="93">Австралия</li>
+                                <li value="94">Израиль</li>
+                                <li value="95">Сербия</li>
+                                <li value="96">Словакия</li>
+                                <li value="98">Литва</li>
+                                <li value="100">Эстония</li>
                             </ul>
                         </div>
-                        <input type="email" name="email_to" class="cart1_email_input" placeholder="Электронная почта" required>
+                        <input type="email" name="email_to" class="cart1_email_input" placeholder="Электронная почта"
+                               required>
                         <!--						<div class="add_input_phone">-->
                         <!--							+-->
                         <!--						</div>-->
@@ -354,16 +379,113 @@
                         <div id="dropDown1" class="wrapper-dropdown-2" tabindex="1"><span
                                 name="country_from">Беларусь	</span>
                             <ul class="dropdown">
-                                <li>Германия</li>
-                                <li>Франция</li>
-                                <li>Беларусь</li>
+                                <li value="3">Беларусь</li>
+                                <li value="64">США</li>
+                                <li value="65">Германия</li>
+                                <li value="66">Египет</li>
+                                <li value="72">Великобритания</li>
+                                <li value="71">Дания</li>
+                                <li value="69">Россия</li>
+                                <li value="73">Канада</li>
+                                <li value="74">Украина</li>
+                                <li value="75">Латвия</li>
+                                <li value="76">Польша</li>
+                                <li value="77">Казахстан</li>
+                                <li value="78">Франция</li>
+                                <li value="81">ОАЭ</li>
+                                <li value="82">Азербайджан</li>
+                                <li value="83">Болгария</li>
+                                <li value="84">Турция</li>
+                                <li value="85">Молдова</li>
+                                <li value="86">Китай</li>
+                                <li value="87">Нидерланды</li>
+                                <li value="91">Испания</li>
+                                <li value="90">Бельгия</li>
+                                <li value="92">Норвегия</li>
+                                <li value="93">Австралия</li>
+                                <li value="94">Израиль</li>
+                                <li value="95">Сербия</li>
+                                <li value="96">Словакия</li>
+                                <li value="98">Литва</li>
+                                <li value="100">Эстония</li>
                             </ul>
                         </div>
                         <div id="dropDown2" class="wrapper-dropdown-2" tabindex="1"><span name="city_from">Минск</span>
                             <ul class="dropdown">
-                                <li>Вилейка</li>
-                                <li>Молодечно</li>
-                                <li>Минск</li>
+                                <li value="257">Слуцк</li>
+                                <li value="256">Слоним</li>
+                                <li value="255">Скидель</li>
+                                <li value="254">Светлогорск</li>
+                                <li value="253">Рогачёв</li>
+                                <li value="252">Речица</li>
+                                <li value="251">Радошковичи</li>
+                                <li value="250">Поставы</li>
+                                <li value="249">Полоцк</li>
+                                <li value="248">Пинск</li>
+                                <li value="258">Сморгонь</li>
+                                <li value="247">Ошмяны</li>
+                                <li value="246">Островец</li>
+                                <li value="245">Осиповичи</li>
+                                <li value="244">Орша</li>
+                                <li value="243">Новополоцк</li>
+                                <li value="242">Новолукомль</li>
+                                <li value="241">Новогрудок</li>
+                                <li value="240">Несвиж</li>
+                                <li value="239">Мядель</li>
+                                <li value="238">Молодечно</li>
+                                <li value="237">Мозырь</li>
+                                <li value="236">Могилёв</li>
+                                <li value="235">Марьина Горка</li>
+                                <li value="234">Маларита</li>
+                                <li value="233">Ляховичи</li>
+                                <li value="232">Лунинец</li>
+                                <li value="231">Лида</li>
+                                <li value="230">Лепель</li>
+                                <li value="229">Кричев</li>
+                                <li value="228">Кобрин</li>
+                                <li value="227">Климовичи</li>
+                                <li value="226">Клецк</li>
+                                <li value="225">Кареличи</li>
+                                <li value="224">Калинковичи</li>
+                                <li value="223">Ивие</li>
+                                <li value="222">Ивацевичи</li>
+                                <li value="220">Жодино</li>
+                                <li value="219">Жлобин</li>
+                                <li value="218">Жидковичи</li>
+                                <li value="217">Дребин</li>
+                                <li value="215">Горки</li>
+                                <li value="214">Гродно</li>
+                                <li value="216">Докшицы</li>
+                                <li value="212">Гомель</li>
+                                <li value="211">Глуск</li>
+                                <li value="210">Глубокое</li>
+                                <li value="209">Ганцевичи</li>
+                                <li value="208">Воложин</li>
+                                <li value="207">Волковыск</li>
+                                <li value="206">Витебск</li>
+                                <li value="205">Вилейка</li>
+                                <li value="202">Браслав</li>
+                                <li value="201">Борисов</li>
+                                <li value="204">Быхов</li>
+                                <li value="197">Березино</li>
+                                <li value="203">Брест</li>
+                                <li value="200">Бобруйск</li>
+                                <li value="189">Берёза</li>
+                                <li value="188">Белыничи</li>
+                                <li value="187">Барановичи</li>
+                                <li value="186">Атолино</li>
+                                <li value="259">Солигорск</li>
+                                <li value="260">Старые Дороги</li>
+                                <li value="261">Столбцы</li>
+                                <li value="262">Толочин</li>
+                                <li value="263">Червень</li>
+                                <li value="264">Чериков</li>
+                                <li value="265">Шарковщина</li>
+                                <li value="266">Шклов</li>
+                                <li selected="selected" value="267">Минск</li>
+                                <li value="277">Другой</li>
+                                <li value="329">Другой</li>
+                                <li value="347">Бегомль</li>
                             </ul>
                         </div>
                         <input type="text" name="address_from" class="cart1_address_input" placeholder="Адрес">
@@ -391,24 +513,26 @@
                     <!-- <p> Текст открытки и ваш комментарий к заказу</p>
                     <input type="text" name="text_postcard" class="text_postcard">  -->
 
-                    <textarea class="text_postcard" name="comment_postcard" id="comment_postcard" cols="30" rows="3" placeholder="Текст комментария"></textarea>
+                    <textarea class="text_postcard" name="comment_postcard" id="comment_postcard" cols="30" rows="3"
+                              placeholder="Текст комментария"></textarea>
                     <p class="interval">интервал времени для доставки, коментарии, пожелания и т. д.</p>
                 </div>
                 <p> Способы оплаты </p>
                 <div class="way_pay_wrapp">
 
-                    <input type="radio" name="radiog_dark" id="radio1" value="1" class="css-checkbox" checked="checked"/>
+                    <input type="radio" name="radiog_dark" id="radio1" value="1" class="css-checkbox"
+                           checked="checked"/>
                     <label for="radio1" class="css-label radGroup2">Наличные деньги курьеру</label><br>
                     <input type="radio" name="radiog_dark" id="radio2" value="2" class="css-checkbox"
-                           />
+                    />
                     <label for="radio2" class="css-label radGroup2">VISA/MasterCard/Белкарт</label><br>
-                    <input type="radio" name="radiog_dark" id="radio3" value=" 3" class="css-checkbox" />
+                    <input type="radio" name="radiog_dark" id="radio3" value=" 3" class="css-checkbox"/>
                     <label for="radio3" class="css-label radGroup2">Оплата наличными в одном из наших
                         салонов</label><br>
                     <input type="radio" name="radiog_dark" id="radio4" value="4" class="css-checkbox"/>
                     <label for="radio4" class="css-label radGroup2">WebMoney</label><br>
                     <input type="radio" name="radiog_dark" id="radio5" value="5" class="css-checkbox"
-                          />
+                    />
                     <label for="radio5" class="css-label radGroup2">ЕРИП Расчёт</label><br>
                     <input type="radio" name="radiog_dark" id="radio6" value="6" class="css-checkbox"/>
                     <label for="radio6" class="css-label radGroup7">Оплата по безналичному расчету на наш расчетный счет
@@ -556,10 +680,10 @@
             <div class="reactive_logo">
                 <div class="reactive_logo_wrap">
                     <a href="http://reactive.by" nofollow>
-                    <p>Дизайн и разработка-</p>
-                    <div class="logo_picture">
-                    </div>
-                        </a>
+                        <p>Дизайн и разработка-</p>
+                        <div class="logo_picture">
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="up_button">
