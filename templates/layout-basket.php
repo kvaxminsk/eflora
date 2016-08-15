@@ -397,10 +397,10 @@
                 <p> Способы оплаты </p>
                 <div class="way_pay_wrapp">
 
-                    <input type="radio" name="radiog_dark" id="radio1" value="1" class="css-checkbox"/>
+                    <input type="radio" name="radiog_dark" id="radio1" value="1" class="css-checkbox" checked="checked"/>
                     <label for="radio1" class="css-label radGroup2">Наличные деньги курьеру</label><br>
                     <input type="radio" name="radiog_dark" id="radio2" value="2" class="css-checkbox"
-                           checked="checked"/>
+                           />
                     <label for="radio2" class="css-label radGroup2">VISA/MasterCard/Белкарт</label><br>
                     <input type="radio" name="radiog_dark" id="radio3" value=" 3" class="css-checkbox" />
                     <label for="radio3" class="css-label radGroup2">Оплата наличными в одном из наших
@@ -408,7 +408,7 @@
                     <input type="radio" name="radiog_dark" id="radio4" value="4" class="css-checkbox"/>
                     <label for="radio4" class="css-label radGroup2">WebMoney</label><br>
                     <input type="radio" name="radiog_dark" id="radio5" value="5" class="css-checkbox"
-                           checked="checked"/>
+                          />
                     <label for="radio5" class="css-label radGroup2">ЕРИП Расчёт</label><br>
                     <input type="radio" name="radiog_dark" id="radio6" value="6" class="css-checkbox"/>
                     <label for="radio6" class="css-label radGroup7">Оплата по безналичному расчету на наш расчетный счет
