@@ -35,7 +35,7 @@
 
         ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
-                    center: [53.9403468, 27.6105249],
+                    center: [53.9403468, 27.6267249],
                     zoom: 14,
                     controls: ["zoomControl"]
 
@@ -44,7 +44,7 @@
                 }),
 
                 myPlacemark = new ymaps.Placemark(
-                    [53.9403468, 27.58435249], {
+                    [53.9403468,27.6024957], {
                         hintContent: false,
                         balloonContent: false
                     }, {

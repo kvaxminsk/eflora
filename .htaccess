@@ -2,19 +2,19 @@ AddDefaultCharset UTF-8
 
 RewriteEngine on
 	
-#редирект с index.php на главную 
+#пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ index.php пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
 	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
 	RewriteRule ^index\.php$ / [R=301,L]
 	
-#cклейка index.php, html, htm с /
+#cпїЅпїЅпїЅпїЅпїЅпїЅ index.php, html, htm пїЅ /
     #RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*?)index\.php|html|htm([^\s]*) [NC]
     #RewriteRule ^ /%1%2 [R=301,L,NE]
     
-#редирект с www на без www, указываем необходимый домен
+#пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ www пїЅпїЅ пїЅпїЅпїЅ www, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     RewriteCond %{HTTP_HOST} ^www\.(.*)$
 	RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
 
-# удаление слеша из урл
+# пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_URI} !^/admin/
 	RewriteCond %{REQUEST_URI} ^(.+)/$
@@ -28,3 +28,370 @@ RewriteEngine on
 # otherwise forward it to index.php
 	DirectoryIndex index.php
 	RewriteRule . index.php
+
+
+
+	Redirect 301 /catalogue/gift/ http://eflora.by/catalog/gift-flavor
+    Redirect 301 /catalogue/gift/2069.html http://eflora.by/catalog/gift-flavor/frezii
+    Redirect 301 /catalogue/gift/buket-roz-liziantusa.html http://eflora.by/catalog/gift-flavor/prem-era
+    Redirect 301 /catalogue/gift/2045.html http://eflora.by/catalog/gift-flavor/11-eustom
+    Redirect 301 /catalogue/gift/2051.html http://eflora.by/catalog/gift-flavor/hrizantemy
+    Redirect 301 /catalogue/gift/2044.html http://eflora.by/catalog/gift-flavor/listopad
+    Redirect 301 /catalogue/gift/2029.html http://eflora.by/catalog/gift-flavor/solnechnyy-udar
+    Redirect 301 /catalogue/gift/2027.html http://eflora.by/catalog/gift-flavor/karmen
+    Redirect 301 /catalogue/gift/2025.html http://eflora.by/catalog/gift-flavor/rozovinka
+    Redirect 301 /catalogue/gift/1978.html http://eflora.by/catalog/gift-flavor/nezabudka
+    Redirect 301 /catalogue/gift/1977.html http://eflora.by/catalog/gift-flavor/nezhnaya-pautina
+    Redirect 301 /catalogue/gift/1972.html http://eflora.by/catalog/gift-flavor/avgust
+    Redirect 301 /catalogue/gift/1971.html http://eflora.by/catalog/gift-flavor/nastroenie
+    Redirect 301 /catalogue/gift/1955.html http://eflora.by/catalog/gift-flavor/lokon
+    Redirect 301 /catalogue/gift/1954.html http://eflora.by/catalog/gift-flavor/vdohnovenie
+    Redirect 301 /catalogue/gift/1952.html http://eflora.by/catalog/gift-flavor/cvetochnyy-uzor
+    Redirect 301 /catalogue/gift/1949.html http://eflora.by/catalog/gift-flavor/flamingo
+    Redirect 301 /catalogue/gift/1945.html http://eflora.by/catalog/gift-flavor/rozali
+    Redirect 301 /catalogue/gift/1942.html http://eflora.by/catalog/gift-flavor/zhezl
+    Redirect 301 /catalogue/gift/1939.html http://eflora.by/catalog/gift-flavor/vechernyaya-skazka
+    Redirect 301 /catalogue/gift/1935.html http://eflora.by/catalog/gift-flavor/provans
+    Redirect 301 /catalogue/gift/1934.html http://eflora.by/catalog/gift-flavor/probuzhdenie
+    Redirect 301 /catalogue/gift/1905.html http://eflora.by/catalog/gift-flavor/rozovye-ochki
+    Redirect 301 /catalogue/gift/1904.html http://eflora.by/catalog/gift-flavor/karamel-ka
+    Redirect 301 /catalogue/gift/1892.html http://eflora.by/catalog/gift-flavor/romashki-v-pole
+    Redirect 301 /catalogue/gift/1885.html http://eflora.by/catalog/gift-flavor/osenniy-park
+    Redirect 301 /catalogue/gift/1884.html http://eflora.by/catalog/gift-flavor/sirenevyy-tuman
+    Redirect 301 /catalogue/gift/1883.html http://eflora.by/catalog/gift-flavor/zolotoe-runo
+    Redirect 301 /catalogue/gift/1880.html http://eflora.by/catalog/gift-flavor/cvetnoy-bul-var
+    Redirect 301 /catalogue/gift/1877.html http://eflora.by/catalog/gift-flavor/11-gerber
+    Redirect 301 /catalogue/gift/1867.html http://eflora.by/catalog/gift-flavor/privet
+    Redirect 301 /catalogue/gift/1866.html http://eflora.by/catalog/gift-flavor/velyur
+    Redirect 301 /catalogue/gift/1868.html http://eflora.by/catalog/gift-flavor/ulybnis
+    Redirect 301 /catalogue/gift/1860.html http://eflora.by/catalog/gift-flavor/dachnyy
+    Redirect 301 /catalogue/gift/1859.html http://eflora.by/catalog/gift-flavor/buket-iz-kall
+    Redirect 301 /catalogue/gift/1857.html http://eflora.by/catalog/gift-flavor/chaynaya-pauza
+    Redirect 301 /catalogue/gift/1854.html http://eflora.by/catalog/gift-flavor/ozero-nadezhdy
+    Redirect 301 /catalogue/gift/1852.html http://eflora.by/catalog/gift-flavor/apel-sinovyy-sok
+    Redirect 301 /catalogue/gift/1992.html http://eflora.by/catalog/gift-flavor/al-stromerii
+    Redirect 301 /catalogue/gift/1878.html http://eflora.by/catalog/gift-flavor/15-gerber
+    Redirect 301 /catalogue/gift/1889.html http://eflora.by/catalog/gift-flavor/metelica
+    Redirect 301 /catalogue/gift/1876.html http://eflora.by/catalog/gift-flavor/akvareli
+    Redirect 301 /catalogue/gift/1825.html http://eflora.by/catalog/gift-flavor/fontan
+    Redirect 301 /catalogue/gift/1805.html http://eflora.by/catalog/gift-flavor/priklyuchenie
+    Redirect 301 /catalogue/gift/1797.html http://eflora.by/catalog/gift-flavor/nezhnyy-rumyanec
+    Redirect 301 /catalogue/gift/1796.html http://eflora.by/catalog/gift-flavor/ariya-orhidei
+    Redirect 301 /catalogue/gift/1781.html http://eflora.by/catalog/gift-flavor/zatmenie
+    Redirect 301 /catalogue/gift/1780.html http://eflora.by/catalog/gift-flavor/rozyulechki
+    Redirect 301 /catalogue/gift/1766.html http://eflora.by/catalog/gift-flavor/romashkovoe-utro
+    Redirect 301 /catalogue/gift/1765.html http://eflora.by/catalog/gift-flavor/cvetochnyy-chay
+    Redirect 301 /catalogue/gift/1763.html http://eflora.by/catalog/gift-flavor/priznanie
+    Redirect 301 /catalogue/gift/1762.html http://eflora.by/catalog/gift-flavor/lilit
+    Redirect 301 /catalogue/gift/1760.html http://eflora.by/catalog/gift-flavor/belyy-ostrov
+    Redirect 301 /catalogue/gift/1738.html http://eflora.by/catalog/gift-flavor/golubaya-laguna
+    Redirect 301 /catalogue/gift/1735.html http://eflora.by/catalog/gift-flavor/lyubimyy-napev
+    Redirect 301 /catalogue/gift/1734.html http://eflora.by/catalog/gift-flavor/kaleydoskop
+    Redirect 301 /catalogue/gift/1721.html http://eflora.by/catalog/gift-flavor/grezy
+    Redirect 301 /catalogue/gift/1720.html http://eflora.by/catalog/gift-flavor/granatovyy-sok
+    Redirect 301 /catalogue/gift/1716.html http://eflora.by/catalog/gift-flavor/siyanie
+    Redirect 301 /catalogue/gift/1711.html http://eflora.by/catalog/gift-flavor/rozovye-mechty
+    Redirect 301 /catalogue/gift/1710.html http://eflora.by/catalog/gift-flavor/buket-iz-gerber
+    Redirect 301 /catalogue/gift/1709.html http://eflora.by/catalog/gift-flavor/klubnichka
+    Redirect 301 /catalogue/gift/1674.html http://eflora.by/catalog/gift-flavor/mnogotochie
+    Redirect 301 /catalogue/gift/1671.html http://eflora.by/catalog/gift-flavor/cvetnye-bryzgi
+    Redirect 301 /catalogue/gift/1670.html http://eflora.by/catalog/gift-flavor/triumf
+    Redirect 301 /catalogue/gift/1667.html http://eflora.by/catalog/gift-flavor/syurpriz
+    Redirect 301 /catalogue/gift/1655.html http://eflora.by/catalog/gift-flavor/lazurnyy-bereg
+
+
+
+    Redirect 301 /catalogue/roses/ http://eflora.by/catalog/flavor-roses
+    Redirect 301 /catalogue/roses/2043.html http://eflora.by/catalog/flavor-roses/pro-lyubov
+    Redirect 301 /catalogue/roses/2037.html http://eflora.by/catalog/flavor-roses/osennie-kraski
+    Redirect 301 /catalogue/roses/2036.html http://eflora.by/catalog/flavor-roses/101-cv-roza-60sm
+    Redirect 301 /catalogue/roses/1871.html http://eflora.by/catalog/flavor-roses/101-roza-60sm-rb
+    Redirect 301 /catalogue/roses/101-roza-buket-60-sm-ekvador.html http://eflora.by/catalog/flavor-roses/101-roza-60sm
+    Redirect 301 /catalogue/roses/1740.html http://eflora.by/catalog/flavor-roses/101-roza-60-sm
+    Redirect 301 /catalogue/roses/1748.html http://eflora.by/catalog/flavor-roses/korzina-101-roza
+    Redirect 301 /catalogue/roses/51-roza-krasnaya-60-sm-ekvador.html http://eflora.by/catalog/flavor-roses/51-roza
+    Redirect 301 /catalogue/roses/1673.html http://eflora.by/catalog/flavor-roses/mnogotochie-2
+    Redirect 301 /catalogue/roses/25-roz-krasnae-70-sm-ekvador.html http://eflora.by/catalog/flavor-roses/25-roz
+    Redirect 301 /catalogue/roses/1745.html http://eflora.by/catalog/flavor-roses/51-belaya-roza
+    Redirect 301 /catalogue/roses/1976.html http://eflora.by/catalog/flavor-roses/nadezhda
+    Redirect 301 /catalogue/roses/110.html http://eflora.by/catalog/flavor-roses/ovaciya
+    Redirect 301 /catalogue/roses/1960.html http://eflora.by/catalog/flavor-roses/avgust-2
+    Redirect 301 /catalogue/roses/1853.html http://eflora.by/catalog/flavor-roses/horovod
+    Redirect 301 /catalogue/roses/1742.html http://eflora.by/catalog/flavor-roses/35-roz
+    Redirect 301 /catalogue/roses/1739.html http://eflora.by/catalog/flavor-roses/11-krasnyh-roz
+    Redirect 301 /catalogue/roses/1768.html http://eflora.by/catalog/flavor-roses/9-belyh-roz-2
+    Redirect 301 /catalogue/roses/1743.html http://eflora.by/catalog/flavor-roses/9-belyh-roz
+    Redirect 301 /catalogue/roses/1798.html http://eflora.by/catalog/flavor-roses/nezhnyy-rumyanec-2
+    Redirect 301 /catalogue/roses/1186.html http://eflora.by/catalog/flavor-roses/barhatnoe-serdce
+    Redirect 301 /catalogue/roses/1741.html http://eflora.by/catalog/flavor-roses/rozovoe-serdce
+    Redirect 301 /catalogue/roses/1697.html http://eflora.by/catalog/flavor-roses/rozovoe-kruzhevo
+    Redirect 301 /catalogue/roses/1779.html http://eflora.by/catalog/flavor-roses/rozyulechki-2
+    Redirect 301 /catalogue/roses/1695.html http://eflora.by/catalog/flavor-roses/omut
+    Redirect 301 /catalogue/roses/1714.html http://eflora.by/catalog/flavor-roses/nezhnyy-poceluy
+    Redirect 301 /catalogue/roses/1684.html http://eflora.by/catalog/flavor-roses/roza-v-otkrytke
+    Redirect 301 /catalogue/roses/1165.html http://eflora.by/catalog/flavor-roses/mishka-v-rozah
+    Redirect 301 /catalogue/roses/1406.html http://eflora.by/catalog/flavor-roses/11-roz-akva
+    Redirect 301 /catalogue/roses/1685.html http://eflora.by/catalog/flavor-roses/delovoy-nastroy
+    Redirect 301 /catalogue/roses/1672.html http://eflora.by/catalog/flavor-roses/cvetnye-bryzgi-2
+    Redirect 301 /catalogue/roses/1256.html http://eflora.by/catalog/flavor-roses/uspeshnyy-2
+    Redirect 301 /catalogue/roses/1145.html http://eflora.by/catalog/flavor-roses/desert
+    Redirect 301 /catalogue/flowersbaskets/2049.html http://eflora.by/catalog/flavor-roses/progulka
+    Redirect 301 /catalogue/flowersbaskets/2023.html http://eflora.by/catalog/flavor-roses/priehali
+    Redirect 301 /catalogue/flowersbaskets/1948.html http://eflora.by/catalog/flavor-roses/izobilie
+    Redirect 301 /catalogue/flowersbaskets/1940.html http://eflora.by/catalog/flavor-roses/za-okolicey
+    Redirect 301 /catalogue/flowersbaskets/1933.html http://eflora.by/catalog/flavor-roses/sirenevaya-vual
+    Redirect 301 /catalogue/flowersbaskets/1927.html http://eflora.by/catalog/flavor-roses/vzbitye-slivki
+    Redirect 301 /catalogue/flowersbaskets/1887.html http://eflora.by/catalog/flavor-roses/privetnyy-luzhok
+    Redirect 301 /catalogue/flowersbaskets/1879.html http://eflora.by/catalog/flavor-roses/sel-skiy-motiv-2
+    Redirect 301 /catalogue/flowersbaskets/1861.html http://eflora.by/catalog/flavor-roses/rozovyy-biser
+    Redirect 301 /catalogue/flowersbaskets/1847.html http://eflora.by/catalog/flavor-roses/dostizhenie
+    Redirect 301 /catalogue/flowersbaskets/1828.html http://eflora.by/catalog/flavor-roses/snezhana
+    Redirect 301 /catalogue/flowersbaskets/523.html http://eflora.by/catalog/flavor-roses/korzina-iz-roz
+    Redirect 301 /catalogue/flowersbaskets/1778.html http://eflora.by/catalog/flavor-roses/rozyulechki-3
+    Redirect 301 /catalogue/flowersbaskets/1770.html http://eflora.by/catalog/flavor-roses/sineglazka
+    Redirect 301 /catalogue/flowersbaskets/1767.html http://eflora.by/catalog/flavor-roses/romashkovoe-utro-2
+    Redirect 301 /catalogue/flowersbaskets/1757.html http://eflora.by/catalog/flavor-roses/korzinka-orhidey
+    Redirect 301 /catalogue/flowersbaskets/1728.html http://eflora.by/catalog/flavor-roses/syn-rodilsya
+    Redirect 301 /catalogue/flowersbaskets/1727.html http://eflora.by/catalog/flavor-roses/dochka-rodilas
+    Redirect 301 /catalogue/flowersbaskets/1712.html http://eflora.by/catalog/flavor-roses/rozovye-mechty-2
+    Redirect 301 /catalogue/flowersbaskets/1698.html http://eflora.by/catalog/flavor-roses/rozovoe-lukoshko
+    Redirect 301 /catalogue/flowersbaskets/1694.html http://eflora.by/catalog/flavor-roses/letniy-podarok
+    Redirect 301 /catalogue/flowersbaskets/1693.html http://eflora.by/catalog/flavor-roses/romashkovoe-pole
+    Redirect 301 /catalogue/flowersbaskets/1690.html http://eflora.by/catalog/flavor-roses/prizvanie
+    Redirect 301 /catalogue/flowersbaskets/1666.html http://eflora.by/catalog/flavor-roses/syurpriz-2
+
+
+    Redirect 301 /catalogue/anniversary/ http://eflora.by/catalog/bridal-flavor
+    Redirect 301 /catalogue/anniversary/2050.html http://eflora.by/catalog/bridal-flavor/progulka-2
+    Redirect 301 /catalogue/anniversary/2005.html http://eflora.by/catalog/bridal-flavor/fontan-2
+    Redirect 301 /catalogue/anniversary/1984.html http://eflora.by/catalog/bridal-flavor/sirenevaya-vual-2
+    Redirect 301 /catalogue/anniversary/1983.html http://eflora.by/catalog/bridal-flavor/prizvanie-2
+    Redirect 301 /catalogue/anniversary/1982.html http://eflora.by/catalog/bridal-flavor/ministerskiy
+    Redirect 301 /catalogue/anniversary/1979.html http://eflora.by/catalog/bridal-flavor/nezabudka-2
+    Redirect 301 /catalogue/anniversary/1969.html http://eflora.by/catalog/bridal-flavor/korzina-101-roza-2
+    Redirect 301 /catalogue/anniversary/1966.html http://eflora.by/catalog/bridal-flavor/izobilie-2
+    Redirect 301 /catalogue/anniversary/1965.html http://eflora.by/catalog/bridal-flavor/flamingo-2
+    Redirect 301 /catalogue/anniversary/1964.html http://eflora.by/catalog/bridal-flavor/rozali-3
+    Redirect 301 /catalogue/anniversary/1963.html http://eflora.by/catalog/bridal-flavor/charuyuschieorhidei
+
+
+
+    Redirect 301  http://eflora.by/catalog/wedding-flavor
+    Redirect 301 /catalogue/wedding/2047.html http://eflora.by/catalog/wedding-flavor/korallovyy
+    Redirect 301 /catalogue/wedding/1991.html http://eflora.by/catalog/wedding-flavor/pelena
+    Redirect 301 /catalogue/wedding/1989.html http://eflora.by/catalog/wedding-flavor/fialochka
+    Redirect 301 /catalogue/wedding/1975.html http://eflora.by/catalog/wedding-flavor/zagadka
+    Redirect 301 /catalogue/wedding/1974.html http://eflora.by/catalog/wedding-flavor/laym
+    Redirect 301 /catalogue/wedding/1973.html http://eflora.by/catalog/wedding-flavor/apel-sin
+    Redirect 301 /catalogue/wedding/1956.html http://eflora.by/catalog/wedding-flavor/rozovoe-varen-e
+    Redirect 301 /catalogue/wedding/1951.html http://eflora.by/catalog/wedding-flavor/uvertyura
+    Redirect 301 /catalogue/wedding/1266.html http://eflora.by/catalog/wedding-flavor/vremya-nadezhd
+    Redirect 301 /catalogue/wedding/1938.html http://eflora.by/catalog/wedding-flavor/lesnaya-malina
+    Redirect 301 /catalogue/wedding/1937.html http://eflora.by/catalog/wedding-flavor/vstrecha
+    Redirect 301 /catalogue/wedding/1908.html http://eflora.by/catalog/wedding-flavor/rubin
+    Redirect 301 /catalogue/wedding/1907.html http://eflora.by/catalog/wedding-flavor/tiramisu
+    Redirect 301 /catalogue/wedding/1906.html http://eflora.by/catalog/wedding-flavor/zelenaya-dolina
+    Redirect 301 /catalogue/wedding/1894.html http://eflora.by/catalog/wedding-flavor/perlamutrovyy
+    Redirect 301 /catalogue/wedding/1957.html http://eflora.by/catalog/wedding-flavor/omut-2
+    Redirect 301 /catalogue/wedding/1888.html http://eflora.by/catalog/wedding-flavor/kashemir
+    Redirect 301 /catalogue/wedding/1872.html http://eflora.by/catalog/wedding-flavor/lunnyy-svet
+    Redirect 301 /catalogue/wedding/1865.html http://eflora.by/catalog/wedding-flavor/aromat-sireni
+    Redirect 301 /catalogue/wedding/1864.html http://eflora.by/catalog/wedding-flavor/serebryanaya-luna
+    Redirect 301 /catalogue/wedding/1844.html http://eflora.by/catalog/wedding-flavor/laym-2
+    Redirect 301 /catalogue/wedding/1841.html http://eflora.by/catalog/wedding-flavor/siniy-barhat
+    Redirect 301 /catalogue/wedding/1784.html http://eflora.by/catalog/wedding-flavor/adazhio
+    Redirect 301 /catalogue/wedding/1769.html http://eflora.by/catalog/wedding-flavor/ozhidanie-chuda
+    Redirect 301 /catalogue/wedding/1736.html http://eflora.by/catalog/wedding-flavor/yagodnyy-kokteyl
+    Redirect 301 /catalogue/wedding/1733.html http://eflora.by/catalog/wedding-flavor/vual
+    Redirect 301 /catalogue/wedding/1732.html http://eflora.by/catalog/wedding-flavor/moey-princesse
+    Redirect 301 /catalogue/wedding/1725.html http://eflora.by/catalog/wedding-flavor/karmin
+    Redirect 301 /catalogue/wedding/1723.html http://eflora.by/catalog/wedding-flavor/zhemchuzhnyy
+    Redirect 301 /catalogue/wedding/1708.html http://eflora.by/catalog/wedding-flavor/krem-bryule
+    Redirect 301 /catalogue/wedding/1729.html http://eflora.by/catalog/wedding-flavor/malinka
+    Redirect 301 /catalogue/wedding/1706.html http://eflora.by/catalog/wedding-flavor/ogon-dushi
+    Redirect 301 /catalogue/wedding/1678.html http://eflora.by/catalog/wedding-flavor/buket-glameliya
+    Redirect 301 /catalogue/wedding/1668.html http://eflora.by/catalog/wedding-flavor/skipetr
+    Redirect 301 /catalogue/wedding/1702.html http://eflora.by/catalog/wedding-flavor/kremovyy
+    Redirect 301 /catalogue/wedding/1646.html http://eflora.by/catalog/wedding-flavor/zefirchik
+    Redirect 301 /catalogue/wedding/1586.html http://eflora.by/catalog/wedding-flavor/miniatyurnyy
+    Redirect 301 /catalogue/wedding/1576.html http://eflora.by/catalog/wedding-flavor/nezhnyy
+    Redirect 301 /catalogue/wedding/1556.html http://eflora.by/catalog/wedding-flavor/vanil-nyy
+    Redirect 301 /catalogue/wedding/1546.html http://eflora.by/catalog/wedding-flavor/alen-kiy
+    Redirect 301 /catalogue/wedding/1436.html http://eflora.by/catalog/wedding-flavor/malinovo-belyy
+    Redirect 301 /catalogue/wedding/1236.html http://eflora.by/catalog/wedding-flavor/fantaziya
+    Redirect 301 /catalogue/wedding/1226.html http://eflora.by/catalog/wedding-flavor/koketka
+    Redirect 301 /catalogue/wedding/1206.html http://eflora.by/catalog/wedding-flavor/snezhinka
+    Redirect 301 /catalogue/wedding/1196.html http://eflora.by/catalog/wedding-flavor/utrenniy
+    Redirect 301 /catalogue/wedding/1176.html http://eflora.by/catalog/wedding-flavor/persik
+    Redirect 301 /catalogue/wedding/1166.html http://eflora.by/catalog/wedding-flavor/rozovyy-shar
+
+
+
+
+    Redirect 301 /catalogue/exotic/ http://eflora.by/catalog/exotic-flowers
+    Redirect 301 /catalogue/exotic/1836.html http://eflora.by/catalog/exotic-flowers/fontan-3
+    Redirect 301 /catalogue/exotic/1783.html http://eflora.by/catalog/exotic-flowers/zatmenie-2
+    Redirect 301 /catalogue/exotic/1764.html http://eflora.by/catalog/exotic-flowers/priznanie-2
+    Redirect 301 /catalogue/exotic/1718.html http://eflora.by/catalog/exotic-flowers/belaya-babochka
+    Redirect 301 /catalogue/exotic/1717.html http://eflora.by/catalog/exotic-flowers/nepobedimyy
+    Redirect 301 /catalogue/exotic/1707.html http://eflora.by/catalog/exotic-flowers/veter-peremen-2
+    Redirect 301 /catalogue/exotic/1654.html http://eflora.by/catalog/exotic-flowers/lazurnyy-bereg-2
+    Redirect 301 /catalogue/exotic/1652.html http://eflora.by/catalog/exotic-flowers/pobeditelyu-2
+    Redirect 301 /catalogue/plantsinpots/ http://eflora.by/catalog/exotic-flowers/potted-plants
+    Redirect 301 /catalogue/plantsinpots/1962.html http://eflora.by/catalog/exotic-flowers/falenopsisy-s
+    Redirect 301 /catalogue/plantsinpots/1920.html http://eflora.by/catalog/exotic-flowers/falenopsis-a
+    Redirect 301 /catalogue/plantsinpots/1660.html http://eflora.by/catalog/exotic-flowers/kompoziciya-6
+    Redirect 301 /catalogue/plantsinpots/923.html http://eflora.by/catalog/exotic-flowers/kompoziciya-7
+
+
+    Redirect 301 /catalogue/plantsinpots/ http://eflora.by/catalog/potted-plants
+    Redirect 301 /catalogue/plantsinpots/1962.html http://eflora.by/catalog/potted-plants/falenopsisy-s
+    Redirect 301 /catalogue/plantsinpots/1920.html http://eflora.by/catalog/potted-plants/falenopsis-a
+    Redirect 301 /catalogue/plantsinpots/1660.html http://eflora.by/catalog/potted-plants/kompoziciya-6
+    Redirect 301 /catalogue/plantsinpots/923.html http://eflora.by/catalog/potted-plants/kompoziciya-7
+
+
+
+    Redirect 301 /catalogue/business/ http://eflora.by/catalog/business-flavor
+    Redirect 301 /catalogue/business/1981.html http://eflora.by/catalog/business-flavor/ministerskiy-2
+    Redirect 301 /catalogue/business/1950.html http://eflora.by/catalog/business-flavor/prizvanie-3
+    Redirect 301 /catalogue/business/1863.html http://eflora.by/catalog/business-flavor/k-novym-beregam
+    Redirect 301 /catalogue/business/1845.html http://eflora.by/catalog/business-flavor/citadel
+    Redirect 301 /catalogue/business/1782.html http://eflora.by/catalog/business-flavor/zatmenie-3
+    Redirect 301 /catalogue/business/1665.html http://eflora.by/catalog/business-flavor/veter-peremen-3
+    Redirect 301 /catalogue/business/1651.html http://eflora.by/catalog/business-flavor/pobeditelyu-3
+    Redirect 301 /catalogue/business/1648.html http://eflora.by/catalog/business-flavor/rozovaya-polyana
+    Redirect 301 /catalogue/business/1639.html http://eflora.by/catalog/business-flavor/zolotaya-orhideya
+    Redirect 301 /catalogue/business/945.html http://eflora.by/catalog/business-flavor/letnyaya-raduga-2
+
+
+
+    Redirect 301 /catalogue/ritual/ http://eflora.by/catalog/ritual
+    Redirect 301 /catalogue/ritual/2026.html http://eflora.by/catalog/ritual/venok-traurnyy-2
+    Redirect 301 /catalogue/ritual/1840.html http://eflora.by/catalog/ritual/traurnyy-2
+    Redirect 301 /catalogue/ritual/1692.html http://eflora.by/catalog/ritual/venok-traurnyy-1
+    Redirect 301 /catalogue/ritual/1830.html http://eflora.by/catalog/ritual/traurnyy-1
+
+
+
+    Redirect 301 /catalogue/toys/ http://eflora.by/catalog/stuffed-toys
+    Redirect 301 /catalogue/toys/2071.html http://eflora.by/catalog/stuffed-toys/mishka-v-zhilete
+    Redirect 301 /catalogue/toys/2061.html http://eflora.by/catalog/stuffed-toys/mishka-nik
+    Redirect 301 /catalogue/toys/2060.html http://eflora.by/catalog/stuffed-toys/medved-dobryak
+    Redirect 301 /catalogue/toys/2046.html http://eflora.by/catalog/stuffed-toys/mishka-mitya
+    Redirect 301 /catalogue/toys/1677.html http://eflora.by/catalog/stuffed-toys/medvezhonok-betti
+
+
+
+    Redirect 301 /catalogue/gifts/ http://eflora.by/catalog/gift
+    Redirect 301 /catalogue/gifts/korzina-sladostey.html http://eflora.by/catalog/gift/slastene
+    Redirect 301 /catalogue/gifts/1959.html http://eflora.by/catalog/gift/tort-1-kg
+    Redirect 301 /catalogue/gifts/1895.html http://eflora.by/catalog/gift/otkrytka
+    Redirect 301 /catalogue/gifts/1869.html http://eflora.by/catalog/gift/steklyannaya-vaza
+    Redirect 301 /catalogue/gifts/1824.html http://eflora.by/catalog/gift/konfety-merci
+    Redirect 301 /catalogue/gifts/1821.html http://eflora.by/catalog/gift/konfety-rafaello
+    Redirect 301 /catalogue/gifts/1947.html http://eflora.by/catalog/gift/rafaello-200-tort
+    Redirect 301 /catalogue/gifts/1823.html http://eflora.by/catalog/gift/assorti-ferrero-2
+    Redirect 301 /catalogue/gifts/1822.html http://eflora.by/catalog/gift/konfety-ferrero-3
+    Redirect 301 /catalogue/gifts/1774.html http://eflora.by/catalog/gift/podarok-1
+    Redirect 301 /catalogue/gifts/1687.html http://eflora.by/catalog/gift/korzina-fruktov
+    Redirect 301 /catalogue/gifts/2035.html http://eflora.by/catalog/gift/5-sharov-serdce
+
+
+
+    Redirect 301 /catalogue/thevalentinesday/ http://eflora.by/catalog/st-day-valentine
+    Redirect 301 /catalogue/thevalentinesday/2042.html http://eflora.by/catalog/st-day-valentine/pro-lyubov-3
+    Redirect 301 /catalogue/thevalentinesday/2039.html http://eflora.by/catalog/st-day-valentine/51-krasnaya-roza
+    Redirect 301 /catalogue/thevalentinesday/1791.html http://eflora.by/catalog/st-day-valentine/25-krasnyh-roz-2
+    Redirect 301 /catalogue/thevalentinesday/1999.html http://eflora.by/catalog/st-day-valentine/11-krasnyh-roz-2
+    Redirect 301 /catalogue/thevalentinesday/1909.html http://eflora.by/catalog/st-day-valentine/korzina-iz-roz-3
+    Redirect 301 /catalogue/thevalentinesday/2009.html http://eflora.by/catalog/st-day-valentine/sladkoe-serdce-2
+    Redirect 301 /catalogue/thevalentinesday/1788.html http://eflora.by/catalog/st-day-valentine/barhatnoe-serdce-2
+    Redirect 301 /catalogue/thevalentinesday/1809.html http://eflora.by/catalog/st-day-valentine/rozyulechki-5
+    Redirect 301 /catalogue/thevalentinesday/2001.html http://eflora.by/catalog/st-day-valentine/cvetnye-bryzgi-4
+    Redirect 301 /catalogue/thevalentinesday/1918.html http://eflora.by/catalog/st-day-valentine/orhideya
+    Redirect 301 /catalogue/thevalentinesday/2062.html http://eflora.by/catalog/st-day-valentine/3-shara-serdce
+    Redirect 301 /catalogue/thevalentinesday/2041.html http://eflora.by/catalog/st-day-valentine/karmen-2
+    Redirect 301 /catalogue/thevalentinesday/1996.html http://eflora.by/catalog/st-day-valentine/al-stromerii-3
+    Redirect 301 /catalogue/thevalentinesday/1808.html http://eflora.by/catalog/st-day-valentine/pestraya-vesna-2
+    Redirect 301 /catalogue/thevalentinesday/1995.html http://eflora.by/catalog/st-day-valentine/25-tyul-panov-cv-3
+    Redirect 301 /catalogue/thevalentinesday/2056.html http://eflora.by/catalog/st-day-valentine/51-tyul-pan-3
+    Redirect 301 /catalogue/thevalentinesday/2059.html http://eflora.by/catalog/st-day-valentine/25-tyul-panov-zhel-3
+    Redirect 301 /catalogue/thevalentinesday/2057.html http://eflora.by/catalog/st-day-valentine/svezhest-2
+    Redirect 301 /catalogue/thevalentinesday/2000.html http://eflora.by/catalog/st-day-valentine/rozali-2
+    Redirect 301 /catalogue/thevalentinesday/2040.html http://eflora.by/catalog/st-day-valentine/akvareli-2
+    Redirect 301 /catalogue/thevalentinesday/1793.html http://eflora.by/catalog/st-day-valentine/na-kryl-yah-2
+    Redirect 301 /catalogue/thevalentinesday/1910.html http://eflora.by/catalog/st-day-valentine/lyubimoy
+    Redirect 301 /catalogue/thevalentinesday/1789.html http://eflora.by/catalog/st-day-valentine/rozovoe-serdce-2
+    Redirect 301 /catalogue/thevalentinesday/1790.html http://eflora.by/catalog/st-day-valentine/mishka-v-rozah-3
+
+
+
+
+    Redirect 301 /catalogue/march/ http://eflora.by/catalog/eight-march/eight-march
+    Redirect 301 /catalogue/march/2070.html http://eflora.by/catalog/eight-march/oblako
+    Redirect 301 /catalogue/march/2013.html http://eflora.by/catalog/eight-march/al-stromerii-2
+    Redirect 301 /catalogue/march/2012.html http://eflora.by/catalog/eight-march/frezii-2
+    Redirect 301 /catalogue/march/1925.html http://eflora.by/catalog/eight-march/mishka-v-rozah-2
+    Redirect 301 /catalogue/march/1820.html http://eflora.by/catalog/eight-march/kruzhevo
+    Redirect 301 /catalogue/march/2065.html http://eflora.by/catalog/eight-march/11-gerber-2
+    Redirect 301 /catalogue/march/2067.html http://eflora.by/catalog/eight-march/101-tyul-pan-cv
+    Redirect 301 /catalogue/march/2019.html http://eflora.by/catalog/eight-march/51-tyul-pan-2
+    Redirect 301 /catalogue/march/1923.html http://eflora.by/catalog/eight-march/vesennyaya-palitra
+    Redirect 301 /catalogue/march/2011.html http://eflora.by/catalog/eight-march/19-tyul-panov-roz
+    Redirect 301 /catalogue/march/1817.html http://eflora.by/catalog/eight-march/korzinatyul-panov
+    Redirect 301 /catalogue/march/2022.html http://eflora.by/catalog/eight-march/vesennee-lukoshko
+    Redirect 301 /catalogue/march/1816.html http://eflora.by/catalog/eight-march/yubileynaya
+    Redirect 301 /catalogue/march/1813.html http://eflora.by/catalog/eight-march/cvetochnyy-chay-2
+    Redirect 301 /catalogue/march/2020.html http://eflora.by/catalog/eight-march/rozyulechki-4
+    Redirect 301 /catalogue/march/1818.html http://eflora.by/catalog/eight-march/cvetnye-bryzgi-3
+    Redirect 301 /catalogue/march/1924.html http://eflora.by/catalog/eight-march/korzina-iz-roz-2
+    Redirect 301 /catalogue/march/2068.html http://eflora.by/catalog/eight-march/pro-lyubov-2
+    Redirect 301 /catalogue/march/2017.html http://eflora.by/catalog/eight-march/25-krasnyh-roz
+    Redirect 301 /catalogue/march/2015.html http://eflora.by/catalog/eight-march/15-krasnyh-roz
+    Redirect 301 /catalogue/march/1819.html http://eflora.by/catalog/eight-march/mnogotochie-3
+
+
+
+    Redirect 301 /events/ http://eflora.by/events
+    Redirect 301 /contacts/ http://eflora.by/kontakty
+    Redirect 301 /feedback/ http://eflora.by/kontakty
+    Redirect 301 /shops/ http://eflora.by/shops
+    Redirect 301 /how/ http://eflora.by/kak-zakazat-cvety-2
+
+
+
+
+    Redirect 301 /events/22.html http://eflora.by/events/dostavka-cvetov-v-grodno-vozmozhna-v-techenie-dnya
+    Redirect 301 /events/35.html http://eflora.by/events/dostavka-cvetov-v-begoml-uzhe-vozmozhna
+    Redirect 301 /events/19.html http://eflora.by/events/dostavka-roz-vozmozhna-v-bobruysk
+    Redirect 301 /events/26.html http://eflora.by/events/dostavka-buketa-v-myadel
+    Redirect 301 /events/20.html http://eflora.by/events/dostavka-buketa-v-molodechno
+    Redirect 301 /events/28.html http://eflora.by/events/vesennie-skidki
+    Redirect 301 /events/27.html http://eflora.by/events/akcii-na-eflora-by
+    Redirect 301 /events/30.html http://eflora.by/events/event-premiya
+    Redirect 301 /events/39.html http://eflora.by/events/zimnie-istorii-2015-v-minske
+    Redirect 301 /events/40.html http://eflora.by/events/svadebnaya-floristika-tradicii-i-istoriya
+
+    Redirect 301 /events/37.html http://eflora.by/events/chempionat-vasil-kovaya-korona
+    Redirect 301 /events/29.html http://eflora.by/events/original-nyy-buket
+    Redirect 301 /events/32.html http://eflora.by/events/novyy-sposob-oplaty
+    Redirect 301 /events/31.html http://eflora.by/events/novyy-magazin
+    Redirect 301 /events/34.html http://eflora.by/events/novoe-predlozhenie
+    Redirect 301 /events/38.html http://eflora.by/events/kak-vybirat-cvety
+    Redirect 301 /events/36.html http://eflora.by/events/itogi-dnya-sv-valentina
+    Redirect 301 /events/24.html http://eflora.by/events/dostavka-cvetochnoy-kompozicii-v-mozyr
+    Redirect 301 /events/23.html http://eflora.by/events/dostavka-cvetov-v-stolbcy
+    Redirect 301 /events/18.html http://eflora.by/events/news-2
+
+    Redirect 301 /help/aboutus/ http://eflora.by/o-nas
+    Redirect 301 /help/pay/ http://eflora.by/sposoby-oplaty
+    Redirect 301 /help/discount/ http://eflora.by/discount
+    Redirect 301 /help/delivery/ http://eflora.by/delivery
+    Redirect 301 /help/faq/ http://eflora.by/faq
+    Redirect 301 /help/customerreviews/ http://eflora.by/customerreviews
+    Redirect 301 /help/guarantee/ http://eflora.by/guarantee
+    Redirect 301 /help/corporatebanking/ http://eflora.by/corporatebanking
+    Redirect 301 /help/friends/ http://eflora.by/friends
+
+

@@ -90,8 +90,8 @@ $params = array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=glushiteli',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'root',//'efloraby_newef',
+			'password' => '',//'[Cv*#^Im})(Ql]~-rN',
 			'charset' => 'utf8',
 			'tablePrefix' => 'sm_',
 			// включает отображение sql запросов.
