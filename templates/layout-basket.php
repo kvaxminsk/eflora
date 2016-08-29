@@ -270,7 +270,7 @@
                 <p> Дата доставки:</p>
                 <div class="date_delivery_wrapp">
                     <?
-                    switch (date('m')) {
+                    switch (date('m')-1) {
                         case 0:
                             $fMonth = "января";
                             break;
