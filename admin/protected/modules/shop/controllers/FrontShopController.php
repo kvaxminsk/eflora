@@ -105,10 +105,13 @@ class FrontShopController extends FrontController
 
         $order->method_pay = $date->method_pay;
         $order->currency = $date->currency;
-//        var_dump($date->text_postcard);die();
+//        var_dump($date->products );
+//        echo "<hr>";
+//        var_dump($order);
+//        die();
         if ($order->save()) {
             $order_id = $order->id;
-            foreach ($date->products as $pr) {
+            foreach ($date->products as $product) {
                 $productOrder = Order::model()->loadProduct($product[0]);
 
                 $op = new OrderProducts();
@@ -374,6 +377,20 @@ class FrontShopController extends FrontController
             $text .= '<b>Тип Валюты:</b> ' . $this->currency . '<br>';
             $text .= '<b>Дата доставки:</b> ' . (($order->date_delivery != '') ? $order->date_delivery : 'Не указано') . '<br>';
 
+            $text .= '</p>';
+            $text .= (($order->text_postcard != '') ? 'Текст открытки:<hr>' . $order->text_postcard . '<hr>' : '');
+            $text .= (($order->user_comment != '') ? 'Комментарий:<hr>' . $order->user_comment . '<hr>' : '');
+        }
+        else {
+            $text .= '<h2>Получатель:</h2> ' . $order->name_from;
+            $text .= '<p>';
+            $text .= '<b>Телефон:</b> ' . (($order->phone_from != '') ? $order->phone_from : 'Не указано') . '<br>';
+            $text .= '<b>Страна:</b> ' . (($order->country_to != '') ? $order->country_to : 'Не указано') . '<br>';
+            $text .= '<b>Город:</b> ' . (($order->city_from != '') ? $order->city_from : 'Не указано') . '<br>';
+            $text .= '<b>Адрес:</b> ' . (($order->address_from != '') ? $order->address_from : 'Не указано') . '<br>';
+            $text .= '<b>E-mail:</b> ' . (($order->email_to != '') ? $order->email_to : 'Не указано') . '<br>';
+            $text .= '<b>Способ оплаты:</b> ' . (($order->method_pay != '') ? $order->method_pay : 'Не указано') . '<br>';
+            $text .= '<b>Дата доставки:</b> ' . (($order->date_delivery != '') ? $order->date_delivery : 'Не указано') . '<br>';
             $text .= '</p>';
             $text .= (($order->text_postcard != '') ? 'Текст открытки:<hr>' . $order->text_postcard . '<hr>' : '');
             $text .= (($order->user_comment != '') ? 'Комментарий:<hr>' . $order->user_comment . '<hr>' : '');

@@ -511,7 +511,7 @@ html ,body{
 	display: none
 }
 #dollar {
-	color: #adadad;
+	color: #898989;
 	font-size: 28px;
 	font-family: 'Roboto Thin', arial;
 	margin-left: 15px;
@@ -529,14 +529,14 @@ sup{
 	font-size: 14px;
 }
 #delimeter {
-	color: #adadad;
+	color: #898989;
 	font-size: 28px;
 	font-family: 'Roboto Thin', arial;
 	margin-left:0px;
 	margin-right: 0px;
 }
 #unit {
-	color:#adadad;
+	color:#898989;
 	font-size: 28px;
 	font-family: 'Roboto Thin', arial;
 	cursor: pointer;

@@ -236,7 +236,7 @@ class Order extends CActiveRecord
     public function getOrderNumberAll()
     {
         $criteria = new CDbCriteria;
-        $criteria->addCondition('t.active=1');
+//        $criteria->addCondition('t.active=1');
         $count = Order::model()->count($criteria);
         return $count;
     }
@@ -244,7 +244,7 @@ class Order extends CActiveRecord
     public function getOrderNumberToday()
     {
         $criteria = new CDbCriteria;
-        $criteria->addCondition('t.active=1');
+//        $criteria->addCondition('t.active=1');
         $criteria->addCondition('t.date LIKE :test','AND');
         $criteria->params=array(
             ':test'=>'%' .  date('Y-m-d') . '%',
@@ -258,7 +258,7 @@ class Order extends CActiveRecord
     public function getOrderNumberYesterday()
     {
         $criteria = new CDbCriteria;
-        $criteria->addCondition('t.active=1');
+//        $criteria->addCondition('t.active=1');
 //        $criteria->addCondition('t.date LIKE `%' .  . '%`');
 //        $criteria->addCondition('t.date=' . date("Y-m-d", time() - (60 * 60 * 24)));
         $criteria->addCondition('t.date LIKE :test','AND');

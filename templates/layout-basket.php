@@ -505,7 +505,7 @@
 
                     <textarea class="text_postcard" name="text_postcard" id="text_postcard" cols="30" rows="3"
                               placeholder="Текст открытки и ваш комментарий к заказу"></textarea>
-                    <p class="interval">пожелания и т. д.</p>
+                    <p class="interval">поздравления и т.д.</p>
                 </div>
                 <div class="cart1_comments">
                     <h1>Текст комментария</h1>
@@ -515,7 +515,7 @@
 
                     <textarea class="text_postcard" name="comment_postcard" id="comment_postcard" cols="30" rows="3"
                               placeholder="Текст комментария"></textarea>
-                    <p class="interval">интервал времени для доставки, коментарии, пожелания и т. д.</p>
+                    <p class="interval">интервал времени для доставки, созваниваться ли с получателем и др. пожелания по доставке</p>
                 </div>
                 <p> Способы оплаты </p>
                 <div class="way_pay_wrapp">
