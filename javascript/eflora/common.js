@@ -210,6 +210,10 @@ function renderBlockReviews() {
 
 
 $(document).ready(function () {
+    setTimeout(function () {
+        $('.left_box').click();
+    }, 3000); // время в мс
+
     var ua = navigator.userAgent;
     if (ua.search(/OPR/) != -1) alert('В старых версиях браузера Opera возможно некоректное отоброжение сайта');
 

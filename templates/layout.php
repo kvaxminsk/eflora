@@ -297,7 +297,7 @@
                     <div class="filter_wrapper">
                         <div id="criterion_filter" class="wrapper-dropdown-5 select_filter" tabindex="1">
 									<span id='criterion_filter_text'>
-									Фильтр</span>
+									Сортировка</span>
                             <ul class="dropdown " id="dropdown2">
                                 <li><a href=""><i class="icon-user"></i>По популярности</a></li>
                                 <li><a href=""><i class="icon-cog"></i>По цене:</a></li>
